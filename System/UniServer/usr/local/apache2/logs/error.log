@@ -61,3 +61,13 @@
 [Thu Jun 07 21:04:34.228953 2012] [:error] [pid 5676:tid 1104] [client ::1:11516] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336
 [Thu Jun 07 21:04:37.451552 2012] [:error] [pid 5676:tid 1104] [client ::1:11526] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296
 [Thu Jun 07 21:04:37.558438 2012] [:error] [pid 5676:tid 1104] [client ::1:11526] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336
+[Thu Jun 07 21:53:08.682415 2012] [core:warn] [pid 4588:tid 484] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Jun 07 21:53:08.702394 2012] [mpm_winnt:notice] [pid 4588:tid 484] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Thu Jun 07 21:53:08.702394 2012] [mpm_winnt:notice] [pid 4588:tid 484] AH00456: Server built: Apr  7 2012 13:58:11
+[Thu Jun 07 21:53:08.702394 2012] [core:notice] [pid 4588:tid 484] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Thu Jun 07 21:53:08.704392 2012] [mpm_winnt:notice] [pid 4588:tid 484] AH00418: Parent: Created child process 5064
+[Thu Jun 07 21:53:09.153922 2012] [mpm_winnt:notice] [pid 5064:tid 588] AH00354: Child: Starting 64 worker threads.
+[Thu Jun 07 21:53:13.802576 2012] [:error] [pid 5064:tid 1104] [client ::1:19288] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 21:53:13.928441 2012] [:error] [pid 5064:tid 1104] [client ::1:19288] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 22:56:36.188838 2012] [:error] [pid 5064:tid 1104] [client ::1:27412] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 22:56:36.310706 2012] [:error] [pid 5064:tid 1104] [client ::1:27412] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml

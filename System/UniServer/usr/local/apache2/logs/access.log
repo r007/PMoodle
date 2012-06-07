@@ -590,3 +590,6 @@
 ::1 - - [07/Jun/2012:21:04:33 +0400] "GET /moodle/install.php HTTP/1.1" 302 - "-" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:13.0) Gecko/20100101 Firefox/13.0"
 ::1 - - [07/Jun/2012:21:04:33 +0400] "GET /moodle/admin/index.php?lang=en HTTP/1.1" 503 543 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:13.0) Gecko/20100101 Firefox/13.0"
 ::1 - - [07/Jun/2012:21:04:36 +0400] "GET /moodle/admin/index.php?lang=en HTTP/1.1" 503 543 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:13.0) Gecko/20100101 Firefox/13.0"
+::1 - - [07/Jun/2012:21:53:09 +0400] "GET /RU/index.shtml HTTP/1.1" 200 1543 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:13.0) Gecko/20100101 Firefox/13.0"
+::1 - - [07/Jun/2012:21:53:12 +0400] "GET /moodle/index.php HTTP/1.1" 503 536 "http://localhost:4001/RU/index.shtml" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:13.0) Gecko/20100101 Firefox/13.0"
+::1 - - [07/Jun/2012:22:56:35 +0400] "GET /moodle/index.php HTTP/1.1" 503 536 "http://localhost:4001/RU/index.shtml" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:13.0) Gecko/20100101 Firefox/13.0"
