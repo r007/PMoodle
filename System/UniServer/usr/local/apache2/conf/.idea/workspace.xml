@@ -31,10 +31,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Index.shtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Index.shtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../../www/RU/Index.shtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="68" selection-start="635" selection-end="635" vertical-scroll-proportion="0.12274368">
+            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../../README.md.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../../../../../README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,6 +88,7 @@
       <list>
         <option value="$PROJECT_DIR$/httpd.conf" />
         <option value="$PROJECT_DIR$/../../../../www/RU/Index.shtml" />
+        <option value="$PROJECT_DIR$/../../../../../../README.md.txt" />
       </list>
     </option>
   </component>
@@ -133,6 +152,11 @@
     <property name="options.lastSelected" value="preferences.sourceCode.CoffeeScript" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\pm1.20_mini" />
+    </key>
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -245,7 +269,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../www/RU/Index.shtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="68" selection-start="635" selection-end="635" vertical-scroll-proportion="0.12274368">
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../README.md.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

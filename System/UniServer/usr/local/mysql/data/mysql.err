@@ -60,3 +60,15 @@ InnoDB: Foreign key constraint system tables created
 120607 21:03:05 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
 120607 21:03:05 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
 120607 21:03:05 [Note] Server socket created on IP: '127.0.0.1'.
+120607 21:53:08 [Note] Plugin 'FEDERATED' is disabled.
+120607 21:53:08 InnoDB: The InnoDB memory heap is disabled
+120607 21:53:08 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120607 21:53:08 InnoDB: Compressed tables use zlib 1.2.3
+120607 21:53:08 InnoDB: Initializing buffer pool, size = 16.0M
+120607 21:53:08 InnoDB: Completed initialization of buffer pool
+120607 21:53:08 InnoDB: highest supported file format is Barracuda.
+120607 21:53:08  InnoDB: Waiting for the background threads to start
+120607 21:53:09 InnoDB: 1.1.8 started; log sequence number 1595675
+120607 21:53:09 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+120607 21:53:09 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+120607 21:53:09 [Note] Server socket created on IP: '127.0.0.1'.
