@@ -1,0 +1,93 @@
+
+
+
+Table of Contents
+
+Setting Mode
+Localization
+Pstart Menu (modification)
+Slimming
+Zombie Processes (apache and mysqld)
+Navigating Quickly in CD Mode
+
+
+***Setting Mode***
+
+The importance of the mode_us.bat and mode_cd.bat when transferring courses. Yes you can restore a course in mode_cd.bat. Because when you're in this mode remember you have created c:/uscd35temp/moodledata which when you restore a course is where it will be written. Addtionally there is a writeable copy of the moodle database residing c:/uscd35temp/mysql/data/moodle. So yes you can restore a course in this mode. But there is one very important thing you should know. If you then switch to mode_us.bat and attempt to burn a CD with this particular course on it you will find that it fails to capture the the new course or any other changes. So to make changes or to capture restored courses you must be in mode_us.bat FIRST !!!. Then you switch back to mode_cd.bat just before you burn the CD. If you run "Mobile Moodle Install" from the menu then you will automatically be in mode_us.bat whether you install to the hard disk or to USB stick. 
+
+
+***Localization***
+
+How can I change the language the opening page uses?
+Prototype pages have been made for you in \udrive\www\EN(English - the default), \udrive\www\RU (Russian), \udrive\www\FR (French) and \udrive\www\ES (Spanish)  You may edit these pages to contain whatever you like, or just translate what is there.  To have the CD come up in the selected language edit the Server_Start.bat file.  The line you need to edit is shown below.  Notice the bold part EN.  Just change that to RU or FR or ES and that language page will start.
+
+start %Disk%:\FireFoxPortable\FireFoxPortable.exe http://localhost:4001/EN/index.shtml
+
+After editing the Server_Start.bat file test to see if it works as expected.  If it does you must perform the same edit in \udrive\plugins\ucsd2\ucsd\new_Server_Start.bat and \udrive\plugins\ucsd2\ucsd\old_Server_Start.bat.  These are the files that are copied to Server_Stat.bat in root when mode_us.bat or mode_cd.bat are run.  You must edit both of the Server_Start files.
+
+
+
+Changing menu's quickly in Portable Firefox. 
+
+MUST BE IN mode_us.bat first (Pstart menu shows R/W Mode). Then you click on Portable Firefox Tools->
+
+
+
+Firefox Portable in Other Languages
+
+This page explains how to get Firefox Portable localized to your language of choice. By default, Firefox Portable ships with English (US) as its language, as that is what I build it from. There are 2 methods to getting Firefox Portable to appear in your locale:
+Method 1: Copy it right in
+
+The easiest way to get Firefox Portable in your own language is to simply copy a local installation of Firefox (in your prefered language) into Portable Firefox. To do this:
+
+   1. Install Firefox Portable to your portable device as outlined on the support page
+   2. Delete all the files within the FirefoxPortable\App\firefox\ directory
+   3. Copy your local Firefox files to that same directory (you can usually find them in C:\Program Files\Mozilla Firefox\ ).
+   4. Use Firefox Portable as normal
+
+You now have Firefox Portable in your own language. Messages from the launcher will still be in English (Ex: Another copy of Firefox is running...). This will be resolved in a future release.
+Method 2: Language Packs and Locale Switcher
+This is the preferred method....
+The Locale switcher is installed on the version of Firefox on this CD
+
+The second method is useful if you wish to be able to switch languages on a regular basis. Here are the steps.
+
+   1. Unzip Firefox Portable to your portable drive
+   2. Start Firefox Portable
+   3. Download the Locale-Switcher extension and then install it by doing a FILE - OPEN within Firefox Portable.
+   4. Download the language pack you'd like to use and install it using the same method.
+   5. Close Firefox Portable, wait for it to stop writing to your drive, and then restart it to complete installation of the extensions.
+   6. Head to TOOLS and the LANGUAGES and select the language you which to switch to.
+   7. Restart Firefox Portable for the change to take effect (being sure it has fully closed before restarting).
+
+Now, this method works pretty well and should work for just about everyone. The advantage is that this is a bit cleaner and you can easily switch between multiple languages. The disadvantage is that if your drop a local profile into Firefox Portable, you'll need to perform these steps again.
+Language Packs
+
+After browsing to the list of languages, you should right-click (or control click) on the link and select to save it locally.
+
+http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/2.0.0.6/win32/xpi/
+
+
+***Pstart Menu***
+
+
+How can I change the menu?
+The menu can be changed by clicking the setup tab on the menu. Click on "setup", and then "backup settings" from the menu, then save PStartBackup1.xml to place you can find if not in /ucsd2/ucsd. Then if you are in the CD mode rename PStartBackup1.xml as cd_PStart.xml in \udrive\plugins\ucsd2\ucsd. If you are in User mode rename PStartBackup1.xml as us_PStart.xml in \udrive\plugins\ucsd2\ucsd. The mode switching bat files will load the proper xml file and save it back to PStart.xml in the root folder.  If you want to change the menu file for a language other than English you may do so from the menu itself.  You can type in your language.  You will have to save the files as described before.  Do not try to edit the xml file itself.  That won't work! After you save the files you must switch modes to make sure everything works in both modes. When you switch modes the PStart.xml file in \System will get over written with the file you edited. 
+
+
+
+***Slimming***
+
+The install which comes off the menu is 135 mb. This install doesn't include the development tools. You can easily make your *.exe install file. Check out the help file for more details. 
+
+
+
+***Zombie Apache and Mysqld processes. 99% of the time when you shutdown from the P-start menu these process which are critical to Moodle will close properly. But on rare occasions they will stay in memory after closing the program for one reason or another. If they do stay in memory and you attempt to launch Server_Start.bat again it will most certainly fail. Addtionally you might have noticed that uniserver(wamp stack) creates a redirect which keeps things strait no matter which drive your using. If Apache and Mysqld don't go away then neither will the new "W" drive you see in "My Computer". Which again most of the time if you try to launch Server_Start.bat and the "W" is already there it will fail because it generally means that Apache and Mysqld never cleared out of memory from the last time you launched. 
+
+
+***Navigation in CD Mode***
+The fastest way to navigate around in Moodle is to use the arrows on the Firefox Portable Browser. Provided that you've already opened the page. 
+Lets say you've already opened a few things up in moodle like a quiz maybe a resource text page or html page. If you want to get back to that page 
+and you click on the links inside moodle it will be much slower because it has to spin the CD ROM again. Why not click the back arrow in Firefox ?
+If you do this it will quickly take you back to where you were. Now there are times when you must use Moodle navigation but if the Firefox arrows are
+available I urge you to use them it will be a much better experience for you.

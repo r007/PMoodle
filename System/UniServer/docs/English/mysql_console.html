@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>MySQL Console</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p530">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/mysql_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>MySQL Console</h1>
+<p>The MySQL server can be administered from a command window. Uniform Server provides a short cut named MySQL console whichs opens a command window with the correct path to the MySQL utilities folder already set. Apart from cosmetics, it is identical to a standard command window.</p>  
+
+<p>This page focuses on using MySQL console. It is not intended as a definitive guide but just an introduction to show you how to access and use MySQL client.</p>
+
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+
+   <li><a href="#Command window" >Command window</a></li>
+   <li><a href="#How to run a standard command window" >&nbsp;&nbsp;How to run a standard command window</a></li>
+   <li><a href="#MySQL console command window short cut" >&nbsp;&nbsp;MySQL console command window short cut</a></li>
+   <li><a href="#Quick MySQL binary folder check" >&nbsp;&nbsp;Quick MySQL binary folder check</a></li>
+   <li><a href="#Start MySQL Client" >Start MySQL Client</a></li>
+
+   <li><a href="#Related topics" >Related topics</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="Command window"></a>
+<h2>Command window</h2>
+
+<p>Using a command window to administer the MySQL server is not specific to The Uniform Server. Running a standard command window is the same for any Windows MySQL installation. The Uniform Server’s MySQL console sets the paths and cosmetics transparently. With a command window open you can access the MySQL server utilities mysql client and mysqladmin. MySQL client allows you to run SQL commands, for example to create or delete databases. The following covers opening a standard command window and then The Uniform Server's preferred alternative MySQL console.</p>
+ 
+
+<a name="How to run a standard command window"></a>
+<h3>How to run a standard command window</h3>
+
+<p>To open a command window, run the command <b>cmd</b> from the start menu. Running a MySQL utility program requires navigating to its binary folder.</p>
+<p><b>Note:</b> The path where you installed The Uniform Server may be different; substitute your path as appropriate.</p>
+<table>
+<tr valign="top">
+<td>
+
+<ol>
+  <li> Start a command window: (<b>Start</b> &gt; click on <b>Run</b> &gt; type <b>cmd</b> click <b>OK</b>)</li> 
+<li>Alternatively: Click <b>Start</b> &gt; <b>All Programs</b> &gt; <b>Accessories</b> &gt; click <b>Command Prompt</b>   </li>
+  <li> Type following lines into the command window:<br>
+      <b>cd \</b> <br>
+      <b>cd C:\UniServer\usr\local\mysql\bin</b> <br>
+</ol>
+<p>The dialogue in the command window looks similar to that on the right.</p>
+<b>Note:</b> To use the command window you must have the MySQL server running.
+</td>
+
+<td>
+    <img src="images/Coral_mysql_standard_cmd_window.gif" alt="Standard command window" />
+</td>
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="MySQL console command window short cut"></a>
+<h3>MySQL console command window short cut</h3>
+
+<table>
+<tr valign="top">
+<td valign="top">
+<p>Running MySQL console from UniController has a number of advantages. The button is enabled only when the MySQL server is running. Server location tracking allows the correct folder to be automatically selected when the console window is open. Opening a console window requires only a single button click.</p>
+
+<ol>
+  <li> Start UniController</li> 
+  <li> Start MySQL server</li> 
+  <li> Click <b>MySQL console</b> button. Opens window shown on right</li> 
+</ol>
+</td>
+
+<td>
+    <img src="images/Coral_mysql_us_cmd_window.gif" alt="Standard command window" />
+</td>
+</tr></table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Quick MySQL binary folder check"></a>
+<h3>Quick MySQL binary folder check</h3>
+
+
+<p>When running MySQL utilities, the working directory is changed to the MySQL folder: UniServer\usr\local\mysql\bin. </p>
+
+<table>
+ <tr>
+   <td>                                                              
+To check the working directory, type the <b>dir</b> command into either <br />
+of the above windows. The result should be as on the right.
+<ul>
+ <li> mysql.exe - MySQL client runs SQL commands</li> 
+ <li> mysqladmin.exe - MySQL admin </li> 
+ <li> mysqldump.exe - Database dump</li> 
+</ul>
+   </td>
+   <td>
+<pre>
+C:\UniServer\usr\local\mysql\bin>dir
+Directory of C:\UniServer\usr\local\mysql\bin
+21/06/2011 19:55   4,001,792 libmysql.dll
+21/06/2011 19:54   4,106,240 mysql.exe
+21/06/2011 19:54   4,037,632 mysqladmin.exe
+21/06/2011 19:54   8,153,600 mysqld1.exe
+21/06/2011 19:54   4,094,976 mysqldump.exe
+C:\UniServer\usr\local\mysql\bin>
+ </pre>
+   </td>
+ </tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Start MySQL Client"></a>
+<h2>Start MySQL Client</h2>
+
+<table>
+<tr valign="top">
+<td>
+<p>To start MySQL Client, type the following at the command window:</p>
+<ul>
+ <li>mysql -h127.0.0.1 -uroot -proot</li>
+</ul>
+
+<p>Note 1: Do not copy and paste! Type the line in as shown.</p>
+<ul>
+ <li> -h stands for host name. Immediately follow that with the host 127.0.0.1 (no spaces)</li>
+
+ <li> -u stands for user name. Immediately follow that with the user name (no spaces)</li>
+ <li> -p stands for user password. Immediately follow that with the password (no spaces) </li>
+</ul>
+
+<p>Note 2: The <b>mysql></b> prompt indicates you are in <b>MySQL monitor</b> and it is ready to receive your commands.</p>
+
+<p>Note 3: Quit MySQL monitor by typing the command <b>exit</b> </p>
+</td>
+<td>
+<p>On successful connection, you will receive a message similar to this:</p>
+<pre>
+
+C:\UniServer\usr\local\mysql\bin>mysql -h127.0.0.1 -uroot -proot
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 2
+Server version: 5.5.20 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2011, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> exit
+Bye
+
+C:\UniServer\usr\local\mysql\bin>
+
+</pre>
+</td>
+</tr>
+</table>
+<p><b>Note 4:</b> You will have changed the MySQL root password. Remember to change <b>root</b> with your password in the above (for -p<b>root</b>).</p>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Related topics"></a>
+<h2>Related topics</h2>
+
+<p><a href="mysql_change_password.html#Set%20New%20MySQL%20root%20user%20password%20using%20MySQL%20Console">Set New MySQL root user password using MySQL Console</a> <br />
+
+<a href="mysql_restore_password.html#Restore%20MySQL%20root%20user%20password%20using%20command%20window">Restore MySQL root user password using command window</a> <br />
+
+<a href="mysql_create_delete_database.html#Create%20delete%20Database%20using%20command%20window">Create delete Database using command window</a><br />
+
+<a href="mysql_create_restricted_user.html#Create%20Restricted%20MySQL%20User%20using%20command%20window">Create Restricted MySQL User using command window</a><br />
+
+<a href="mysql_create_restricted_user.html#Delete%20Restricted%20MySQL%20User%20using%20command%20window">Delete Restricted MySQL User using command window</a><br />
+
+<a href="mysql_edit_restricted_user.html#Edit%20Restricted%20MySQL%20User%20using%20command%20window">Edit Restricted MySQL User using command window</a></p>
+
+
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 21-jan-2012 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

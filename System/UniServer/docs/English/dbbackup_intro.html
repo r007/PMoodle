@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>DbBackup</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p1000">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>Db Backup</h1>
+<p>The Uniform Server's database backup allows for either manual or periodic backups. This page covers the configuration sub-menu, which allows you to configure the backup system and view backup logs.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Features" >Features</a></li>
+   <li><a href="#Overview" >Overview</a></li>
+   <li><a href="#Edit DB Backup Config" >Edit DB Backup Config</a></li>
+   <li><a href="#Force DB  Backup" >Force DB  Backup</a></li>
+   <li><a href="#Enable log" >Enable log</a></li>
+   <li><a href="#View Log" >View Log</a></li>
+   <li><a href="#Enable In Cron" >Enable In Cron</a></li>
+   <li><a href="#Select DBs to backup" >Select DBs to backup</a></li>
+   <li><a href="#Restore DBs from backup" >Restore DBs from backup</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="Features"></a>
+<h2>Features</h2>
+<ul>
+ <li>Simple configuration file. Sets FIFO depth and enables or disables logging</li>
+ <li>Force backup</li>
+ <li>Enable in Cron - Auto backups</li>
+ <li>Create database backup list. Add to list or delete from list</li>
+ <li>Restore a selected database</li>
+</ul>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Overview"></a>
+<h2>Overview</h2>
+
+<p><b>The Uniform Server and Database Backup</b></p>
+<p>The Uniform Server's database backup allows for either manual or periodic backups. Each database is extracted from the MySQL server in SQL format. The archive files consist of a database name with a unix time stamp appended. For example fred_1306863938_.sql. These are saved to folder UniServer\db_backup (which is created automatically). </p>
+<p>Archive files can become large (they eat disk space). To minimise this, the archive system implements a FIFO (first in first out) deletion. The total number of files for each database is user specifiable (default 3). On reaching this value the eldest file is deleted to make way for a new archive file. </p>
+<p>The above applies to both manual and automatic updates (Using Cron).</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Edit DB Backup Config"></a>
+<h2>Edit DB Backup Config</h2>
+<p>The configuration file sets the FIFO depth to 3 and enables logging by default.</p>  
+<p><b>UniController:</b> Open file as follows:</p>
+
+<p class="access">Server Configuration &gt; DB Backup &gt; Edit DB Backup Config </p>
+
+<p><b>Directly:</b> Open the following file in notepad or other suitable text editor: UniServer\uni_con\db_backup\<b>db_backup.ini</b></p>
+<h3>Configuration</h3>
+<table>
+ <tr valign="top">
+ <td>
+<table>
+ <tr valign="top">
+  <td>
+Fifo_depth&nbsp;=&nbsp;3&nbsp;&nbsp;
+  </td>
+  <td>
+This defines total number of archives to save.<br />
+When the limit is reached, the eldest archive is deleted to make way for a new archive.<br />
+FIFO stands for first-in, first-out (deleted).
+  </td>
+</tr>
+
+<tr valign="top">
+  <td>
+    Logging = True
+  </td>
+  <td>
+  True enable logging <br />
+  False Disable logging
+  </td>
+</tr>
+</table>
+
+</td>
+<td>
+<pre>
+;#######################
+
+[FIFO]
+Fifo_depth = 3
+
+[LOG]
+Logging = true
+
+;=== END Config ========
+</pre>
+ </td>
+ </tr>
+</table>
+
+<p><b>Note:</b> FIFO size is a compromise between database size, disk space and how often backups are required. Three is just a test value and should be changed to suit your particular requirements. </p>
+ 
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Force DB  Backup"></a>
+<h2>Force DB  Backup</h2>
+
+<p>Using the menu option, you can force all selected databases to be backed up. It can also be done directly by running the batch file Run_db_backup.bat.<br /> 
+Either method assumes you have entered databases to the file list. See section  <a href="#Select DBs to backup">Select DBs to backup</a>.</p>
+
+<p><b>UniController:</b></p> 
+
+<p class="access">Server Configuration &gt; DB Backup &gt; Force DB  Backup </p>
+
+<p><b>Directely:</b><br />
+
+UniServer\uni_con\db_backup\<b>Run_db_backup.bat</b></p>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Enable log"></a>
+<h2>Enable log</h2>
+<p>This menu option is identical to "Edit DB Backup Config". It allows you to enable or disable logging.</p>
+
+<table>
+ <tr >
+ <td>
+
+<p class="access">Server Configuration &gt; DB Backup &gt; Enable log </p>
+
+<ul>
+ <li>Logging = <b>True</b> - Enable logging </li>
+ <li>Logging = <b>False</b> - Disable logging</li>
+</ul>
+
+</td>
+<td>
+<pre>
+;#######################
+
+[FIFO]
+Fifo_depth = 3
+
+[LOG]
+Logging = true
+
+;=== END Config ========
+</pre>
+ </td>
+ </tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="View Log"></a>
+<h2>View Log</h2>
+
+<table>
+ <tr>
+ <td>
+<p class="access">Server Configuration &gt; DB Backup &gt; View Log </p>
+
+<p>The log file opens in Notepad; an extract from this file is shown on the right.</p>
+<p>Log file displays date and time a database was backed up. Each file has a time stamp appended to its file name.</p>
+<p><b>Note:</b> The log file provides a quick way to check databases are being backed up. This is useful when setting up configuration files such as Cron.</p>
+ </td>
+
+ <td>
+<pre>
+19/07/2011 22:18:07 ### Log Started ===========================
+19/07/2011 22:18:07  File backed up - wordpress_1311081487_.sql
+19/07/2011 22:18:07  File backed up - joomla_1311081487_.sql
+19/07/2011 22:18:07 ### Log Ended =============================
+
+19/07/2011 22:22:37 ### Log Started ===========================
+19/07/2011 22:22:37  File backed up - wordpress_1311081757_.sql
+19/07/2011 22:22:37  File backed up - joomla_1311081757_.sql
+19/07/2011 22:22:37 ### Log Ended =============================
+
+19/07/2011 22:25:30 ### Log Started ===========================
+19/07/2011 22:25:30  File backed up - wordpress_1311081930_.sql
+19/07/2011 22:25:30  File backed up - joomla_1311081930_.sql
+19/07/2011 22:25:30 ### Log Ended =============================
+</pre>
+ </td>
+ </tr>
+</table>
+<p><b>Note:</b> The Log file location UniServer\uni_con\db_backup\<b>db_backup.log</b></p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Enable In Cron"></a>
+<h2>Enable In Cron</h2>
+
+<p>Every time you want to create a backup you need to manually run <b>Force DB Backup</b>.</p>
+
+<p>Remembering to manually run scripts like <b>Force DB Backup</b> becomes a chore. The Uniform Server automates running this type of script using Cron, which is started either manually (portable) or run as a service. It periodically executes a list of scripts; the "Force DB Backup" script is included and requires enabling as follows:</p>
+
+<table>
+ <tr valign="top">
+  <td>
+<p>You can open Cron configuration file in one of two ways either using UniController or directely.</p>
+
+<p><b>UniController:</b> To open the configuration file in Notepad</p>
+
+<p class="access">Server Configuration &gt; DB Backup &gt; Enable In Cron </p>
+
+<p><b>Directly:</b> Open the following file in notepad or other suitable text editor:<br />
+UniServer\uni_con\cron\<b>cron.ini</b>
+
+<table>
+ <tr valign="top">
+  <td>
+<p><b>Configuration:</b></p>
+<ul>
+  <li>Locate the section shown on right</li>
+</ul>
+</td>
+
+<td>
+  <pre>
+;[db_backup]
+;start  = 2009-09-21 2:56:52
+;period = hourly
+;path   = C:\UniServer\uni_con\db_backup\Run_db_backup.bat
+;ref =
+  </pre>
+</td>
+
+</tr>
+
+
+ <tr valign="top">
+  <td>
+<p>Enable the pre-configured <b>db_backup</b> section in Cron as follows:</p>
+  <ul>
+    <li>Un-comment the four lines as shown on right.</li>
+  </ul>
+</td>
+
+<td>
+  <pre>
+;[db_backup]
+start  = 2009-09-21 2:56:52
+period = hourly
+path   = C:\UniServer\uni_con\db_backup\Run_db_backup.bat
+ref =
+  </pre>
+</td>
+
+</tr>
+
+</table>
+<p><b>Note:</b> You can change the start time and period to suit your own requirements. See <a href="cron_intro.html#Configuration%20file">Cron Configuration file</a> for details.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Select DBs to backup"></a>
+<h2>Select DBs to backup</h2>
+<p>In order to backup a database it must be added to the backup list contained in a file. This menu option provides an easy to use interface for adding or removing databases to and from this list. All users MySQL databases are listed on the left (1). The list of databases to be backed up is shown on the right (4) these are the current entries saved in a file.</p>
+
+<p class="access">Server Configuration &gt; DB Backup &gt; Select DBs to backup </p>
+
+<table>
+ <tr valign="top">
+
+  <td>
+<p><b><i>Add to file</i></b></p>
+ <ul>
+  <li>From the databases listed on the left select a database to backup (1).</li>
+  <li>Click the <b>Add</b> button (2).<br /> Selected database appears in right window (4) and added to file.</li>
+ </ul>
+<p>Note: Clear button (3) deselects a selection</p>
+
+<p><b><i>Remove from file</i></b></p>
+
+ <ul>
+  <li>To delete an entry select a database from the list (4)</li>
+  <li>Click <b>Delete</b> button (5). Removes entry from list and file.</li>
+ </ul>
+
+  </td>
+
+  <td>
+<img src="images/Coral_dbbackup_add_del_database.gif" alt="Select db to backup or delete" />
+  </td>
+
+ </tr>
+</table>
+<h3>Direct Alternative:</h3>
+<p>An alternative to using the above menu item is to directly edit the database list file. Open the following file in a text editor:<br />
+&nbsp;&nbsp;&nbsp;UniServer\uni_con\db_backup\<b>dbs_to_backup.txt</b><br />
+Add or delete database names as required.</p> 
+
+<p><b>Note:</b> The following files should not be included in the backup list: "information_schema", "mysql", "performance_schema" or "phpmyadmin".</p>
+
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Restore DBs from backup"></a>
+<h2>Restore DBs from backup</h2>
+
+<table>
+ <tr valign="top">
+
+  <td>
+<p>This menu option allows you to restore a database from a backup file. All files backed up are displayed in section (1) each file listed has a time stamp appended.</p>
+<p>Note: Smaller number indicates older backup.</p>
+<p class="access">Server Configuration &gt; DB Backup &gt; Restore DBs from backup </p>
+
+<p><b><i>Restore database</i></b></p>
+
+ <ul>
+  <li>From the list (1)Select a database to restore.</li>
+  <li>Click <b>Restore</b> button (2)</li>
+ </ul>
+
+  </td>
+
+  <td>
+<img src="images/Coral_dbbackup_restore_database.gif" alt="Restore selected database" />
+  </td>
+
+ </tr>
+</table>
+<p><b>Note:</b> Backup files are saved to folder UniServer\<b>db_backup</b>.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 15-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

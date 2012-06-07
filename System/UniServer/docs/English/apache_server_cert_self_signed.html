@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Apache - Server Certificate Self-signed</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p440">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/apache_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>Apache - Server Certificate Self-Signed</h1>
+<p>This covers how to enable SSL on The Uniform Server 8.0-Coral.</p> 
+
+<p>The Uniform Server does not include a test server certificate/key pair, so a default installation has SSL disabled. The reason is one of security. A certificate/key pair must be unique to each server. After creating a new server certificate/key pair, SSL is automatically enabled in Apache's configuration file.</p> 
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Creating a self-signed certificate" >Creating a self-signed certificate</a></li>
+   <li><a href="#Alternative scripts" >Alternative Scripts</a></li>
+   <li><a href="#Generate_server_cert_and_key.bat" >&nbsp;&nbsp;Generate_server_cert_and_key.bat</a></li>
+   <li><a href="#Generate_server_cert_and_key.vbs" >&nbsp;&nbsp;Generate_server_cert_and_key.vbs</a></li>
+   <li><a href="#Key_cert_gen.hta" >&nbsp;&nbsp;Key_cert_gen.hta</a></li>
+
+   <li><a href="#Where to next" >Where to next</a></li>
+
+   </ul>
+ </div>
+</div>
+
+<a name="Creating a self-signed certificate"></a>
+<h2>Creating a self-signed certificate</h2>
+
+<p>Generating a self-signed certificate requires only a few mouse clicks. The “Server Certificate and Key generator” form has been pre-configured for a self-signed certificate there is no need to change these values just click “Run Generate” However if you wish you can change any of the defaults.</p>
+
+<table>
+<tr valign="top">
+<td>
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; Apache &gt; Generate Certificate</p>
+
+<ul>
+  <li>This opens <b>Server Certificate and Key generator</b> menu shown on right</li>
+  <li>D) Click <b>Run Generate</b> After a short time a confirmation pop-up is displayed.</li>
+  <li>For the new configuration to become effective, <b>restart Apache server</b>.</li>
+</ul>
+<p>Note 1: A) If you have changed the server name, that will be displayed instead of localhost.</p>
+<p>Note 2: B) C) Are dropdown menus.</p>
+<p>Note 3: C) 2048 Bits provide high-grade encryption. It's recommended not to change this.</p>
+
+</td>
+
+<td>
+   <img src="images/Coral_apache_cert_gen_1.gif" alt="Start as program"  />
+</td>
+
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Alternative Scripts"></a>
+<h2>Alternative Scripts</h2>
+
+The Uniform Server provides three scripts to generate a server certificate and key pair.
+<ol>
+  <li> UniServer\openssl\Generate_server_cert_and_key.bat  </li>
+  <li> UniServer\openssl\Generate_server_cert_and_key.vbs </li>
+  <li> UniServer\coral_con\scripts\Key_cert_gen.hta </li>
+</ol>
+
+<a name="Generate_server_cert_and_key.bat"></a>
+<h3>Generate_server_cert_and_key.bat</h3>
+
+<p>This script generates a self-signed server certificate and key pair. It assumes you have not changed the server name from its default of localhost. This allows the certificate and key to be automatically generated and installed without any user input.</p>
+
+<p><b>Note:</b> The certificate signing request is not required and is deleted.</p>
+
+<a name="Generate_server_cert_and_key.vbs"></a>
+<h3>Generate_server_cert_and_key.vbs</h3>
+
+<p>This script also generates a self-signed server certificate and key pair, but it assumes you have changed the server name from its default of localhost. 
+A popup displays the current server name setting. You can either accept this displayed value or change it as required. Pressing OK in either case will generate and install the certificate and key.</p>
+
+<p><b>Note:</b> The certificate signing request is not required and is deleted.</p>
+
+<a name="Key_cert_gen.hta"></a>
+<h3>Key_cert_gen.hta</h3>
+
+<p><b><i>Self-signed certificate</i>:</b> <br />This script is similar to the above in that it generates a self-signed server certificate and key pair. Several certificate defaults are displayed including server-name. For a self-signed certificate you need only change the server-name or accept its default. Pressing "Run Generate" generates and installs the certificate and key.</p>
+
+<p><b><i>Signed certificate</i>:</b> <br />If you are intending to purchase a signed certificate, fill in all appropriate form fields. Pressing “Run Generate” generates and installs the (self-signed) certificate and key. Unlike the previous two key-cert generation scripts, this script does not delete the certificate-signing request (server.csr). It is located in folder
+UniServer\openssl. You will open this file and post the contents for signing by the certificate authority. When you receive the signed certificate, you will replace the self-signed certificate with it.</p>
+
+<p><b>Note 1:</b> Copy both the server key, UniServer\usr\local\apache2\server_certs\ssl.key\server.key, and the returned signed certificate to a writable CD or USB memory stick for safekeeping.</p>
+
+<p><b>Note 2:</b> For a free signed certificate check out the following page: <a href="apache_free_server_cert.html">Free server certificate</a> </p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Where to next"></a>
+<h2>Where to next</h2>
+
+<p><a href="apache_ssl.html">Apache SSL</a> Introduction and overview.</p>
+<p><a href="apache_free_server_cert.html">Free server certificate</a> How to obtain and install a free server certificate from StartCom</p>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 11-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

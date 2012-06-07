@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Install ActivePerl</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p1110">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/perl_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>Perl - Install ActivePerl</h1>
+<p>ActivePerl is considered to be the de facto standard. However the ActivePerl Community License restricts the way the package can be distributed. Since this is inconsistent with The Uniform Server's license, ActivePerl is not included with The Uniform Server, nor is it available as a plug-in. On the other hand, you are free to download, install and use a personal copy of ActivePerl Community Edition. If you need to make it portable, it must be installed first and then integrated into The Uniform Server’s file structure.</p>
+
+<p>This process is a bit tedious because ActivePerl is distributed only in msi format. Although the files are extractable without actually performing an installation, they do require relocating. The Uniform Server automates much of the installation process as explained below.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Download ActivePerl" >Download ActivePerl</a></li>
+   <li><a href="#Install ActivePerl" >Install ActivePerl</a></li>
+   <li><a href="#Background" >Background</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="Download ActivePerl"></a>
+<h2>Download ActivePerl</h2>
+<p>First download the latest version of ActivePerl Community Edition from <a href="http://www.activestate.com/activeperl/downloads">ActiveState</a> (http://www.activestate.com/activeperl/downloads)</p>
+
+<ul>
+ <li>As of August 2011, the current version is 5.12.4.1205 file (ActivePerl-5.12.4.1205-MSWin32-x86-294981.msi)</li>
+ <li>Save the downloaded file to folder UniServer\alt_diag\<b>install_perl</b></li>
+</ul>
+
+<p><b>Note:</b> If you wish, save a copy of the downloaded file for archiving. After completing the installation, you can save space by deleting the folder UniServer\alt_diag\install_perl.<p>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Install ActivePerl"></a>
+<h2>Install ActivePerl</h2>
+
+<p> To extract and install, double click on the batch file:</p>
+<p class="access"> UniServer\alt_diag\install_perl\<b>extract_install_perl.bat</b></p>
+
+<p><b>Note 1</b>:<br /> For a fresh install, this process is automatic and does not require any user input.</p>
+
+<p><b>Note 2</b>:<br /> If ActivePerl is already installed, you will be prompted to delete the old version and install the new version. Press enter to delete and install. Entering anything other than "Yes" will terminate the installation.</p>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Background"></a>
+<h2>Background</h2>
+<p>Files within a MSI installer file are easily extracted using a batch file.</p>
+<pre>
+Use the following batch command to perform extraction:
+
+  msiexec /a "Full path to MSI file" /qb TARGETDIR="Full path to target folder"
+
+  msiexec               - Batch command
+  /a                    - Forces all files to be reinstalled.
+  Full path to MSI file - Package name of the Windows Installer package file
+  /qb                   - Displays a basic user interface.
+  TARGETDIR=            - Folder where etracted files will be saved
+
+Example:  
+
+  msiexec /a F:\test\ActivePerl-5.12.3.1204-MSWin32-x86-294330.msi /qb TARGETDIR=F:\test\temp
+</pre>
+
+<p>These files can then be copied to the desired location.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 15-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

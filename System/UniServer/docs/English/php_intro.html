@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>PHP</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p600">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/php_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>PHP - Introduction</h1>
+<p><b>PHP</b> is a general-purpose scripting language designed for creating dynamic web pages. The Apache server uses a PHP processor module to generate the final web page being served. It interprets code embedded into HTML documents. PHP has been pre-configured for production and development. One of Unicontroller's sub-menus allows you to easily switch between the two configurations. This page covers the configuration sub-menu and its additional features for maintaining PHP.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Edit Basic Configuration" >Edit Basic Configuration</a></li>
+   <li><a href="#Directly edit configuration files" >Directly edit configuration files</a></li>
+   <li><a href="#Edit Current Configuration file: php.ini" >&nbsp;&nbsp;Edit Current Configuration file: php.ini</a></li>
+   <li><a href="#Edit Production Configuration file: php_production.ini" >&nbsp;&nbsp;Edit Production Configuration file: php_production.ini</a></li>
+   <li><a href="#Edit Development Configuration file: php_development.ini" >&nbsp;&nbsp;Edit Development Configuration file: php_development.ini</a></li>
+   <li><a href="#Edit Command Line Configuration file: php-cli.ini" >&nbsp;&nbsp;Edit Command Line Configuration file: php-cli.ini</a></li>
+   <li><a href="#Configuration file switching" >Configuration file switching</a></li>
+   <li><a href="#Switch to Production Configuration file" >&nbsp;&nbsp;Switch to Production Configuration file</a></li>
+   <li><a href="#Switch to Development Configuration file" >&nbsp;&nbsp;Switch to Development Configuration file</a></li>
+   <li><a href="#PHP Accelerators" >PHP Accelerators</a></li>
+   <li><a href="#APC control panel" >&nbsp;&nbsp;APC control panel</a></li>
+   <li><a href="#eAccelerator control panel" >&nbsp;&nbsp;eAccelerator control panel</a></li>
+   <li><a href="#PEAR control panel" >PEAR control panel</a></li>
+   <li><a href="#PHP Extensions Enable Disable" >PHP Extensions Enable Disable</a></li>
+   <li><a href="#Note: PHP mail() function" >Note: PHP mail() function</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="Edit Basic Configuration"></a>
+<h2>Edit Basic Configuration</h2>
+
+<p class="access">Server Configuration &gt; PHP &gt; Edit Basic Configuration </p>
+
+<table>
+ <tr valign="top">
+  <td>
+This menu item allows you to change commonly configured PHP options.
+
+<ol>
+  <li><b>Current:</b> This file is the active file used by PHP for configuration. Switching to development or production overwrites this file. Consider any changes you make to this file as temporary.</li>
+  <li><b>Development:</b> Configuration file used for development. Errors will be written to the screen. You can enable other parameters for testing.</li>
+  <li><b>Production:</b> Configuration file for production ini file. Prevents errors being written to screen. The initial settings tighten security. For example, globals are off by default. Any changes you wish to be permanent should be made in this file.</li>
+</ol>
+
+  </td>
+
+  <td>
+   <img src="images/Coral_php_basic_config_1.gif" alt="PHP Basic configuration" />
+  </td>
+ </tr>
+</table>
+<p><b>Note 1:</b> After making changes, click the corresponding update button. This writes the modified data to the associated configuration file.<br />
+<b>Note 2:</b> Changes to the current configuration are used next time the servers are started.<br />
+<b>Note 3:</b> For development and production configuration files to become effective, you need to switch over the appropriate file (see <a href="#Configuration file switching">switching</a>.) and restart Apache.<br />
+<b>Note 4:</b> Do not enable <b>short open tags</b>. Doing so will conflict with other languages such as XML’s open tag.  For detailed information, and the exception, see <a href="php_short_open_tags.html">Short open tags</a></p>
+               
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Directly edit configuration files"></a>
+<h2>Directly edit configuration files</h2>
+
+  <p>The following menu items allow you to edit the specific PHP configuration file in notepad.</p>
+
+  <a name="Edit Current Configuration file: php.ini"></a>
+  <h3>Edit Current Configuration file: php.ini</h3>
+
+<p class="access">Server Configuration &gt; PHP &gt; Edit Current Configuration file: php.ini </p>
+  <ul>
+    <li>File path: UniServer\usr\local\php\<b>php.ini</b></li>
+    <li>This configuration file is the active configuration. When Apache is started, the contents of this file will configure PHP. </li>
+    <li><b>Note 1:</b> When either production or development configuration file is selected, as explained in the next section on switching, any edits in this file will be overwritten. Consider changes to this file as temporary.  This is ideal for testing without making permanent changes.</li>
+    <li><b>Note 2:</b> The initial version of the current configuration file is a copy of the production version. </li>
+  </ul>
+
+  <a name="Edit Production Configuration file: php_production.ini"></a>
+  <h3>Edit Production Configuration file: php_production.ini</h3>
+
+<p class="access">Server Configuration &gt; PHP &gt; Edit Production Configuration file: php_production.ini </p>
+  <ul>
+    <li>File path: UniServer\usr\local\php\<b>php_production.ini</b></li>
+    <li>This configuration file is pre-configured for production use. </li>
+    <li><b>Note:</b> In a default installation of The Uniform Server, the current configuration is a copy of this file (php.ini = php_production.ini).</li>
+  </ul>
+
+  <a name="Edit Development Configuration file: php_development.ini"></a>
+  <h3>Edit Development Configuration file: php_development.ini</h3>
+
+<p class="access">Server Configuration &gt; PHP &gt; Edit Development Configuration file: php_development.ini </p>
+  <ul>
+    <li>File path: UniServer\usr\local\php\<b>php_development.ini</b></li>
+    <li>This configuration file is pre-configured for development use. </li>
+    <li><b>Note:</b> Errors will be displayed in a user's browser.</li>
+  </ul>
+
+  <a name="Edit Command Line Configuration file: php-cli.ini"></a>
+  <h3>Edit Command Line Configuration file: php-cli.ini</h3>
+
+<p class="access">Server Configuration &gt; PHP &gt; Edit Command Line Configuration file: php-cli.ini </p>
+  <ul>
+    <li>File path: UniServer\usr\local\php\<b>php-cli.ini</b></li>
+    <li>This configuration file is pre-configured for command-line operation. </li>
+    <li><b>Note:</b> Do not change the existing directives. These are required for correct operation of UniController's command-line scripts. You can add any directives you want that are not included.</li>
+  </ul>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Configuration file switching"></a>
+<h2>Configuration file switching</h2>
+
+<p>The following two menu items allow you to easily switch between PHP production and development configuration files. </p>  
+
+<a name="Switch to Production Configuration file"></a>
+<h3>Switch to Production Configuration file</h3>
+
+<p class="access">Server Configuration &gt; PHP &gt; Switch to Production Configuration file </p>
+  <ul>
+    <li>File path: UniServer\usr\local\php\<b>php_production.ini</b></li>
+    <li>This configuration file is pre-configured for production use. </li>
+    <li><b>Note 1:</b> In a default installation of The Uniform Server, the current configuration is a copy of this file (php.ini = php_production.ini).</li>
+    <li><b>Note 2:</b> Errors are not displayed; these are directed to Apache's log file.</li>
+    <li><b>Note 3:</b> Switching <b>overwrites</b> the php.ini configuration file.</li>
+    <li><b>Note 4:</b> After switching you must <b>restart</b> the servers or the new configuration will not be recognised.</li>
+  </ul>
+
+
+<a name="Switch to Development Configuration file"></a>
+<h3>Switch to Development Configuration file</h3>
+
+<p class="access">Server Configuration &gt; PHP &gt; Switch to Development Configuration file </p>
+  <ul>
+    <li>File path: UniServer\usr\local\php\<b>php_development.ini</b></li>
+    <li>This configuration file is pre-configured for development. </li>
+    <li><b>Note 1:</b> Errors are displayed in a user's browser and also directed to log file</li>
+    <li><b>Note 2:</b> Switching <b>overwrites</b> the php.ini configuration file. The php.ini file is replaced by a copy of php_development.ini.</li>
+    <li><b>Note 3:</b> After switching you must <b>restart</b> the servers or the new configuration will not be recognised.</li>
+  </ul>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="PHP Accelerators"></a>
+<h2>PHP Accelerators</h2>
+<p>The Uniform Server provides two PHP accelerators: APC and eAccelerator. The following UniController sub-menu allows you to enable or disable these accelerators and open their corresponding controller in your default browser.</p>
+<p class="access">Server Configuration &gt; PHP &gt; PHP Accelerators </p>
+<table>
+ <tr valign="top">
+  <td>
+
+<p><b><i>eAccelerator</i></b></p>
+
+<ul>
+  <li>Check box 1) enables or disables eAccelerator. With the box checked, eAccelerator is enabled.</li>
+  <li>Control panel button 2) opens eAccelerator’s control panel in the default browser. </li>
+</ul>
+
+<p><b><i>APC</i></b></p>
+
+<ul>
+  <li>Check box 3) enables or disables APC. With the box checked, APC is enabled.</li>
+  <li>Control panel button 2) opens APC’s control panel in the default browser. </li>
+</ul>
+
+  </td>
+
+  <td>
+   <img src="images/Coral_php_accelerators_1.gif" alt="Accelerators control panel" />
+  </td>
+ </tr>
+</table>
+<p><b>Note:</b> After enabling or disabling either accelerator, the Apache server must be restarted in order for the new configuration to become effective.</p>
+
+
+<table>
+ <tr valign="top">
+  <td>
+<a name="eAccelerator control panel"></a>
+<h3>eAccelerator control panel</h3>
+<p>eAccelerator is a free open-source PHP accelerator and optimizer. It increases the performance of PHP scripts by caching them in their compiled state, so that the overhead of compiling is almost completely eliminated.</p>
+
+<p>The Uniform Server's default installation has eAccelerator <b>disabled</b>.</p>
+
+<p>The eAccelerator control panel is shown on the right.</p>
+
+  </td>
+
+  <td>
+   <img src="images/Coral_php_eaccelerator_con_1.gif" alt="eAccelerator control panel" />
+  </td>
+ </tr>
+</table>
+
+
+<table>
+ <tr valign="top">
+  <td>
+
+<a name="APC control panel"></a>
+<h3>APC control panel</h3>
+
+<p>The Alternative PHP Cache (APC) is a free and open opcode cache for PHP. It is a robust framework for caching and optimizing PHP intermediate code.</p>
+
+<p>The Uniform Server's default installation has APC <b>disabled</b>.</p>
+
+<p>The APC control panel is shown on the right.</p>
+
+<p>For detailed information, see <a href="php_apc.html">PHP APC</a></p>
+
+  </td>
+
+  <td>
+   <img src="images/Coral_php_apc_con_1.gif" alt="APC control panel" />
+  </td>
+ </tr>
+</table>
+
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="PEAR control panel"></a>
+<h2>PEAR control panel</h2>
+
+<p class="access">Server Configuration &gt; PHP &gt; PEAR control panel </p>
+<table>
+ <tr valign="top">
+  <td>
+The PHP Extension and Application Repository, or PEAR for short, contains re-usable code. This menu option opens the PEAR Controller. It consists of two buttons, operating as follows:
+<ul>
+  <li><b>1) Install PEAR</b> Click to install PEAR. For detailed information see <a href="php_pear.html">PEAR Auto Install </a> </li>
+  <li><b>2) View PEAR front-end</b> Opens the PEAR front-end in the default browser. </li>
+</ul>
+<b>Note 1:</b> Apache must be running, else the buttons remain greyed out. <br /> 
+<b>Note 2:</b> For a short tutorial on how to use PEAR, see <a href="php_pear.html#Using%20PEAR%20Frontend">Using PEAR Frontend</a><br />
+<b>Note 3:</b> You can also view the PEAR Front-end by entering the following into your browser:<br />
+<a href="http://localhost/us_pear/index.php">http://localhost/us_pear/index.php</a>
+
+
+  </td>
+
+  <td>
+   <img src="images/Coral_php_pear_controller_1.gif" alt="PEAR Controller" />
+  </td>
+ </tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="PHP Extensions Enable Disable"></a>
+<h2>PHP Extensions Enable Disable</h2>
+
+<table>
+ <tr valign="top">
+   <td>
+<p>The following sub-menu allows you to enable or disable PHP extensions:</p>
+<p class="access">Server Configuration &gt; PHP &gt; PHP Extensions Enable/Disable</p>
+
+<ul>
+ <li>Checkbox un-checked Extension disabled</li>
+ <li>Checkbox checked Extension enabled</li>
+</ul>
+<p><b>Note:</b> After changing state you must <b>restart</b> the Apache server for the new configuration to be recognised.</p>
+<p><b>Files modified:</b><br />
+UniServer\usr\local\php\<b>php.ini</b><br />
+UniServer\usr\local\php\<b>php_development.ini</b><br />
+UniServer\usr\local\php\<b>php_production.ini</b></p>
+   </td>
+
+   <td>
+<img src="images/Coral_php_extensions_1.gif" alt="PHP Extentions enable disable" />
+   </td>
+ <tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Note: PHP mail() function"></a>
+<h2>Note: PHP mail() function</h2>
+<p>Uniform Server has been pre-configured for sending mail using the open source <b>msmtp</b> client. For reference the configuration section contained in confiuration files php.ini,  php_development.ini and php_production.ini is shown below:</p>
+
+<pre>
+; For Unix only.  You may supply arguments as well (default: "sendmail -t -i").
+;sendmail_path = "/usr/bin/sendmail.exe -t"
+
+sendmail_path = "**path**/UniServer/msmtp/msmtp.exe --file=**path**/UniServer/msmtp/msmtprc.ini  -t"
+
+; Force the addition of the specified parameters to be passed as extra parameters
+; to the sendmail binary. These parameters will always replace the value of
+; the 5th parameter to mail(), even in safe mode.
+;mail.force_extra_parameters =
+
+; Add X-PHP-Originating-Script: that will include uid of the script followed by the filename
+mail.add_x_header = On
+</pre>
+<p>Note: **path** is automatically set to where Uniform Server is located; for example: C:/Coral_4 </p>
+<p>Before using the PHP mail function, the msmtp client must be set up. See the <a href="msmtp_intro.html">MSMTP</a> page for details.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 21-jan-2012 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

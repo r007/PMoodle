@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Apache</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p400">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/apache_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>Apache - Introduction</h1>
+<p><b>Apache HTTP Server</b> is an open-source web server platform. It is one of the main components of The Uniform Server. Apache has been pre-configured to run as a local web server. There are several configuration options allowing the server to be accessed from an Intranet or the Internet. The Uniform Server provides an easy-to-use control interface, UniController, allowing you to run servers as either a standard program or a service. UniController contains a sub-menu specifically targeting Apache. From this sub-menu you can put your server on-line, change ports or create a server certificate. This page covers all the sub-menu options.</p>
+
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Edit Basic Configuration" >Edit Basic Configuration</a></li>
+   <li><a href="#Edit configuration files" >Edit configuration files</a></li>
+   <li><a href="#Edit httpd.conf" >&nbsp;&nbsp;Edit httpd.conf</a></li>
+   <li><a href="#Edit ssl.conf" >&nbsp;&nbsp;Edit ssl.conf</a></li>
+   <li><a href="#View log files" >View log files</a></li>
+   <li><a href="#View Error log file error.log" >&nbsp;&nbsp;View Error log file error.log</a></li>
+   <li><a href="#View Access log file access.log" >&nbsp;&nbsp;View Access log file access.log</a></li>
+   <li><a href="#View SSL Error log file error.log" >&nbsp;&nbsp;View SSL Error log file error.log</a></li>
+   <li><a href="#View SSL Access log file access.log" >&nbsp;&nbsp;View SSL Access log file access.log</a></li>
+   <li><a href="#Generate Certificate" >Generate Certificate</a></li>
+   <li><a href="#Apache Vhosts" >Apache Vhosts</a></li>
+   <li><a href="#Apache Data" >Apache Data</a></li>
+   <li><a href="#Apache server-status" >&nbsp;&nbsp;Apache server-status</a></li>
+   <li><a href="#Apache server-info" >&nbsp;&nbsp;Apache server-info&nbsp;&nbsp;</a></li>
+   <li><a href="#Apache Modules Enable Disable" >Apache Modules Enable Disable</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="Edit Basic Configuration"></a>
+<h2>Edit Basic Configuration</h2>
+<p>This form allows you to change commonly configured Apache options.</p>
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; Apache &gt; Edit Basic Configuration</p>
+
+<p>A default installation of The Uniform Server configures the main server for localhost. This is intended for testing. Before putting your servers on-line, if you have registered a domain name, change "Server name" and "Server Admin Email" to match that name.</p>
+
+<table>
+<tr>
+<td>
+
+<ul>
+  <li>1) <b>Server Name</b> sets the hostname of your server; for example, fred.com</li>
+  <li>2) <b>Admin E-mail</b> Use a real e-mail address for users to contact; for example, admin@fred.com </li>
+  <li>3) <b>Directory Index Files</b> This list is searched when a client requests an index page without explicitly specifying it. If a match is found that index page is served. </li>
+
+  <li>4) Apache processes files with the extensions listed; any SSI <b>Server Side Includes</b> directives found in these files are executed. </li>
+
+  <li>5) <b>Server Signature</b> This allows Apache to add a footer line for server-generated documents (Value is On or Off). </li>
+
+  <li>6) <b>Listen Port</b> This tells Apache to listen to a specific port and to accept incoming requests only on that specified port. </li>
+  <li>7) <b>Update Configuration</b> button applies the changes.</li>
+</ul>
+<p>Note 1: For the new settings to become effective you must restart the server.<br />
+Note 2: For more information, see <a href="apache_basic_configuration.html">Apache Basic Configuration</a></p>
+</td>
+<td>
+   <img src="images/Coral_apache_basic_config_1.gif" alt="Apache basic config">
+</td>
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Edit configuration files"></a>
+<h2>Edit configuration files</h2>
+
+<a name="Edit httpd.conf"></a>
+<h3>Edit httpd.conf</h3>
+
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; Apache &gt; Edit httpd.conf</p>
+<p>Opens the configuration file in notepad, allowing you to directly edit the file.</p>
+<p><b>File:</b> UniServer\usr\local\apache2\conf\<b>httpd.conf</b></p>
+
+<a name="Edit ssl.conf"></a>
+<h3>Edit ssl.conf</h3>
+
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; Apache &gt; ssl.conf</p>
+<p>Opens the configuration file in notepad, allowing you to directly edit the file.</p>
+<p><b>File:</b> UniServer\usr\local\apache2\conf\extra\<b>ssl.conf</b></p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="View log files"></a>
+<h2>View log files</h2>
+
+<p>The following menu options provide convenient short cuts allowing you to view server log files. If you are experiencing problems with the server, these should be your first port of call; they may shed light on a particular issue.</p>  
+
+<p>Below are the paths to each log file along with a small extract:</p>
+
+<table>
+<tr>
+<td>
+  <a name="View Error log file error.log"></a>
+  <h3>View Error log file error.log</h3>
+  <p>Location:UniServer\usr\local\apache2\logs\<b>error.log</b></p>
+</td>
+
+<td>
+<pre>
+[Fri Jul 08 21:25:46 2011] [notice] Apache/2.2.19 (Win32) mod_ssl/2.2.19.... 
+[Fri Jul 08 21:25:46 2011] [notice] Server built: May 20 2011 21:39:40
+[Fri Jul 08 21:25:46 2011] [notice] Parent: Created child process 1028
+[Fri Jul 08 21:25:50 2011] [notice] Child 1028: Child process is running
+[Fri Jul 08 21:25:50 2011] [notice] Child 1028: Acquired the start mutex.
+[Fri Jul 08 21:25:50 2011] [notice] Child 1028: Starting 250 worker threads.
+[Fri Jul 08 21:25:50 2011] [notice] Child 1028: Starting thread to listen on port 443.
+[Fri Jul 08 21:25:50 2011] [notice] Child 1028: Starting thread to listen on port 80.
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>
+  <a name="View Access log file access.log"></a>
+  <h3>View Access log file access.log</h3>
+  <p>Location:UniServer\usr\local\apache2\logs\<b>access.log</b></p>
+</td>
+
+<td>
+<pre>
+127.0.0.1 - - [08/Jul/2011:21:25:53 +0100] "GET /us_splash/index.php HTTP/1.1" 200 1290
+"-" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.2.18) Gecko/20110614 
+Firefox/3.6.18 ( .NET CLR 3.5.30729)"
+
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>
+  <a name="View SSL Error log file error.log"></a>
+  <h3>View SSL Error log file error.log</h3>
+  <p>Location:UniServer\usr\local\apache2\logs\<b></b>error_ssl.log</p>
+</td>
+
+<td>
+<pre>
+[Fri Jul 08 21:29:44 2011] [warn] RSA server certificate CommonName (CN)
+ `localhost123' does NOT match server name!?
+[Fri Jul 08 21:29:45 2011] [warn] RSA server certificate CommonName (CN)
+ `localhost123' does NOT match server name!?
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>
+  <a name="View SSL Access log file access.log"></a>
+  <h3>View SSL Access log file access.log</h3>
+  <p>Location:UniServer\usr\local\apache2\logs\<b>access_ssl.log</b></p>
+</td>
+
+<td>
+<pre>
+127.0.0.1 - - [08/Jul/2011:21:28:47 +0100] "GET /index.php HTTP/1.1" 200 762
+127.0.0.1 - - [08/Jul/2011:21:28:47 +0100] "GET /us_splash/css/style.css HTTP/1.1" 304 -
+
+</pre>
+</td>
+</tr>
+
+</table>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Generate Certificate"></a>
+<h2>Generate Certificate</h2>
+<p>This form allows you to quickly generate a self-signed server certificate or a certificate-signing request (CSR).</p>
+
+<table>
+<tr valign="top">
+<td>
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; Apache &gt; Generate Certificate</p>
+
+<ul>
+  <li>This opens the <b>Server Certificate and Key generator</b> menu shown at right</li>
+  <li>D) Click <b>Run Generate</b> After a short time, a confirmation pop-up is displayed.</li>
+  <li>For the new configuration to become effective, you must <b>restart Apache server</b>.</li>
+</ul>
+<p>The above generates a self-signed certificate.</p>
+
+<p>Note 1: For detailed information about enabling SSL, see <a href="apache_ssl.html">Apache - SSL</a><br />
+Note 2: For detailed information about self-signed certificates, see <a href="apache_server_cert_self_signed.html">Server Certificate Self-Signed</a><br />
+Note 3: For detailed information about Certificate Signing Requests, see <a href="apache_free_server_cert.html">Free Server Certificate</a></p>
+
+</td>
+<td>
+   <img src="images/Coral_apache_cert_gen_1.gif" alt="Start as program"  />
+</td>
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Apache Vhosts"></a>
+<h2>Apache Vhosts</h2>
+
+<p>This menu allows you to quickly create virtual host blocks. </p>
+<p class="access"><b><i>UniController</i></b>: Server Configuration > Apache > Apache Vhosts</p>
+
+<table>
+<tr valign="top">
+<td>
+
+<p>Creating a Vhost requires only two form entries, a server root folder and a host name. After entering these, click the confirm button. All other directives are optional, and are automatically filled in with values based on the above two form entries. Clicking the Create Vhost button creates the root folder if it does not exist. A Vhost is created in the Vhost configuration file and an entry is written to your PC’s host file. Here is a summary of the steps:</p>
+
+<ul>
+<li><b>A3)</b> Either replace <b>***</b> with the folder name you wish to use as your server root folder or click <b>Select Folder</b> button and navigate to an existing folder and select it. </li>
+
+<li><b>A4)</b> Enter your server name (host name). This is the domain name you registered with a registrar, for example <b>fred.com</b>. It is the name you enter in a browser to access your web site (excluding the <b>http://</b> part).  </li>
+
+<li><b>A13)</b> Click the <b>Confirm</b> button. This enables the greyed out buttons and fills in form fields with selected values for other Apache directives. Change or delete these as appropriate.</li>
+
+<li><b>A10)</b> Click <b>Create Vhost</b> button to create your virtual host.</li>
+</ul>
+<p><b><i>Note 1</i>:</b> After creating a Vhost you <b>must restart</b> your Apache server otherwise Apache will not recognise the new configuration.</p>
+<p><b><i>Note 2</i>:</b> For detailed information see <a href="apache_vhosts.html" >Apache Vhosts</a></p>
+</td>
+<td>
+<img src="images/Coral_apache_vhosts_1.gif" alt="Vhost Menu" />
+</td>
+</tr>
+</table>
+
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Apache Data"></a>
+<h2>Apache Data</h2>
+<p>These menu options provide convenient short cuts that allow you to 
+view the server status and other important information.
+They are shown along with a small extract of each file. 
+Each menu option runs a small script that redirects your browser to the 
+appropriate page. You also can type this address directly into your browser.</p>
+
+<table>
+<tr>
+<td>
+<a name="Apache server-status"></a>
+<h3>Apache server-status</h3>
+<p>Menu item redirects to: http://localhost/server-status</p>
+</td>
+
+<td>
+<pre>
+Apache Server Status for localhost
+
+Server Version: Apache/2.2.19 (Win32) mod_ssl/2.2.19 OpenSSL/1.0.0d PHP/5.3.6 DAV/2
+Server Built: May 20 2011 21:39:40
+
+Current Time: Friday, 08-Jul-2011 22:43:16 GMT Daylight Time
+Restart Time: Friday, 08-Jul-2011 22:29:47 GMT Daylight Time
+Parent Server Generation: 0
+Server uptime: 13 minutes 28 seconds
+Total accesses: 13 - Total Traffic: 2 kB
+.0161 requests/sec - 2 B/second - 157 B/request
+1 requests currently being processed, 249 idle workers
+</pre>
+</td>
+</tr>
+
+<tr>
+<td>
+<a name="Apache server-info"></a>
+<h3>Apache server-info</h3>
+<p>Menu item redirects to: http://localhost/server-info</p>
+</td>
+
+<td>
+<pre>
+Server Settings
+Server Version: Apache/2.2.19 (Win32) mod_ssl/2.2.19 OpenSSL/1.0.0d PHP/5.3.6 DAV/2
+Server Built: May 20 2011 21:39:40
+Server loaded APR Version: 1.4.5
+Compiled with APR Version: 1.4.5
+Server loaded APU Version: 1.3.12
+Compiled with APU Version: 1.3.12
+Module Magic Number: 20051115:28
+Hostname/port: localhost:80
+Timeouts: connection: 300    keep-alive: 5
+</pre>
+</td>
+</tr>
+
+</table>
+
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Apache Modules Enable Disable"></a>
+<h2>Apache Modules Enable Disable</h2>
+
+<table>
+ <tr valign="top">
+   <td>
+<p>This sub-menu allows you to enable or disable Apache Modules.<br /> 
+<b>NOTE: improper use can totally disable your server!</b>  Be sure you know what a module does before you enable or disable it.</p>  
+<p class="access">Server Configuration &gt; Apache &gt; Apache Modules Enable/Disable</p>
+
+<ul>
+ <li>If checkbox is unchecked: Module disabled</li>
+ <li>If checkbox is checked: Module enabled</li>
+</ul>
+<p><b>Note:</b> After changing state you must <b>restart</b> the Apache server for the new configuration to be recognised.</p
+<p>This modifies the file<br /> UniServer\usr\local\apache2\conf\<b>httpd.conf</b></p>
+   </td>
+
+   <td>
+<img src="images/Coral_apache_modules_1.gif" alt="Apache modules enable disable" />
+   </td>
+ <tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 08-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

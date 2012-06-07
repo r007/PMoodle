@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Apache Vhosts</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p420">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/apache_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>Apache Vhosts</h1>
+<p>The Uniform Server is configured for name-based virtual hosting. This allows you to run any number of web sites from a single IP address. Each domain-name you host must first be registered and an “A” record created on a DNS server. This “A” record translates the domain-name to your IP address.</p>
+<p><b><i>Note</i></b>: For testing, “A” records are simulated using a PC's hosts files.    </p>
+
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Overview" >Overview</a></li>
+   <li><a href="#Inform Apache to use Vhosts" >&nbsp;&nbsp;Inform Apache to use Vhosts</a></li>
+   <li><a href="#Adding a Vhost" >&nbsp;&nbsp;Adding a Vhost</a></li>
+   <li><a href="#Vhost additional Apache directives" >&nbsp;&nbsp;Vhost additional Apache directives</a></li>
+   <li><a href="#Vhost Configuration Menu" >Vhost Configuration Menu</a></li>
+   <li><a href="#Vhost Configuration Menu Example" >Vhost Configuration Menu Example</a></li>
+   </ul>
+ </div>
+</div>
+
+
+<h2>Features</h2>
+<p>The main features of The Uniform Server’s Vhost configuration menu are:</p>
+<ul>
+ <li>Include separate log files and server alias</li>
+ <li>Auto enable when first vhost created</li>
+ <li>Auto disable when last vhost deleted</li>
+ <li>Port tracking follows main server port (defaults to port 80)</li>
+ <li>Writes host name to Windows hosts file when vhost created</li>
+ <li>Deletes host name from Windows hosts file when vhost deleted</li>
+</ul>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Overview"></a>
+<h2>Overview</h2>
+
+<p>Vhosts are configured using a separate configuration file UniServer\usr\local\apache2\conf\extra\<b>httpd-vhosts.conf</b>.<br /> This file requires enabling in Apache’s main configuration file UniServer\usr\local\apache2\conf\<b>httpd.conf</b></p>
+
+<table>
+ <tr>
+  <td>
+    <p>Search this file for the following line:</p>
+    <pre>#Include conf/extra/httpd-vhosts.conf </pre>
+  </td>
+  <td>&nbsp;</td>
+  <td>
+    <p>Remove the hash "#" to enable as shown below:</p>
+    <pre>Include conf/extra/httpd-vhosts.conf</pre>
+ </td>
+ </tr>
+</table>
+
+<p>Note: The above is automatically performed when using The Uniform Server’s Vhost configuration menu.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Inform Apache to use Vhosts"></a>
+<h3>Inform Apache to use Vhosts</h3>
+
+<p>Apache requires the directive <b>NameVirtualHost address:port</b> which instructs it to use virtual hosts and resolve an address on the specified port. The Uniform Server uses <b>*:80</b>, where the * is a wildcard meaning use all addresses. Port 80 is the standard web server listening port. This can be changed if required, for example, to port 8080.</p>
+
+<p>A separate <b>NameVirtualHost</b> directive is required for each different port used. These NameVirtualHost directives must have a corresponding listening directive. The Uniform Server’s Vhost configuration file contains the following block:</p>
+
+<table>
+ <tr>
+  <td>
+<pre>
+ #--US_START--------------Do not remove
+ NameVirtualHost *:80
+ #--US_END----------------Do not remove
+</pre>
+  </td>
+  <td>&nbsp;</td>
+  <td>
+    <p>The "Do not remove" Lines are used by The Uniform Server to locate the block and insert lines as appropriate.<br />
+    The NameVirtualHost directive has a matching Listen directive <b>Listen 80</b> located in the main configuration file <br />
+    so it is not required in this configuration block.</p>
+ </td>
+ </tr>
+</table>
+  <p>However, adding a virtual host that uses port 8080, a listen directive is required. The configuration block becomes:  </p>
+
+<table>
+ <tr>
+  <td>
+<pre>
+ #--US_START--------------Do not remove
+ Listen 8080
+ NameVirtualHost *:80
+ NameVirtualHost *:8080
+ #--US_END----------------Do not remove
+</pre>
+  </td>
+  <td>&nbsp;</td>
+  <td>
+    <p>The main configuration file (httpd.conf) does not contain a Listen 8080 directive and it is required and added to this configuration block along with the NameVirtualHost directive.</p>
+<p>Note: These are automatically added when using The Uniform Server’s Vhost configuration menu.</p>
+ </td>
+ </tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Adding a Vhost"></a>
+<h3>Adding a Vhost</h3>
+
+<p>Each virtual host requires a separate configuration block. These blocks inherit their configuration from the main configuration file <b>httpd.conf</b>. Specifying an Apache directive in a Vhost block overrides that of the main configuration file. The advantage of this inheritance is to reduce number of Apache directives required for each Vhost. The absolute minimum required is to specify a <b>DocumentRoot</b> and <b>ServerName</b>. </p>
+
+<p>Apache resolves a Vhost by matching its port and ServerName. On finding a match, the server's content is fetched from the folder specified by DocumentRoot. If it cannot find a match, it uses the first Vhost defined (the default). Note: to avoid conflicts, Apache uses a <b>_default_</b> directive for the address of this first virtual host.</p>
+
+<p>Example: to add a virtual host for fred.com on port 8080 and to serve content from folder UniServer\vhosts\fred, the minimum configuration required is:</p>
+
+
+<table>
+ <tr>
+  <td>
+<pre>
+ #--US_START--------------Do not remove
+ Listen 8080
+ NameVirtualHost *:80
+ NameVirtualHost *:8080
+ #--US_END----------------Do not remove
+
+ &lt;VirtualHost _default_:80&gt;
+  DocumentRoot C:/Coral/UniServer/www
+  ServerName localhost
+ &lt;/VirtualHost&gt;
+
+ &lt;VirtualHost *:8080&gt;
+  DocumentRoot C:/Coral/UniServer/vhosts/fred
+  ServerName fred.com
+ &lt;/VirtualHost&gt;
+</pre>
+
+  </td>
+  <td>&nbsp;</td>
+  <td>
+ <p>The default Vhost maps to The Uniform Server’s folder www. If you wish, this can be changed as well as the server name.</p>
+
+ <p>The new Vhost fred.com maps to folder UniServer\vhosts\fred. This can be any folder you wish. All vhost root folders are created in the folder <b>vhosts</b>. This is not a strict requirment, but it is provided for portability (as when using a USB memory stick).
+</p>
+
+ <p>Note: Port 8080 is shown as an example. Generally all Vhosts would use the standard port 80.  </p>
+ </td>
+ </tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Vhost additional Apache directives"></a>
+<h3>Vhost additional Apache directives</h3>
+
+ <p>Other Apache directives can be included in a Vhost block. Common directives are shown in this example block: </p>
+<table>
+ <tr>
+  <td>
+<pre>
+
+&lt;VirtualHost *:80&gt;
+  ServerAdmin webmaster@fred.net
+  DocumentRoot C:/Coral/UniServer/vhosts/fred_net
+  ServerName fred.net
+  ServerAlias www.fred.net  *.fred.net
+  ErrorLog logs/fred.net-error.log
+  CustomLog logs/fred.net-access.log common
+&lt;/VirtualHost&gt;
+
+</pre>
+
+  </td>
+  <td>&nbsp;</td>
+  <td>
+<p><b>ServerAlias</b> Allows you to access the server using sub-domains. Each sub-domain <b>must</b> have a corresponding DNS entry.</p>
+
+<p>Each Vhost can have a separate <b>ErrorLog</b> and <b>CustomLog</b> log file. If you do not specify these log files, the main server log files are used.</p>
+<p><b><i>Note</i></b>: Separate log files will eat into your file allocation resources, depending on the total number of Vhosts you wish to host. This may become an issue .</p>
+ </td>
+ </tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Vhost Configuration Menu"></a>
+<h2>Vhost Configuration Menu</h2>
+
+<p class="access"><b><i>UniController</i></b>: Server Configuration > Apache > Apache Vhosts</p>
+
+<table>
+<tr valign="top">
+<td>
+<p>This menu allows you to quickly create virtual host blocks. </p>
+<p>Creating a Vhost requires only two form entries, a server root folder and a host name. After entering these, click the confirm button. All other directives are optional, and are automatically filled in with values based on the above two form entries. Clicking the Create Vhost button creates the root folder if it does not exist. A Vhost is created in the Vhost configuration file and an entry is written to your PC’s host file. Here is a Summary of the steps:</p>
+
+<ul>
+<li><b>A3)</b> Either replace <b>***</b> with the folder name you wish to use as your server root folder or click <b>Select Folder</b> button and navigate to an existing folder and select it. </li>
+
+<li><b>A4)</b> Enter your server name (host name). This is the domain name you registered with a registrar, for example <b>fred.com</b>. It is the name you enter in a browser to access your web site (excluding the <b>http://</b> part).  </li>
+
+<li><b>A13)</b> Click the <b>Confirm</b> button. This enables greyed out buttons and fills in form fields with selected values for other Apache directives. Change or delete these as appropriate.</li>
+
+<li><b>A10)</b> Click <b>Create Vhost</b> button this creates your virtual host.</li>
+</ul>
+<p><b><i>Note</i>:</b> After creating a Vhost you <b>must restart</b> your Apache server otherwise Apache will not recognise the new configuration.</p>
+</td>
+<td>
+<img src="images/Coral_apache_vhosts_1.gif" alt="Vhost Menu" />
+</td>
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Vhost Configuration Menu Example"></a>
+<h2>Vhost Configuration Menu Example</h2>
+
+
+<p>For clarity following example shows Vhost form filled in and the corresponding Vhost block created in the configuration file for host name <b>fred.com</b> and server root folder <b>fred</b>. </p>
+<table>
+<tr valign="top">
+<td>
+
+<p>The block created in httpd-vhosts.conf</p>
+<pre>
+&lt;VirtualHost *:80&gt;
+  ServerAdmin webmaster@fred.com
+  DocumentRoot C:/UniServer/vhosts/fred
+  ServerName fred.com
+  ServerAlias www.fred.com  *.fred.com
+  ErrorLog logs/fred.com-error.log
+  CustomLog logs/fred.com-access.log common
+&lt;/VirtualHost&gt;
+</pre>
+
+<p>The entry created in host file</p>
+<pre>
+ 127.0.0.1 fred.com
+</pre>
+<p>Note: An entry will be created in the List of Hosts (B1). After restarting Apache and returning to this menu you can click an entry. Clicking an entry enables the greyed out buttons, allowing you to perform the following tasks:</P>
+
+<ul>
+<li><b>A9)</b> The Virtual host setup form is filled in allowing you to edit the Vhost. Click the <b>Update Vhost</b> button to apply your modification.</li>
+
+<li><b>B2)</b>To remove a Vhost, click the <b>Delete Vhost</b> button. It deletes the Vhost block from the configuration file and removes the entry in the Hosts file. The root folder and all its content are deleted, however you are requested to confirm this action before it is implemented.</li>
+
+<li><b>B3) View In Browser</b> opens default browser and displays the Vhost selected.</li>
+</ul>
+
+</td>
+
+<td>&nbsp;</td>
+
+<td>
+<img src="images/Coral_apache_vhosts_2.gif" alt="Vhost Menu" />
+</td>
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 11-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

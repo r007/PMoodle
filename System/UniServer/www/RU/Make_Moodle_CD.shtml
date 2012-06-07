@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>MAF
+LT Moodle CD</title>
+<link href="menu.css" type="text/css" rel="stylesheet"></head>
+<body scroll="auto" topmargin="0" leftmargin="0" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+<!--#include file="header.inc" --><div align="center">
+<table style="text-align: left; margin-left: auto; margin-right: auto; width: 760px;" border="0" cellpadding="0" cellspacing="1"> <tbody><tr><td valign="top" width="760"> <h2>How
+to Make a new Moodle CD</h2>There
+are several steps to make a new Moodle CD containing your own courses.<br>There
+are two modes of operation. <b>CD mode</b> and <b>US
+mode</b>(user mode). You must be in <b>US mode</b>
+to make changes to Moodle. You must be in <b>CD mode</b>
+to make a new CD. Follow the steps below to make a new Moodle CD.<br><br><b>Install
+Moodle</b><br>If
+you want to make a new CD you must first install moodle to your hard
+disk drive. There is a link on the control panel menu to do this.<br>When
+you receive the CD it will start by itself if possible. It can only
+start by itself if autostart is enabled for the CD drive in your
+computer. When it starts it will be in CD mode. In this mode things
+added to moodle are stored on the hard disk of the computer in a folder
+named C:\uscd35temp. These additions to moodle will be lost if a new CD
+is made.<br>The install will copy moodle to C:\UniServer
+on your hard disk. From there you can start moodle by running
+Server_Start.bat.<br><br><b>Make
+Changes to Moodle</b><br>When
+you have installed moodle on the hard disk you can add new courses or
+make whatever other changes you want. Before you make a new CD you must
+return to the CD mode. The CD you make will not work if you do not do
+this.<br><br><b>Change to CD Mode</b><br>To
+change to CD mode you must run <b>C:\Uniserver\mode_cd.bat</b><br><br><b>Make
+the new Moodle CD</b><br>After
+you have done this you can make a new CD. There is a CD making software
+called Deepburner on the original CD. You can use this software to make
+the new CD. If you have your own software to make CD's you can use
+that. To make the CD copy the files from C:\UniServer
+on your hard disk to the CD.<br><br><b>Change Moodle
+back to US Mode</b><br>You should change Moodle back to the
+US mode. This will make it easier to make more changes later.<br>Follow
+the steps below...<br>Run <b>C:\Uniserver\mode_us.bat</b><br>You
+do not have to shut down the server. The <b>mode_us.bat</b>
+command will do everything for you.</td> </tr> </tbody></table></div></body></html>

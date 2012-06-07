@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>General</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p300">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/general_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>General - Introduction</h1>
+<p>This dropdown menu groups items that do not easily fit into other categories.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Change Apache and MySQL ports" >Change ports, Apache and MySQL</a></li>
+   <li><a href="#Clear server log files" >Clear server log files</a></li>
+   <li><a href="#Root folder www - Access" >Root www - Change passwords and access</a></li>
+   <li><a href="#Root folder ssl - Access" >Root ssl - Change passwords and access</a></li>
+   <li><a href="#Root phpMyAdmin Access" >Root phpMyAdmin - Change Access</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="Change Apache and MySQL ports"></a>
+<h2>Change Apache and MySQL ports</h2>
+
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; General &gt; Change ports, Apache and MySQL</p>
+
+<table>
+<tr>
+<td>
+<p><b><i>Change a Single port</i></b></p>
+<ul>
+  <li>Current port setting is displayed.  </li>
+  <li>Change the port to required value. </li>
+  <li>Click the corresponding <b>change</b> button. </li>
+</ul>
+
+<p><b><i>Change all ports</i></b></p>
+<ul>
+  <li>Change all ports to required value. </li>
+  <li>Click <b>change all</b> button. </li>
+</ul>
+<p><b>Note 1:</b> For new ports to become effective you must restart the servers.<br />
+<b>Note 2:</b> For detailed information see <a href="general_change_ports.html">Change Ports</a><br />
+<b>Note 3:</b> Normally you should run the <a href="start_multi_servers.html">multi-server</a> script to change ports.</p>
+</td>
+
+<td>
+  <img src="images/Coral_general_change_ports.gif" alt="Change Ports" />
+</td>
+</tr>
+</table> 
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Clear server log files"></a>
+<h2>Clear server log files</h2>
+
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; General &gt; Clear Server log files</p>
+
+<table>
+<tr>
+<td>
+<p><b><i>Clear a Single Log file</i></b></p>
+<ul>
+  <li>Select the log file to delete (Tick check box).  </li>
+  <li>Click <b>Clear Selected</b> button. </li>
+</ul>
+
+<p><b><i>Clear All log files</i></b></p>
+<ul>
+  <li>Click <b>Select All</b> button. </li>
+  <li>Click <b>Clear Selected</b> button. </li>
+</ul>
+<p><b>Note 1:</b> The current file size is displayed.<br />
+<b>Note 2:</b> To clear Apache and MySQL logs, you must first stop the servers.<br />
+<b>Note 3:</b> For detailed information see <a href="general_clear_logs.html">Clear Logs</a></p>
+</td>
+
+<td>
+   <img src="images/Coral_general_clear_logs.gif" alt="Clear Log Files" />
+</td>
+</tr>
+</table> 
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Root folder www - Access"></a>
+<h2>Root folder www - Access</h2>
+
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; General &gt; Root www - Change passwords and access</p>
+
+<table>
+<tr valign="top">
+<td>
+
+<p>This menu is split into three sections as follows:<p>
+
+<ol>
+  <li> The top section allows you to change the access name and password; the defaults are set to root. </li>
+<ul>
+<li>Generally for a private server a single name and password are used.</li>
+<li>These are displayed and changeable using buttons A) B) D)</li>
+<li> Note: When using a list, only the first entry is displayed and directly changeable.</li>
+<li>Using a list of names and passwords requires that you directly edit the associated name-password configuration file. Use edit button E) to open the file in notepad. The Reload values button C) displays just the first entry in list.</li>
+</ul>
+</ol>
+<ol start="2">
+  <li> Change state: enables or disables the use of a password to access root folder www. Default is disabled.</li>
+  <li> Access section: allows you to set who can gain access to root folder www.  Default is local access only.</li>
+</ol>
+
+
+<p><b>Note 1:</b> Server access is controlled using an .htaccess file. This can be directly edited using Edit button K)<br />
+<b>Note 2:</b> Apache does not require restarting all changes take effect immediately.<br />
+<b>Note 3:</b> Test button L) opens the index page in the default browser allowing you to quickly test changes.<br />
+<b>Note 4:</b> For detailed information see <a href="general_access_www.html">Root folder www access</a></p>
+</td>
+
+<td>
+   <img src="images/Coral_general_www_access.gif" alt="Root www access" />
+</td>
+
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Root folder ssl - Access"></a>
+<h2>Root folder ssl - Access</h2>
+
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; General &gt; Root ssl - Change passwords and access</p>
+
+<table>
+<tr valign="top">
+<td>
+
+<p>This menu is split into three sections as follows:<p>
+
+
+<ol>
+  <li> The top section allows you to change the access name and password; the defaults are set to root. </li>
+<ul>
+<li>Generally for a private server a single name and password are used.</li>
+<li>These are displayed and changeable using buttons A) B) D)</li>
+<li> Note: When using a list, only the first entry is displayed and directly changeable.</li>
+<li>Using a list of names and passwords requires that you directly edit the associated name-password configuration file. Use edit button E) to open the file in notepad. The Reload values button C) displays just the first entry in list.</li>
+</ul>
+</ol>
+<ol start="2">
+  <li> Change state: enables or disables the use of a password to access root folder ssl. Default is disabled.</li>
+  <li> Access section: allows you to set who can gain access to root folder ssl.  Default is local access only.</li>
+</ol>
+
+<p><b>Note 1:</b>  Server access is controlled using an .htaccess file. This can be directly edited using Edit button K)<br />
+<b>Note 2:</b>  Apache does not require restarting. All changes take effect immediately.<br />
+<b>Note 3:</b>  Test button L) opens the index page in the default browser allowing you to quickly test changes.<br />
+<b>Note 4:</b> For detailed information see <a href="general_access_ssl.html">Root folder ssl access</a></p>
+</td>
+
+<td>
+   <img src="images/Coral_general_ssl_access.gif" alt="Root ssl access" />
+</td>
+
+</tr>
+</table>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Root phpMyAdmin Access"></a>
+<h2>Root phpMyAdmin Access</h2>
+
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; General &gt; Root phpMyAdmin - Change Access</p>
+
+<table>
+<tr >
+<td>
+
+<ul>
+<li>A) <b>Local</b> access is the default and prevents both Intranet and Internet users access to phpMyAdmin. Only localhost may connect. It allows the root MySQL administrator direct access without the need to enter a name or password. For security reasons you must change the default MySQL password this prevents accidental cross-site scripting.</li>
+
+<li>B) <b>Intranet + passwords</b>. Anyone on your Intranet is allowed access to phpMyAdmin, however to gain access to the MySQL server requires a name and password. A user name and password are stored on the MySQL server for each restricted user created. A restricted user is one that is assigned  access only to specific databases, and also has limited privileges for them.</li>
+
+<li>C) <b>Internet + passwords +ssl</b> This is similar to Intranet, except that all transactions are performed over a secure encrypted connection using ssl. If you have not installed or created a server certificate, clicking this radio button will produce a warning and the access selection will not change. This security feature forces you to use ssl and prevents sending names and passwords over the Internet in plain text.</li>
+
+<li>D) phpMyAdmin root folder is protected by an <b>.htaccess</b> file. This menu button opens this file in the default text editor allowing you to view or edit the file.</li>
+
+<li>E) phpMyAdmin is configured using the user configuration file <b>config.inc.php</b>. This menu button opens this file in the default text editor allowing you to view or edit the file.</li>
+
+<li>F) This menu button opens phpMyAdmin in the default browser. A greyed out button indicates that Apache is not running and its function are unavailable.</li>
+
+</ul>
+</td>
+
+<td>
+   <img src="images/Coral_php_phpmyadmin.gif" alt="Change phpMyAdmin access status" />
+</td>
+<tr>
+</table>
+
+<b>Note:</b> For detailed information, see <a href="general_access_phpmyadmin.html">Root phpMyAdmin access</a>
+
+<p>&nbsp;</p>
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 08-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

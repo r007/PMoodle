@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Quick Start Detail</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p25">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+<script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/quick_start_menu.js"></script>
+
+</td>
+
+<td id="td_spacer" >
+</td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+
+<h1>Quick Start Guide - More Detail</h1>
+
+<p>This guide adds more detail to the basic <a href="start_quick_start.html">Quick Start Guide</a>.  It covers installation and how to run The Uniform Server as a program or service.</p>
+
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Installation" >Installation</a></li>
+   <li><a href="#Installing your Website or Test pages" >Installing your Website or Test pages</a></li>
+   <li><a href="#Server Control" >Server Control</a></li>
+   <li><a href="#Run as Program" >&nbsp;&nbsp; Run as Program</a></li>
+   <li><a href="#Run as Service" >&nbsp;&nbsp; Run as Service</a></li>
+   <li><a href="#Server Utilities" >Server Utilities</a></li>
+   <li><a href="#Important - Security Feature" >Important - Security Feature</a></li>
+   <li><a href="#Set New MySQL root password" >Set New MySQL root password</a></li>
+   <li><a href="#How to put the servers on-line" >How to put the servers on-line</a></li>
+   <li><a href="#How to check Server Internet Access" >How to check Server Internet Access</a></li>
+   <li><a href="#Where to next" >Where to next</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="Root folder www - Test"></a>
+<h2>Installation</h2>
+<table>
+<tr>
+<td valign="top">
+<p>The Unform Server does not have a typical program installation. Instead, just execute the downloaded file (Coral_x_x_x.exe). The installation extraction defaults to creating "C:\UniServer", with the folder structure as shown on the right. Once extracted, the servers are ready to run.</p>
+<p>While it may seem that by this point you have successfully completed the installation, there is one aspect that needs to be validated.</p>
+
+<a name="Server Paths"></a>
+<h3>Server Paths</h3>
+
+<p>You can install The Uniform Server in nearly any location, with the exception that the <u>path to folder UniServer must not contain spaces</u>. Do not use "C:\Program Files", for example (which has other problems as well, such as restricted permissions and system restore inconsistencies). We recommend installing to the drive root, such as "C:\" or "D:\" for simplicity, but other locations, such as "C:\test1\appserver" work just as well. </p>
+
+<p><b><i>Note</i>:</b> The space character restriction is generic and applies to other WAMP stacks as well. Many applications that will be hosted on the server do not tolerate spaces in paths.  The system restore issue applies mainly to individual component installs.</p>
+
+<p>If the current installation is on a faulty path, the situation can eaily be resolved by just moving the UniServer directory to a proper location.  You do not have to delete the directory and reinstall.  For example, just rename "D:\bad path\UniServer" to "D:\good_loc\UniServer".</p>  
+
+</td>
+<td>
+<img src="images/Coral_start_folders.gif" alt="US Folder structure" />
+</td>
+</tr>
+</table>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Installing your Website or Test pages"></a>
+<h2>Installing your Website or Test pages</h2>
+
+<p>Web pages are served from folder UniServer\<b>www</b> (B), which is commonly referred to as the server root folder. Simply copy your Website into the root folder www. </p>
+
+<p><i>Note 1:</i> Unix installations use a root folder named <b>htdocs.</b> When using an application installation guide that refers to htdocs, use folder www instead.<br />
+<i>Note 2:</i> The file structure is not static. For example, running Vhost or database backup creates the new folders UniServer\vhosts or UniServer\db_backup respectively.</p>
+
+<p>The root folder <b>www</b> already contains a very simple web-site consisting of a single page named index.php. Its purpose is to provide a test page, allowing you to confirm that the server is functioning properly.</p>
+
+<p>Before installing your Website, you can delete the index.php file.  Don't delete the <b>.htaccess</b> and <b>favicon.ico</b> files. They have the following purposes: 
+
+<ul>
+<li><b>.htaccess</b> - This file is part of the server security and should <b>not</b> be deleted.</li>
+<li><b>favicon.ico</b> - This is a small image file displayed in a browser next to a Web page name. You can replace this with your own file, but use the name <b>favicon.ico</b> so browsers will display it properly.</li>
+</ul>
+Note: Having a favicon image is not a requirement, but modern browsers attempt to load this image by default. If your server does not contain one, an error is logged in Apache's log file.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Server Control"></a>
+<h2>Server Control</h2>
+
+<p>The UniServer folder contains two files <b>Start_as_program.exe</b> and <b>Start_as_service.exe</b> which open The Uniform Server's control menu for running the servers either as a standard program or as a service respectively.
+This control menu is referred to as UniController. </p>
+
+<a name="Run as Program"></a>
+<h3>Run as Program</h3>
+<table>
+<tr valign="top">
+ <td>
+  <ul>
+  <li><b>Start_as_program.exe</b> Opens a menu that runs the servers as a standard program. When using this menu nothing is installed to your operating system's registry. This is ideal for a development server, especially when running from a USB memory stick, since you do not have to perform anything special to stop or remove the servers.</li> 
+  </ul>
+ </td>
+
+ <td>
+   <img src="images/Coral_start_start_as_program.gif" alt="Start as program" />
+ </td>
+</tr>
+
+<tr valign="top">
+ <td>
+  <ul>
+<li><b>Run servers</b> - Click the button "Start Both" (A3). This starts both servers. Some pop-ups are initially displayed; you may click "no" to these (but see <a href="#Set New MySQL root password" >Set New MySQL root password</a> which follows). If challenged by your firewall, allow access for both Apache and MySQL. Your browser will automatically start and display the server splash  page.  Be aware that this is <b>not</b> the index.php file in wwww.</li>
+
+<li><b>Your Web site</b> - If you installed a Website in root folder www containing either an index.html or index.php page, clicking <b>View www</b> will  display your page instead of the test page.</li>
+  </ul>
+ </td>
+ <td>
+   <img src="images/Coral_start_standard_program_menu.gif" alt="Start servers as program" />
+ </td>
+</tr>
+</table>
+
+
+<a name="Run as Service"></a>
+<h3>Run as Service</h3>
+<table>
+
+<tr valign="top">
+ <td>
+<ul>
+  <li><b>Start_as_service.exe</b> Opens a menu that runs the servers as a service. The purpose of running them as a service is that when you restart your PC, the servers will automatically re-start. Using this menu you add the servers' program information to your operating system's registry. Although you can install and run services from a USB memory stick, you must remember to stop and uninstall the services before removing your USB stick.</li>
+<p>
+<b>NOTE:</b> For Windows 7 and Vista, you must have admin privileges.</p>
+ </ul>
+ </td>
+ <td>
+   <img src="images/Coral_start_start_as_service.gif" alt="Start as service" />
+ </td>
+</tr>
+
+<tr valign="top">
+ <td>
+ <ul>
+<li><b>Install and Run services</b> - Click the button "Install/Run Apache and MySQL service" (A3). This installs and runs both servers. Some pop-ups are initially displayed; click no to all pop-ups (but see <a href="#Set New MySQL root password" >Set New MySQL root password</a> following). If challenged by your firewall allow access for both Apache and MySQL. Your browser will automatically start and display the server splash page.</li>
+ 
+<li><b>Your Web site</b> - If you installed a Website in root folder www containing either an index.html or index.php page, clicking <b>View www</b> will display your page instead of the test page.</li>
+ </ul>
+ </td>
+
+ <td>
+   <img src="images/Coral_start_run_as_service_menu.gif" alt="Start as service" />
+ </td>
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Server Utilities"></a>
+<h2>Server Utilities</h2>
+
+<p>Although there are a bewildering number of menu items. Running the servers either as a standard program or as a service requies just a single button click as explained above. UniController has several additional menu items, providing independent control of many server features and functions.</p>
+
+<table>
+<tr valign="top">
+<td>
+<p><b>Server utilities:</b><br />
+These menu items provide useful features, such as single button access to PHPMyAdmin and server configuration. </p>
+
+<ul>
+<li>
+<b>B7) View www</b> - Displays your website in the default browser. It's equivalent to typing the following into a browser: <b>http://localhost/</b>
+</li>
+</ul>
+<p><a href="start_server_utilities.html">Server utilities - detailed</a></p>
+</td>
+
+<td>
+   <a href="start_server_utilities.html" title="Server utilities - detailed list"><img src="images/Coral_start_menu_options.gif" alt="Server Utilities" border="0" /></a>
+</td>
+<tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Important - Security Feature"></a>
+<h2>Important - Security Feature</h2>
+
+<p>The servers are safe to use even when connected to the Internet, since they are locked down, allowing only local access. In other words, the servers are accessible only to the PC on which they are running. Internet and Intranet access are denied.</p>
+
+<p>In order to allow access to your server by other users (Internet or Intranet), you must manually enable the required functions, thereby putting your servers on-line. </p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Set New MySQL root password"></a>
+<h2>Set New MySQL root password</h2>
+
+<table>
+<tr valign="top">
+ <td>
+<p>Although you can skip setting a new MySQL root password it is recommended you set this password at the first opportunity.<br />
+Well! This is the first opportunity; click <b>Yes</b> at the pop-up.</p>
+
+<ul>
+ <li>Set New MySQL Password menu opens (See image on right) </li>
+ <li><b>A)</b> Enter a new password</li>
+ <li><b>B)</b> Click the <b>Change Password</b> button.</li>
+ <li><b>Note:</b> You can re-open this menu from UniController as follows:</li>
+</ul>
+<p class="access">Server Configuration &gt; MySQL &gt; Change Password </p>
+  </td>
+  <td>
+<img src="images/Coral_mysql_change_root_password.gif" alt="Set root user MySQL password" />
+  </td>
+ </tr>
+
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="How to put the servers on-line"></a>
+<h2>How to put the servers on-line</h2>
+
+<p>Putting your servers on-line takes just a few clicks as follows:</p>
+<table>
+<tr valign="top">
+<td>
+<ul>
+<li> On the server menu, click <b>"Server Configuration"</b> button (B4 in Server Utilities above)</li>
+<li> In the new window click dropdown menu <b>"General"</b> </li>
+<li> From the dropdown click <b>"Root www - Change password and access"</b></li>
+<li> In the new window click <b>"Local, Intranet and Internet Access"</b> (J) see image on right.</li>
+</ul>
+<p>If your servers are accessible from the Internet, users will now be able to view your web-site.</p>
+
+<p>Note 1: The <b>Access</b> section controls who can gain access to your server. Three radio buttons H, I and J provide Local, Intranet and Internet access respectively, full details see page <a href="general_access_www.html" Title="Change name, password and access for root folder www" >www</a></p>
+
+<p>Note 2: A similar menu is provided for <a href="general_access_ssl.html">ssl</a> folder control.</p>
+
+</td>
+
+<td>
+   <img src="images/Coral_general_www_access.gif" alt="Root www access" />
+</td>
+
+</tr>
+</table>
+<p class="access">Server Configuration > General > Root www - Change password and access </p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="How to check Server Internet Access"></a>
+<h2>How to check Server Internet Access</h2>
+<p>Clicking the <b>Server Status</b> menu button opens a pop-up displaying a list of the current server parameters and their status. Server Internet accessibility is provided by the first two items. The first provides your IP address as seen from the Internet while the second confirms whether your server is accessible. </p>
+
+<table>
+<tr valign="top">
+<td>
+<ul>
+  <li>Servers must be running and connected to Internet</li>
+  <li>Run server status, click <b>Server Status</b> button (B2 see Server Utilities above)  </li>
+  <li>IP address displayed with green indicator (A) Confirms IP  </li>
+  <li>Accessible from Internet = <b>Yes</b> with green indicator (B) confirms server is accessible<br />Note: Your server, if it is accessible, will pass this test even if you have restricted access to local access only.</li>
+</ul>
+<p>If you have put your servers on-line, any user on the Internet now has access to your server by typing the following into their browser address bar:
+<b> http://xxx.xxx.xxx.xxx/</b> (replace the x's with your IP address)</p>
+<h3>Possible Problems</h3>
+<p><b><i>IP Address</i>:</b> Red indicator and no ip address. Your PC is not connected to the Internet!</p>
+<p><b><i>Access</i>:</b>  Red indicator and accessible from Internet = <b>No</b></p>
+
+<ul>
+  <li>Must be connected to Internet and an IP address displayed (A).</li>
+  <li>Your PC is connected to a router. You must forward port 80 in the router settings.</li>
+  <li>For Windows 7 and Vista, check the firewall for public access to the servers.</li> 
+  <li>Still no access? Is your service provider blocking port 80?</li>
+</ul>
+
+</td>
+<td>
+ <img src="images/Coral_start_server_status.gif" alt="Server Status" />
+</td>
+</tr>
+</table>
+
+<a name="Where to next"></a>
+<h2>Where to next</h2>
+
+<p><a href="start_user_configuration.html">User Configuration</a> - Splash page at start up. User defined buttons www and ssl</p>
+
+<!--
+http://archive.fosdem.org/2010/schedule/events/eviloninternet
+ -->
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 11-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

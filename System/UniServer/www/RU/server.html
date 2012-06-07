@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>server</title></head><body><div style="text-align: center; color: rgb(255, 0, 0);"><big><big><big><span style="font-weight: bold; font-style: italic;">To Create Intranet Server<br></span></big></big></big><div style="text-align: left;"><big><br><span style="color: rgb(0, 0, 0);">There is only one file you have to edit make this install into an "full on"</span><big><big><span style="font-weight: bold; font-style: italic;"></span></big></big></big>&nbsp;<span style="color: rgb(0, 0, 0);"></span><big><span style="color: rgb(0, 0, 0);">intranet server. The \udrive\www\moodle\config.php. <br><br>Here is the line:<br><br>$CFG-&gt;wwwroot&nbsp;&nbsp;
+= 'http://localhost:4001/moodle'; to $CFG-&gt;wwwroot&nbsp;&nbsp; =
+'http://myipaddress:4001/moodle';<br></span></big><big><big><big><span style="font-weight: bold; font-style: italic;"></span></big></big></big></div><div style="text-align: left;"><big><big><big><span style="font-weight: bold; font-style: italic;"></span></big></big></big><span style="color: rgb(51, 0, 0);"></span><span style="color: rgb(0, 0, 0); font-weight: bold;">This
+would be the ip address of your Portable Moodle machine. Start--&gt;
+Run---&gt;cmd---&gt; c:\.ipconfig ... copy the ipaddress &nbsp;to left
+of the colon. Close and save config.php. </span><br style="color: rgb(0, 0, 0); font-weight: bold;"><br style="color: rgb(0, 0, 0); font-weight: bold;"><span style="color: rgb(0, 0, 0); font-weight: bold;">Make
+sure your firewall has port 4001 open . Go to other machine type
+in&nbsp;&nbsp;http://ipaddress:4001/moodle. This will launch moodle.
+Make sure you have connectivity to your new server you might need to
+turn off the firewall for testing and use ping to verify. <br><br>There is one more file you will need to edit if you want to preserve these settings after changing modes.<br><br>\udrive\plugins\uscd2\config_orig.php. If you don't change this file also and you change modes your edit will be overwritten. <br><br>The
+fact that this configuration would work for an internet server is
+highly discouraged. There is not enough security to properly serve
+people coming in off the internet. If you decide to use with internet
+***USE AT YOUR OWN RISK***.<br style="color: rgb(0, 0, 0); font-weight: bold;"></span><big style="color: rgb(0, 0, 0); font-weight: bold;"><big><big><span style="font-style: italic;"></span></big></big></big></div><big><big><big><span style="font-weight: bold; font-style: italic;"></span></big></big></big></div></body></html>

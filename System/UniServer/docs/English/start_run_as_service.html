@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Run as a service</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p40">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/quick_start_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>Run as a service</h1>
+<p>Folder UniServer contains a file <b>Start_as_service.exe</b> which opens the server control menu UniController. This menu allows you to install and run The Uniform Server as a service.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#UniController Menu" >UniController Menu</a></li>
+   <li><a href="#Interlinked server control" >Interlinked server control</a></li>
+   <li><a href="#Where to next" >Where to next</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="UniController Menu"></a>
+<h2>UniController Menu</h2>
+
+<p>When using this menu, you install the servers as services; it adds data to your operating system’s registry. The dvantages of running as a service, when you restart your PC, servers’ will automatically re-start. You can install and run services from a USB memory stick however, you must remember to stop and uninstall services before removing your USB stick.</p>
+
+<p><b>NOTE:</b> For Vista and Win7, admin privileges are required. To run as administrator, right click on <b>Start_as_service.exe</b> and click Properties and then choose run as administrator.</p>
+<table>
+<tr valign="top">
+ <td>
+
+  <ul>
+<li><b>Install and Run services</b> - Click button <b>Install/Run Apache and MySQL service</b> (A3). This installs and runs both servers. If challenged by your firewall allow access. Your browser will automatically start and display the server splash test page. Buttons A1, A2 and A3 toggle to display uninstall. Buttons A4 and A5 are enabled and display stop service. Indicators change from red to green when services have been installed and are running.</li>
+
+<li><b>Stop and Uninstall services</b> - Click button <b>Stop/Uninstall Apache and MySQL service</b> (A3). This stops and uninstalls both servers. Server menu returns to initial state as shown at right.</li>
+
+<li>Buttons (A1,A4) and (A2,A5) provide independent control of Apache and MySQL servers respectively. </li>
+
+  </ul>
+
+ </td>
+ <td>
+   <img src="images/Coral_run_as_service_menu.gif" alt="Start as service" />
+ </td>
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Interlinked server control"></a>
+<h2>Interlinked server control</h2>
+
+<p>The server control menus are interlinked; this prevents you running both menus at the same time. If you have a single server Apache or MySQL running as a service and close the “run as a service” menu and then open the “run as a program menu”, you will find its corresponding server buttons are greyed out.</p>
+
+<p>Similarly the reverse is true. A single server Apache or MySQL running as a program will have its corresponding server buttons greyed out in the “run as a service menu”</p>
+
+<p>This interlinking applies when running multi-servers; the first server started (Apache or MySQL) will have its corresponding buttons greyed out in all other server menus. This means you can have a single instance of the MySQL server running and have several different Apache servers running, all accessing the one MySQL server.</p>
+
+<a name="Where to next"></a>
+<h2>Where to next</h2>
+
+<p><a href="start_run_as_program.html">Run as a program</a> - UniController menu run server as a program<br />
+<a href="start_server_utilities.html">Server Utilities</a> - UniController menu Server Utilities</p>
+      
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 11-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

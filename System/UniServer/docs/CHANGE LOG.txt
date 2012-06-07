@@ -1,0 +1,126 @@
+﻿################################################################################
+# File name: CHANGE LOG.txt
+# Created By: The Uniform Server Development Team
+################################################################################
+
+-------------------------
+Uniform Server Change Log
+-------------------------
+
+8.5.4     - Updated PHP to 5.4.3
+          - Updated MySQL to 5.5.24
+
+8.5.3     - Reverted Port check to 8.4.0
+          - Splash page now shows OpenSSL 1.0.1
+          - Cron:  Values for period now recognise upper case first letter.
+          - Cron:  Removed extraneous line of code Set http = Nothing
+          - Updated phpMyAdmin to 3.5.1
+          - Updated PHP to 5.4.2
+
+8.5.2     - Updated Apache to 2.4.2
+          - Updated phpMyAdmin 3.5.0
+          - Updated PHP to 5.4.1
+          - Updated MySQL to 5.5.23
+          - Added apc 3.1.10
+          - DB-restore bug fix.
+
+8.5.1     - phpMyAdmin updated to 3.4.10.2 - Security update
+
+8.5.0     - Vhost access.log changed common to combined
+          - Port check, seperate check for Apache and MySQL
+          - PhpMyAdmin path now splits at us_phpmyadmin instead of home
+          - Updated MySQL to 5.5.22
+
+8.4.0     - Updated PHP to 5.4.0
+          - Modified PHP basic config script - Removed Safe Mode  and Register Globals
+          - Bug fix phpinfo.php
+
+8.3.1     - Bug fix Updated OpenSSL components 
+          - Bug fix Modified Apache configuration files
+          - Bug fix Updated Vhost script 
+
+8.3.0     - Updated MySQL to 5.5.21
+
+8.2.0     - Updated Apache to 2.4.1
+
+8.1.2     - Updated eAccelerator to match PHP 5.3.10
+          - phpMyAdmin updated to 3.4.10.1 - Security update
+          - phpMyAdmin config.inc.php added trim MySQL password
+          - phpMyAdmin file navigation.php line 646 replaced 'disp_name' with 'Name' - MADLAX
+          - Updated index.php in folders www ssl 
+          - Bug incorrect status displayed
+          - OpenSSL 1.0.0g
+
+8.1.1     - Updated PHP to 5.3.10 - Security update
+
+8.1.0     - Updated Apache 2.2.22
+          - Updated MySQL to 5.5.20
+          - Updated PHP to 5.3.9
+          - Updated msmtp to 1.4.27
+          - Apache configuration separated as per ASF
+          - Added language file Portuguese.vbs
+          - Added support for portable Firefox
+          - Added support for portable Opera
+          - Added support for portable GoogleChrome
+          - Bug fixes core_functions_inc.vbs core_config_inc.vbs
+          - Renamed ssl.conf to httpd-ssl.conf
+          - Renamed php.ini_production to php_production.ini
+          - Renamed php.ini_development to php_development.ini
+          - Pear core preinstalled.
+          - Added tracker to Pear index.php to update configuration paths
+          - MySQL, phpMyAdmin and all users use 127.0.0.1 instead of localhost
+          - MySQL documentation updated to reflect use of IP 127.0.0.1
+          - Issue with @ in MySQL password, updated regex in us_my_ini_get
+          - Create Restricted MySQL User - displays message database already
+            exists, although correct this is no longer displayed
+          - Log_files_clear.hta Selet all" should be "'Select all
+          - Added separate css and image folders to www and ssl
+            resolves htaccess conflict
+          - Added ZoneAlarm detection - The ZoneAlarm application conflicts with 
+            the Apache Server producing a blue screen of death when Apache is closed. 
+          - Updated Coral UniTray to match 8.1.0
+          - Both APC and eAccelerator disabled by default
+          - Updated php_accelerators.html button enable/disable
+          - Bug  - Fail to change MySQL password at start-up
+          - Bug  - Bugs introduced after sorting out memory leak.
+          - Bug  – MySQL incorrect host setting
+          - Bug  - Server access user settings www,ssl and phpMyAdmin
+          - Added bind-address=127.0.0.1 to [mysqld] config section
+          - Updated files and documentation
+          - Bug - Incorrect MySQL port status displayed
+          - Bug - Host file append added CR/LF
+          - Added feedback for Vhost Create, Update and Delete.
+          - Downgraded APC to 3.1.7 - Apache service stop issue.
+          - Added - Vhost creation copies .htaccess and favicon.ico to Vhost root
+          - Bug - Incorrect port assignment when Vhost port changed
+
+8.0.0     - First Release
+          - phpMyAdmin updated to 3.4.8
+          - APC on by default instead of eAccelerator
+          - InnoDB ON by default
+          - port_check.bat now displays process name
+
+8.0.0RC2  - Changed language selection. UniTray command from "Update" to "Change"
+          - Menus allow spaces for pre-checking. Main restriction still applies.  
+          - Updated Cron test scripts
+          - Corrected double multi-server pop-up menu. 
+
+8.0.0RC1  - First public release. 
+          - Apache 2.2.21
+          - MySQL 5.5.18
+          - PHP 5.3.8
+          - phpMyAdmin 3.4.7.1
+          - Go-Pear 1.1.6
+          - msmtp 1.4.25
+          - eAccelerator 1.0-snv427
+          - OpenSSL 1.0.0e
+
+-------------------------------------------------------------------------------
+         Copyright 2002-2011 The Uniform Server Development Team
+                        All rights reserved.
+
+The authors were trying to make the best product so they cannot be held responsible
+for any type of damage or problems caused by using this or another software.
+
+                                 ---o0o---
+

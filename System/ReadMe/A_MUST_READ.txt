@@ -1,0 +1,27 @@
+                                           CRITICAL BATCH FILES IN ROOT DIRECTORY !!!
+                                           
+                                           
+                                           
+ /Server_Start.bat- Starts WAMP stack. THIS FILE STARTS EVERYTHING RELATED TO MOODLE !!! If your not sure check task manager look for Apache processes(2) and mysql process.  
+ Launches to Splash Page then you click link to get into Moodle. IF AUTO START DOESN'T WORK DOUBLE CLICK THIS FILE !
+ 
+ 
+ /mode_us.bat - this is read/write mode. You must be in this mode to make any changes to moodle. Otherwise your changes will be lost forever !!!
+ (so yes you can make changes to moodle in CD mode BUT THEY WON'T NECESSARILY BE SAVED AND IF YOU HAPPEN TO TRY TO BURN A CD STRAIT
+ OUT OF THIS MODE IT WON'T WORK !!!
+ 
+/mode_cd.bat - this is the batch file you run AFTER you've restored a course or added content to your moodle. Then you burn your cd
+ I would recommend using Deep Burner Portable in the /Extra directory to burn you CD that's what me and Pete used.  IF YOU WANT TO 
+ DISTRIBUTE MOODLE COURSES VIA CD ROM YOU MUST RUN THIS FILE BEFORE BURNING YOUR CD !!!
+ 
+IF YOU'RE RUNNNING FROM CD ROM YOU ARE IN mode_cd.bat parameters.(see note above) 
+
+IF YOU INSTALLED FROM THE START MENU TO HDD OR USB STICK THEN YOU ARE IN mode_use.bat parameters.(see note above) 
+
+IF YOU SIMPLY COPIED ALL DIRECTORIES AND FILES FROM CD ROM TO HDD OR USB STICK YOU'RE STILL IN mode_cd.bat
+parameters. (see note above). 
+
+
+STOPPING THINGS 
+
+If you close Firefox Portable browser it doesn't close Moodle. The only way to close Moodle is with the PStart Menu. If you click on the X on the PStart menu that doesn't work either it is still running on the tray at the bottom of the screen. YOU MUST choose either STOP SAVE or STOP DELETE. STOP DELETE will make sure it deletes your stuff thoroughly if you do this you CANNOT RETRIEVE your files. Make sure you know that there's nothing that you've added to Moodle that you want to keep. It will not erase Moodle or whatever came on the CD but anything you've added since will be gone. 

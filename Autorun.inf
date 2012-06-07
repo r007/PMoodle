@@ -1,0 +1,3 @@
+[Autorun]
+open=system\Server_Start.bat
+icon=diff.ico

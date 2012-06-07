@@ -1,0 +1,65 @@
+h1
+{
+    Font-family : Verdana;
+    Font-size : 200%;
+    Color : white;
+    Font-weight : bold;
+}
+h2
+{
+    Font : Verdana;
+    Font-weight : bold;
+    Font-size : 110%;
+    Font-family : Verdana;
+    Color : black;
+}
+body
+{
+    Font-family : Verdana;
+    Font-size : 1 em;
+    Color : black;
+}
+a
+{
+    Font-family : Verdana;
+    Font : Verdana;
+    Color : blue;
+    Font-weight : bold;
+    Text-decoration : none;
+}
+a:link
+{
+    Font-family : sans-serif;
+    Font-size : 1 em;
+    Color : blue;
+    Text-decoration : none;
+}
+a:hover
+{
+    Color : red;
+    Background-color : yellow;
+    Text-decoration : none;
+}
+a:visited
+{
+    Color : maroon;
+    Text-decoration : none;
+}
+a:active
+{
+    Color : blue;
+    Text-decoration : none;
+}
+p
+{
+    Font-family : Verdana;
+    Font : Verdana;
+    Color : black;
+    Font-size : 1 em;
+}
+h3
+{
+    Font : Verdana;
+    Font-style : oblique;
+    Font-family : Verdana;
+}

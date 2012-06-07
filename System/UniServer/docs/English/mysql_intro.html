@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>MySQL</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p500">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/mysql_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>MySQL - Introduction</h1>
+
+<p>MySQL is an open source database server. When used in conjunction with PHP 
+scripts, powerful and dynamic server-side applications can be created. 
+MySQL server administration is performed using phpMyAdmin and The Uniform 
+Server’s integrated utilities. This page covers the configuration sub-menu.</p>  
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Change Password" >Change Password</a></li>
+   <li><a href="#Restore Password" >Restore Password</a></li>
+   <li><a href="#Edit my.ini" >Edit my.ini</a></li>
+   <li><a href="#View Error log file mysql.err" >View Error log file mysql.err</a></li>
+   <li><a href="#Create Delete Database" >Create Delete Database</a></li>
+   <li><a href="#Create Restricted MySQL User" >Create Restricted MySQL User</a></li>
+   <li><a href="#Edit Restricted MySQL User" >Edit Restricted MySQL User</a></li>
+   <li><a href="#InnoDB Enable Disable" >InnoDB Enable Disable</a></li>
+   <li><a href="#General note MySQL access and privileges" >General note MySQL access and privileges</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="Change Password"></a>
+<h2>Change Password</h2>
+
+<table>
+<tr valign="top">
+ <td>
+<p>Change or set a new MySQL root user password.<br />
+From UniController, open the menu:</p>
+<p class="access">Server Configuration &gt; MySQL &gt; Change Password </p>
+
+<ul>
+ <li>The Set New MySQL Password menu opens (See image on right) </li>
+ <li><b>A)</b> Enter a new password</li>
+ <li><b>B)</b> Click the <b>Change Password</b> button.</li>
+</ul>
+<p>The change process is automatic; the indicators show the actions taken.<br />
+<b>Note:</b> For detailed information, see <a href="mysql_change_password.html">MySQL - Change password</a></p>
+  </td>
+  <td>
+<img src="images/Coral_mysql_change_root_password.gif" alt="Set root user MySQL password" />
+  </td>
+ </tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Restore Password"></a>
+<h2>Restore Password</h2>
+
+
+<table>
+<tr valign="top">
+ <td>
+<p>Restore MySQL root user password<br />
+From UniController, open the menu:</p>
+<p class="access">Server Configuration &gt; MySQL &gt; Restore Password </p>
+<ul>
+ <li>The Restore MySQL Password menu opens (See image on right) </li>
+ <li>Click the <b>Run Restore</b> button.</li>
+</ul>
+<p>The restore process is automatic; the indicators show the actions taken.<br />
+<b>Note:</b> For detailed information, see <a href="mysql_restore_password.html">MySQL - Restore password</a></p>
+  </td>
+  <td>
+<img src="images/Coral_mysql_restore_root_password.gif" alt="Restore root user MySQL password" />
+  </td>
+ </tr>
+
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Edit my.ini"></a>
+<h2>Edit my.ini</h2>
+<p class="access">Server Configuration &gt; MySQL &gt; Edit my.ini</p>
+
+<p>Opens the configuration file in notepad, allowing you to directly edit the file, which is UniServer\usr\local\mysql\<b>my.ini</b></p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="View Error log file mysql.err"></a>
+<h2>View Error log file mysql.err</h2>
+<p class="access">Server Configuration &gt; MySQL &gt; View Error log file mysql.err</p>
+<p>This menu option provides a convenient short cut, allowing you to view the MySQL server log file. If you are experiencing problems with the server, this should be your first port of call; its content may shed light on a particular issue.</p>
+<p>The path to the log file is:  UniServer\usr\local\mysql\data\<b>mysql.err</b><br />
+<b>Note:</b> Depending on where you extracted UniServer, the path may differ.</p>
+
+<table>
+<tr>
+<td>
+A short extract from the file:
+<pre>
+110706 11:40:41 [Note] Plugin 'FEDERATED' is disabled.
+110706 11:40:41 [Note] Plugin 'InnoDB' is enabled.
+110706 11:40:43 [Note] Event Scheduler: Loaded 0 events
+110706 11:40:43 [Note] C:\UniServer\usr\local\mysql\bin\mysqld1.exe: ready for connections.
+Version: '5.5.14'  socket: ''  port: 3306  MySQL Community Server (GPL)
+110706 11:55:35 [Note] C:\UniServer\usr\local\mysql\bin\mysqld1.exe: Normal shutdown
+110706 11:55:35 [Note] Event Scheduler: Purging the queue. 0 events
+110706 11:55:36 [Note] C:\UniServer\usr\local\mysql\bin\mysqld1.exe: Shutdown complete
+</pre>
+</td>
+</tr>
+</table>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Create Delete Database"></a>
+<h2>Create Delete Database</h2>
+
+<p>There are three methods for creating or deleting a database: via command prompt, phpMyAdmin or UniController. UniController provides a convenient menu option described bellow. To use this option, the MySQL server must be running, otherwise a warning message is produced.</p>
+
+<p class="access">Server Configuration &gt; MySQL &gt; Create Delete Database</p>
+
+<table>
+ <tr>
+   <td>
+<p><b><i>Create Database</i></b></p>
+<ul>
+ <li>1) Enter a database name, e.g mydb</li>
+ <li>2 Click the "Create Database" button</li>
+</ul>
+
+<p><b><i>Delete Database</i></b></p>
+<ul>
+ <li>3) Select a database to delete</li>
+ <li>5) Click the "Delete Database" button</li>
+</ul>
+
+<p>Note 1: Clear both (4) deletes the entered name and database selected.<br />
+Note 2: For detailed information, see <a href="mysql_create_delete_database.html">MySQL Create Delete Database</a></p>
+
+   </td>
+   <td>
+<img src="images/Coral_mysql_create_delete_db.gif" alt="Create delete Database" />
+   </td>
+ <tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Create Restricted MySQL User"></a>
+<h2>Create Restricted MySQL User</h2>
+<p>A restricted user has no root privileges and is constrained to a single database.</p>
+<p>There are three methods for creating a restricted user: at a command prompt, with phpMyAdmin or through UniController, which provides a convenient menu option described below. To use this option, the MySQL server must be running, otherwise a warning message will show.</p>
+
+<p class="access">Server Configuration &gt; MySQL &gt; Create Restricted MySQL User</p>
+
+<table>
+ <tr>
+   <td>
+<ul>
+ <li>1) Enter a user name, e.g. fred</li>
+ <li>2) Enter the user password, e.g. fred123</li>
+ <li>3) Select a database to assign to the user. The database name (4) is automatically inserted.</li>
+ <li>5) Select or deselect primary user privileges as required.</li>
+ <li>6) Click “Create User” </li>
+</ul>
+
+<p><br /><br />Note 1: Cancel (7) clears both the selected database and user input.<br />
+Note 2: For detailed information, see <a href="mysql_create_restricted_user.html">MySQL Create Restricted User</a></p>
+
+   </td>
+   <td>
+<img src="images/Coral_mysql_restricted_user.gif" alt="Create Restricted MySQL User" />
+   </td>
+ <tr>
+</table>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Edit Restricted MySQL User"></a>
+<h2>Edit Restricted MySQL User</h2>
+
+<p>The same aspects for creating a restricted user (above) apply to editing restricted users.  The UniController menu is decribed below.</p>
+
+<p class="access">Server Configuration &gt; MySQL &gt; Edit Restricted MySQL User</p>
+
+<table>
+ <tr>
+   <td>
+
+<p><b><i>Edit Restricted User</i></b></p>
+<ul>
+ <li>1) Select the user to edit from the list. This populates the form.</li>
+ <li>3) Enter the current or a new password for the user</li>
+ <li>5) Select or deselect user privileges as required</li>
+ <li>6) Click "Update User" button</li>
+</ul>
+
+<p><b><i>Delete Restricted User</i></b></p>
+<ul>
+ <li>1) Select the user to be deleted from list.</li>
+ <li>7) Click "Delete" button</li>
+</ul>
+
+<p><br />Note 1: Cancel (8) clears only the edit fields.<br />
+Note 2: Cancel (9) clears only the selected user.<br />
+Note 3: For detailed information, see <a href="mysql_edit_restricted_user.html">MySQL Edit Restricted User</a></p>
+
+   </td>
+   <td>
+<img src="images/Coral_mysql_edit_restricted_user.gif" alt="Edit Restricted MySQL User" />
+   </td>
+ <tr>
+</table>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="InnoDB Enable Disable"></a>
+<h2>InnoDB Enable Disable</h2>
+
+<table>
+ <tr valign="top">
+   <td>
+<p>Uniform Server default is InnoDB enabled. The following sub-menu allows you to enable or disable InnoDB:</p>
+<p class="access">Server Configuration &gt; MySQL &gt; InnoDB Enable/Disable</p>
+
+<ul>
+ <li>Checkbox un-checked: InnoDB disabled</li>
+ <li>Checkbox checked: InnoDB enabled</li>
+</ul>
+<p><b>Note:</b> After changing the state, you must restart the MySQL server to read the configuration.</p
+   </td>
+   <td>
+<img src="images/Coral_mysql_innodb.gif" alt="Enable disable InnoDB" />
+   </td>
+ <tr>
+</table>
+<p>Files modified: UniServer\usr\local\mysql\<b>my.ini</b>, UniServer\usr\local\mysql\<b>small_my.ini</b> and UniServer\usr\local\mysql\<b>medium_my.ini</b> </p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="General note MySQL access and privileges"></a>
+<h2>General note: MySQL access and privileges</h2>
+
+<p>When connecting to a MySQL server, the <b>host</b> from which the connection is made, a <b>user name</b> and <b>user password</b> specified all determine that user's identity. This identity informs MySQL what access is allowed to the server and what privileges are assigned to this user. </p>
+
+<p>There are three root accounts that permit connections from the local host only. Connections can be made by specifying the host name localhost, the IPv4 address 127.0.0.1, or the IPv6 address ::1. The Uniform Server Development Team have elected to use the IPv4 address throughout.  Ref: <a href=http://dev.mysql.com/doc/refman/5.5/en/default-privileges.html>http://dev.mysql.com/doc/refman/5.5/en/default-privileges.html</a></p>
+
+<table>
+<tr>
+<td>
+<pre>
+C:\UniServer\usr\local\mysql\bin>mysql -h127.0.0.1 -uroot -proot
+mysql> SELECT User, Host, Password FROM mysql.user;
++------+-----------+-------------------------------------------+
+| User | Host      | Password                                  |
++------+-----------+-------------------------------------------+
+| root | 127.0.0.1 | *81F5E21E35407D884A6CD4A731AEBFB6AF209E1B |
+| pma  | 127.0.0.1 | *81F5E21E35407D884A6CD4A731AEBFB6AF209E1B |
++------+-----------+-------------------------------------------+
+mysql>exit
+Bye
+</pre>
+</td>
+<td>
+<p>The Uniform Server for consistency uses IPV4 addressing, which is forced by using IP address 127.0.0.1 (<b>Note:</b> This is used instead of localhost)</p>
+<p>The example on the left shows The Uniform Server default settings for user accounts. The commands are entered in the <a href=mysql_console.html>MySQL console</a> window.</p>
+
+</td>
+</tr>
+</table>
+<!-- Checked 21-jan-2012 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

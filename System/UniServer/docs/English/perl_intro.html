@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Perl</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p1100">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/perl_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>Perl - Introduction</h1>
+<p>Perl is a very powerful scripting language and is fully supported by The Uniform Server. Since the ActivePerl Community License precludes distribution with The Uniform Server, you will have to download it yourself. However, Perl is easy to install when using The Uniform Server's builtin script. For details, see <a href="perl_install_activeperl.html">Perl - Installing ActivePerl</a>. This page covers UniController's menu option that displays the Perl control panel.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Overview" >Overview</a></li>
+   <li><a href="#Auto tracking" >&nbsp;&nbsp;Auto tracking</a></li>
+   <li><a href="#UniController support" >&nbsp;&nbsp;UniController support</a></li>
+   <li><a href="#Convert to Unix format" >&nbsp;&nbsp;Convert to Unix format</a></li>
+   <li><a href="#Perl control panel" >Perl control panel</a></li>
+
+   <li><a href="#Where to next" >Where to next</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="Overview"></a>
+<h2>Overview</h2>
+
+<p>The Uniform Server automatically detects the presence of Perl and enables the functionality to support it in UniController. If Perl is not installed, the Perl control panel buttons are greyed out.</p>
+
+<a name="Auto tracking"></a>
+<h3>Auto tracking</h3>
+
+<p>Place your Perl scripts in folder UniServer\<b>cgi-bin</b> and any sub-folders as appropriate. Each script requires a Shebang. This must be an absolute path to the Perl executable. For example:</p>
+<pre>
+#!C:/UniServer/usr/bin/perl.exe
+</pre>
+
+<p>Moving UniServer to another location automatically updates this Shebang. UniController, on detecting a server move, writes a new Shebang to all files with a <b>.pl</b> or <b>.cgi</b> extension. An automatic update is initiated <b>only</b> when the servers are <b>moved</b>. </p>
+
+<p><i><b>Important:</b></i>
+When you place a third party Perl script in cgi-bin, you must either move the servers or <b>force a Shebang update</b> using UniController. Alternatively, you can manually edit each file.</p>
+
+<a name="UniController support"></a>
+<h3>UniController support</h3>
+
+<p><b>Force Shebang update</b></p>
+
+<p>Perl scripts contain a Shebang (the first line) which informs a server where to find the Perl program. The Uniform Server is dynamic and tracks any path changes, automatically updating the Shebang.</p>
+
+<p>However if the server remains static and you add new scripts, the Shebang is never updated. You must therefore run "Force Shebang update" from the Perl control panel. It updates the Shebang to the current Perl location in all files.</p>
+
+<p><b><i>Tip</i>:</b>
+When writing Perl scripts you can use the following for the Shebang:</p>
+
+<pre>
+#!
+</pre>
+
+<p>From the Perl control panel, run "Perl Shebang Update" and all pages will be updated with the correct Shebang. </p>
+
+<a name="Convert to Unix format"></a>
+<h3>Convert to Unix format</h3>
+
+<p>Perl scripts developed on Windows will not run on a Unix machine. They require conversion to Unix format. You can run the conversion script from the Perl control panel.</p>
+
+<p>This script copies all files in <b>cgi-bin</b> to a new folder <b>\cgi-bin-unix\</b><br />
+Scripts in this new folder are converted from Windows to Unix format.</p>
+
+<ul>
+  <li>Converts end of line:  Dec(#13#10=&gt;#10) Hex 0D0A to 0A</li>
+  <li>Replaces Windows Shebang with Unix Shebang</li>
+</ul>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Perl control panel"></a>
+<h2>Perl control panel</h2>
+
+<p>This sub-menu option opens the Perl control panel.</p>
+
+<table>
+ <tr valign="top">
+  <td>
+<p class="access">Server Configuration &gt; Perl &gt; Perl control panel </p>
+
+<ol>
+  <li><b>Force Shebang Update</b><br />
+Rewrites the Shebang in all .pl and .cgi files infolder UniServer\cgi-bin and its sub-folders.</li>
+  <li><b>Convert Win2Nix</b><br />
+ Copies the folders and files in <b>cgi-bin</b> to folder <b>\cgi-bin-unix\</b> and converts from Windows to Unix format.</li>
+  <li><b>Run Test Script</b><br />
+ Runs the script UniServer\cgi-bin\test.pl</li>
+</ol>
+  </td>
+
+  <td>
+<img src="images/Coral_perl_1.gif" alt="Perl control panel" />
+  </td>
+ </tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Where to next"></a>
+<h2>Where to go next</h2>
+
+<p><a href="perl_install_activeperl.html">Perl - Installing ActivePerl</a></p>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 15-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

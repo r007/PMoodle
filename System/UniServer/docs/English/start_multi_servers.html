@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Multi-Servers</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p50">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/quick_start_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>Multi-Servers</h1>
+
+<p>Multi-servers enable you to run more than one copy of The Uniform Server (Apache and MySQL) on the same PC. Moving servers to different ports also allows you to run The Uniform Server alongside other servers such as IIS. This page details the changes made when the Multi-servers menu is invoked.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Multi Servers" >Multi Servers</a></li>
+   <li><a href="#Files modified" >Files modified</a></li>
+
+   </ul>
+ </div>
+</div>
+
+
+<a name="Multi Servers"></a>
+<h2>Multi Servers</h2>
+
+<table>
+<tr valign="top">
+<td>
+<p>Multi-servers enables you to run more than one copy of The Uniform Server (Apache and MySQL) on the same PC. To achieve this, the executables and services are renamed and the ports the servers run on are changed.</p>
+
+<p>Values under the <b>old</b> column are the current server values. After clicking “Run Move Servers” these values are overwritten in their corresponding configurations files with the values shown in the <b>new</b> column.</p> 
+
+<p>Changes are reflected in the tray icon, which is numbered 1 to 9. This number generally corresponds to the digit appended to the executable and service names. The number of separate server sets is not limited to 9, but subsequent sets will not show a digit. </p>
+
+<p><b>Note:</b><br />
+Ideally you would run this menu on a newly extracted copy of The Uniform Server and then add any applications using appropriate configuration parameters. </p>    
+
+</td>
+
+<td>
+ <img src="images/Coral_start_multi_servers.gif" alt="Multi-Servers" />
+</td>
+
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Files modified"></a>
+<h2>Files modified</h2>
+
+<p>After running Multi-servers the following files are updated:</p>
+
+<table>
+<tr valign="top">
+
+<td>
+<p><b><i>Apache</i></b></p>
+<ul>
+  <li>UniServer\usr\local\apache2\conf\<b>httpd.conf</b>  </li>
+  <li>UniServer\usr\local\apache2\conf\extra\<b>httpd-vhosts.conf</b> </li>
+  <li>UniServer\usr\local\apache2\conf\extra\<b>ssl.conf</b> </li>
+</ul>
+</td>
+
+<td>
+<p><b><i>MySQL</i></b></p>
+<ul>
+  <li>UniServer\usr\local\mysql\<b>my.ini</b> </li>
+  <li>UniServer\usr\local\mysql\<b>small_my.ini</b> </li>
+  <li>UniServer\usr\local\mysql\<b>medium_my.ini</b> </li>
+</ul>
+</td>
+
+</tr>
+<tr valign="top">
+
+<td>
+<p><b><i>PHP</i></b></p>
+<ul>
+  <li>UniServer\usr\local\php\<b>php.ini</b> </li>
+  <li>UniServer\usr\local\php\<b>php_development.ini</b> </li>
+  <li>UniServer\usr\local\php\<b>php_production.ini</b> </li>
+</ul>
+</td>
+
+<td>
+<p><b><i>UniController</i></b></p>
+<ul>
+  <li>UniServer\uni_con\<b>uni_con_program.hta</b>  </li>
+  <li>UniServer\uni_con\<b>uni_con_service.hta</b> </li>
+  <li>UniServer\uni_con\<b>config_tracker.ini</b> </li>
+</ul>
+</td>
+
+</tr>
+<tr valign="top">
+
+<td>
+<p><b><i>Cron</i></b></p>
+<ul>
+  <li>UniServer\uni_con\cron_service\<b>srvstart.ini</b> </li>
+  <li>UniServer\uni_con\cron_service\<b>start_automatic.vbs</b> </li>
+  <li>UniServer\uni_con\cron_service\<b>z_install.bat</b> </li>
+</ul>
+</td>
+
+
+<td>
+<p><b><i>Cron</i></b></p>
+<ul>
+  <li>UniServer\uni_con\cron_service\<b>z_service_start.bat</b> </li>
+  <li>UniServer\uni_con\cron_service\<b>z_service_stop.bat</b> </li>
+  <li>UniServer\uni_con\cron_service\<b>z_uninstall_service.bat</b> </li>
+</ul>
+</td>
+
+
+</tr>
+</table>
+
+<p>After running Multi-servers the following executables are renamed. Note: <b>x</b> is new digit appended to executable name.</p>
+<ul>
+  <li>UniServer\usr\local\apache2\bin\<b>httpd1.exe</b> to UniServer\usr\local\apache2\bin\httpd<b>x</b>.exe  </li>
+  <li>UniServer\usr\local\mysql\bin\<b>mysqld1.exe</b> to UniServer\usr\local\mysql\bin\mysqld<b>x</b>.exe </li>
+</ul>
+
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 22-jan-2012 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

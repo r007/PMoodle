@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Documentation Home - The Uniform Server 8-Coral</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p10">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+<script language="javascript" src="common/top_menu.js"></script>
+
+</td>
+
+<td id="td_spacer" >
+</td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+
+<h1>The Uniform Server - 8-Coral</h1>
+
+<h2>Introduction</h2>
+<p>Welcome to The Uniform Server and this documentation, which is for the 8-Coral series. The Uniform Server is a free and open source Windows Apache-MySQL-PHP server suite. The Uniform Server is an excellent system for both beginning webmasters and experienced developers. It is a full-power webserver suitable for production use, but small enough to carry on a USB memory stick, or even a camera's flash drive.</p>
+
+<p>We strongly suggest that you check over the points on this page as they provide important information that may help you avoid common problems. After that, if you are eager to get started, you can jump straight to the <a href="start_quick_start.html">quick start</a> guide. It will have you up and running in seconds.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Installation Restriction" >Installation Restriction</a></li>
+   <li><a href="#Server Paths" >&nbsp;&nbsp;Server Paths</a></li>
+   <li><a href="#Help" >Help</a></li>
+   <li><a href="#Security" >Security</a></li>
+   <li><a href="#Other Issues" >Other Issues</a></li>
+   <li><a href="#VC9 Libraries" >&nbsp;&nbsp;VC9 Libraries</a></li>
+   <li><a href="#MySQL Access" >&nbsp;&nbsp;MySQL Access</a></li>
+   <li><a href="#Windows 7, Vista and UAC" >&nbsp;&nbsp;Windows 7, Vista and UAC</a></li>
+   <li><a href="#Firewalls" >&nbsp;&nbsp;Firewalls</a></li>
+   <li><a href="#Run as a standard program vs Run as a service" >Run as a standard program vs Run as a service</a></li>
+
+   <li><a href="#Where to next" >Where to next</a></li>
+
+   </ul>
+ </div>
+</div>
+
+<a name="Installation Restriction"></a>
+<h2>Installation Restriction</h2>
+
+<p>While it may seem that by this point you have successfully completed the installation, there is one aspect that needs to be validated.  This is especially true if you have been unable to start the servers.  In this case, you're most likely viewing this file directly in a browser, rather than having it served by Apache.</p>
+
+<a name="Server Paths"></a>
+<h3>Server Paths</h3>
+
+<p>The installation extraction defaults to creating "C:\UniServer". The documentation examples assume this default. You can install The Uniform Server in nearly any location, with the exception that the path to folder UniServer must not contain spaces. Do not use "C:\Program Files", for example (which has other problems as well, such as restricted permissions and system restore inconsistencies). We recommend installing to the drive root, such as "C:\" or "D:\" for simplicity, but other locations, such as "C:\test1\appserver" work just as well. </p>
+
+<p><b><i>Note</i>:</b> The space character restriction is generic and applies to other WAMP stacks as well. Many applications that will be hosted on the server do not tolerate spaces in paths.  The system restore issue applies mainly to individual component installs.</p>
+
+<p>If the current installation is on a faulty path, the situation can eaily be resolved by just moving the UniServer directory to a proper location.  You do not have to delete the directory and reinstall.  For example, just rename "D:\bad path\UniServer" to "D:\good_loc\UniServer".</p>  
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Help"></a>
+<h2>Help</h2>
+<p>Two levels of help are built into The Uniform Server’s control menus. Direct local help as instant pop-up message boxes are accessed by clicking a box containing a question mark. Detailed help, linked directly to documentation pages, is accessible by clicking a box containing an exclamation mark.</p>
+<table>
+ <tr>
+   <td>
+     <img src="images/Coral_help_1.gif" alt="Direct help" />
+   </td>
+   <td>
+    <p>Direct local help - Integrated pop-up help with language translation.</p> 
+   </td>
+ </tr>
+ <tr>
+   <td>
+    <img src="images/Coral_help_2.gif" alt="Documentation help" />
+   </td>
+   <td>
+    <p>Detailed help - Links to documentation pages.</p>
+   </td>
+ </tr>
+</table>
+
+<p><b><i>Note</i>:</b> From either of the control menus, selecting a language enables the corresponding language for the direct help buttons. For detailed help buttons, however, a language translation may be unavailable. In this case a warning will pop up.</p>
+
+         
+<a name="Security"></a>
+<h2>Security</h2>
+<p>The security of your server is one of our primary concerns and for that reason the default settings are oriented for production. We take this seriously, and ask that if you believe that a setting is not right for production, you send us an email or post it in the forum. We will look into it and see if it should be changed.</p>
+
+<p>In this light, before you can run the servers, several nag screens are presented. Initially you can click "no" to each of these. See the <a href="start_quick_start.html" title="Quick start quide">Quick start</a> guide for further details.</p>
+
+<p>In order to allow access to your server by other users (Internet or Intranet), you must manually enable the required functions. </p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Other Issues"></a>
+<h2>Other Issues</h2>
+
+
+<p>This section covers the basics a new user should be aware of.</p>
+
+<a name="VC9 Libraries"></a>
+<h3>VC9 Libraries</h3>
+
+<p>If you are using Windows XP as the OS platform for Coral, please be aware that you may need to install the Microsoft Visual C++ 2008 runtime 
+library. This can be found at <a href=http://www.microsoft.com/download/en/details.aspx?id=26368>Microsoft Visual C++ 2008 Service Pack 1 Redistributable Package ATL Security Update</a>.
+Be sure to select the package appropriate for your OS and hardware (x86, x64 or IA64).</p>
+<p>If you do not have the VC9 library, when you attempt to start the servers, you will get a runtime error popup.</p>
+
+<a name="MySQL Access"></a>
+<h3>MySQL Access</h3>
+
+<p>The MySQL server supports IPv4 and IPv6; localhost resolves to 127.0.0.1 and ::1 respectively.  
+You can bypass the resolver by using an IP address; for example, you can force an IPv4 address by replacing <b><i>localhost</i></b> with <i><b>127.0.0.1</i></b>. <br />
+During application installations you may be requested to enter a MySQL host name. Use <b>localhost</b> or IP address 127.0.0.1</p>
+
+<a name="Windows 7, Vista and UAC"></a>
+<h3>Windows 7, Vista and UAC</h3>
+
+The startup executables have been marked as requiring Administrator privilege.  When you start these programs, you must authorize this access in order to continue.
+
+<a name="Firewalls"></a>
+<h3>Firewalls</h3>
+
+<p>When you initially start the servers, your firewall will sense the programs' requests for IP access, and (typically) will require your authorization to change the security.  If you have a third-party firewall activated (Symantic, ZoneAlarm, etc.), be sure to set the port access as required, since it may not display a message.       
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Run as a standard program vs Run as a service"></a>
+<h2>Run as a standard program vs Run as a service</h2>
+
+<p>Functionally speaking there is no difference. All processes are standard programs. In the context of The Uniform Server "Run as a standard program" means nothing is installed to the registry. On the other hand, "Run as a service", by its very nature, writes service configuration data to the registry.</p>
+
+<p>All processes die when a PC is turned off. If The Uniform Server was started as a standard program, the servers will need to be restarted, but when running as a service, the servers are restarted automatically by the operating system.</p>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Where to next"></a>
+<h2>Where to next</h2>
+
+<p><a href="start_quick_start.html">Quick Start</a> - This page provides a quick start quide </p>
+<p><a href="start_quick_start_detail.html">Quick Start – More Detail</a> - The above page is expanded providing more detail.</p>
+
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 16-nov-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

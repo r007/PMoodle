@@ -1,0 +1,62 @@
+120605 13:55:00 [Note] Plugin 'FEDERATED' is disabled.
+120605 13:55:00 InnoDB: The InnoDB memory heap is disabled
+120605 13:55:00 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120605 13:55:00 InnoDB: Compressed tables use zlib 1.2.3
+120605 13:55:00 InnoDB: Initializing buffer pool, size = 16.0M
+120605 13:55:00 InnoDB: Completed initialization of buffer pool
+InnoDB: The first specified data file C:\Users\Ниндзя\Downloads\Программы\UniServer\usr\local\mysql\data\ibdata1 did not exist:
+InnoDB: a new database to be created!
+120605 13:55:00  InnoDB: Setting file C:\Users\Ниндзя\Downloads\Программы\UniServer\usr\local\mysql\data\ibdata1 size to 10 MB
+InnoDB: Database physically writes the file full: wait...
+120605 13:55:01  InnoDB: Log file C:\Users\Ниндзя\Downloads\Программы\UniServer\usr\local\mysql\data\ib_logfile0 did not exist: new to be created
+InnoDB: Setting log file C:\Users\Ниндзя\Downloads\Программы\UniServer\usr\local\mysql\data\ib_logfile0 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+120605 13:55:01  InnoDB: Log file C:\Users\Ниндзя\Downloads\Программы\UniServer\usr\local\mysql\data\ib_logfile1 did not exist: new to be created
+InnoDB: Setting log file C:\Users\Ниндзя\Downloads\Программы\UniServer\usr\local\mysql\data\ib_logfile1 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+InnoDB: Doublewrite buffer not found: creating new
+InnoDB: Doublewrite buffer created
+InnoDB: 127 rollback segment(s) active.
+InnoDB: Creating foreign key constraint system tables
+InnoDB: Foreign key constraint system tables created
+120605 13:55:02  InnoDB: Waiting for the background threads to start
+120605 13:55:03 InnoDB: 1.1.8 started; log sequence number 0
+120605 13:55:03 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+120605 13:55:03 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+120605 13:55:03 [Note] Server socket created on IP: '127.0.0.1'.
+120607 20:58:04 [Note] Plugin 'FEDERATED' is disabled.
+120607 20:58:04 InnoDB: The InnoDB memory heap is disabled
+120607 20:58:04 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120607 20:58:04 InnoDB: Compressed tables use zlib 1.2.3
+120607 20:58:04 InnoDB: Initializing buffer pool, size = 16.0M
+120607 20:58:04 InnoDB: Completed initialization of buffer pool
+120607 20:58:04 InnoDB: highest supported file format is Barracuda.
+120607 20:58:04  InnoDB: Waiting for the background threads to start
+120607 20:58:05 InnoDB: 1.1.8 started; log sequence number 1595675
+120607 20:58:05 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+120607 20:58:05 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+120607 20:58:05 [Note] Server socket created on IP: '127.0.0.1'.
+120607 20:58:53 [Note] Plugin 'FEDERATED' is disabled.
+120607 20:58:53 InnoDB: The InnoDB memory heap is disabled
+120607 20:58:53 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120607 20:58:53 InnoDB: Compressed tables use zlib 1.2.3
+120607 20:58:53 InnoDB: Initializing buffer pool, size = 16.0M
+120607 20:58:53 InnoDB: Completed initialization of buffer pool
+120607 20:58:53 InnoDB: highest supported file format is Barracuda.
+120607 20:58:53  InnoDB: Waiting for the background threads to start
+120607 20:58:54 InnoDB: 1.1.8 started; log sequence number 1595675
+120607 20:58:54 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+120607 20:58:54 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+120607 20:58:54 [Note] Server socket created on IP: '127.0.0.1'.
+120607 21:03:04 [Note] Plugin 'FEDERATED' is disabled.
+120607 21:03:04 InnoDB: The InnoDB memory heap is disabled
+120607 21:03:04 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120607 21:03:04 InnoDB: Compressed tables use zlib 1.2.3
+120607 21:03:04 InnoDB: Initializing buffer pool, size = 16.0M
+120607 21:03:04 InnoDB: Completed initialization of buffer pool
+120607 21:03:04 InnoDB: highest supported file format is Barracuda.
+120607 21:03:04  InnoDB: Waiting for the background threads to start
+120607 21:03:05 InnoDB: 1.1.8 started; log sequence number 1595675
+120607 21:03:05 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+120607 21:03:05 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+120607 21:03:05 [Note] Server socket created on IP: '127.0.0.1'.

@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Server Utilities</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+    
+<body id="p45">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/quick_start_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>Server Utilities</h1>
+
+<p>Both UniController menus (started by run as program or run as a service) have a menu section titled <b>Server Utilities</b> which provides useful features, such as single button access to PHPMyAdmin and server configuration.</p>
+
+<table>
+ <tr >
+  <td>
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#MySQL Console"        >B1 - MySQL Console</a></li>
+   <li><a href="#Server Status"        >B2 - Server Status</a></li>
+   <li><a href="#Apache Syntax Check"  >B3 - Apache Syntax Check</a></li>
+   <li><a href="#Server Configuration" >B4 - Server Configuration</a></li>
+   <li><a href="#Multi Servers"        >B5 - Multi Servers</a></li>
+   <li><a href="#Select Language"      >B6 - Select Language</a></li>
+   </ul>
+ </div>
+</div>
+  </td>
+
+<td>&nbsp;</td>
+
+<td>
+<div id="page_links_menu_shadow2" >
+ <div id="page_links_menu2" >
+  <ul>
+   <li><a href="#View www"             >B7 - View www</a></li>
+   <li><a href="#View ssl"             >B8 - View ssl</a></li>
+   <li><a href="#View phpInfo"         >B9 - View phpInfo</a></li>
+   <li><a href="#phpMyAdmin"           >B10 - phpMyAdmin</a></li>
+   <li><a href="#Server Documentation" >B11 - Server Documentation</a></li>
+   <li><a href="#About"                >B12 - About</a></li>
+   </ul>
+ </div>
+</div>
+</td>
+
+<td>&nbsp;</td>
+
+<td>
+     <img src="images/Coral_start_menu_options.gif" alt="Server Utilities" />
+</td>
+
+ </tr>
+</table>
+<p>The image on the right shows the available menu options. </p>
+<p>if a menu button is greyed out, it means that that option is currently unavailable. This can be for a number of reasons, such as that a related server (or servers) is not running.</p>
+
+<a name="MySQL Console"></a>
+<h2>B1 - MySQL Console</h2>
+<p>The <b>MySQL console</b> button opens a command window and changes the working directory to the MySQL binary folder. From here you can login to the MySQL server and open a MySQL prompt.</p>
+
+<p>Logging into the server requires a user name and password. The defaults are root and root (root user account). At the first opportunity you should have changed this password! If you have forgotten the root user password, it is retrievable in one of two ways.</p>
+
+<ul>
+  <li>Open file UniServer\coral_con\<b>config_tracker.ini</b> and look for section <b>[MYSQL]</b> line  <b>password =</b> . </li>
+  <li>Or from UniController: <b>Server Configuration</b> (B4) <b>&gt; MySQL &gt; Change Password</b>  - The password is displayed in the bottom left. Do not make any changes; just close the window.  </li>
+</ul>
+
+<p><b>Login to MySQL console</b></p>
+<ul>
+  <li>At the command prompt, enter: <b>mysql -uroot -proot</b>   </li>
+  <li>Quit MySQL monitor by typing: <b>exit</b>   </li>
+</ul>
+
+<p>For more details, see <a href="mysql_console.html" title="MySQL Console - Details of use"  >MySQL Console</a></p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Server Status"></a>
+<h2>B2 - Server Status</h2>
+
+<table>
+<tr >
+<td>
+<p>Clicking the <b>Server Status</b> menu button opens a pop-up that displays a list of current server parameters.</p>
+
+<p><b><i>General Status</i></b></p>
+<ul>
+  <li>Internet accessibility is indicated by the first two items. See <a href="start_quick_start_detail.html#How%20to%20check%20Server%20Internet%20Access">Quick start details</a> for more.</li>
+<li>Newer UniServer version. A server <b>version displayed</b> means that version is newer and available for download. <b>Current</b> displayed your server is up to date. <b>Unavailable</b> indicates, unable to contact the web-server or there was an error. </li>
+  <li>Cron is a built in scheduler. It runs pre-defined scripts periodically. By default, it is not running; you can either start it manually or install and run it as a service.</li>
+  <li>PHP configuration file (php.ini) shows as either Production or Development. The default is that it is a copy of Production.</li>
+</ul>
+
+<p><b><i>Apache Server & MySQL Server</i></b></p>
+
+<ul>
+  <li>Displays ports as set in the configuration file.</li>
+  <li>Executable file name changes (digit change) when you run multi-servers (default as shown).</li>
+  <li>Service name changes (digit change) when you run multi-servers (default as shown).</li>
+  <li>Displays server run status.</li>
+  <li>Displays server install status: either as program, service or free to install.</li>
+</ul>
+<p><b><i>Port Status</i></b></p>
+<ul>
+  <li>Displays the current port status.</li>
+  <li>Free - No processes are using this port.</li>
+  <li>In use by this server - The current server instance is using this port.</li>
+  <li>In use by another server  - Another process is using the port.</li>
+</ul>
+
+</td>
+<td>
+ <img src="images/Coral_start_server_status.gif" alt="Server Status" />
+</td>
+</tr>
+</table>
+
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Apache Syntax Check"></a>
+<h2>B3 - Apache Syntax Check</h2>
+
+<p>The <b>Apache Syntax Check</b> button initiates a syntax check on Apache's configuration files. The results are displayed in a pop-up message box. Any errors found require correction before the Apache server will start. The check is equivalent to the following manual procedure:</p>
+
+<ol>
+  <li>Start &gt; All Programs &gt; Accessories &gt; Command Prompt - Opens a command window </li>
+  <li>In the command window type: <b>cd C:\UniServer\usr\local\apache2\bin</b> </li>
+  <li>In the command window type: <b>httpd1.exe -t</b>  </li>
+</ol>
+<p><b>Note 1:</b> The path to the Apache binary in step 2 may be different depending on where you installed The Uniform Server <br />
+<b>Note 2:</b> If you previously ran multi-servers, the Apache binary httpd1.exe in step 3 will have a different digit. </p>
+
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Server Configuration"></a>
+<h2>B4 - Server Configuration</h2>
+
+<table>
+<tr valign="top">
+<td>
+<p>Clicking the <b>Server Configuration</b> button opens a pop-up displaying the server configuration menu.</p>
+
+<ul>
+  <li>Clicking each menu heading opens a sub-menu.</li>
+  <li>Each sub-menu runs either a configuration menu or opens the default text editor to display or to edit the configuration file.</li>
+</ul>
+
+<p><b><i>Note:</i></b><br />
+Configuration menu headings are reflected in documentation top left menu. Documentation menu also opens sub-menu items corresponding to configuration items.</p>
+
+</td>
+<td>
+ <img src="images/Coral_start_server_configuration.gif" alt="Server Configuration" />
+</td>
+</tr>
+</table>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Multi Servers"></a>
+<h2>B5 - Multi Servers</h2>
+
+<table>
+<tr valign="top">
+<td>
+<p><b>Multi-servers</b> enables you to run more than one copy of The Uniform Server (Apache and MySQL) on the same PC. To achieve this, the executables and services are renamed and the ports the servers run on are changed.</p>
+
+<p>Values under the <b>old</b> column are the current server values. After clicking “Run Move Servers” these values are overwritten in their corresponding configurations files with the values shown in the <b>new</b> column.</p> 
+
+<p>Changes are reflected in the tray icon, which is numbered 1 to 9. This number generally corresponds to the digit appended to executable and service names. For server sets past 9 the tray icon will not use a digit. </p> 
+
+<p><b>Note 1:</b> Each server requires its own separate directory. For example, Server set 1 and Server set 2 may have the following directories: C:\UniServer1 and C:\UniServer2.<br />  
+<b>Note 2:</b>Normally you run this menu on a newly extracted copy of The Uniform Server, change the directory name, and then add any applications using appropriate configuration parameters. </p>    
+
+<p>Thre is more information at <a href="start_multi_servers.html">Multi-Servers Detail</a>.</p>
+
+</td>
+
+<td>
+ <img src="images/Coral_start_multi_servers.gif" alt="Multi-Servers" />
+</td>
+
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Select Language"></a>
+<h2>B6 - Select Language</h2>
+
+<p>This drop down menu displays the currently supported languages.</p>
+
+<p>Language files are contained in folder UniServer\uni_con\lang. This folder is scanned for all language files (with the exception of the active language file, lang.vbs). The names are then listed in the dropdown menu. Selecting a language overwrites the lang.vbs file with the appropriate language. </p>
+
+<p>A language file name has a corresponding folder name in the documentation folder UniServer\docs. Any references to document pages are automatically switched to the appropriate language folder.</p>
+
+<p><b>Note:</b> You are welcome to submit a language file for inclusion in the next release. Use file UniServer\uni_con\lang\English.vbs as a template. </p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="View www"></a>
+<h2>B7 - View www</h2>
+
+<p>This is a user definable button. The default action is to open an html page in the default browser, which then redirects to an index page served by Apache.</p>
+<ul>
+ <li>UniServer\tmp\redirect.html - Location and name of redirect file dynamically updated.</li>
+ <li>url=http://localhost:80/index.php" - Redirected to this page on server</li>
+</ul>
+<p><a href="start_user_configuration.html#Change%20www%20page" >How to reassign the button and page</a></p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="View ssl"></a>
+<h2>B8 - View ssl</h2>
+
+<p>This is a user definable button. The default action is to open an html page in the default browser, which then redirects to an index page served by Apache.</p>
+<ul>
+ <li>UniServer\tmp\redirect.html - Location and name of redirect file dynamically updated.</li>
+ <li>url=https://localhost:443/index.php" - Redirected to this page on server</li>
+</ul>
+<p><a href="start_user_configuration.html#Change%20ssl%20page" >How to reassign the button and page</a></p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="View phpInfo"></a>
+<h2>B9 - View phpInfo</h2>
+
+<p>This menu button opens an html page in the default browser, which redirects to a page served by Apache.  This in turn runs the PHP function phpinfo() displaying a wealth of information relating to PHP. The page provides very detailed information, and a menu splits this into smaller sections, making it easier to read.</p>
+
+<ul>
+ <li>UniServer\tmp\redirect.html - Location and name of redirect file dynamically updated.</li>
+ <li>url=http://localhost:80/us_extra/phpinfo.php" - Redirected to this page on server</li>
+</ul>
+<p>PHP Info Menu</p>
+<ul>
+ <li>Configuration - Displays PHP Core configuration.</li>
+ <li>Enviroment - PHP current environment</li>
+ <li>Modules - List all modules</li>
+ <li>Extensions - Overview and details (includes functions) for all loaded extensions.</li>
+ <li>Variables - List all currently available PHP variables.</li>
+ <li>General - Intro information </li>
+</ul>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="phpMyAdmin"></a>
+<h2>B10 - phpMyAdmin</h2>
+
+<p>phpMyAdmin is a MySQL admininstration tool written in PHP. It allows you to perform tasks such as creating, modifying or deleting databases. You can execute SQL statements and manage users and their permissions.</p>
+
+<p>The <b>phpMyAdmin</b> menu button opens an html page in the default browser, which redirects to the phpMyAdmin index page served by Apache.</p>
+
+<ul>
+ <li>UniServer\tmp\redirect.html - Location and name of the dynamically updated redirect file.</li>
+ <li>url=http://localhost:80/us_phpmyadmin/index.php" - Target of redirection on the server</li>
+</ul>
+
+<p><b>phpMyAdmin Access</b><br />
+By default phpMyAdmin is accessible only to localhost. To allow access for external users (Intranet and Internet), refer to the <a href="general_access_phpmyadmin.html">phpMyAdmin Access</a> page for details.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Server Documentation"></a>
+<h2>B11 - Server Documentation</h2>
+
+<p>The <b>Server Documentation</b> button opens the index.html page from which the pages you are reading can be accessed. It follows the structure of the UniController menu. The top level describes commonly used functionality while sub-menus detail the next level of functionality and provide more detailed information.  It is self-contained, requiring no external references.
+This notwithstanding, there is quite a bit of additional information available at The Uniform Server's Wiki site <a name=http://wiki.uniformserver.com>wiki.uniformserver.com</a></p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="About"></a>
+<h2>B12 - About</h2>
+
+<p><b>About</b> provides an overview of "UniController", in particular why it was implemented in VbScript and HTAs. In addition to providing support for different languages, a user can easily tailor and modify the menu structure to meet their differing requirements.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 25-sep-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

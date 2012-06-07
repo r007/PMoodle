@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Quick Start Guide</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p20">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+<script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/quick_start_menu.js"></script>
+
+</td>
+
+<td id="td_spacer" >
+</td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+
+<h1>Quick Start Guide</h1>
+
+<p>The Uniform Server’s default configuration is set to allow only local access; users on your network or the Internet cannot access your server. This allows you to develop and view your website locally in a secure environment.</p>
+
+<p>This guide shows you how to run the servers as standard programs. When run as standard programs, nothing is installed to the Windows registry. The servers are therefore fully portable. </p> 
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Start the Servers" >Start the Servers</a></li>
+   <li><a href="#Set New MySQL root password" >Set New MySQL root password</a></li>
+   <li><a href="#Root folder www - Test" >Root folder www - Test</a></li>
+   <li><a href="#Add your Website or test pages" >Add your Website or test pages</a></li>
+   <li><a href="#View pages" >View pages</a></li>
+   <li><a href="#Stop the Servers" >Stop the Servers</a></li>
+   <li><a href="#Where to next" >Where to next</a></li>
+
+   </ul>
+ </div>
+</div>
+
+
+<h2><a name="Start the Servers"></a>Start the Servers</h2>
+<p>For reference, The Uniform Server's folder structure is shown on the right.</p>
+<table>
+<tr valign="top">
+<td >
+
+<table>
+<tr>
+<td>
+  <ul>
+    <li><b>A)</b> Navigate to the UniServer folder</li>
+    <li>Locate the file <b>Start_as_program.exe</b> </li>
+    <li>Double click. This starts the server menu</li>
+    <li>Click <b>No</b> to pop-ups<br /> (But see <a href="#Set New MySQL root password" >Set New MySQL root password</a> following).</li>
+  </ul>
+</td>
+
+<td>
+   <img src="images/Coral_start_start_as_program.gif" alt="Start as program" />
+</td>
+
+</tr>
+
+<tr >
+<td>
+  <ul>
+    <li><b>From Server Menu</b></li>
+    <li>Click <b>Start Both</b> button <b>(A3)</b>. Starts servers</li>
+    <li>If challenged by your firewall, allow access</li>
+    <li>A browser opens, displaying splash page.</li>
+    <li>Buttons/Indicators change state</li>
+  </ul>
+</td>
+
+<td>
+   <img src="images/Coral_start_standard_program_menu.gif" alt="Start servers as program" />
+</td>
+</tr>
+
+</table>
+
+</td>
+<td>
+<img src="images/Coral_start_folders.gif" alt="US Folder structure" />
+</td>
+</tr>
+
+</table>
+<p><b>Note:</b> There are various start-up conditions. If you receive a message <b><i>unable to connect</i></b> and are provided an option from your browser to try again, wait until all disk activity completes and click the "try again" button. Alternatively, wait a reasonable time to view the initial splash page, and enter the following into your browser: http://localhost/us_splash/index.php </p>
+<p>If you do not have the VC9 library, when you attempt to start the servers, you will get a runtime error popup.  See <a href="index.html#VC9 Libraries" >VC9 Libraries</a> to resolve this.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Set New MySQL root password"></a>
+<h2>Set New MySQL root password</h2>
+
+
+<table>
+<tr valign="top">
+ <td>
+<p>Although you can skip setting a new MySQL root password, it is highly<br /> 
+recommended that you set this password at the first opportunity.<br />
+Well! This is the first opportunity; click <b>Yes</b> at the pop-up.</p>
+
+<ul>
+ <li>The Set New MySQL Password menu opens (See image on right) </li>
+ <li><b>A)</b> Enter a new password</li>
+ <li><b>B)</b> Click the <b>Change Password</b> button.</li>
+</ul>
+
+  </td>
+  <td>
+<img src="images/Coral_mysql_change_root_password.gif" alt="Set root user MySQL password" />
+  </td>
+ </tr>
+
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Root folder www - Test"></a>
+<h2>Root folder www - Test</h2>
+
+<p>The root folder www contains a very simple web-site consisting of a single page named index.php. </p>
+
+<p>Clicking menu button <b>View www</b> displays this page confirming that Apache is serving pages from this folder.</p>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Add your Website or test pages"></a>
+<h2>Add your Website or test pages</h2>
+
+<p>Copy your Website or test pages into the root folder www.</p>
+
+<p>Before doing this you can delete the content of this root folder, with the exception of files <b>.htaccess</b> and <b>favicon.ico</b>.</p>
+
+<ul>
+<li><b>.htaccess</b> - This file is part of the server security and should <b>not</b> be deleted.</li>
+<li><b>favicon.ico</b> - This is a small image file displayed in a browser next to a Web page name. You can replace this with your own file. The name is important and should always be <b>favicon.ico</b></li>
+</ul>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="View pages"></a>
+<h2>View pages</h2>
+
+<p>The default server name is <b>localhost</b>. Use this to access pages as follows:</p>
+          
+<table>
+<tr valign="top">
+ <td>
+<h3>Index Pages</h3>
+<p>To access index pages (such as index.htm, index.html, index.php) type the following into your browser.</p>
+
+<p class="access">http://localhost/</p>
+
+ </td>
+
+ <td>
+<h3>Specific pages</h3>
+
+<p>Display a specific page by appending its name to the server name. For example, if your test page is named test.php, then type the following into your browser:</p>
+
+<p class="access">http://localhost/test.php</p>
+ </td>
+</tr>
+</table>
+
+<p>The Apache server automatically searches for index pages and displays the first one it finds. If it cannot find an index page, a directory listing is displayed instead.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<h2><a name="Stop the Servers"></a>Stop the Servers</h2>
+<p>Note: Server control buttons toggle between start and stop.</p>
+<table>
+<tr >
+<td>
+  <ul>
+    <li><b>From the Server Menu</b></li>
+    <li><b>A3)</b> Click <b>Stop Both</b> button. Stops servers</li>
+    <li>Buttons/Indicators change state</li>
+    <li>You can now close the server menu.</li>
+  </ul>
+</td>
+
+<td>
+   <img src="images/Coral_stop_standard_program_menu.gif" alt="Stop servers as program" />
+</td>
+
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+
+<a name="Where to next"></a>
+<h2>Where to go next</h2>
+
+<p>This quick guide shows how to start and stop the servers and display a test page. You can copy an entire web-site into the root folder www and it will then be served by Apache.</p>
+
+<p><a href="start_quick_start_detail.html">Quick Start - More Detail</a> - An expanded quick guide providing more detail</p>
+
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 08-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

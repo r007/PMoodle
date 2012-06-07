@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>General - Clear Logs</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p320">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/general_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>General - Clear Logs</h1>
+
+<p>Log files are an important resource when developing or debugging applications. 
+Over time, log files can become very large. Generally there is no need to keep these. 
+When running servers from a USB memory stick, freeing up space is essential. 
+This menu allows you to delete all or just certain log files.<p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Clear server log files" >Clear server log files</a></li>
+   <li><a href="#Files modified" >Files modified</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="Clear server log files"></a>
+<h2>Clear server log files</h2>
+
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; General &gt; Clear Server log files</p>
+
+<table>
+<tr>
+<td>
+<p><b><i>Clear a Single Log file</i></b></p>
+<ul>
+  <li>Select the log file to delete (Tick check box).  </li>
+  <li>Click <b>Clear Selected</b> button. </li>
+</ul>
+
+<p><b><i>Clear All log files</i></b></p>
+<ul>
+  <li>Click <b>Select All</b> button. </li>
+  <li>Click <b>Clear Selected</b> button. </li>
+</ul>
+<p><b>Note 1:</b> The current file size is displayed.<br />
+<b>Note 2:</b> Greyed out buttons are unavailable because either the file does not 
+exist or the associated servers are running.<br />
+<b>Note 3:</b> To clear Apache and MySQL logs, you must first stop the servers.
+</td>
+
+<td>
+   <img src="images/Coral_general_clear_logs.gif" alt="Clear Log Files" />
+</td>
+</tr>
+</table> 
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Files modified"></a>
+<h2>Files modified</h2>
+
+<p>Depending on what is selected, the following files are modified:</p>
+
+
+<ul>
+  <li>UniServer\usr\local\apache2\logs<b>error.log</b>  </li>
+  <li>UniServer\usr\local\apache2\logs\<b>access.log</b> </li>
+  <li>UniServer\usr\local\apache2\logs\<b>error_ssl.log</b>  </li>
+  <li>UniServer\usr\local\apache2\logs\<b>access_ssl.log</b> </li>
+  <li>UniServer\usr\local\mysql\data\<b>mysql.err</b> </li>
+  <li>UniServer\uni_con\cron\<b>cron.log</b> </li>
+  <li>UniServer\uni_con\dtdns_updater\<b>dtdns.log</b> </li>
+  <li>UniServer\uni_con\db_backup\<b>db_backup.log</b> </li>
+</ul>
+
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 08-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

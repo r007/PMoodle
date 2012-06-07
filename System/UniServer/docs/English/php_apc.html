@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>PHP APC</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p640">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/php_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>PHP - APC</h1>
+<p>The APC administrator interface is a PHP script named <b>apc.php</b> located in folder UniServer\home\us_extra. It can be accessed using UniController</p>
+
+<p class="access">Server Configuration &gt; PHP &gt; PHP Accelerators </p>
+<p>Alternatively, you can type the following into your browser: http://localhost/us_extra/apc.php</p>
+
+<p>This page covers the administrator interface menu bar and fine-tuning the cache.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#APC administrator menu" >APC administrator menu</a></li>
+   <li><a href="#Tuning the cache" >Tuning the cache</a></li>
+   <li><a href="#Additional Information" >Additional Information</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="APC administrator menu"></a>
+<h2>APC administrator menu</h2>
+
+<p>The APC administrator interface has the following menu options allowing you to view usage or inspect cached variables.</p>
+
+<img src="images/Coral_php_apc_con_2.gif" alt="APC bar menu" />
+
+<a name="Refresh Data"></a>
+<h3>Refresh Data</h3>
+
+<p>This captures the current cache status and updates the statistics.</p>
+
+<a name="View Host Stats"></a>
+<h3>View Host Stats</h3>
+
+<p>This option allows you to view the current cache status, general cache information, and usage and statistics on hits and misses. Information displayed covers both the system cache (which handles opcodes) and the user cache (which handles user variables). Various other statistics are displayed, such as the number of cache requests per second, hit rate and miss rate. </p>
+
+<p>This information allows you identify areas that are under-optimized. For example, the cache full count value indicates how often the cache has filled up. A high number indicates high cache churn. To reduce this, assign more memory to the cache. </p>
+
+<a name="System Cache Entries"></a>
+<h3>System Cache Entries</h3>
+
+<p>The <b>System Cache Entries</b> menu lists the PHP scripts that are currently being cached, together with their filename, size and number of hits.  APC automatically caches each script's opcodes.</p>
+
+<p><b>Note:</b> You can clear the opcode cache at any time with the <b>Clear cache</b> button top right of the page.</p>
+
+<a name="User Cache Entries"></a>
+<h3>User Cache Entries</h3>
+
+<p>The <b>User Cache Entries</b> menu lists user variables that have been stored in the cache, together with their identifier, size, and creation and modification times. You can select any of these entries to look inside the cache entry and see what it contains. User cache entries are not automatically created by APC. They are the result of specific instructions in a PHP script.</p>
+
+<p><b>Note:</b> You can clear the user cache at any time with the <b>Clear cache</b> button top right of the page.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Tuning the cache"></a>
+<h2>Tuning the cache</h2>
+
+<p>The Uniform Server default <b>apc.shm_size</b> memory size is <b>64M</b>, which should be adequate for most small applications.  
+The setting is application specific. It may require adjusting to avoid fragmentation and cache churning. 
+To determine if changes are required, open the APC control panel and check the following: </p>   
+
+<ul>
+  <li>Under <b>File Cache Information</b>, check Cache Full Count. If it's greater than zero, the cache is filling up and churning. This is because there is not enough memory allocated. Resolve this by increasing the memory allocation (apc.shm_size).  </li> 
+
+  <li>Under <b>Detailed Memory Usage and Fragmentation</b> the Fragmentation value should be 0% (this may occasionally vary). A non-zero value is probably due to cache churning. Solve this the same as above. </li>
+</ul>
+
+<p>Fragmentation occurs when cached items expire and new items fill their vacated memory space. The new item maybe slightly smaller than the old item and the remaining memory space may be too small for a new cache item. This unused memory space is referred to as fragmentation.  </p>  
+
+<p>To avoid fragmentation, ensure you run your servers during high traffic conditions and note the value for  <b>Memory Usage</b>. Double this value and add another Meg to it. Update the PHP configuration files with this new value for <b>apc.shm_size</b></p>
+
+
+<script language="javascript" src="common/top.js"></script>
+
+<a name="Additional Information"></a>
+<h2>Additional Information</h2>
+
+<p>Read more about configuration directives at <a href="http://in3.php.net/manual/en/apc.configuration.php">http://in3.php.net/manual/en/apc.configuration.php</a></p>
+
+<script language="javascript" src="common/top.js"></script>
+
+<!-- Checked 16-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

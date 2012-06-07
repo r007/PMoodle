@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>General phpMyAdmin Access</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p350">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/general_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>General - phpMyAdmin Access</h1>
+
+<p>phpMyAdmin is integrated into The Uniform Server's structure. It is used to administer the MySQL server locally using a browser, or (optionally) over the Internet. It performs various tasks such as creating, modifying or deleting databases, tables, fields or rows; executing SQL statements; or managing database users and permissions. To run phpMyAdmin, simply click the phpMyAdmin button.</p>
+
+<p>Because of the powerful capabilities, phpMyAdmin must be properly secured before allowing external access. The Uniform Server attempts to do this as transparently as possible. By default, access is restricted to localhost only, while Intranet and Internet access is provided by menu options explained below.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Features" >Features</a></li>
+   <li><a href="#Root phpMyAdmin - Change access type" >Root phpMyAdmin - Change access type</a></li>
+   <li><a href="#Background information" >Background information</a></li>
+   </ul>
+ </div>
+</div>
+
+<h2><a name="Features"></a> Features</h2>
+<ul>
+ <li>Local access - Requires no name/password. These are provided transparently (as user root)</li>
+ <li>Intranet + password - Requires name and password as defined for restricted MySQL user (all users)</li>
+ <li>Internet + password + ssl -  Requires name and password as defined for restricted MySQL user (all users). All transactions performed over a secure encrypted connection</li>
+ <li>Disable Internet selection if server certificate is not generated.</li>
+ <li>Automatically tracks SSL port used. User may change main server configuration.</li>
+ <li>Automatically tracks server name. User may change main server configuration.</li>
+</ul>
+
+<h2><a name="Root phpMyAdmin - Change access type"></a>Root phpMyAdmin - Change access type</h2>
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; General &gt; Root phpMyAdmin - Change access type</p>
+
+<table>
+<tr >
+<td>
+
+<ul>
+<li>A) <b>Local</b> access is the default and prevents both Intranet and Internet users access to phpMyAdmin. Only localhost may connect. It allows the root MySQL administrator direct access without the need to enter a name or password. For security reasons you must change the default MySQL password. This prevents accidental cross-site scripting.</li>
+
+<li>B) <b>Intranet + passwords</b>. Anyone on your Intranet is allowed access to phpMyAdmin, however to gain access to the MySQL server requires a name and password. A user name and password are stored on the MySQL server for each restricted user created. A restricted user is one that is assigned access only to specific databases, and also has limited privileges for them.</li>
+
+<li>C) <b>Internet + passwords +ssl</b> This is similar to Intranet, except that all transactions are performed over a secure encrypted connection using ssl. If you have not installed or created a server certificate, clicking this radio button will produce a warning and the access selection will not change. This security feature forces you to use ssl and prevents sending names and passwords over the Internet in plain text.</li>
+
+<li>D) phpMyAdmin root folder is protected by an <b>.htaccess</b> file. This menu button opens this file in the default text editor allowing you to view or edit the file.</li>
+
+<li>E) phpMyAdmin is configured using the user configuration file <b>config.inc.php</b>. This menu button opens this file in the default text editor allowing you to view or edit the file.</li>
+
+<li>F) This menu button opens phpMyAdmin in the default browser. A greyed out button indicates that Apache is not running and its function are unavailable.</li>
+
+</ul>
+</td>
+
+<td>
+   <img src="images/Coral_php_phpmyadmin.gif" alt="Change phpMyAdmin access status" />
+</td>
+<tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<h2><a name="Background information"></a> Background information</h2>
+<p>Two files govern phpMyAdmin access and ultimately MySQL server access:<br />UniServer\home\phpMyAdmin\<b>.htaccess </b> - Apache configuration<br />
+UniServer\home\phpMyAdmin\<b>config.inc.php</b> - phpMyAdmin user configuration</p>
+
+<p>You can modify the above files to suite your own requirements, but be sure you read the following:</p>
+
+<h3>File .htaccess </h3>
+<p>When selecting a particular access type, certain directives are overwritten as follows:</p>
+
+<table >
+
+<tr valign="top">
+<td>
+<p><b>Local access</b></p>
+<ul>
+<li>Access is restricted to locahost (127.0.0.1) IPv4</li>
+<li>Access is restricted to locahost (::1) IPv6</li>
+<li>Force SSL disabled (# disables lines)</li>
+</ul>
+</td>
+
+<td>
+<pre>
+Order Deny,Allow
+Deny from all
+Allow from 127.0.0.1
+Allow from ::1
+
+#RewriteCond %{SERVER_PORT} !=443
+#RewriteRule ^ https://localhost:443%{REQUEST_URI} [NS,R,L]
+</pre>
+</td>
+</tr>
+
+<tr valign="top">
+<td>
+<p><b>Intranet + passwords</b></p>
+<ul>
+<li>Access is restricted to locahost (127.0.0.1) and Intranet (192.168) IPv4</li>
+<li>Access is restricted to locahost (::1) IPv6</li>
+<li>Force SSL disabled (# disables lines)</li>
+</ul>
+</td>
+
+<td>
+<pre>
+Order Deny,Allow
+Deny from all
+Allow from 127.0.0.1 192.168
+Allow from ::1
+
+#RewriteCond %{SERVER_PORT} !=443
+#RewriteRule ^ https://localhost:443%{REQUEST_URI} [NS,R,L]
+</pre>
+</td>
+</tr>
+
+<tr valign="top">
+<td>
+<p><b>Intranet + passwords +ssl</b></p>
+<ul>
+<li>Access restriction removed (# disables lines) allows everyone access</li>
+<li>Force SSL enabled (removed # enables lines)</li>
+</ul>
+</td>
+
+<td>
+<pre>
+#Order Deny,Allow
+#Deny from all
+#Allow from 127.0.0.1
+#Allow from ::1
+
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^ https://localhost:443%{REQUEST_URI} [NS,R,L]
+</pre>
+</td>
+</tr>
+
+</table>
+
+
+<h3>File config.inc.php</h3>
+<p>When selecting a particular access type, certain directives are overwritten as follows:</p>
+
+<table>
+
+<tr valign="top">
+<td>
+<p><b>Local access</b><br /> 
+Automatically use root user password, allowing transparent access.</p>
+</td>
+
+<td>
+<pre>
+/* Authentication section */
+$cfg['Servers'][$i]['auth_type']       = 'config';  // Authentication method (config, http or cookie based)?
+$cfg['Servers'][$i]['user']            = 'root';    // MySQL user
+$cfg['Servers'][$i]['password']        = $password; // MySQL password (only needed with 'config' auth_type)
+$cfg['Servers'][$i]['AllowNoPassword'] = false;     // Must use password
+</pre>
+</td>
+</tr>
+
+<tr valign="top">
+<td>
+<p><b>Intranet + passwords</b> and <br />
+<b>Internet + passwords +ssl</b>  <br />
+Force all users to enter a name and password.</p>
+</td>
+
+<td>
+<pre>
+/* Authentication section */
+$cfg['Servers'][$i]['auth_type']       = 'cookie';  // Authentication method (config, http or cookie based)?
+$cfg['Servers'][$i]['user']            = '';        // MySQL user
+$cfg['Servers'][$i]['password']        = '';        // MySQL password (only needed with 'config' auth_type)
+$cfg['Servers'][$i]['AllowNoPassword'] = false;     // Must use password
+</pre>
+</td>
+</tr>
+
+</table>
+
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 08-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+This is for Moodle Administrators or Technical Person responsible for Moodle Course Distribution for more information see HELP on PStart menu. 
+
+
+Contents:
+Restoring and moving courses
+Plug-in modules
+mode_us.bat and mode_cd.bat issues in restoring and moving courses
+
+
+
+
+
+1. There are basically only two ways to create courses in Moodle. One: you run a restore from a backup 
+of a preexisting course which is a zip file. Two: you just create the course inside of Moodle with the 
+tools Moodle provides for course creation. This presupposes that you know how to backup a course in Moodle. If you want to move courses around in Moodle you must backup the same. This is best done from inside the specific course. When you launch the backup it will give you the opportunity to do a very granular backup. This will allow you to backup only the specific part or parts of the course you want to transfer or the entire course including student created content.  
+
+Any course which has been created with Moodle after version 1.6 can be restored in this 
+moodle version 1.83. Moodle versions before 1.6 were not unicode so these courses will
+not work. You must first upgrade the Pre 1.6 Moodle to later version 1.6 or higher, then backup the course 
+transport it to the 1.83 CD Version. General versioning rules apply here. For instance it is not good protocol to attempt the restore of a 1.9 version course to 1.83. Your riding on bleeding edge here.  
+
+When a course is backed up they are stored in the /moodledata folder. If you are running from the CD ROM this
+file will be stored in c:/uscd35temp/moodledata. If you are running in mode_us.bat parameters it will be in
+/udrive/moodledata. There are two ways to find these courses that are backed up. 
+One: do a search on /moodledata for the extension *.zip. or two: use restore or backup wizard from the same place
+where the course was first backed up it will show you all the files that have been backed up from this
+particular course. When you find the zip file from inside of the Moodle interface if you just click on the zip file itself it will begin a download to your computer. If you know the *.zip file location on your local computer you can browse to that location from the restore wizard, upload the file from inside the "new" moodle and restore the course. The *.zip files must be restored inside the Moodle interface because of the database piece. Because they are *.zip files they can be moved around any way you want but you cannot just unzip the file in /moodledata and expect it to work you must find it with the restore interface and then follow the restore wizard.  
+
+
+*** Important note about Restores !!! Right now if you restore a moodle backup file that is over 2 mb it could be as long as 10-15 minutes !!! If your restoring it while running off of CD ROM go get yourself lunch.*** 
+
+
+*** Important note about Plug-in modules***  Some of you might not know about Moodle plug-in modules. There are approximately 260 plug-in modules that extend the capability of Moodle. They don't come with the general install. They are added on after the general install of Moodle. This means that you could backup a course that has a specific module not present in your restore target Moodle. Generally this does not cause a problem. If the Moodle site it is restored to doesn't have the module during the restore process when it displays informational text you will see something like [[module name]]. If this functionality is critical to the course then you must install the particular module. To discover what modules are present go to \udrive\www\moodle\mod and do a comparison between the module directories or from the moodle interface go to "Site Administration", Modules and compare Activities and Blocks. Generally modules are very easy to install usually you just unzip the module in the /mod directory which will create the specific module directory and follow the module readme.txt which tells you what to do. Afterward you logout and then log back in as administrator go to "Site Administration", Modules and during this process Moodle will recognize the module and modify the database which you will see the exact modifications during this process. You continue into Modules, Activities and Blocks and make sure the module is active.  
+
+
+***The importance of the mode_us.bat and mode_cd.bat when transferring courses***. Yes you can restore a course in mode_cd.bat. Because when you're in this mode remember you have created c:/uscd35temp/moodledata which when you restore a course is where it will be written. Addtionally there is a writeable copy of the moodle database residing c:/uscd35temp/mysql/data/moodle. So yes you can restore a course in this mode. But there is one very important thing you should know. If you then switch to mode_us.bat and attempt to burn a CD with this particular course on it you will find that it fails to capture the the new course or any other changes. So to make changes or to capture restored courses you must be in mode_us.bat FIRST !!!. Then you switch back to mode_cd.bat just before you burn the CD. If you run "Mobile Moodle Install" from the menu then you will automatically be in mode_us.bat whether you install to the hard disk or to USB stick. 
+
+
+
+
+
+

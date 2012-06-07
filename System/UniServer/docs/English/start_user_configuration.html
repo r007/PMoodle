@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>User Configuration</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p27">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+ <script language="javascript" src="common/quick_start_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>User Configuration</h1>
+
+<p>The Uniform Server Coral uses a configuration file which is split into two sections: user defined configuration and server tracking. The server tracking section is automatically updated by UniController and should not be changed by a user. It tracks items such as the installation path and the current Apache and MySQL running status.</p>
+
+<p>This page covers the user defined configuration section. You can disable or enable the start up splash page and optionally set a new page to display. During start up, a user is nagged to change server security items such as the MySQL password. Nagging is enabled or disabled in this section. Two user buttons, www and ssl, have been pre-configured to display the root folder index pages; these can be re-configured to display specific pages. In addition each button text is changeable by setting a language file constant.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Splash page" >Splash page</a></li>
+   <li><a href="#Enable/Disable splash page" >&nbsp;&nbsp;Enable/Disable splash page</a></li>
+   <li><a href="#Change Splash Page" >&nbsp;&nbsp;Change Splash Page</a></li>
+   <li><a href="#User buttons www and ssl" >User buttons www and ssl</a></li>
+   <li><a href="#Change www page" >&nbsp;&nbsp;Change www page</a></li>
+   <li><a href="#Change ssl page" >&nbsp;&nbsp;Change ssl page</a></li>
+   <li><a href="#Change button names (www or ssl)" >&nbsp;&nbsp;Change button names (www or ssl)</a></li>
+   <li><a href="#Start-up - Nagging" >Start-up - Nagging</a></li>
+   <li><a href="#Enable/Disable - Nagging" >&nbsp;&nbsp;Enable/Disable - Nagging</a></li>
+   <li><a href="#Browser Selection" >Browser Selection</a></li>
+   <li><a href="#Installing portable Firefox" >&nbsp;&nbsp;Installing portable Firefox</a></li>
+   <li><a href="#Installing portable Opera" >&nbsp;&nbsp;Installing portable Opera</a></li>
+   <li><a href="#Installing portable GoogleChrome" >&nbsp;&nbsp;Installing portable GoogleChrome</a></li>
+   <li><a href="#Enable in configuration file" >&nbsp;&nbsp;Enable in configuration file</a></li>
+   <li><a href="#Where to next" >Where to next</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="Splash page"></a>
+<h2>Splash Page</h2>
+
+<h3>Background</h3>
+<p>At start-up, the server displays a splash page confirming that it is working. It is only a single page mini web-site with associated image and css folders. This mini-site is in its own folder (UniServer\home\us_splash) and mapped as an alias. The folder contains an .htaccess file limiting access only to localhost.</p>
+
+<p>This mini web-site may be changed to fit your own requirements. Alternatively it can be disabled in the control configuration file as explained below. After that, it can be deleted, and the alias section removed from the configuration file.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Enable/Disable splash page"></a>
+<h3>Enable/Disable splash page</h3>
+
+<p>A single line in the control configuration file enables or disables the splash page at start-up. Edit file:</p>
+<p class="access">UniServer\coral_con\config_menu\<b>config_tracker.ini</b></p>
+<p>Locate this section and change line <b>start=true</b> as appropriate :</p>
+<pre>
+[REDIRECT]
+;Redirect allows you to specify a page to display either
+;at startup or when www or ssl buttons pressed.
+;Folders can be an Alias eg us_splash. Root folder assumed 
+;If no path or file specified root is assumed first index
+;page is displayed. No index page found the root folder
+;content is displayed.
+
+; Display page at start up. true display page false no page
+start=true
+</pre>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Change Splash Page"></a>
+<h3>Change Splash Page</h3>
+
+<p>After enabling the start-up splash page, you can set the specific page to be displayed. Locate this section in the configuration file and change the line <b>display_page=us_splash/index.php</b> accordingly:</p>
+
+<pre>
+; Page to display from folder alias us_splash 
+; Default index.php
+display_page=us_splash/index.php
+</pre>
+
+<p> For example, if you want to display the index.php page in root folder www change line to: <b>display_page=index.php</b></p>
+
+<p><b>Note 1:</b> The default page displayed uses redirection and is constructed with the following format: <b>http://localhost:80/<i>display_page</i></b> (display_page is the variable containing path/file to display.)</p>
+
+<p><b>Note 2:</b> This part of the URL <b>http://localhost:80/</b> is automatically adjusted to match the server port configuration. </p>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="User buttons www and ssl"></a>
+<h2>User buttons www and ssl</h2>
+
+
+<table>
+<tr valign="top">
+<td>
+<p>Both server menus, initiated by <i>start as program</i> and <i>start as service</i>, contain two user configurable buttons:</p>
+<ul>
+<li><b>B7)</b> View www </li>
+<li><b>B8)</b> View ssl</li>
+</ul>
+<p>These have been pre-configured to display the root folder index pages. Their corresponding button text is defined in the language file.</p>
+</td>
+
+<td>
+   <img src="images/Coral_start_menu_options.gif" alt="Menu options">
+</td>
+</tr><tr>
+</tr></table>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Change www page"></a>
+<h3>Change www page</h3>
+
+<p>A single line in the control configuration file sets the page to be displayed. Edit file:</p>
+<p class="access">UniServer\coral_con\config_menu\<b>config_tracker.ini</b></p>
+
+<p>Locate this section in the configuration file and change line "www=" accordingly:</p>
+
+<pre>
+; Page to display from folder www when www button clicked
+; Default any index page. Note: http:// is used
+www=
+</pre>
+
+<p> For example, if you want to display the index.php page in root folder www change line to: www=<b>index.php</b></p>
+
+<p><b>Note 1:</b> The page displayed uses redirection and is constructed with the following format: <b>http://localhost:80/<i>www</i></b> (www is the variable containing path/file to display.)</p>
+
+<p><b>Note 2:</b> This part of the URL <b>http://localhost:80/</b> is automatically adjusted to match server configuration. </p>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Change ssl page"></a>
+<h3>Change ssl page</h3>
+
+<p>A single line in the control configuration file sets the page to be displayed. Edit file:</p>
+<p class="access">UniServer\coral_con\config_menu\<b>config_tracker.ini</b></p>
+
+<p>Locate this section in the configuration file and change line "ssl=index.php" accordingly:</p>
+
+<pre>
+; Page to display from folder ssl when ssl button clicked
+; Default index.php Note: https:// is used
+ssl=index.php
+</pre>
+
+<p> For example, if you want to display the fred.html page in root folder ssl change line to: ssl=<b>fred.html</b></p>
+
+<p><b>Note 1:</b> The page displayed uses redirection and is constructed with the following format: <b>https://localhost:443/<i>ssl</i></b> (sll is the variable containing path/file to display.)</p>
+
+<p><b>Note 2:</b> This part of the URL <b>https://localhost:443/</b> is automatically adjusted to match server configuration. </p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Change button names (www or ssl)"></a>
+<h3>Change button names (www or ssl)</h3>
+
+
+<p>Button names are defined in the language configuration files.  The actual file used is lang.vbs, but this is just a copy of the active language.
+When a language is selected with the Select Language button, that language file is copied to lang.vbs and replaces it.</p> 
+<p>Currently there are two language files; other languages will be added as translations are made available.</p> 
+
+<p>For English, edit: </p>
+
+<p class="access">UniServer\coral_con\lang\<b>English.vbs</b>  </p>
+
+<p>Locate this section in the configuration file and change lines accordingly:</p>
+
+<pre>
+'******************************************************************************
+' User Configuration
+'******************************************************************************
+
+Const lang_view_www   = "View www"   'User button text
+Const lang_view_ssl   = "View ssl"   'User button text
+
+'-------------------------------------------------- End User Configuration ---
+</pre>
+
+<p> For example, if you want to change the displayed text "View www" to "My Index" and change "View ssl" to "Information", then the block becomes:</p>
+
+<pre>
+'******************************************************************************
+' User Configuration
+'******************************************************************************
+
+Const lang_view_www   = "My Index"     'User button text
+Const lang_view_ssl   = "Information"  'User button text
+
+'-------------------------------------------------- End User Configuration ---
+</pre>
+
+<p><b>Note:</b><br />
+To activate your change, you can either duplicate the change to lang.vbs or use the Select Language button, which will do the copy for you.  
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Start-up - Nagging"></a>
+<h2>Start-up - Nagging</h2>
+
+<p>I personally hate the concept of nagging users, hence the ability to turn it off when first encountered. That said, it is essential to set a new MySQL server root password, and nagging stresses the security issue.</p>
+
+<a name="Enable/Disable - Nagging"></a>
+<h3>Enable/Disable - Nagging</h3>
+
+<p>If you accidentally turn off nagging, it is easy to restore by editing the control configuration file.</p>
+<p class="access">UniServer\coral_con\config_menu\<b>config_tracker.ini</b></p>
+<p>Search for this section:</p>
+<pre>
+[NAG]
+; Enables nagging to get user to change MYSQL password
+; Default true - nag user
+nag_user=false
+</pre>
+
+<p>Change the section as shown to reenable nagging:</p>
+<pre>
+[NAG]
+; Enables nagging to get user to change MYSQL password
+; Default true - nag user
+nag_user=true
+</pre>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Browser Selection"></a>
+<h2>Browser Selection</h2>
+<p>The Uniform Server supports three portable browsers Firefox, Opera and GoogleChrome. These require downloading and extracting to the plugins folder as follows:</p>
+
+<a name="Installing portable Firefox"></a>
+<h3>Installing portable Firefox</h3>
+
+<ul>
+<li>Download portable Firefox using this link:  <a href=http://portableapps.com/apps/internet/firefox_portable> currently FirefoxPortable_8.0.1_English.paf.exe</a>. Save this file to folder UniServer\plugins</li>
+<li>Double click on the file and a menu opens. For the destination folder, browse to UniServer\plugins</li>
+<li>After extracting, check that you have this path to the executable: UniServer\plugins\FirefoxPortable\FirefoxPortable.exe</li>
+</ul>
+
+<a name="Installing portable Opera"></a>
+<h3>Installing portable Opera</h3>
+
+<ul>
+<li>Download portable Opera using this link: <a href=http://portableapps.com/apps/internet/opera_portable> currently OperaPortable_11.60.paf.exe</a>. Save this file to folder UniServer\plugins</li>
+<li>Double click on the file and a menu opens. For the destination folder, browse to UniServer\plugins</li>
+<li>After extracting, check you have this path to the executable: UniServer\plugins\OperaPortable\OperaPortable.exe</li>
+</ul>
+
+<a name="Installing portable GoogleChrome"></a>
+<h3>Installing portable GoogleChrome</h3>
+
+<ul>
+<li>Download portable GoogleChrome using this link: <a href=http://portableapps.com/apps/internet/opera_portable> currently GoogleChromePortable_16.0.912.63_online.paf.exe</a>. Save this file to folder UniServer\plugins</li>
+<li>Double click on the file and a menu opens. For the destination folder, browse to UniServer\plugins</li>
+<li>After extracting, check you have this path to the executable: UniServer\plugins\GoogleChromePortable\GoogleChromePortable.exe</li>
+</ul>
+
+<a name="Enable in configuration file"></a>
+<h3>Enable in configuration file</h3>
+<p>After extraction you need to enable the corresponding browser in the configuration file <b>config_tracker.ini</b> as follows:</p>
+<table>
+<tr>
+<td>
+<ul>
+<li>Edit file: UniServer\uni_con\config_tracker.ini and locate the [BROWSER] section</li>
+<li>There are four entries as shown on the right.</li>
+</ul>
+
+<p>The default browser is already enabled. This may conflict with the portable version. If that's the case,<br /> 
+be sure to set DefaultBrowser to false. Then set the browser you want to use to true.</p>
+
+<p>Note: All browsers can be enabled. This allows testing your pages in various browsers all at the same time.</p>
+
+
+</td>
+<td>
+<pre>
+[BROWSER]
+; Enable browser
+; true - enabled
+; false - disabled
+
+DefaultBrowser=true
+PortableFireFox=false
+PortableOpera=false
+PortableGoogleChrome=false
+</pre>
+</td>
+</tr>
+</table>
+
+
+<a name="Where to next"></a>
+<h2>Where to next</h2>
+
+<p><a href="mysql_change_password.html">MySQL Change Restore password</a> - Set new MySQL root password</p>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 22-jan-2012 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

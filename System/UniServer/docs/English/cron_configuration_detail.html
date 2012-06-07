@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>CRON - Configuration detail</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p810">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/cron_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>CRON - Configuration detail</h1>
+
+<p>This page adds more detail to the basic <a href="cron_intro.html">Cron page</a>. It covers aditional user configuration and paths to appropriate files.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Configuration file" >Configuration file</a></li>
+   <li><a href="#Configuration block format" >&nbsp;&nbsp;Configuration block format</a></li>
+   <li><a href="#Cron Controller" >Cron Controller</a></li>
+   <li><a href="#Run as a program" >&nbsp;&nbsp;Run as a program</a></li>
+   <li><a href="#Run as a service" >&nbsp;&nbsp;Run as a service </a></li>
+   <li><a href="#Time resolution" >Time resolution</a></li>
+   <li><a href="#User Cron script-configuration" >User Cron script-configuration</a></li>
+   <li><a href="#Logging" >Logging</a></li>
+   <li><a href="#Test Scripts" >Test Scripts</a></li>
+
+   <li><a href="#Where to next" >Where to next</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="User Cron script-configuration"></a>
+<h2>User Cron script-configuration</h2>
+
+<p>Generally there is no need to edit the Cron script! However there is a user configuration section where you can disable logging or change the basic tick rate.</p>
+<p>Open file: UniServer\uni_con\cron\<b>run_cron.vbs</b><br />Locate this section:</p>
+<pre>
+'*** User configuration *******************************************************
+
+ logging   = true           'true = Enable logging false = disable logging
+ cron_time = 60             'Set cron time (tick) in seconds. Default 60=1 Min
+ cron_loop = cron_time      'Set equal allows immediate first time run
+
+'*************************************************** End User configuration ***
+</pre>
+
+<p>Changing cron_time also changes the resolution time. Sixty seconds is a good compromise and ideal for testing scripts and running a production server.</p>       
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Test Scripts"></a>
+<h2>Test Scripts</h2>
+
+<p>Three test files have been included and pre-configured in Cron’s configuration file. Each is a simple command-line script creating a text file when run.</p>
+<ul>
+  <li>UniServer\uni_con\cron\cron_test\<b>test_cron_1.bat</b>  File created: UniServer\uni_con\cron\cron_test\<b>test_cron_1_result.txt</b></li>
+  <li>UniServer\uni_con\cron\cron_test\<b>test_cron_2.vbs</b>  File created: UniServer\uni_con\cron\cron_test\<b>test_cron_2_result.txt</b></li>
+  <li>UniServer\uni_con\cron\cron_test\<b>test_cron_3.php</b>  File created: UniServer\uni_con\cron\cron_test\<b>test_cron_3_result.txt</b></li>
+</ul>
+
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Where to next"></a>
+<h2>Where to next</h2>
+
+<p><a href="cron_portable_design.html">CRON - Portable Design</a></p>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 12-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

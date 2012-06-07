@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>MAF LT Moodle CD</title>
+<link href="menu.css" type="text/css" rel="stylesheet"></head>
+<body scroll="auto" topmargin="0" leftmargin="0" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+<!--#include file="header.inc" --><table style="text-align: left; margin-left: auto; margin-right: auto; width: 760px;" border="0" cellpadding="0" cellspacing="1"> <tbody><tr><td valign="top" width="760"><h2 style="text-align: left;">FAQ<span style="font-weight: bold;"></span></h2><span style="font-weight: bold;"></span>1. What is the
+password for Moodle?<br>A) The password for moodle is <span style="font-style: italic;">password<br></span><br>2.
+Why are there two modes? &nbsp;What do the mode_us.bat and
+mode_cd.bat files do?<br>A)
+These files change the configuration and settings files to enable the
+system to run either from writable media or read only media.
+&nbsp;The
+actual work is done by \udrive\plugins\ucsd2 cd_mode.bat and
+us_mode.bat. &nbsp;<br>One
+of the important things that happens is that a critical line in the
+FirefoxPortable.ini file in the FirefoxPortable folder is changed.<br><span style="font-style: italic;">RunLocally=true in cd mode</span><br style="font-style: italic;"><span style="font-style: italic;">RunLocally=false in us mode</span><br>Another
+thing that happens is that the moodle config.php file is changed.
+&nbsp;After a new moodle install the default config.php file must
+be
+copied from udrive\www\moodle\config.php to
+udrive\plugins\ucsd2\config.php<br>The
+actual work of changing the configuration files is done by a couple of
+perl scripts in the \udrive\plugins\uscd2\ucsd folder. &nbsp;Read
+docs (in PDF)
+on how they work <a href="../TechDocs/UNIFORM%20Server%20from%20CD1.pdf">here</a>
+<br><br>3.) How can I tell which mode I am in?<br>A)
+The Top item in the menu
+tells you which mode you are in. &nbsp;If you just want to know
+which mode
+you are in without starting the moodle server you can double click on
+PStart.exe and the menu will appear. &nbsp;You can then close the
+menu with
+&lt;File/Exit&gt; and invoke the bat file to change modes if
+you wish.<br>&nbsp;<br>4.) How can I change the menu?<br>A)
+The menu can be changed by clicking the edit tab on the menu.
+&nbsp;To
+save the menu setting you need to exit from the menu. &nbsp;After
+exiting you must save the PStart.xml file to
+\udrive\plugins\ucsd2\ucsd. &nbsp;If you are in the CD mode save
+the
+PStart.xml file as cd_PStart.xml. If you are in User mode save the
+PStart.xml file as us_PStart.xml. &nbsp;The mode switching bat
+files
+will load the proper xml file and save it back to PStart.xml in the
+root folder. &nbsp;If you want to change the menu file for a
+language
+other than English you may do so from the menu itself. Click on edit and type your language into the text area. &nbsp;You
+can
+type in your language. &nbsp;You will have to save the files as
+described before. &nbsp;Do not try to edit the xml file itself.
+&nbsp;That won't work!<br><br>5.) How can I change the
+language the opening page uses?<br>A)
+Prototype pages have been made for you in \udrive\www\EN(English - the
+default), \udrive\www\RU (Russian), \udrive\www\FR (French) and
+\udrive\www\ES (Spanish) &nbsp;You may edit these pages to contain
+whatever you like, or just translate what is there. &nbsp;To have
+the
+CD come up in the selected language edit the Server_Start.bat file.
+&nbsp;The line you need to edit is shown below. &nbsp;Notice
+the bold
+part <span style="font-weight: bold;">EN</span>.
+&nbsp;Just change that to RU or FR or ES and that language page
+will start.<br><br><span style="font-style: italic;">start
+%Disk%:\FireFoxPortable\FireFoxPortable.exe http://localhost:4001/</span><span style="font-weight: bold; font-style: italic;">EN/</span><span style="font-style: italic;">index.shtml</span><br><br>After
+editing the Server_Start.bat file test to see if it works as expected.
+&nbsp;If it does you must perform the same edit
+in&nbsp;\udrive\plugins\ucsd2\ucsd\new_Server_Start.bat and
+\udrive\plugins\ucsd2\ucsd\old_Server_Start.bat. &nbsp;These are
+the
+files that are copied to Server_Stat.bat in root
+when&nbsp;mode_us.bat
+or mode_cd.bat are run. &nbsp;You must edit both of the
+Server_Start files.<br><br>6.) Can I do moodle course
+development using this CD?<br>A)
+Yes.... but... You must install the
+system to your hard&nbsp;disk. &nbsp;You can use
+the install icon on the CD mode menu to do this easily. &nbsp;The
+system will be in User mode after the install. &nbsp;If you want to
+use the extra software from the CD you must also copy the \Extra folder
+to C:\UniServer\. &nbsp;If you want to access the english language
+moodle
+docs you also need to copy moodledocs_en to C:\UniServer.
+&nbsp;Assuming you have installed into the default C:\UniServer
+folder
+on your hard disk you will then have C:\UniServer\Extra and
+C:\UniServer\moodledocs_en folders.<br><br>7.) How can I
+make a new CD after I have added my own course?<br>A) There is a
+detailed page describing the process... <a href="Make_Moodle_CD.shtml">Here</a><br><br>8.)
+What happens if the W: drive is being used?<br>A) There is a
+script file named <span style="font-style: italic;">Disk Start.vbs</span>&nbsp; to change
+it to some other drive letter. <br><br>9. What happens
+if there is
+already a folder named c:\uscd35temp?<br>A) The mode switching
+bat
+file has the option to change it to a different folder name.
+&nbsp;When you run the mode_cd.bat file you have the option to
+specify a folder to use as the temp folder.<br><br>10.)
+What happens on a client machine with insufficient user privileges?<br>A)
+That is a show stopper... we have done everything we are able
+to minimize that - for<br>example we do not write to the windows
+registry - but if the user does not have<br>r/w permissions to
+C:\ the show is pretty much over - I'm not sure there is a<br>solution
+to that.<br><br>11.) How can we&nbsp;synchronize with
+an online version of moodle?<br>A) As it stands the end user will
+have to save his responses to quizzes<br>into text files and
+email them if/when he has internet access - my initial<br>thought
+is perhaps we can provide an email client that will save the responses<br>locally
+("save as a draft") for sending later when connected... Another<br>possibility
+for offline responses might be GTD tiddly wiki... <br><a target="_blank" href="http://shared.snapgrid.com/index.html"><span style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" class="yshortcuts" id="lw_1194620598_0">http://shared.snapgrid.com/index.html</span></a><br>the
+instructor could prepare the quizzes in that format and the student
+could<br>fill it out and email it back when completed and a net
+connection becomes<br>available.... or gasp... save it to a
+floppy disk and snail mail it....<br><br>It has been
+discussed here that a student could backup just his current work<br>and
+then that portion could be restored when the student is back on line.<br>I
+suppose it would be convenient to have a moodle module that facilitates
+this<br>granular backup and provides some guidance for the
+student in how to backup. I<br>am not aware of such a module....
+though I did find a module that claims to be<br>able to back up a
+students work as html. I think it was called something like<br>"mymoodle".
+I wonder if that might be useful in presenting just the course<br>material
+in a totally portable set of html pages? <br><br>There is
+a Moodle
+Forum discussion about this on Moodle Client Project?<br><a target="_blank" href="http://moodle.org/mod/forum/discuss.php?d=71136#p351626"><span style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" class="yshortcuts" id="lw_1194621348_2">http://moodle.org/mod/forum/discuss.php?d=71136#p351626</span></a><br>&nbsp; &nbsp; &nbsp;<br>12.) &nbsp;Why is this system so slow? &nbsp;So slow to start up?<br>A)
+We decided to install a version of Portable Firefox&nbsp;so the
+moodle system uses that as a default. &nbsp;FireFox makes the system
+start slowly. &nbsp;Firefox was chosen for several reasons. <br><ol><li>Were were able to install plugins&nbsp;needed to make sure that media files would work.</li><li>We were able to install addons to Firefox that made localization easier.</li><li>FireFox was the only browser we could find that would run without <span style="font-weight: bold;">writing anything!</span> to the CD. &nbsp;We tried several other browsers and none of them would run completely from CD.</li><li><span style="font-weight: bold;">Security</span> - only Firefox caches nothing to the writable media.</li></ol>The
+second reason things are slow is that we have not yet optimized the
+settings for Apache and MySQL. &nbsp;There is some work to be done
+there to speed things up.<br><br>13.)
+What about security? &nbsp;Is it safe to
+write the temp folder to the client machine? &nbsp;There are people
+here hostile to what I believe and I don't want anything damaging left
+on the client HD.<br>A) The temp folder is deleted using the <span style="font-style: italic;">sdelete</span>
+utility with 3 passes. &nbsp;This utility overwrites with random data.
+&nbsp;It can be set for multiple passes. &nbsp;As a default we have set
+it for 3 passes which is enough to keep people from getting back the
+data. &nbsp;It can be set to use additional passes if needed.
+&nbsp;More passes will make it even more difficult to retrieve the
+data. &nbsp;Unless people use very sophisticated techniques 3 passes is
+enough to completely remove the data.<br><br><br><br></td>
+</tr> </tbody></table></body></html>

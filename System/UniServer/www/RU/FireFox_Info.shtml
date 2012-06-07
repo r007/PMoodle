@@ -1,0 +1,504 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>FireFox
+Info</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"><link href="menu.css" type="text/css" rel="stylesheet"></head>
+<body scroll="auto" topmargin="0" leftmargin="0" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+<!--#include virtual="header.inc" --><table style="width: 760px; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="1"> <tbody><tr><td>
+<img style="border: 0px solid ; width: 150px; height: 144px; float: right;" src="../images/firefox.png" alt="firefox.png">
+<p>Many of the most common issues that arise when using Mozilla
+Firefox
+- Portable Edition are addressed here. Please read through the various
+topics to see if any of them address your question. You can also post a
+question in the <a href="http://portableapps.com/forums/support/firefox_portable">Firefox
+Portable Support Forum</a>.</p>
+<p><a href="http://portableapps.com/apps/internet/firefox_portable">&lt;&lt;
+Return to Firefox Portable</a></p>
+<h2>Firefox Portable-Specific Issues</h2>
+<ul><li><a href="#installing">Installing
+Firefox Portable</a></li><li><a href="#using">Using
+Firefox Portable</a></li><li><a href="#upgrading">Upgrading
+Firefox Portable</a></li><li><a href="#local_profile">Copying
+your local Firefox settings to Firefox Portable</a></li><li><a href="#performance">Improving
+Firefox Portable's Performance</a></li><li><a href="#proxies">Configuring
+Proxies</a> - Suggestions for moving between PCs with different
+network settings</li><li><a href="#plugins">Installing
+Plugins (Flash, Shockwave, etc.)</a></li><li><a href="#helper_apps">Configuring
+Helper Apps (PDF reader, document viewers, etc)</a></li><li><a href="#cd">Running
+From a CD (Firefox Portable Live)</a></li><li><a href="#known_issues">Known
+Issues</a></li><li><a href="#modifications">Modifications</a>
+- A list of the modifications made to Firefox in this package</li></ul>
+<p>Also, be sure to check out the <a href="http://portableapps.com/forums/support/firefox_portable/faq">Frequently
+Asked Questions</a> in the forum.</p>
+<h2>General Mozilla Firefox Issues</h2>
+<ul><li><a href="http://www.mozilla.org/support/firefox/faq">Mozilla
+Firefox Frequently Asked Questions</a>
+<ul><li><a href="http://www.mozilla.org/support/firefox/faq#general">General
+Questions</a> <ul><li><a href="http://www.mozilla.org/support/firefox/faq#q1.1">What
+is Firefox?</a></li><li><a href="http://www.mozilla.org/support/firefox/faq#mozvsie">Is
+Firefox more secure than Internet Explorer?</a></li><li><a href="http://www.mozilla.org/support/firefox/faq#free">Is
+Firefox free?</a></li><li><a href="http://www.mozilla.org/support/firefox/faq#q1.9">Where
+is the e-mail client?</a></li><li><a href="http://www.mozilla.org/support/firefox/faq#profiles">Where
+are my bookmarks, passwords and other personal information saved?</a></li></ul></li><li class="newsection"><a href="http://www.mozilla.org/support/firefox/faq#extensions">Extensions</a>
+<ul><li><a href="http://www.mozilla.org/support/firefox/faq#q3.1">What
+is an extension?</a></li><li><a href="http://www.mozilla.org/support/firefox/faq#downloadextensions">Where
+can I find extensions?</a></li><li><a href="http://www.mozilla.org/support/firefox/faq#q3.2">How
+do I uninstall extensions?</a></li></ul></li><li class="newsection"><a href="http://www.mozilla.org/support/firefox/faq#usage">Usage</a>
+<ul><li><a href="http://www.mozilla.org/support/firefox/faq#toolbar">How
+do I customize the toolbar?</a></li><li><a href="http://www.mozilla.org/support/firefox/faq#themes">Can
+I use different themes for Firefox?</a></li><li><a href="http://www.mozilla.org/support/firefox/faq#masterpassword">How
+can I access/change the Master Password?</a></li></ul></li></ul>
+</li><li><a href="http://www.mozilla.org/support/firefox/tips">Firefox
+Tips &amp; Tricks</a></li><li><a href="http://www.mozilla.org/support/firefox/keyboard">Keyboard
+Shortcuts</a></li><li><a href="http://www.mozilla.org/support/firefox/mouse">Mouse
+Shortcuts</a></li></ul>
+<h2><a name="installing"></a>Installing
+Firefox Portable</h2>
+<p>To install Firefox Portable, just download the portable
+package at
+the top of the Firefox Portable page and then double-click it. Select
+the location you wish to install to and click OK. A FirefoxPortable
+directory will be created there and all the necessary files installed.
+That's all there is to it.</p>
+<h2><a name="using"></a>Using Firefox Portable</h2>
+<p>To start up Firefox Portable, just double-click
+FirefoxPortable.exe file where you installed Portable
+Firefox on your portable drive. Then, use it just like you would a
+local copy of Firefox. There are a
+couple of things to keep in mind:</p>
+<ul><li>Stay Safe - When using portable apps, it's always a
+good idea to practice <a href="http://johnhaller.com/jh/useful_stuff/safe_portable_app-ing/">Safe
+Portable App-ing</a>.</li><li>Removing Your Drive -
+When you're done, exit Firefox and then wait for the activity light on
+your removable drive to stop flashing. This may take a minute or more
+on slow drives or computers. Then select the 'Safely remove [device]'
+option from the icon in the system tray. If you remove the drive while
+it is writing, you may lose data.</li></ul>
+<h2><a name="upgrading"></a>Upgrading Firefox
+Portable</h2>
+<p>To upgrade to a newer version of Firefox Portable, just
+install a
+new copy of Firefox Portable right over your old one. All your data
+will be preserved.</p>
+<p>If you're upgrading from Portable Firefox (older name and
+directories), make a copy of your existing profile folder within the
+PortableFirefox\Data\profile directory on your portable drive. Then
+download the new version of Firefox Portable and copy your profile from
+the old version into the new version within
+FirefoxPortable\Data\profile. If you added any plugins or
+searchplugins, you should copy those directories as well
+(PortableFirefox\plugins to FirefoxPortable\Data\plugins and
+PortableFirefox\firefox\searchplugins to
+FirefoxPortable\App\firefox\searchplugins).</p>
+<h2><a name="local_profile"></a>Copying Your
+Local Firefox Settings</h2>
+<p>If you're using a local copy of Firefox, you may wish to just
+copy
+your local Firefox settings right into Firefox Portable. Your local
+Firefox profile is usually installed in C:\Documents and
+Settings\[user]\Application Data\Mozilla\Firefox\Profiles\default.???\
+Just copy the contents of that folder (except the cache directories) to
+the FirefoxPortable\Data\profile directory. Then, and this is
+important, delete the file FirefoxPortableSettings.ini within the
+FirefoxPortable\Data\settings directory, if there is one. When you
+start Firefox Portable for the first time, it's recommended that you
+turn off disk cache, password saving and history if you're using a
+flash-based portable device. You can set all of these within the
+Privacy tab of the Firefox Options window. Sometimes, certain profiles
+will cause the launcher to fail or hang. It's best to give it a few
+minutes to see if it's just checking compatiblity and adjusting the
+locations of the extensions before giving up on it. If it fails, it is
+usually due to an incompatible extension.</p>
+<h2><a name="plugins"></a>Installing Plugins
+(Flash, Shockwave, etc.)</h2>
+<p>With Firefox Portable, plugins work a bit differently than
+they do
+in regular Firefox. Here's how to do some of the most common plugins:</p>
+<ul><li><strong>Flash Plugin</strong> - To
+install Flash, follow these steps: <ol><li>Flash is
+available <a href="http://fpdownload.macromedia.com/get/flashplayer/xpi/current/flashplayer-win.xpi">as
+an extension</a>. Just click the link.</li><li>You'll
+probably see a yellow bar across the top of the browser (if not, skip
+to Step 5), on that bar, click Edit Options</li><li>In the
+popup window, click Allow to add PortableApps.com to your whitelist and
+then click close</li><li>Now try the link again</li><li>You'll
+see a popup asking if you would like to install, click OK after the
+countdown and follow along the prompts</li></ol> </li><li><strong>Shockwave
+Plugin</strong> - To install Shockwave, follow these steps: <ol><li>Download
+the free <a href="http://sdc.shockwave.com/shockwave/download/download.cgi?">Shockwave
+Player</a> from the Macromedia website</li><li>Run
+the installation routine and, instead of letting it install to a local
+browser, select to choose your browser</li><li>Browse to
+X:\FirefoxPortable\App\firefox (where X is your device's driver letter)
+and continue with the installation</li><li>You may need to
+restart Firefox Portable for the changes to take effect</li></ol>
+</li><li><strong>Other Plugins</strong> - Other
+plugin directions are coming soon...</li></ul>
+<p><b>If the above fails, try the alternate (and more
+geeky) method:</b></p>
+<ol><li>Install the plugin in a local copy of Firefox (on
+your hard drive)</li><li>Locate your plugins directory
+(usually C:\Program Files\Mozilla Firefox\plugins\)</li><li>Copy
+the plugin you need from there to your
+FirefoxPortable\Data\plugins directory (Some Exmaples: For Flash, copy
+NPSWF32.dll... for Shockwave, copy np32dsw.dll)</li></ol>
+<p><strong>Notes</strong>: It should be noted that
+Adobe Flash does
+*not* officially support running in any portable configuration. And, as
+it is a closed source application, we can neither modify it nor package
+it into a more portable-friendly installer. It should also be noted
+that it is illegal to redistribute either flash or shockwave without
+the full installer.</p>
+<h2><a name="helper_apps"></a>Configuring
+Helper Apps (PDF reader, document viewers, etc)</h2>
+<p>Firefox Portable supports the ability to set other portable
+apps as
+helper apps to handle additional document types even as you move
+between PCs. So, you can set Sumatra PDF Portable as your PDF viewer,
+OpenOffice.org Portable as your DOC opener and VLC Media Player
+Portable as your AVI handler and it will all work as you move to other
+PCs.</p>
+<p>The setting to do this in Firefox Portable works just like it
+does in a regular install of Firefox:</p>
+<ol><li>Click Tools and then Options from the menu</li><li>Select
+the Content tab</li><li>Within the File Types section,
+click the Manage button</li><li>In the list of types,
+select the one you wish to edit and click the
+Change Action button (if you don't see the type you want, see the note
+below)</li><li>Select the "Open them with this application"
+radio button and then click Browse</li><li>Select the
+portable app you'd like to open this file type with (example:
+SumatraPortable.exe)</li><li>Click Ok. Click Close. And
+click OK to close all the windows.</li></ol>
+<p>Now, when you click on a file of that type in Firefox, it will
+open
+it in the portable app you selected. The PortabableApps.com Launcher
+takes care of any needed changes as you move between PCs.</p>
+<p><strong>Note</strong>: If you don't see the file
+type you'd like in
+the list of file types, that means Firefox doesn't know about it yet.
+Just search for a file of that type in Firefox and click on it. It'll
+either ask you what you'd like to open it with (in which case, just
+select the portable app you'd like to use) or it will automatically
+associate it with an application or plugin installed on the local PC.
+At that point, you can then follow the instructions above to tell
+Firefox to use a portable app to open that type of file.</p>
+<p><strong>Mailto Note</strong>: Mailto links are not
+controlled by
+Firefox's mimetypes setup, so this has no effect on being able to click
+on an email link and launching Thunderbird. Firefox simply passes
+mailto links to Windows and has it open the default mail client.</p>
+<p><strong>Privacy Note</strong>: When Firefox hands
+off a file to
+another application, it will usually store that file in the local PC's
+TEMP directory. This file may be left behind after you close Firefox
+Portable.</p>
+<h2><a name="performance"></a>Improving
+Firefox Portable's Performance</h2>
+<p>Firefox Portable runs quite well from faster flash drives (and
+portable hard drives or iPods) when connected to a USB 2.0 port. But
+what if your flash drive is a bit below average speed-wise (and just
+because it says "USB 2.0" on it, doesn't mean it's fast)? Or what if
+you're stuck connecting to USB 1.1 ports at work or school? Well, there
+are a few ways to improve performance.</p>
+<p>First off, it helps to realize why things are slow. Firefox
+Portable
+has to read and write bits of data to and from your portable device
+while it's running. On most flash drives, every time something is
+written, all reads stop. When this happens, Firefox Portable can appear
+to "freeze" or "hesitate" momentarily. Add to this the fact that most
+flash drives aren't as fast as they promise. They all say "USB 2.0 high
+speed" on them, but they're actually limited by the speed of the memory
+chips inside them and the controller chip that handles communication
+between those chips and a PC. There's about a 40x speed difference
+between a slow drive and a fast drive when dealing with writing small
+amounts of data. And, even if a drive can write a 5mb MP3 file quickly,
+it may be slow with writing lots of tiny files.</p>
+<p>Here's a list of different things you can do to speed things
+up:</p>
+<ul><li><strong>Disable Cache, History and Form Saving</strong>
+- Cache is
+disabled by default. In newer releases of Firefox Portable, history and
+form saving are enabled. You can disable these within the Options
+window.</li><li><strong>Disable Session Restore /
+Undo Close Tab</strong> - Firefox
+2.0 introduced a new feature called session restore. It keeps track of
+all your open windows and tabs and can restore your session if Firefox
+should crash. While a handy feature, it does have the unfortunate side
+effect of writing to disk on every page load, which slows down Firefox
+Portable. There's no option to disable it in the usual Tools - Options
+windows, but you can disable it manually.
+<ol><li>In Firefox's address bar, type in <strong>about:config</strong>
+and then hit enter</li><li>Right-click on any entry and
+select New - Boolean</li><li>For the name, enter
+browser.sessionstore.enabled and click OK</li><li>Select
+false and then click OK</li></ol>When you restart Firefox,
+session restore (and undo close tab)
+will be disabled and you should notice an improvement in browsing speed.</li><li><strong>Disable
+Anti-Phishing</strong> - Firefox 2.0 comes bundled
+with an anti-phishing filter that warns you of fake sites pretending to
+be things like ebay and bank login pages. As with the ression restore,
+though, it results in additional writes to the drive. This is
+especially noticable in the first few minutes of using Firefox Portable
+as it has to download the anti-phishing database and store it within
+your profile (a 3mb+ file). You can disable this feature by clicking
+Tools - Options and then selecting the Security tab. Uncheck the box
+next to "Tell me if the site I'm visiting is a suspected forgery" and
+then click OK. The anti-phishing filter is now off. If you'd like to
+get back the space taken up by the database of forged sites, exit
+Firefox Portable and then head to the FirefoxPortable\Data\profile
+directory on your drive. Delete the urlclassifier2.sqlite file.</li></ul>
+<h2><a name="proxies"></a>Configuring Proxies</h2>
+<p>As you move between different computers, you may encounter
+systems
+on networks that use proxies and don't allow direct access to the
+internet. You'll need to update Firefox Portable' connection settings
+to use in the new environment. You can find these settings within Tools
+- Options - General - Connection Settings. If you routinely use PCs
+with different proxy settings (for example, work and home or work and
+school), you can set up the options for both and easily switch between
+them with the <a href="https://addons.mozilla.org/firefox/125/">SwitchProxy
+extension</a>. If you need to determine the connection settings
+of the PC you are on to add to Firefox Portable, just run our <a href="http://portableapps.com/downloads/ProxyGet.exe">Proxy
+Get Utility</a> and it will let you know what they are.</p>
+<h2><a name="cd"></a>Running From a CD
+(Firefox Portable Live)</h2>
+<p>Firefox Portable supports running from a CD right out of the
+box,
+and it's a snap. Start off by downloading and installing Firefox
+Portable to your hard drive... it doesn't matter where. Run it at least
+once to generate the default settings. Then, customize it as needed,
+being sure not to move FirefoxPortable.exe or any of the other critical
+files. Next, download <a href="http://portableapps.com/downloads/app_extras/firefox_portable/live/FirefoxPortable.ini">FirefoxPortable.ini</a>
+and save it to the same directory as FirefoxPortable.exe. Then, burn
+the whole FirefoxPortable directory to a CD and you're ready to go.</p>
+<p>If you use Firefox Portable from a USB flash drive with a
+write-protect switch, you're covered, too. The Firefox Portable
+Launcher will automatically detect when you protect the drive and offer
+to run your files locally for you.</p>
+<p>Additional information about the options in the INI is
+provided in
+the readme.txt file within the
+FirefoxPortable\Other\FirefoxPortableSource directory. Please note that
+you must follow Mozilla's Trademark Distribution Guidelines if you are
+distributing your customized version to anyone else.</p>
+<h2><a name="known_issues"></a>Known Issues</h2>
+<p>The following are known issues with this package:</p>
+<ul><li><strong>Trojan/Virus detected</strong>
+- AntiVir and Avast, on more
+than one occasion, have claimed there is a trojan or virus in the
+launcher. This is due to poor detection in both products that will
+occasionally mis-identify many NSIS-based applications as trojans. It
+will usually occur after a definitions update. You should contact your
+antivirus provider and let them know of their mistake. Do not contact
+me about it as I am well aware of Avast and AntiVir's issues and can do
+nothing to fix them. You can either wait for them to fix the issue
+again
+or switch to a better antivirus package.</li><li><strong>Renaming
+FirefoxPortable.exe</strong> - Once on your
+portable device, the launcher can be renamed to anything you'd like
+except for firefox.exe. It tries to detect an existing instance of
+Firefox so it doesn't just launch a new local one and if it is named
+firefox.exe, it will detect itself.</li><li><strong>Themes
+and Extensions</strong> - Most themes and extensions
+should now work with Firefox Portable -- including those that make use
+of the component registry. A handful will still fail, though. A few
+things to keep in mind:
+<ul><li>Some XPIs
+must be downloaded to your PC before installing and then opened using
+FILE and then OPEN (this is a limitation of Firefox, see <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=262854">Bug
+262854</a>).
+If you can't easily download the XPI locally (like with the Google
+Toolbar), simply enable your cache temporarily (Tools - Options -
+Privacy - Cache - enter 1000 and click OK) and then install the
+extension. Don't forget to disable the cache again after installing.
+Oddly, <a href="http://addons.mozilla.org/">addons.mozilla.org</a>
+doesn't seem affected by this.</li></ul></li><li><strong>No
+Portable Java</strong> - Sun's Java VM needs to be installed
+locally as it makes a slew of registry entries, etc. There is no way to
+make
+it portable at present, so you will only be able to use Java-enabled
+sites on machines that have the Sun Java VM installed locally.</li><li><strong>Read/Write
+Required</strong> - Both the Firefox directory and the Profile
+directory must be writeable on
+the USB drive. Drives with a writable switch can not be in read-only
+mode.</li><li><strong>Network Drives</strong> -
+There has been a report that Microsoft patch <a href="http://support.microsoft.com/kb/885250">MS051-011</a>
+may break the ability to run applications from networked drives and
+that Firefox Portable is affected.</li><li><strong>Non-ASCII
+Character Directories Fail</strong> - Firefox Portable will not
+function correctly when placed in a
+directory containing non-ASCII characters. Firefox Portable's entire
+path must be ASCII characters. The workaround is,
+of course, to use an ASCII path for Firefox Portable. In a situation
+where this is not possible (for example, when being placed
+on a desktop of a non-English machine), you can set Firefox Portable to
+run in <a href="http://www.microsoft.com/windowsxp/using/helpandsupport/learnmore/appcompat.mspx#EBAA">Windows
+98 compatibility mode</a> under
+Windows XP. <em>(Thanks Wigaldlinger)</em></li></ul>
+<h2><a name="modifications"></a>Modifications</h2>
+<p>I made some modifications to the default version of Firefox
+to make it more USB key friendly (decreasing the
+number of writes to the drive, which will increase drive life). These
+changes are listed here so you'll
+know what they are, and so you can recreate the process, if so desired.
+Obviously, you can change many of these settings
+(ex cache, form saving or cookies disabled) by changing the options in
+Firefox, but you will increase the number of writes to your
+flash drive, thus decreasing its life.</p>
+<ul><li><strong>Extension-Friendly Launcher</strong>
+- Firefox Portable
+Launcher
+is included. It will alter the paths to any extensions you install to
+work relatively and cleans up the bits Firefox leaves behind on the
+local PC.</li><li><strong>Default Profile</strong>
+- A default profile exists within the firefox directory.</li><li><strong>No
+Default Browser Check</strong> - Firefox won't check to see if it
+is the default browser on startup.</li><li><strong>Download
+Prompt</strong> - Firefox will ask where to save downloads.</li><li><strong>Download
+History Cleared</strong> - Download history is cleared on exit.</li><li><strong>Browser
+History Disabled</strong> - The history has been disabled to
+decrease disk size and the number of writes to the
+disk, increasing disk life.</li><li><strong>Form Info
+Saving Disabled</strong> - Information from forms is not saved.</li><li><strong>No
+Disk Cache</strong> - The browser disk cache has been disabled to
+decrease disk size and the number of writes to the
+disk, increasing disk life.</li></ul>
+<h2><a name="version_history"></a>Version
+History</h2>
+<p>Firefox Portable grew out
+of a mozillaZine forum topic (now split in two: <a href="http://forums.mozillazine.org/viewtopic.php?t=81759">original</a>,
+<a href="http://forums.mozillazine.org/viewtopic.php?t=233313">followup</a>)
+back in June of 2004 (I'm there as CritterNYC).</p>
+<ul><li>2.0.0.4 - May 31, 2007
+<ul><li>Firefox updated to 2.0.0.4</li><li>New
+PortableApps.com Installer (auto-detects existing PortableApps.com
+install, better progress meter, etc.</li></ul></li><li>2.0.0.3
+- April 3, 2007
+<ul><li>Firefox updated to 2.0.0.3</li><li>Default
+options changed (history, form filling and download history enabled)</li><li>Added
+launcher feature to process mimetypes. Allows portable apps to be used
+as helper apps.</li></ul></li><li>2.0.0.2
+&amp; 1.5.0.10 - February 27, 2007
+<ul><li>Firefox updated to 2.0.0.2 / 1.5.0.10</li><li>Slight
+name change "Mozilla Firefox, Portable Edition"</li></ul></li><li>2.0.0.1
+- February 15, 2007
+<ul><li>Firefox updated to 2.0.0.1</li></ul></li><li>2.0.0.0
+- November 20, 2006
+<ul><li>Firefox updated to 2.0.0.0</li><li>Vista
+compatible</li></ul></li><li>1.5.0.7 -
+September 26, 2006
+<ul><li>Updated to Firefox 1.5.0.7</li><li>New
+Launcher: 1.3.1
+<ul><li>Improved CD support on Windows 9x</li><li>New
+Intelligent Start feature for faster startup</li><li>Dropped
+support for all alternate INI locations</li><li>Dropped
+support for most alternate directory layouts (see help file)</li><li>Launcher
+now cleans up the pluginreg.dat Firefox leaves on the local PC</li><li>INI
+files format updated (if you use it, grab the new one from the
+FirefoxPortableSource directory and customize it)</li></ul>
+</li></ul></li><li>1.5.0.6 - Auguest 2, 2006
+<ul><li>Firefox updated to 1.5.0.6</li></ul></li><li>1.5.0.5
+- July 27, 2006
+<ul><li>Application renamed to Mozilla Firefox - Portable
+Edition</li><li>Updated to Firefox 1.5.0.5</li><li>Partial
+Updates Now Fully Supported</li><li>New Splash Screen and
+Branding In The Help File</li><li>New Launcher: 1.2.1.1
+<ul><li>Added CD and Read-Only Media support with
+auto-detection</li><li>Added default data set to allow
+in-place upgrades</li><li>Fixed bug: Blank profile when
+first-launch within Wine</li><li>Fixed bug: File error when
+first-launch in Windows 95</li><li>Improved Wait For
+Firefox Support</li></ul>
+</li></ul></li><li>2.0 Beta 1 - July 27, 2006
+<ul><li>Combined new launcher with Firefox 2.0 Beta 1</li></ul>
+</li><li>1.0.8 - July 27, 2006
+<ul><li>Combined new launcher with Firefox 1.0.8</li></ul>
+</li><li>1.5.0.3 - May 2, 2006
+<ul><li>Updated Firefox to 1.5.0.3</li><li>Fixes
+for plugins and userprofile directories</li></ul>
+</li><li>1.5.0.2 - April 28, 2006
+<ul><li>Updated Firefox to 1.5.0.2</li><li>Switched
+to self-extracting package (smaller)</li><li>Switched to
+App/Data directory structures</li></ul>
+</li><li>2.0 Alpha 1 (Bon Echo) - April 6, 2006
+<ul><li>Packaged with Bon Echo 2.0 A1</li></ul>
+</li><li>1.5.0.1 - April 6, 2006
+<ul><li>Updated Firefox to 1.5.0.1</li><li>Added
+ability to use local homepages</li></ul>
+</li><li>1.5 Final - December 9, 2005</li><ul><li>Updated
+to Firefox 1.5 Final</li><li>Updated Launcher to 1.1.2</li><ul><li>Detection
+of other Firefox instances</li><li>Auto-correction of
+profile XUL cache disabled or default browser check</li><li>New
+splash screen in compliance with Firefox visual identity guidelines<br></li></ul></ul><li>1.5
+RC3 - November 18, 2005 <ul><li>Updated to Firefox 1.5 RC3</li></ul></li><li>1.5
+RC2 - November 10, 2005 <ul><li>Updated to Firefox 1.5 RC2</li></ul></li><li>1.5
+RC1 - November 2, 2005 <ul><li>Release based on Firefox
+1.5 RC1 and Firefox Portable Launcher 1.1.1 Beta 7</li></ul></li><li>1.5
+B1 - September 28, 2005 <ul><li>Release based on Firefox
+1.5 B1 and Firefox Portable Launcher 1.0.8</li></ul></li><li>1.0.7
+Beta - September 21, 2005 <ul><li>Updated to Firefox 1.0.7</li></ul></li><li>1.0.6
+Beta - July 20, 2005 <ul><li>Updated to Firefox 1.0.6</li><li>Added
+window icons for Windows 95/98/Me</li></ul></li><li>1.0.5
+Beta - July 13, 2005 <ul><li>Updated to Firefox 1.0.5</li><li>Updated
+launcher:<ul><li>Added Mozilla Calendar support</li><li>Added
+support for split Data and Apps directories (detailed in readme)</li></ul></li></ul></li><li>1.0.4
+Release Candidate 2 - May 17, 2005 <ul><li>Fixed
+compression of the Firefox directory</li><li>Released to
+general public</li></ul></li><li>1.0.4 Release
+Candidate 1 - May 12, 2005 <ul><li>Updated to Firefox 1.0.4</li><li>Updated
+to PFF Launcher 1.0.8 (adds suppport for renaming firefox.exe)</li><li>Removed
+INI from main directory</li><li>Limited release to 1.0.3
+users</li></ul></li><li>1.0.3 Beta - April 27,
+2005 <ul><li>Updated to Firefox 1.0.3</li><li>Added
+launcher 1.0.6</li><li>Removed Talkback</li><li>Added
+ability for INI to be in subdirectory</li></ul></li><li>1.0.2
+Beta - March 23, 2005 <ul><li>Updated to Firefox 1.0.2</li><li>Added
+ability to pass additional commandline parameters</li><li>Disabled
+Firefox update notification</li></ul></li><li>1.0.1
+Beta 2 (Open) - March 11, 2005 <ul><li>New Firefox
+Portable launcher features: <ul><li>Allow Spaces in
+directory names</li><li>Relative Path rewriting (backwards
+compatibility with pre1.0.1 portable profiles)</li><li>Local
+Profile path rewriting</li></ul></li></ul></li><li>1.0.1
+Beta 1 (Semi-Closed) - March 2, 2005 <ul><li>Minor Polish
+Adjustments</li></ul></li><li>1.0.1 Internal
+Alpha - February 24, 2005 <ul><li>Updated to Firefox 1.0.1</li><li>Completely
+new Firefox Portable launcher with: <ul><li>Absolute Paths</li><li>Optional
+INI</li><li>Commandline Passing</li><li>Multiple
+Instance Support</li><li>Extension Install / Uninstall</li><li>Profile
+Creation / Detection</li><li>EXE detection</li></ul></li></ul></li><li>1.0
+Final Release - November 9, 2004 <ul><li>Updated to
+Firefox 1.0 Final Release</li></ul></li><li>1.0
+Release Candidate 2 - November 7, 2004 <ul><li>Updated to
+Firefox 1.0 Release Candidate 2</li></ul></li><li>1.0
+Release Candidate 1 - November 3, 2004 <ul><li>Updated to
+Firefox 1.0 Release Candidate 1</li><li>Added in default
+bookmarks.html from standard install</li></ul></li><li>1.0
+Preview Release - September 14, 2004 <ul><li>Set cookies
+to session only to decrease disk writes</li><li>Updated to
+Firefox Portable Launcher 0.0.3 due to profile changes</li><li>Updated
+to Firefox 1.0 Preview Release</li></ul></li><li>0.9.3
+(Revision 2) - August 6, 2004 <ul><li>Fixed error in
+Bookmark Manager (packaging issue)</li></ul></li><li>0.9.3
+- August 4, 2004 <ul><li>Added Firefox Portable Launcher
+by default to automate portable extensions</li><li>Updated
+to Firefox 0.9.3</li></ul></li><li>0.9.2 - July
+10, 2004 <ul><li>Updated to Firefox 0.9.2</li></ul></li><li>0.9.1
+(Revision 2) - July 2, 2004 <ul><li>Repaired packaging
+issue affecting extensions</li></ul></li><li>0.9.1
+- June 29, 2004 <ul><li>Updated to Firefox 0.9.1</li></ul></li><li>0.9
+(Revision 2) - June 19, 2004 <ul><li>Removed Flash plugin
+due to licensing issues</li></ul></li><li>0.9
+Final - June 15, 2004 <ul><li>Updated UPX comression
+switches to leave icons alone</li><li>Updated to Firefox
+0.9 Final</li></ul></li><li>0.9 RC (Revision 2)
+- June 11, 2004 <ul><li>Disabled browser history and disk
+cache</li></ul></li><li>0.9 RC - June 9, 2004 <ul><li>Further
+compression to 8Mb</li><li>Re-enabled Java based on feedback</li><li>Updated
+to Firefox 0.9 Release Candidate</li></ul></li><li>0.8+
+(Revision 2) - June 8, 2004 <ul><li>Compressed the JARs to
+decrease size from 11Mb to 9.8Mb</li></ul></li><li>0.8+
+- June 4, 2004 <ul><li>Initial Release with basic edits to
+a default profile and a .bat launcher.</li><li>Based on the
+previous nightly build</li></ul></li></ul>
+ </td></tr></tbody></table></body></html>

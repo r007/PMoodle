@@ -1,0 +1,7 @@
+                                     This is a listing of directories in root and function...
+
+
+/Extra- all freeware software used in creating this program
+/Install-readme for installing from CD ROM and the install executeable (this installs into read/write us_mode.bat parameters)
+/moodledocs_en-this is a copy of the english online moodle docs
+/udrive-this is the WAMP stack based on Uniserver 3.5 Apollo with a few extra directories like foxitpdf and firefox portable. 

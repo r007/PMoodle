@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>CRON</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p800">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/cron_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>CRON - Introduction</h1>
+<p>Cron originated in the Unix environment. It is a job scheduler, allowing scripts to be run automatically at a certain time or date. The name was based on the Greek word for time, "chronos" .</p>
+
+<p>The Uniform Server’s portable Cron plugin has been integrated into 8.0-Coral. Cron's configuration file has been pre-populated with various scripts to be run. These are essentially four-line templates that require enabling to run the appropriate applications from the Cron script.</p>
+
+<p>The Uniform Server provides a simple user control interface to start and stop Cron as a standard program. Alternatively, you can install Cron as a service.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Features" >Features</a></li>
+   <li><a href="#Configuration file" >Configuration file</a></li>
+   <li><a href="#Configuration block format" >&nbsp;&nbsp;Configuration block format</a></li>
+   <li><a href="#Cron Controller" >Cron Controller</a></li>
+   <li><a href="#Run as a program" >&nbsp;&nbsp;Run as a program</a></li>
+   <li><a href="#Run as a service" >&nbsp;&nbsp;Run as a service </a></li>
+   <li><a href="#Logging" >Logging</a></li>
+   <li><a href="#Summary" >Summary</a></li>
+
+
+   <li><a href="#Where to next" >Where to next</a></li>
+   </ul>
+ </div>
+</div>
+
+
+<a name="Features"></a>
+<h2>Features</h2>
+<ul>
+ <li>Configuration file pre-configured for common applications. </li>
+ <li>Run Cron as a standard program</li>
+ <li>Run Cron as a service</li>
+ <li>Run scripts with the following file extensions: .bat, .vbs and .php</li>
+ <li>Pre-configured to run DtDNS, DBbackup and Drupal cron jobs</li>
+</ul>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Configuration file"></a>
+<h2>Configuration file</h2>
+
+<p>Each script to be run requires a configuration entry in the configuration file <b>cron.ini</b>. Open this file in the default editor using UniController as follows:</p>
+
+<p class="access"><b><i>UniController</i>:</b> Server Configuration &gt; Cron &gt; Edit Cron Configuration </p>
+
+<table>
+<tr valign="top">
+<td>
+<ul>
+  <li> Each script to be run requires a configuration block. Two examples are shown at right.</li>
+  <li> Comand-line scripts (.bat, .php, .vbs) require an absolute path to be specified. </li>
+  <li> Web-applications require a URL path. This URL path is what you would type into a browser to run that script.</li>
+  <li> Each script running a Command-line or Web-application is defined in a separate block with the following format:
+</ul>
+</td>
+
+<td>
+<pre>
+[db_backup]
+start  = 2009-09-21 2:56:52
+period = hourly
+path   = C:\UniServer\uni_con\db_backup\Run_db_backup.bat
+ref =
+
+[moodle]
+start  = 2009-09-21 2:56:52
+period = hourly
+path   = http://localhost/moodle/admin/cron.php
+ref =
+</pre>
+</td>
+</tr>
+</table>
+
+<a name="Configuration block format"></a>
+<h3>Configuration block format</h3>
+
+<table>
+<tr valign="top">
+<td>[dtdns]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </td>
+<td>--</td>
+<td>Each block starts with a unique name enclosed in square brackets. Note that no spaces are allowed.</td>
+</tr>
+
+<tr valign="top">
+<td>start  = </td>
+<td>--</td>
+<td> Initial start time with the following format: Y-M-D H:M:S  -  Note: 24 hour clock.</td>
+</tr>
+
+<tr valign="top">
+<td>period =  </td>
+<td>--</td>
+<td>How often to run the script from the above referenced start time<br /> Values: hourly, daily, weekly, monthly or numeric in seconds </td> 
+</tr>
+
+<tr valign="top">
+<td>path   =  </td>
+<td>--</td>
+<td>a) For a web application, the full URL of the script. e.g. http://localhost/drupal/cron.php <br />b) Command-line (CLI) uses an absolute path with back-slashes e.g. C:\UniServer\uni_con\cron\test_cron_1.bat</td>
+</tr>
+
+<tr valign="top">
+<td>ref    =  </td>
+<td>--</td>
+<td>A timestamp updated by cron script. Set initial value to blank</td>
+</tr>
+</table>
+
+<p><b>Note 1:</b>  Cron automatically updates <b>ref</b>. It initially adds <b>period</b> as set above to <b>Start</b> time. For subsequent runs, it sets <b>ref</b>  to current time + <b>period</b>.<br />
+               
+<b>Note 2:</b>  To change <b>start</b> time, first set a new value for <b>start</b> and delete the <b>ref</b> number, then save the file. The script will run at the new date and time set and thereafter at the rate you defined for <b>period</b>. <br /> 
+
+<b>Note 3:</b> To use pre-configured CLI blocks for dtdns and db_backup, uncomment to enable.<br />
+
+<b>Note 4:</b> To use pre-configured web blocks for drupal and moodle, uncomment to enable.<br />
+
+<b>Note 5:</b> Command-line paths to scripts contained in sub-folders below UniServer are automatically updated (portable). Paths outside UniServer require a manual change.<p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Cron Controller"></a>
+<h2>Cron Controller</h2>
+
+<p>Using Cron controller, portable Cron is run either as a standard program or as a service. Open the Cron controller as follows:</p>
+<p class="access"><b><i>UniController</i>:</b> Server Configuration &gt; Cron &gt; Cron Controller </p>
+
+<table>
+<tr valign="top">
+
+<td>
+<p>The Cron Controller consists of four buttons (B,C,D and E) as shown on right</p>
+<ul>
+  <li>Initially, both program B) and service D) buttons are enabled. When Cron is running, one of these buttons is disabled; for example, if it is running as a service the program button is disabled.</li>
+
+  <li><a name="Run as a program"><b>Run as a program:</b> To run Cron, click the start button B). With Cron running, this button is disabled and the Stop button C) becomes enabled, allowing you to stop Cron.  </li> 
+
+
+  <li><a name="Run as a service"></a><b>Run as a service:</b> To install and run Cron, click the start button D). With Cron running as a service, this button is disabled and the Stop and Uninstall Service button E) becomes enabled, allowing you to stop and uninstall Cron service.   </li>
+</ul>
+</td>
+<td>
+<img src="images/Coral_cron_controller.gif" alt="Cron controller" />
+</td>
+</tr>
+</table>
+<p>Note: There is a one second response time (delay) before the buttons change state.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Logging"></a>
+<h2>Logging</h2>
+
+<p>Cron logs the following information:</p>
+<ul>
+  <li>Time Cron was started</li>
+  <li>Start time and path of a script that is run.</li>
+  <li>Time Cron was stopped. Note: if this is missing from the log, it means the servers were not shutdown before the PC was turned off </li>
+</ul>
+
+<p><b>Note:</b> Cron logging is enabled by default. This can be disabled; see xxx for details.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Summary"></a>
+<h2>Summary</h2>
+
+<p>The above has shown how easy Cron is to use and configure.<br />
+<b><i>Note</i>:</b> If you enable either or both builtin CLI scripts (DtDNS updater, db_backup), remember to properly set their configuration files.</p> 
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Where to next"></a>
+<h2>Where to next</h2>
+
+<p><a href="cron_configuration_detail.html" >CRON - Configuration detail</a></p>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 12-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

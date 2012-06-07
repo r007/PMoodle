@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>General - Change ports</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p310">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/general_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>General - Change Ports</h1>
+
+<p>The Uniform Server provides two ways of changing the ports used by the servers. Normally you should run the <a href="start_multi_servers.html">multi-server</a> script. This automatically increments all the ports and renames the executables. However there are situations where you need to change individual server ports. This menu allows you to specify the Apache (standard and secure) and MySQL ports.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Change Apache and MySQL ports" >Change Apache and MySQL ports</a></li>
+   <li><a href="#Files modified" >Files modified</a></li>
+
+   </ul>
+ </div>
+</div>
+
+<a name="Change Apache and MySQL ports"></a>
+<h2>Change Apache and MySQL ports</h2>
+
+<p class="access"><b><i>UniController</i></b>: Server Configuration &gt; General &gt; Change ports, Apache and MySQL</p>
+
+<table>
+<tr>
+<td>
+<p><b><i>Change a Single port</i></b></p>
+<ul>
+  <li>Current port setting is displayed.  </li>
+  <li>Change the port to required value. </li>
+  <li>Click the corresponding <b>change</b> button. </li>
+</ul>
+
+<p><b><i>Change all ports</i></b></p>
+<ul>
+  <li>Change all ports to required values. </li>
+  <li>Click <b>change all</b> button. </li>
+</ul>
+<p><b>Note :</b> For new ports to become effective you must restart the servers.<br />
+
+</td>
+
+<td>
+  <img src="images/Coral_general_change_ports.gif" alt="Change Ports" />
+</td>
+</tr>
+</table> 
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Files modified"></a>
+<h2>Files modified</h2>
+
+<p>The Uniform Server scripts that use server ports will read them directly from the appropriate configuration file. The following files are updated when a port is changed:</p>
+ <!-- There are third party configuration files with hard coded ports, these have been pre-configured with defaults and are updated when a port is changed.   ??? What? -->
+<p><b><i>Apache standard port</i></b></p>
+<ul>
+  <li>UniServer\usr\local\apache2\conf\<b>httpd.conf</b>  </li>
+  <li>UniServer\usr\local\apache2\conf\extra\<b>httpd-vhosts.conf</b> </li>
+</ul>
+
+<p><b><i>Apache ssl port</i></b></p>
+<ul>
+  <li>UniServer\usr\local\apache2\conf\extra\<b>ssl.conf</b> </li>
+</ul>
+
+<p><b><i>MySQL standard port</i></b></p>
+<ul>
+  <li>UniServer\usr\local\mysql\<b>my.ini</b> </li>
+  <li>UniServer\usr\local\mysql\<b>small_my.ini</b> </li>
+  <li>UniServer\usr\local\mysql\<b>medium_my.ini</b> </li>
+</ul>
+
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 08-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

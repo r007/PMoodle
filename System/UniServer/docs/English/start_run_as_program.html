@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Run as a program</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p30">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/quick_start_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>Run as a program</h1>
+<p>Folder UniServer contains a file <b>Start_as_program.exe</b> which opens the server control menu UniController. This menu allows you to run The Uniform Server as a standard program.</p>
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#UniController Menu" >UniController Menu</a></li>
+   <li><a href="#Interlinked server control" >Interlinked server control</a></li>
+   <li><a href="#Where to next" >Where to next</a></li>
+   </ul>
+ </div>
+</div>
+
+<a name="UniController Menu"></a>
+<h2>UniController Menu</h2>
+
+<p>When using this menu, nothing is installed in your operating system’s registry. This is ideal for a development server, especially when running from a USB memory stick, since you do not have to perform anything special to stop or remove the servers.</p> 
+
+
+<table>
+<tr valign="top">
+ <td>
+
+  <ul>
+<li><b>Run servers</b> - Click button <b>Start Both</b> (A3). This starts both servers. If challenged by your firewall allow access. Your browser will automatically start and display the server splash test page. Buttons A1, A2 and A3 toggle to display "stop". The indicators change from red to green when the servers are running.</li>
+
+<li><b>Stop servers</b> - Click button <b>Stop Both</b> (A3). This stops both servers. The server menu returns to the initial state as shown on the right.</li>
+
+<li>Buttons A1 and A2 provide independent control of the Apache and MySQL servers respectively. </li>
+
+  </ul>
+
+ </td>
+ <td>
+   <img src="images/Coral_standard_program_menu.gif" alt="Start as program" />
+ </td>
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Interlinked server control"></a>
+<h2>Interlinked server control</h2>
+
+<p>The server control menus are interlinked; this prevents you running both menus at the same time. If you have a single server Apache or MySQL running as a service and close the "run as a service" menu and then open the "run as a program menu", you will find its corresponding server buttons are greyed out.</p>
+
+<p>Similarly the reverse is true. A single server Apache or MySQL running as a program will have its corresponding server buttons greyed out in the "run as a service menu"</p>
+
+<p>This interlinking applies when running multi-servers; the first server started (Apache or MySQL) will have its corresponding buttons greyed out in all other server menus. This means you can have a single instance of the MySQL server running and have several different Apache servers running, all accessing the one MySQL server.</p>
+
+<a name="Where to next"></a>
+<h2>Where to next</h2>
+
+<p><a href="start_run_as_service.html">Run as a service</a> - UniController menu run server as a service<br />
+<a href="start_server_utilities.html">Server Utilities</a> - UniController menu Server Utilities</p>
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 11-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>

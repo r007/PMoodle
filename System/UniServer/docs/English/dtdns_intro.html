@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>DtDNS</title>
+  <link href="common/css/main.css" rel="stylesheet" type="text/css">
+  <link href="common/css/menu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="p900">
+<!-- Start header -->
+  <script language="javascript" src="common/header.js"></script>
+<!-- End header -->
+
+<table id="main" >
+<tr valign="top">
+
+<td id="td_menu">
+  <script language="javascript" src="common/top_menu.js"></script>
+  <script language="javascript" src="common/dtdns_menu.js"></script>
+</td>
+
+<td id="td_spacer" ></td >
+
+<td id="td_content" >
+<!-- ============ Start Content ========== -->
+
+<h1>DtDNS - Introduction</h1>
+<p>The majority of domestic Internet connections are via a dynamic IP address, one that can change every time you connect to the Internet. A web server requires a static IP address. A free dynamic DNS service such as DtDNS provides accounts and tracking software to automatically update your IP address when it changes, creating the effect of a static IP address. The Uniform Server has a built-in utility which supports the DtDNS service. This page covers the configuration sub-menu, which allows you to configure and test the DtDNS service.</p>   
+
+
+<div id="page_links_menu_shadow" >
+ <div id="page_links_menu" >
+  <ul>
+   <li><a href="#Edit DtDNS Accounts" >Edit DtDNS Accounts</a></li>
+   <li><a href="#Force DtDNS UpDATE" >Force DtDNS UpDATE</a></li>
+   <li><a href="#Enable Log" >Enable Log</a></li>
+   <li><a href="#View Log" >View Log</a></li>
+   <li><a href="#Enable in CRON" >Enable in CRON</a></li>
+   <li><a href="#Where to next" >Where to next</a></li>
+   </ul>
+ </div>
+</div>
+
+
+<a name="Edit DtDNS Accounts"></a>
+<h2>Edit DtDNS Accounts</h2>
+
+<table>
+  <tr valign="top">
+    <td>
+<p class="access">Server Configuration &gt; DtDNS &gt; Edit DtDNS Accounts </p>
+
+<p>For each account you wish to update at DtDNS add a block with the following format:</p>
+
+<table>
+
+<tr>
+  <td>&nbsp;&nbsp;<b>[account_1]</b></td>
+  <td>- A unique name enclosed in square brackets. Can be any name you wish do not include spaces. </td>
+</tr>
+
+<tr>
+  <td>&nbsp;&nbsp;<b>hostname =</b></td>
+  <td>- Full host name as configured at DtDNS</td>
+</tr>
+
+<tr>
+  <td>&nbsp;&nbsp;<b>password =</b></td>
+  <td>- Your DtDNS account password</td>
+</tr>
+
+</table>
+
+<p>An extract from the configuration file (dtdns.ini) is shown on the right.</p>
+
+<ul>
+  <li> Add as many blocks as required.</li>
+  <li> To use the examples uncomment (remove the ;) and substitute your data as appropriate.</li>
+</ul>
+
+    </td>
+    <td>
+<pre>
+;#################################
+
+;[account_1]
+;hostname = books.effers.com
+;password = fred123
+
+;[account_2]
+;hostname = books.effers.net
+;password = fred123
+
+;[account_3]
+;hostname = books.dtdns.net
+;password = fred123
+
+;=== END Config ==================
+</pre>
+    </td>
+  </tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Force DtDNS UpDATE"></a>
+<h2>Force DtDNS UpDATE</h2>
+
+<p class="access">Server Configuration &gt; DtDNS &gt; Force DtDNS UpDATE</p>
+<p>Runs the Uniform Server DtDNS update script. A conformation pop-up is produced "DtDNS was manually updated View log for details."</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Enable Log"></a>
+<h2>Enable Log</h2>
+
+<p>Logging is enabled by default you can turn logging off using this menu option. The DtDNS script is open in Notepad.</p>
+<table>
+<tr>
+ <td>
+  <p class="access">Server Configuration &gt; DtDNS &gt; Enable Log</p>
+  <p>To disable logging change the following line as shown:</p>
+<ul>
+ <li>logging = false</li>
+</ul>
+<p>Extract from script (dtdns_updater.vbs) is shown on the right.</p>
+ </td>
+
+ <td>
+ <pre>
+'*** User configuration *****************************************
+
+ logging = true   'true  = Enable logging false = disable logging
+ test    = false  'true  = display IP address and host names
+                  'false = no display
+
+'************************************** End User configuration ***
+ </pre>
+ </td>
+</tr>
+</table>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="View Log"></a>
+<h2>View Log</h2>
+
+<table>
+<tr>
+ <td>
+
+<p class="access">Server Configuration &gt; DtDNS &gt; View Log</p>
+<p>This menu option displays the DtDNS log file in Notepad. Each updater run produces an entry in the log file. An example of one run is shown on the right.</p>
+ </td>
+
+ <td>
+<pre>
+
+18/07/2011 22:42:18 ### Log Started =========================================
+18/07/2011 22:42:25 Changed IP from: xx.x10.165.92 To xx.x10.160.158 books.dtdns.net
+18/07/2011 22:42:31 Changed IP from: xx.x10.165.92 To xx.x10.160.158 books.effers.com
+18/07/2011 22:42:36 Changed IP from: xx.x10.165.92 To xx.x10.160.158 fredxx.dtdns.net
+18/07/2011 22:42:36 ### Log Ended ===========================================
+
+</pre>
+
+ </td>
+</tr>
+</table>
+
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Enable in CRON"></a>
+<h2>Enable in CRON</h2>
+
+<p>Every time you start your PC and reconnect to the Internet (given a new IP address) you need to manually run the DtDNS updater.</p>
+
+<p>Remembering to manually run scripts like <b>DtDNS</b> becomes a chore. Uniform Server centralises running this type of script using portable Cron. Cron is started either manually (portable) or run as a service. It periodically executes a list of scripts; the DtDNS script is included and requires enabling as follows:</p>
+
+<table>
+ <tr valign="top">
+  <td>
+<p class="access">Server Configuration &gt; DtDNS &gt; Enable in CRON</p>
+<p>Opens Cron configuration file in Notepad</p>
+
+<ul>
+  <li>Locate section shown on right</li>
+</ul>
+</td>
+
+<td>
+  <pre>
+;[dtdns]
+;start  = 2011-04-7 13:20:00  
+;period = 600                 ; 10 Mins as required by DtDNS
+;path   = C:\UniServer\uni_con\dtdns_updater\Run_dtdns_updater.bat
+;ref    =
+  </pre>
+</td>
+
+</tr>
+
+
+ <tr valign="top">
+  <td>
+<p>Enable pre-configured DtDNS section in Cron as follows:</p>
+  <ul>
+    <li>Un-comment four lines as shown on right.</li>
+  </ul>
+</td>
+
+<td>
+  <pre>
+;[dtdns]
+start  = 2011-04-7 13:20:00  
+period = 600                 ; 10 Mins as required by DtDNS
+path   = C:\UniServer\uni_con\dtdns_updater\Run_dtdns_updater.bat
+ref    =
+  </pre>
+</td>
+
+</tr>
+
+</table>
+<p><b>Note:</b> You can change the start time and period to suite your own requirements see <a href="cron_intro.html#Configuration%20file">Cron Configuration file</a> for details.</p>
+
+<script language="javascript" src="common/top.js"></script>
+<a name="Where to next"></a>
+<h2>Where to go next</h2>
+
+<p><a href="dtdns_detail.html">DtDNS - Detail</a><br />
+<a href="dtdns_account.html">Create DtDNS Account</a><br />
+<a href="cron_intro.html#Run%20as%20a%20program">Run Cron as a program</a><br />
+<a href="cron_intro.html#Run%20as%20a%20service">Run Cron as a service </a></p>
+
+
+<script language="javascript" src="common/top.js"></script>
+<!-- Checked 11-aug-2011 BobS -->
+<!-- ============ End Content ============ -->
+</td>
+</tr>
+</table>
+
+<!-- Start footer -->
+  <script language="javascript" src="common/footer.js"></script>
+<!-- End footer -->
+
+</body>
+</html>
