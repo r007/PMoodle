@@ -9,43 +9,10 @@ The Server Structure
 --------------------
 
 UniServer\
-  Start_as_program.exe - Opens program menu
-  Start_as_service.exe - Opens service menu
-  help.exe             - Opens html documentation in default browser. 
-
-UniServer\alt_diag
-  Alternative control,Diagnostics and Perl install
-
-UniServer\alt_diag\diagnostics
-  Batch files for checking Apache syntax, vhost and ports
-
-UniServer\alt_diag\install_perl
-  Batch file for installing Perl and read me file providing instructions 
-
-UniServer\alt_diag\run_as_program
-  Batch files for running servers as a program and MySQL console
-
-UniServer\alt_diag\run_as_service
-  Batch files for runnings servers as a service.
-
-UniServer\alt_diag\run_on_virtual_drive
-  Allows running The Uniform Server from a folder containing spaces in its path
 
 UniServer\cgi-bin
   Script root (/cgi-bin/).
    By default cgi-scripts: .bat .exe .pl .cgi
-
-UniServer\docs
-  Uniform Server Documentation (/docs/)
-
-UniServer\docs
-  Uniform Server Documentation (/docs/)
-
-UniServer\docs\English
-  English help html files
-
-UniServer\docs\licenses
-  Single location for all licenses
 
 UniServer\home
   Users home page.
@@ -57,12 +24,6 @@ UniServer\home\us_access\www
 UniServer\home\us_extra
   Users information pages: 
   APC, eAccelerator, MySQL and PHPinfo
-
-UniServer\home\us_pear
-  Pear install scripts and archive.
-
-UniServer\home\us_phpmyadmin
-  MySQL administrator (/us_phpmyadmin/) 
 
 UniServer\home\us_splash
   Optional initial opening page (/us_splash/) 
@@ -89,52 +50,6 @@ UniServer\ssl
 
 UniServer\tmp
   Temporally folder.
-
-UniServer\uni_con
-   uni_con_program.hta   - Menu run servers as a program
-   uni_con_service.hta   - Menu run servers as a service
-   config_tracker.ini    - Server status tracker and configuration.
-
-UniServer\uni_con\config_menu
-   Server configuration menu and associated files.
-
-UniServer\uni_con\cron
-   Files to periodically run additional scripts.
-UniServer\uni_con\cron\cron.ini
-   Cron configuration file
-UniServer\uni_con\cron\cron_test
-   Contatins three Cron test scripts
-
-UniServer\uni_con\cron_service
-   Files for running CRON as a service
-
-UniServer\uni_con\css
-   CSS files for HTA scripts
-
-UniServer\uni_con\db_backup  
-  Database backup scripts
-
-UniServer\uni_con\dtdns_updater
-  DtDNS automatic account updater
-  Contains script and configuration file
-
-UniServer\uni_con\images
-  Menu images  
-
-UniServer\uni_con\includes
-  Common meu files.
-
-UniServer\uni_con\lang
-  Menu language files. Default English
-
-UniServer\uni_con\php_scripts
-  PHP menu support scripts
-
-UniServer\uni_con\scripts
-  Individual HTA menus called by main menus 
-
-UniServer\uni_con\top_level
-  Files that can be copied to folder UniServer 
 
 UniServer\usr\bin    - Installed by Perl plugin or extract_install_perl.bat
   PERL folder.
@@ -164,7 +79,6 @@ UniServer\usr\local\apache2\modules
 UniServer\usr\local\apache2\server_certs
   Server SSL certificate ssl.crt
   Server SSL Key ssl.key
-
 
 UniServer\usr\local\mysql
   MySQL folder.

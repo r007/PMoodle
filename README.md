@@ -15,7 +15,6 @@ and password "root".
 - MySQL 5.5.24-community
 - PHP 5.4.3
 - msmtp 1.4.27 - PHP Mail client
-- Cron - Scheduler
 - Firefox 13
 - FoxitReader 5.3.0
 
