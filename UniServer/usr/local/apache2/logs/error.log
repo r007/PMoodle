@@ -1,0 +1,123 @@
+[Thu Jun 07 14:11:40.657566 2012] [mpm_winnt:notice] [pid 5064:tid 568] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Thu Jun 07 14:11:40.657566 2012] [mpm_winnt:notice] [pid 5064:tid 568] AH00456: Server built: Apr  7 2012 13:58:11
+[Thu Jun 07 14:11:40.657566 2012] [core:notice] [pid 5064:tid 568] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Thu Jun 07 14:11:40.658564 2012] [mpm_winnt:notice] [pid 5064:tid 568] AH00418: Parent: Created child process 4116
+[Thu Jun 07 14:11:40.999691 2012] [mpm_winnt:notice] [pid 4116:tid 620] AH00354: Child: Starting 64 worker threads.
+[Thu Jun 07 17:20:31.336639 2012] [mpm_winnt:notice] [pid 6120:tid 580] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Thu Jun 07 17:20:31.336639 2012] [mpm_winnt:notice] [pid 6120:tid 580] AH00456: Server built: Apr  7 2012 13:58:11
+[Thu Jun 07 17:20:31.336639 2012] [core:notice] [pid 6120:tid 580] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Thu Jun 07 17:20:31.337638 2012] [mpm_winnt:notice] [pid 6120:tid 580] AH00418: Parent: Created child process 6052
+[Thu Jun 07 17:20:31.713242 2012] [mpm_winnt:notice] [pid 6052:tid 580] AH00354: Child: Starting 64 worker threads.
+[Thu Jun 07 20:58:04.025714 2012] [mpm_winnt:notice] [pid 4272:tid 584] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Thu Jun 07 20:58:04.025714 2012] [mpm_winnt:notice] [pid 4272:tid 584] AH00456: Server built: Apr  7 2012 13:58:11
+[Thu Jun 07 20:58:04.025714 2012] [core:notice] [pid 4272:tid 584] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Thu Jun 07 20:58:04.027712 2012] [mpm_winnt:notice] [pid 4272:tid 584] AH00418: Parent: Created child process 1412
+[Thu Jun 07 20:58:04.439278 2012] [mpm_winnt:notice] [pid 1412:tid 328] AH00354: Child: Starting 64 worker threads.
+[Thu Jun 07 20:58:07.015975 2012] [:error] [pid 1412:tid 1104] [client 127.0.0.1:10625] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:58:07.143835 2012] [:error] [pid 1412:tid 1104] [client 127.0.0.1:10625] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:58:12.212817 2012] [:error] [pid 1412:tid 1096] [client ::1:10642] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:58:12.336684 2012] [:error] [pid 1412:tid 1096] [client ::1:10642] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:58:14.203461 2012] [:error] [pid 1412:tid 1096] [client ::1:10649] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:58:14.318339 2012] [:error] [pid 1412:tid 1096] [client ::1:10649] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:58:16.230433 2012] [:error] [pid 1412:tid 1096] [client ::1:10659] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:58:16.352302 2012] [:error] [pid 1412:tid 1096] [client ::1:10659] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:58:18.376694 2012] [:error] [pid 1412:tid 1096] [client ::1:10667] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:58:18.493570 2012] [:error] [pid 1412:tid 1096] [client ::1:10667] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:58:53.972080 2012] [core:warn] [pid 3204:tid 556] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Jun 07 20:58:53.989062 2012] [mpm_winnt:notice] [pid 3204:tid 556] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Thu Jun 07 20:58:53.989062 2012] [mpm_winnt:notice] [pid 3204:tid 556] AH00456: Server built: Apr  7 2012 13:58:11
+[Thu Jun 07 20:58:53.989062 2012] [core:notice] [pid 3204:tid 556] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Thu Jun 07 20:58:53.990061 2012] [mpm_winnt:notice] [pid 3204:tid 556] AH00418: Parent: Created child process 5800
+[Thu Jun 07 20:58:54.327705 2012] [mpm_winnt:notice] [pid 5800:tid 404] AH00354: Child: Starting 64 worker threads.
+[Thu Jun 07 20:58:57.043709 2012] [:error] [pid 5800:tid 1100] [client 127.0.0.1:10770] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:58:57.149600 2012] [:error] [pid 5800:tid 1100] [client 127.0.0.1:10770] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:59:51.931991 2012] [:error] [pid 5800:tid 1096] [client ::1:10917] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 20:59:52.050865 2012] [:error] [pid 5800:tid 1096] [client ::1:10917] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 21:01:52.372062 2012] [mpm_winnt:notice] [pid 3204:tid 556] AH00428: Parent: child process exited with status 1 -- Restarting.
+[Thu Jun 07 21:01:52.464810 2012] [mpm_winnt:notice] [pid 3204:tid 556] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Thu Jun 07 21:01:52.464810 2012] [mpm_winnt:notice] [pid 3204:tid 556] AH00456: Server built: Apr  7 2012 13:58:11
+[Thu Jun 07 21:01:52.464810 2012] [core:notice] [pid 3204:tid 556] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Thu Jun 07 21:01:52.465817 2012] [mpm_winnt:notice] [pid 3204:tid 556] AH00418: Parent: Created child process 4948
+[Thu Jun 07 21:01:52.805450 2012] [mpm_winnt:notice] [pid 4948:tid 300] AH00354: Child: Starting 64 worker threads.
+[Thu Jun 07 21:01:55.445902 2012] [mpm_winnt:notice] [pid 3204:tid 556] AH00428: Parent: child process exited with status 1 -- Restarting.
+[Thu Jun 07 21:01:55.541800 2012] [mpm_winnt:notice] [pid 3204:tid 556] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Thu Jun 07 21:01:55.541800 2012] [mpm_winnt:notice] [pid 3204:tid 556] AH00456: Server built: Apr  7 2012 13:58:11
+[Thu Jun 07 21:01:55.542799 2012] [core:notice] [pid 3204:tid 556] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Thu Jun 07 21:01:55.543801 2012] [mpm_winnt:notice] [pid 3204:tid 556] AH00418: Parent: Created child process 5928
+[Thu Jun 07 21:01:55.880443 2012] [mpm_winnt:notice] [pid 5928:tid 580] AH00354: Child: Starting 64 worker threads.
+[Thu Jun 07 21:03:04.754331 2012] [core:warn] [pid 44:tid 272] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Jun 07 21:03:04.770314 2012] [mpm_winnt:notice] [pid 44:tid 272] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Thu Jun 07 21:03:04.770314 2012] [mpm_winnt:notice] [pid 44:tid 272] AH00456: Server built: Apr  7 2012 13:58:11
+[Thu Jun 07 21:03:04.770314 2012] [core:notice] [pid 44:tid 272] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Thu Jun 07 21:03:04.771313 2012] [mpm_winnt:notice] [pid 44:tid 272] AH00418: Parent: Created child process 5676
+[Thu Jun 07 21:03:05.112987 2012] [mpm_winnt:notice] [pid 5676:tid 400] AH00354: Child: Starting 64 worker threads.
+[Thu Jun 07 21:03:07.797300 2012] [:error] [pid 5676:tid 1104] [client ::1:11347] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 21:03:07.918171 2012] [:error] [pid 5676:tid 1104] [client ::1:11347] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 21:03:38.427208 2012] [:error] [pid 5676:tid 1104] [client ::1:11410] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 21:03:38.541086 2012] [:error] [pid 5676:tid 1104] [client ::1:11410] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 21:04:28.361721 2012] [:error] [pid 5676:tid 1104] [client ::1:11501] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 21:04:28.470601 2012] [:error] [pid 5676:tid 1104] [client ::1:11501] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Thu Jun 07 21:04:34.109075 2012] [:error] [pid 5676:tid 1104] [client ::1:11516] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296
+[Thu Jun 07 21:04:34.228953 2012] [:error] [pid 5676:tid 1104] [client ::1:11516] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336
+[Thu Jun 07 21:04:37.451552 2012] [:error] [pid 5676:tid 1104] [client ::1:11526] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296
+[Thu Jun 07 21:04:37.558438 2012] [:error] [pid 5676:tid 1104] [client ::1:11526] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336
+[Thu Jun 07 21:11:45.313847 2012] [:error] [pid 5676:tid 1104] [client 127.0.0.1:12394] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296
+[Thu Jun 07 21:11:45.433718 2012] [:error] [pid 5676:tid 1104] [client 127.0.0.1:12394] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336
+[Thu Jun 07 21:17:15.561555 2012] [:error] [pid 5676:tid 1104] [client ::1:13246] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296
+[Thu Jun 07 21:17:15.670437 2012] [:error] [pid 5676:tid 1104] [client ::1:13246] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336
+[Thu Jun 07 21:17:31.037656 2012] [:error] [pid 5676:tid 1104] [client ::1:13288] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296
+[Thu Jun 07 21:17:31.137550 2012] [:error] [pid 5676:tid 1104] [client ::1:13288] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336
+[Thu Jun 07 21:19:45.154306 2012] [:error] [pid 5676:tid 1104] [client ::1:13582] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296
+[Thu Jun 07 21:19:45.276177 2012] [:error] [pid 5676:tid 1104] [client ::1:13582] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336
+[Thu Jun 07 21:30:08.332458 2012] [:error] [pid 5676:tid 1104] [client ::1:15184] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296
+[Thu Jun 07 21:30:08.452328 2012] [:error] [pid 5676:tid 1104] [client ::1:15184] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336
+[Fri Jun 08 12:51:45.966302 2012] [core:warn] [pid 4464:tid 268] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 08 12:51:46.657009 2012] [mpm_winnt:notice] [pid 4464:tid 268] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Fri Jun 08 12:51:46.657009 2012] [mpm_winnt:notice] [pid 4464:tid 268] AH00456: Server built: Apr  7 2012 13:58:11
+[Fri Jun 08 12:51:46.657009 2012] [core:notice] [pid 4464:tid 268] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Fri Jun 08 12:51:46.659007 2012] [mpm_winnt:notice] [pid 4464:tid 268] AH00418: Parent: Created child process 4232
+[Fri Jun 08 12:51:47.065411 2012] [mpm_winnt:notice] [pid 4232:tid 580] AH00354: Child: Starting 64 worker threads.
+[Fri Jun 08 12:51:52.770899 2012] [:error] [pid 4232:tid 1100] [client ::1:9295] PHP Warning:  mysqli::mysqli(): (HY000/2002): No connection could be made because the target machine actively refused it.\r\n in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Fri Jun 08 12:51:56.775895 2012] [:error] [pid 4232:tid 1100] [client ::1:9295] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Fri Jun 08 14:30:38.611422 2012] [core:warn] [pid 6628:tid 380] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 08 14:30:38.630402 2012] [mpm_winnt:notice] [pid 6628:tid 380] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Fri Jun 08 14:30:38.630402 2012] [mpm_winnt:notice] [pid 6628:tid 380] AH00456: Server built: Apr  7 2012 13:58:11
+[Fri Jun 08 14:30:38.630402 2012] [core:notice] [pid 6628:tid 380] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Fri Jun 08 14:30:38.632404 2012] [mpm_winnt:notice] [pid 6628:tid 380] AH00418: Parent: Created child process 5172
+[Fri Jun 08 14:30:39.025982 2012] [mpm_winnt:notice] [pid 5172:tid 460] AH00354: Child: Starting 64 worker threads.
+[Fri Jun 08 16:24:53.152483 2012] [core:warn] [pid 3732:tid 480] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 08 16:24:53.171461 2012] [mpm_winnt:notice] [pid 3732:tid 480] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Fri Jun 08 16:24:53.171461 2012] [mpm_winnt:notice] [pid 3732:tid 480] AH00456: Server built: Apr  7 2012 13:58:11
+[Fri Jun 08 16:24:53.171461 2012] [core:notice] [pid 3732:tid 480] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Fri Jun 08 16:24:53.172460 2012] [mpm_winnt:notice] [pid 3732:tid 480] AH00418: Parent: Created child process 3064
+[Fri Jun 08 16:24:53.803777 2012] [mpm_winnt:notice] [pid 3064:tid 424] AH00354: Child: Starting 64 worker threads.
+[Fri Jun 08 16:26:38.037990 2012] [core:warn] [pid 6444:tid 356] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 08 16:26:38.055970 2012] [mpm_winnt:notice] [pid 6444:tid 356] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Fri Jun 08 16:26:38.055970 2012] [mpm_winnt:notice] [pid 6444:tid 356] AH00456: Server built: Apr  7 2012 13:58:11
+[Fri Jun 08 16:26:38.055970 2012] [core:notice] [pid 6444:tid 356] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Fri Jun 08 16:26:38.057969 2012] [mpm_winnt:notice] [pid 6444:tid 356] AH00418: Parent: Created child process 6092
+[Fri Jun 08 16:26:38.573476 2012] [mpm_winnt:notice] [pid 6092:tid 584] AH00354: Child: Starting 64 worker threads.
+[Fri Jun 08 16:27:22.065184 2012] [core:warn] [pid 7164:tid 680] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 08 16:27:22.082166 2012] [mpm_winnt:notice] [pid 7164:tid 680] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Fri Jun 08 16:27:22.082166 2012] [mpm_winnt:notice] [pid 7164:tid 680] AH00456: Server built: Apr  7 2012 13:58:11
+[Fri Jun 08 16:27:22.082166 2012] [core:notice] [pid 7164:tid 680] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Fri Jun 08 16:27:22.084163 2012] [mpm_winnt:notice] [pid 7164:tid 680] AH00418: Parent: Created child process 3104
+[Fri Jun 08 16:27:22.474751 2012] [mpm_winnt:notice] [pid 3104:tid 488] AH00354: Child: Starting 64 worker threads.
+[Fri Jun 08 16:28:21.931832 2012] [core:warn] [pid 7088:tid 272] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 08 16:28:21.950813 2012] [mpm_winnt:notice] [pid 7088:tid 272] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Fri Jun 08 16:28:21.950813 2012] [mpm_winnt:notice] [pid 7088:tid 272] AH00456: Server built: Apr  7 2012 13:58:11
+[Fri Jun 08 16:28:21.950813 2012] [core:notice] [pid 7088:tid 272] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Fri Jun 08 16:28:21.951811 2012] [mpm_winnt:notice] [pid 7088:tid 272] AH00418: Parent: Created child process 5912
+[Fri Jun 08 16:28:22.359283 2012] [mpm_winnt:notice] [pid 5912:tid 588] AH00354: Child: Starting 64 worker threads.
+[Fri Jun 08 16:31:30.153180 2012] [core:warn] [pid 5960:tid 676] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 08 16:31:30.173159 2012] [mpm_winnt:notice] [pid 5960:tid 676] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Fri Jun 08 16:31:30.173159 2012] [mpm_winnt:notice] [pid 5960:tid 676] AH00456: Server built: Apr  7 2012 13:58:11
+[Fri Jun 08 16:31:30.173159 2012] [core:notice] [pid 5960:tid 676] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Fri Jun 08 16:31:30.174158 2012] [mpm_winnt:notice] [pid 5960:tid 676] AH00418: Parent: Created child process 5884
+[Fri Jun 08 16:31:30.567672 2012] [mpm_winnt:notice] [pid 5884:tid 368] AH00354: Child: Starting 64 worker threads.
+[Fri Jun 08 16:51:11.616655 2012] [core:warn] [pid 4644:tid 356] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 08 16:51:11.658609 2012] [mpm_winnt:notice] [pid 4644:tid 356] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Fri Jun 08 16:51:11.658609 2012] [mpm_winnt:notice] [pid 4644:tid 356] AH00456: Server built: Apr  7 2012 13:58:11
+[Fri Jun 08 16:51:11.658609 2012] [core:notice] [pid 4644:tid 356] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Fri Jun 08 16:51:11.660607 2012] [mpm_winnt:notice] [pid 4644:tid 356] AH00418: Parent: Created child process 4664
+[Fri Jun 08 16:51:12.035591 2012] [mpm_winnt:notice] [pid 4664:tid 424] AH00354: Child: Starting 64 worker threads.
