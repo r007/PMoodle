@@ -18,3 +18,7 @@ user_pref("network.cookie.prefsMigrated", true);
 user_pref("browser.shell.checkDefaultBrowser", false);
 
 user_pref("browser.shell.checkDefaultBrowser", false);
+
+user_pref("browser.shell.checkDefaultBrowser", false);
+
+user_pref("browser.shell.checkDefaultBrowser", false);

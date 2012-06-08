@@ -1,11 +1,10 @@
 <start>
 	<files>
 		<file name="Start (r/w)">
-			<path>UniServer\FirefoxPortable\FirefoxPortable.exe</path>
-			<parameters>localhost:4001/RU/index.shtml</parameters>
+			<path>Server_Start.bat</path>
 			<icon>Icons\Play.ico</icon>
-			<runcount>33</runcount>
-			<rundate>2012/06/07 20:53:37</rundate>
+			<runcount>34</runcount>
+			<rundate>2012/06/08 14:30:05</rundate>
 		</file>
 		<file name="Stop">
 			<path>Stop.bat</path>
@@ -55,8 +54,8 @@
 		<backupmode>pbmTemporary</backupmode>
 	</configurationfile>
 	<execution>
-		<count>84</count>
-		<overalltime>28:47:19.717</overalltime>
+		<count>85</count>
+		<overalltime>28:47:48.126</overalltime>
 	</execution>
 	<general>
 		<executionaction>0</executionaction>
