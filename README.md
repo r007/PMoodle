@@ -9,6 +9,8 @@ The Details
 -----------
 
 This package contains preconfigured Uniform Server installation, including some portable apps such as Firefox and Foxit Reader.
+To access Moodle, use the following credentials: username "admin" and password "Password123_". For MySQL default username "root"
+and password "root".
 - Apache 2.4.2
 - MySQL 5.5.24-community
 - PHP 5.4.3
