@@ -1072,12 +1072,14 @@ components/jsd3250.dll
 components/nsPostUpdateWin.js
 js3250.dll
 plugins/npnul32.dll
+Microsoft.VC80.CRT.manifest
+msvcm80.dll
+msvcp80.dll
+msvcr80.dll
 Microsoft.VC90.CRT.manifest
 msvcm90.dll
 msvcp90.dll
 msvcr90.dll
-msvcp100.dll
-msvcr100.dll
 msvcp110.dll
 msvcr110.dll
 mozcrt19.dll

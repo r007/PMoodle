@@ -8,12 +8,13 @@ and database.
 The Details
 -----------
 
-This package contains preconfigured Uniform Server installation.
+This package contains preconfigured Uniform Server installation, including some portable apps such as Firefox and Foxit Reader.
 - Apache 2.4.2
 - MySQL 5.5.24-community
 - PHP 5.4.3
 - msmtp 1.4.27 - PHP Mail client
 - Cron - Scheduler
-
+- Firefox 13
+- FoxitReader 5.3.0
 
 

@@ -71,3 +71,11 @@
 [Thu Jun 07 21:19:45.276177 2012] [:error] [pid 5676:tid 1104] [client ::1:13582] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336
 [Thu Jun 07 21:30:08.332458 2012] [:error] [pid 5676:tid 1104] [client ::1:15184] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'moodle' in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296
 [Thu Jun 07 21:30:08.452328 2012] [:error] [pid 5676:tid 1104] [client ::1:15184] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336
+[Fri Jun 08 12:51:45.966302 2012] [core:warn] [pid 4464:tid 268] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 08 12:51:46.657009 2012] [mpm_winnt:notice] [pid 4464:tid 268] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Fri Jun 08 12:51:46.657009 2012] [mpm_winnt:notice] [pid 4464:tid 268] AH00456: Server built: Apr  7 2012 13:58:11
+[Fri Jun 08 12:51:46.657009 2012] [core:notice] [pid 4464:tid 268] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Fri Jun 08 12:51:46.659007 2012] [mpm_winnt:notice] [pid 4464:tid 268] AH00418: Parent: Created child process 4232
+[Fri Jun 08 12:51:47.065411 2012] [mpm_winnt:notice] [pid 4232:tid 580] AH00354: Child: Starting 64 worker threads.
+[Fri Jun 08 12:51:52.770899 2012] [:error] [pid 4232:tid 1100] [client ::1:9295] PHP Warning:  mysqli::mysqli(): (HY000/2002): No connection could be made because the target machine actively refused it.\r\n in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Fri Jun 08 12:51:56.775895 2012] [:error] [pid 4232:tid 1100] [client ::1:9295] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml

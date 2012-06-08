@@ -3,21 +3,33 @@
 		<file name="Start (r/w)">
 			<path>UniServer\FirefoxPortable\FirefoxPortable.exe</path>
 			<parameters>localhost:4001/RU/index.shtml</parameters>
-			<icon>Icons\hdd.ico</icon>
-			<runcount>32</runcount>
-			<rundate>2012/06/07 20:21:55</rundate>
+			<icon>Icons\Play.ico</icon>
+			<runcount>33</runcount>
+			<rundate>2012/06/07 20:53:37</rundate>
 		</file>
 		<file name="Stop">
 			<path>Stop.bat</path>
-			<icon>Icons\Stop_save.ico</icon>
-			<runcount>10</runcount>
-			<rundate>2012/06/07 20:51:44</rundate>
+			<icon>Icons\Stop.ico</icon>
+			<runcount>18</runcount>
+			<rundate>2012/06/08 13:14:48</rundate>
 		</file>
 		<file name="Help">
 			<path>UniServer\www\RU\student.shtml</path>
-			<icon>UniServer\www\EN\hlp.ico</icon>
+			<icon>Icons\Help Blue Button.ico</icon>
 			<runcount>1</runcount>
 			<rundate>2007/11/19 13:49:01</rundate>
+		</file>
+		<separator>
+		</separator>
+		<file name="Mozilla Firefox">
+			<path>UniServer\FirefoxPortable\FirefoxPortable.exe</path>
+			<runcount>1</runcount>
+			<rundate>2012/06/08 13:17:24</rundate>
+		</file>
+		<file name="Foxit Reader">
+			<path>UniServer\FoxitReaderPortable\FoxitReaderPortable.exe</path>
+			<runcount>1</runcount>
+			<rundate>2012/06/08 13:17:08</rundate>
 		</file>
 	</files>
 	<notes>
@@ -43,8 +55,8 @@
 		<backupmode>pbmTemporary</backupmode>
 	</configurationfile>
 	<execution>
-		<count>83</count>
-		<overalltime>21:06:33.041</overalltime>
+		<count>84</count>
+		<overalltime>28:47:19.717</overalltime>
 	</execution>
 	<general>
 		<executionaction>0</executionaction>
@@ -158,8 +170,8 @@
 	<window>
 		<main>
 			<position>
-				<x>1473</x>
-				<y>467</y>
+				<x>1471</x>
+				<y>434</y>
 			</position>
 			<size>
 				<x>225</x>
