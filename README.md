@@ -19,4 +19,4 @@ and password "root".
 - Firefox 13
 - FoxitReader 5.3.0
 
-
+![Screenshot](http://i.imgur.com/LbDhy.png)
