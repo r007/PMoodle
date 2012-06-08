@@ -1,10 +1,9 @@
 @echo off
-cls
 COLOR B0
 TITLE UNIFORM SERVER - Stop Server as program
 
 rem ###################################################
-rem # Name: Stop_and_Save.bat
+rem # Name: Stop.bat
 rem # Created By: r007
 rem # V 1.0 07-06-2012
 rem ##################################################

@@ -1,5 +1,5 @@
-﻿@echo off
 cls
+@echo off
 COLOR B0
 TITLE UNIFORM SERVER - Start Server as program
 
@@ -10,7 +10,7 @@ rem # V 1.0 07-06-2012
 rem ##################################################
 echo.
 
-rem working directory current folder 
+rem --- working directory current folder 
 pushd %~dp0
 
 start PStart.exe
