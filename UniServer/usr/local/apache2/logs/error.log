@@ -187,3 +187,26 @@
 [Fri Jun 08 19:27:17.823940 2012] [core:notice] [pid 3720:tid 256] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
 [Fri Jun 08 19:27:17.825938 2012] [mpm_winnt:notice] [pid 3720:tid 256] AH00418: Parent: Created child process 2892
 [Fri Jun 08 19:27:18.188487 2012] [mpm_winnt:notice] [pid 2892:tid 628] AH00354: Child: Starting 64 worker threads.
+[Sat Jun 09 02:46:45.773276 2012] [core:warn] [pid 4076:tid 256] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Jun 09 02:46:45.904137 2012] [mpm_winnt:notice] [pid 4076:tid 256] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Sat Jun 09 02:46:45.904137 2012] [mpm_winnt:notice] [pid 4076:tid 256] AH00456: Server built: Apr  7 2012 13:58:11
+[Sat Jun 09 02:46:45.904137 2012] [core:notice] [pid 4076:tid 256] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Sat Jun 09 02:46:45.906134 2012] [mpm_winnt:notice] [pid 4076:tid 256] AH00418: Parent: Created child process 2020
+[Sat Jun 09 02:46:46.335672 2012] [mpm_winnt:notice] [pid 2020:tid 620] AH00354: Child: Starting 64 worker threads.
+[Sat Jun 09 04:11:03.522244 2012] [mpm_winnt:notice] [pid 4076:tid 256] AH00428: Parent: child process exited with status 1073807364 -- Restarting.
+[Sat Jun 09 04:11:03.693919 2012] [mpm_winnt:notice] [pid 4076:tid 256] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Sat Jun 09 04:11:03.693919 2012] [mpm_winnt:notice] [pid 4076:tid 256] AH00456: Server built: Apr  7 2012 13:58:11
+[Sat Jun 09 04:11:03.693919 2012] [core:notice] [pid 4076:tid 256] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Sat Jun 09 04:11:03.694918 2012] [mpm_winnt:notice] [pid 4076:tid 256] AH00418: Parent: Created child process 4652
+[Sat Jun 09 04:11:03.703910 2012] [mpm_winnt:crit] [pid 4076:tid 256] AH00419: master_main: create child process failed. Exiting.
+[Mon Jun 11 00:27:48.964348 2012] [mpm_winnt:notice] [pid 4028:tid 408] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 11 00:27:48.971340 2012] [mpm_winnt:notice] [pid 4028:tid 408] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 11 00:27:48.971340 2012] [core:notice] [pid 4028:tid 408] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 11 00:27:48.974337 2012] [mpm_winnt:notice] [pid 4028:tid 408] AH00418: Parent: Created child process 3836
+[Mon Jun 11 00:27:49.428209 2012] [mpm_winnt:notice] [pid 3836:tid 580] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 11 01:37:50.668855 2012] [core:warn] [pid 3848:tid 616] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 11 01:37:50.686837 2012] [mpm_winnt:notice] [pid 3848:tid 616] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 11 01:37:50.686837 2012] [mpm_winnt:notice] [pid 3848:tid 616] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 11 01:37:50.686837 2012] [core:notice] [pid 3848:tid 616] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 11 01:37:50.687836 2012] [mpm_winnt:notice] [pid 3848:tid 616] AH00418: Parent: Created child process 5820
+[Mon Jun 11 01:37:51.106791 2012] [mpm_winnt:notice] [pid 5820:tid 580] AH00354: Child: Starting 64 worker threads.

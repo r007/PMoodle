@@ -1,6 +1,6 @@
 <start>
 	<files>
-		<file name="Start (r/w)">
+		<file name="Start">
 			<path>Server_Start.bat</path>
 			<icon>Icons\Play.ico</icon>
 			<runcount>45</runcount>
@@ -9,8 +9,8 @@
 		<file name="Stop">
 			<path>Stop.bat</path>
 			<icon>Icons\Stop.ico</icon>
-			<runcount>35</runcount>
-			<rundate>2012/06/08 19:27:22</rundate>
+			<runcount>36</runcount>
+			<rundate>2012/06/11 00:37:25</rundate>
 		</file>
 		<file name="Help">
 			<path>Docs\</path>
@@ -54,8 +54,8 @@
 		<backupmode>pbmTemporary</backupmode>
 	</configurationfile>
 	<execution>
-		<count>87</count>
-		<overalltime>31:53:55.504</overalltime>
+		<count>89</count>
+		<overalltime>34:28:04.831</overalltime>
 	</execution>
 	<general>
 		<executionaction>0</executionaction>
@@ -169,8 +169,8 @@
 	<window>
 		<main>
 			<position>
-				<x>1471</x>
-				<y>434</y>
+				<x>1482</x>
+				<y>701</y>
 			</position>
 			<size>
 				<x>225</x>
