@@ -9,14 +9,14 @@
 		<file name="Stop">
 			<path>Stop.bat</path>
 			<icon>Icons\Stop.ico</icon>
-			<runcount>36</runcount>
-			<rundate>2012/06/11 00:37:25</rundate>
+			<runcount>42</runcount>
+			<rundate>2012/06/11 03:50:41</rundate>
 		</file>
 		<file name="Help">
 			<path>Docs\</path>
 			<icon>Icons\Help Blue Button.ico</icon>
-			<runcount>8</runcount>
-			<rundate>2012/06/08 16:51:31</rundate>
+			<runcount>9</runcount>
+			<rundate>2012/06/11 01:38:17</rundate>
 		</file>
 		<separator>
 		</separator>
@@ -55,7 +55,7 @@
 	</configurationfile>
 	<execution>
 		<count>89</count>
-		<overalltime>34:28:04.831</overalltime>
+		<overalltime>36:41:30.733</overalltime>
 	</execution>
 	<general>
 		<executionaction>0</executionaction>
