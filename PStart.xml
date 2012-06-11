@@ -9,8 +9,8 @@
 		<file name="Stop">
 			<path>Stop.bat</path>
 			<icon>Icons\Stop.ico</icon>
-			<runcount>42</runcount>
-			<rundate>2012/06/11 03:50:41</rundate>
+			<runcount>44</runcount>
+			<rundate>2012/06/11 04:15:46</rundate>
 		</file>
 		<file name="Help">
 			<path>Docs\</path>
@@ -54,8 +54,8 @@
 		<backupmode>pbmTemporary</backupmode>
 	</configurationfile>
 	<execution>
-		<count>89</count>
-		<overalltime>36:41:30.733</overalltime>
+		<count>90</count>
+		<overalltime>36:53:20.610</overalltime>
 	</execution>
 	<general>
 		<executionaction>0</executionaction>
