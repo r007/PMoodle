@@ -3,20 +3,20 @@
 		<file name="Start">
 			<path>Server_Start.bat</path>
 			<icon>Icons\Play.ico</icon>
-			<runcount>45</runcount>
-			<rundate>2012/06/08 19:27:14</rundate>
+			<runcount>47</runcount>
+			<rundate>2012/06/12 02:17:55</rundate>
 		</file>
 		<file name="Stop">
 			<path>Stop.bat</path>
 			<icon>Icons\Stop.ico</icon>
-			<runcount>44</runcount>
-			<rundate>2012/06/11 04:15:46</rundate>
+			<runcount>52</runcount>
+			<rundate>2012/06/13 10:42:39</rundate>
 		</file>
 		<file name="Help">
 			<path>Docs\</path>
 			<icon>Icons\Help Blue Button.ico</icon>
-			<runcount>9</runcount>
-			<rundate>2012/06/11 01:38:17</rundate>
+			<runcount>12</runcount>
+			<rundate>2012/06/13 10:14:12</rundate>
 		</file>
 		<separator>
 		</separator>
@@ -27,8 +27,8 @@
 		</file>
 		<file name="Foxit Reader">
 			<path>UniServer\FoxitReaderPortable\FoxitReaderPortable.exe</path>
-			<runcount>1</runcount>
-			<rundate>2012/06/08 13:17:08</rundate>
+			<runcount>2</runcount>
+			<rundate>2012/06/13 10:41:05</rundate>
 		</file>
 	</files>
 	<notes>
@@ -54,8 +54,8 @@
 		<backupmode>pbmTemporary</backupmode>
 	</configurationfile>
 	<execution>
-		<count>90</count>
-		<overalltime>36:53:20.610</overalltime>
+		<count>98</count>
+		<overalltime>38:04:36.232</overalltime>
 	</execution>
 	<general>
 		<executionaction>0</executionaction>
@@ -169,8 +169,8 @@
 	<window>
 		<main>
 			<position>
-				<x>1482</x>
-				<y>701</y>
+				<x>1570</x>
+				<y>286</y>
 			</position>
 			<size>
 				<x>225</x>
