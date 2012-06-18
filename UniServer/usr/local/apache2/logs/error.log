@@ -276,3 +276,152 @@
 [Wed Jun 13 20:41:21.048339 2012] [core:notice] [pid 5600:tid 168] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
 [Wed Jun 13 20:41:21.049338 2012] [mpm_winnt:notice] [pid 5600:tid 168] AH00418: Parent: Created child process 4652
 [Wed Jun 13 20:41:21.430585 2012] [mpm_winnt:notice] [pid 4652:tid 436] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 01:48:40.500664 2012] [core:warn] [pid 3096:tid 360] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 01:48:43.705515 2012] [mpm_winnt:notice] [pid 3096:tid 360] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 01:48:43.705515 2012] [mpm_winnt:notice] [pid 3096:tid 360] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 01:48:43.705515 2012] [core:notice] [pid 3096:tid 360] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 01:48:43.708511 2012] [mpm_winnt:notice] [pid 3096:tid 360] AH00418: Parent: Created child process 7328
+[Mon Jun 18 01:48:44.123172 2012] [mpm_winnt:notice] [pid 7328:tid 416] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 01:48:48.913617 2012] [:error] [pid 7328:tid 1092] [client ::1:19969] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:48:50.151484 2012] [:error] [pid 7328:tid 1092] [client ::1:19969] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:49:03.079784 2012] [:error] [pid 7328:tid 1092] [client ::1:20003] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:49:03.181675 2012] [:error] [pid 7328:tid 1092] [client ::1:20003] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:49:03.977061 2012] [:error] [pid 7328:tid 1092] [client ::1:20011] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:49:04.079953 2012] [:error] [pid 7328:tid 1092] [client ::1:20011] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:49:46.374666 2012] [:error] [pid 7328:tid 1092] [client ::1:20061] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:49:46.475565 2012] [:error] [pid 7328:tid 1092] [client ::1:20061] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:49:47.330654 2012] [:error] [pid 7328:tid 1092] [client ::1:20064] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:49:47.430549 2012] [:error] [pid 7328:tid 1092] [client ::1:20064] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:52:45.978380 2012] [core:warn] [pid 6524:tid 284] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 01:52:45.997360 2012] [mpm_winnt:notice] [pid 6524:tid 284] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 01:52:45.997360 2012] [mpm_winnt:notice] [pid 6524:tid 284] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 01:52:45.998366 2012] [core:notice] [pid 6524:tid 284] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 01:52:45.999358 2012] [mpm_winnt:notice] [pid 6524:tid 284] AH00418: Parent: Created child process 7624
+[Mon Jun 18 01:52:46.381283 2012] [mpm_winnt:notice] [pid 7624:tid 408] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 01:52:48.052484 2012] [:error] [pid 7624:tid 1104] [client ::1:20221] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 296, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:52:48.165368 2012] [:error] [pid 7624:tid 1104] [client ::1:20221] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in W:\\www\\moodle\\lib\\dml\\mysqli_native_moodle_database.php on line 336, referer: http://localhost:4001/RU/index.shtml
+[Mon Jun 18 01:56:00.499002 2012] [core:warn] [pid 5652:tid 444] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 01:56:00.525974 2012] [mpm_winnt:notice] [pid 5652:tid 444] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 01:56:00.525974 2012] [mpm_winnt:notice] [pid 5652:tid 444] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 01:56:00.525974 2012] [core:notice] [pid 5652:tid 444] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 01:56:00.527971 2012] [mpm_winnt:notice] [pid 5652:tid 444] AH00418: Parent: Created child process 6572
+[Mon Jun 18 01:56:00.899579 2012] [mpm_winnt:notice] [pid 6572:tid 656] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 02:46:27.873643 2012] [core:warn] [pid 8160:tid 164] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 02:46:27.897617 2012] [mpm_winnt:notice] [pid 8160:tid 164] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 02:46:27.897617 2012] [mpm_winnt:notice] [pid 8160:tid 164] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 02:46:27.897617 2012] [core:notice] [pid 8160:tid 164] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 02:46:27.898616 2012] [mpm_winnt:notice] [pid 8160:tid 164] AH00418: Parent: Created child process 3288
+[Mon Jun 18 02:46:28.294199 2012] [mpm_winnt:notice] [pid 3288:tid 440] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 02:48:35.104404 2012] [:error] [pid 3288:tid 1088] [client ::1:24492] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/
+[Mon Jun 18 02:50:13.776285 2012] [:error] [pid 3288:tid 1088] [client ::1:24625] PHP Notice:  cURL request for "http://bloodninja.dyndns.org" failed, HTTP response code: HTTP/1.0 401 Unauthorized\r\n<ul style="text-align: left"><li>line 1153 of \\lib\\filelib.php: call to debugging()</li><li>line 70 of \\mnet\\peer.php: call to download_file_content()</li><li>line 91 of \\admin\\mnet\\peers.php: call to mnet_peer->bootstrap()</li></ul> in W:\\www\\moodle\\lib\\weblib.php on line 2751, referer: http://localhost:4001/moodle/admin/mnet/peers.php
+[Mon Jun 18 02:50:13.818525 2012] [:error] [pid 3288:tid 1088] [client ::1:24625] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/admin/mnet/peers.php
+[Mon Jun 18 02:50:13.825517 2012] [:error] [pid 3288:tid 1088] [client ::1:24625] PHP Notice:  Request for http://bloodninja.dyndns.org failed with HTTP code 401<ul style="text-align: left"><li>line 111 of \\mnet\\lib.php: call to debugging()</li><li>line 90 of \\mnet\\peer.php: call to mnet_get_public_key()</li><li>line 91 of \\admin\\mnet\\peers.php: call to mnet_peer->bootstrap()</li></ul> in W:\\www\\moodle\\lib\\weblib.php on line 2751, referer: http://localhost:4001/moodle/admin/mnet/peers.php
+[Mon Jun 18 02:50:13.825517 2012] [:error] [pid 3288:tid 1088] [client ::1:24625] PHP Notice:  Request for http://bloodninja.dyndns.org returned empty response<ul style="text-align: left"><li>line 134 of \\mnet\\lib.php: call to debugging()</li><li>line 90 of \\mnet\\peer.php: call to mnet_get_public_key()</li><li>line 91 of \\admin\\mnet\\peers.php: call to mnet_peer->bootstrap()</li></ul> in W:\\www\\moodle\\lib\\weblib.php on line 2751, referer: http://localhost:4001/moodle/admin/mnet/peers.php
+[Mon Jun 18 02:50:42.735032 2012] [:error] [pid 3288:tid 1088] [client ::1:24692] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/admin/mnet/peers.php
+[Mon Jun 18 02:53:37.166499 2012] [:error] [pid 3288:tid 1088] [client ::1:25040] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/admin/mnet/access_control.php
+[Mon Jun 18 02:54:04.731755 2012] [:error] [pid 3288:tid 1088] [client ::1:25118] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/admin/settings.php?section=manageauths
+[Mon Jun 18 02:54:06.855787 2012] [:error] [pid 3288:tid 1088] [client ::1:25118] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/admin/settings.php?section=manageauths
+[Mon Jun 18 03:05:37.646761 2012] [core:warn] [pid 3108:tid 264] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 03:05:37.665741 2012] [mpm_winnt:notice] [pid 3108:tid 264] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 03:05:37.665741 2012] [mpm_winnt:notice] [pid 3108:tid 264] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 03:05:37.665741 2012] [core:notice] [pid 3108:tid 264] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 03:05:37.666741 2012] [mpm_winnt:notice] [pid 3108:tid 264] AH00418: Parent: Created child process 7980
+[Mon Jun 18 03:05:38.210135 2012] [mpm_winnt:notice] [pid 7980:tid 432] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 09:06:54.323063 2012] [core:warn] [pid 4532:tid 244] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 09:06:57.346309 2012] [mpm_winnt:notice] [pid 4532:tid 244] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 09:06:57.346309 2012] [mpm_winnt:notice] [pid 4532:tid 244] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 09:06:57.346309 2012] [core:notice] [pid 4532:tid 244] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 09:06:57.348307 2012] [mpm_winnt:notice] [pid 4532:tid 244] AH00418: Parent: Created child process 2036
+[Mon Jun 18 09:06:57.766499 2012] [mpm_winnt:notice] [pid 2036:tid 584] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 09:10:05.089890 2012] [core:warn] [pid 4756:tid 256] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 09:10:05.107872 2012] [mpm_winnt:notice] [pid 4756:tid 256] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 09:10:05.107872 2012] [mpm_winnt:notice] [pid 4756:tid 256] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 09:10:05.107872 2012] [core:notice] [pid 4756:tid 256] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 09:10:05.109871 2012] [mpm_winnt:notice] [pid 4756:tid 256] AH00418: Parent: Created child process 2864
+[Mon Jun 18 09:10:05.502936 2012] [mpm_winnt:notice] [pid 2864:tid 460] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 09:12:12.996939 2012] [core:warn] [pid 936:tid 264] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 09:12:13.014921 2012] [mpm_winnt:notice] [pid 936:tid 264] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 09:12:13.014921 2012] [mpm_winnt:notice] [pid 936:tid 264] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 09:12:13.014921 2012] [core:notice] [pid 936:tid 264] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 09:12:13.015919 2012] [mpm_winnt:notice] [pid 936:tid 264] AH00418: Parent: Created child process 4208
+[Mon Jun 18 09:12:13.467941 2012] [mpm_winnt:notice] [pid 4208:tid 428] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 09:14:50.535762 2012] [core:warn] [pid 5608:tid 372] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 09:14:50.552744 2012] [mpm_winnt:notice] [pid 5608:tid 372] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 09:14:50.552744 2012] [mpm_winnt:notice] [pid 5608:tid 372] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 09:14:50.552744 2012] [core:notice] [pid 5608:tid 372] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 09:14:50.554743 2012] [mpm_winnt:notice] [pid 5608:tid 372] AH00418: Parent: Created child process 5752
+[Mon Jun 18 09:14:50.946333 2012] [mpm_winnt:notice] [pid 5752:tid 452] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 09:15:11.903165 2012] [:error] [pid 5752:tid 1104] [client ::1:8769] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 09:15:19.773885 2012] [:error] [pid 5752:tid 1104] [client ::1:8793] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/login/index.php
+[Mon Jun 18 09:15:43.125559 2012] [:error] [pid 5752:tid 1104] [client ::1:8858] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 09:17:09.505599 2012] [core:warn] [pid 5088:tid 276] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 09:17:09.524580 2012] [mpm_winnt:notice] [pid 5088:tid 276] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 09:17:09.524580 2012] [mpm_winnt:notice] [pid 5088:tid 276] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 09:17:09.524580 2012] [core:notice] [pid 5088:tid 276] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 09:17:09.525579 2012] [mpm_winnt:notice] [pid 5088:tid 276] AH00418: Parent: Created child process 3324
+[Mon Jun 18 09:17:09.893194 2012] [mpm_winnt:notice] [pid 3324:tid 640] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 09:24:33.798160 2012] [core:warn] [pid 4940:tid 264] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 09:24:33.818138 2012] [mpm_winnt:notice] [pid 4940:tid 264] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 09:24:33.818138 2012] [mpm_winnt:notice] [pid 4940:tid 264] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 09:24:33.818138 2012] [core:notice] [pid 4940:tid 264] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 09:24:33.819137 2012] [mpm_winnt:notice] [pid 4940:tid 264] AH00418: Parent: Created child process 76
+[Mon Jun 18 09:24:34.189212 2012] [mpm_winnt:notice] [pid 76:tid 580] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 09:25:23.890603 2012] [core:warn] [pid 744:tid 352] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 09:25:23.908584 2012] [mpm_winnt:notice] [pid 744:tid 352] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 09:25:23.908584 2012] [mpm_winnt:notice] [pid 744:tid 352] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 09:25:23.908584 2012] [core:notice] [pid 744:tid 352] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 09:25:23.909587 2012] [mpm_winnt:notice] [pid 744:tid 352] AH00418: Parent: Created child process 3100
+[Mon Jun 18 09:25:24.283158 2012] [mpm_winnt:notice] [pid 3100:tid 456] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 09:27:55.279257 2012] [core:warn] [pid 5464:tid 264] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 09:27:55.297238 2012] [mpm_winnt:notice] [pid 5464:tid 264] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 09:27:55.297238 2012] [mpm_winnt:notice] [pid 5464:tid 264] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 09:27:55.297238 2012] [core:notice] [pid 5464:tid 264] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 09:27:55.298237 2012] [mpm_winnt:notice] [pid 5464:tid 264] AH00418: Parent: Created child process 4636
+[Mon Jun 18 09:27:55.672489 2012] [mpm_winnt:notice] [pid 4636:tid 440] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 09:28:57.286801 2012] [:error] [pid 4636:tid 1096] [client ::1:10469] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 09:31:16.594749 2012] [:error] [pid 4636:tid 1096] [client ::1:10764] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 09:31:38.484363 2012] [core:warn] [pid 5476:tid 276] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 09:31:38.501344 2012] [mpm_winnt:notice] [pid 5476:tid 276] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 09:31:38.501344 2012] [mpm_winnt:notice] [pid 5476:tid 276] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 09:31:38.501344 2012] [core:notice] [pid 5476:tid 276] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 09:31:38.502343 2012] [mpm_winnt:notice] [pid 5476:tid 276] AH00418: Parent: Created child process 5244
+[Mon Jun 18 09:31:38.888896 2012] [mpm_winnt:notice] [pid 5244:tid 676] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 09:31:44.582419 2012] [:error] [pid 5244:tid 1104] [client 127.0.0.1:10814] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 09:31:48.962673 2012] [:error] [pid 5244:tid 1104] [client 127.0.0.1:10814] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 09:31:52.443062 2012] [:error] [pid 5244:tid 1104] [client 127.0.0.1:10814] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 09:31:55.578830 2012] [:error] [pid 5244:tid 1104] [client 127.0.0.1:10814] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 09:36:19.495280 2012] [:error] [pid 5244:tid 1088] [client ::1:11524] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 09:40:12.712637 2012] [:error] [pid 5244:tid 1104] [client ::1:12177] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 09:53:34.646210 2012] [core:warn] [pid 5364:tid 448] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 09:53:34.668187 2012] [mpm_winnt:notice] [pid 5364:tid 448] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 09:53:34.668187 2012] [mpm_winnt:notice] [pid 5364:tid 448] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 09:53:34.668187 2012] [core:notice] [pid 5364:tid 448] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 09:53:34.670185 2012] [mpm_winnt:notice] [pid 5364:tid 448] AH00418: Parent: Created child process 5676
+[Mon Jun 18 09:53:35.035804 2012] [mpm_winnt:notice] [pid 5676:tid 452] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 09:53:43.154920 2012] [:error] [pid 5676:tid 1096] [client ::1:13949] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 09:56:59.812048 2012] [:error] [pid 5676:tid 1096] [client ::1:14346] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 10:08:42.286805 2012] [:error] [pid 5676:tid 1096] [client ::1:15571] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 10:13:08.654380 2012] [:error] [pid 5676:tid 1092] [client ::1:15953] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/admin/settings.php
+[Mon Jun 18 10:13:19.007973 2012] [:error] [pid 5676:tid 1084] [client ::1:15969] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/admin/settings.php
+[Mon Jun 18 10:13:23.135637 2012] [:error] [pid 5676:tid 1084] [client ::1:15969] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/admin/mnet/index.php
+[Mon Jun 18 10:16:10.526750 2012] [core:warn] [pid 52:tid 456] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 10:16:10.544731 2012] [mpm_winnt:notice] [pid 52:tid 456] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 10:16:10.544731 2012] [mpm_winnt:notice] [pid 52:tid 456] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 10:16:10.544731 2012] [core:notice] [pid 52:tid 456] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 10:16:10.546729 2012] [mpm_winnt:notice] [pid 52:tid 456] AH00418: Parent: Created child process 1456
+[Mon Jun 18 10:16:10.912346 2012] [mpm_winnt:notice] [pid 1456:tid 584] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 10:16:17.665805 2012] [:error] [pid 1456:tid 1104] [client 127.0.0.1:16285] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 10:16:22.738280 2012] [:error] [pid 1456:tid 1104] [client 127.0.0.1:16285] Can not generate keypair, sorry, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 10:16:37.840914 2012] [:error] [pid 1456:tid 1104] [client ::1:16342] New public key has been generated. It expires 2012/07/16 06:16:37, referer: http://localhost:4001/moodle/index.php
+[Mon Jun 18 10:18:58.011945 2012] [core:warn] [pid 5996:tid 264] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 10:18:58.029920 2012] [mpm_winnt:notice] [pid 5996:tid 264] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 10:18:58.029920 2012] [mpm_winnt:notice] [pid 5996:tid 264] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 10:18:58.029920 2012] [core:notice] [pid 5996:tid 264] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 10:18:58.031917 2012] [mpm_winnt:notice] [pid 5996:tid 264] AH00418: Parent: Created child process 4548
+[Mon Jun 18 10:18:58.392534 2012] [mpm_winnt:notice] [pid 4548:tid 428] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 18 10:19:45.520325 2012] [core:warn] [pid 5356:tid 508] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jun 18 10:19:45.538308 2012] [mpm_winnt:notice] [pid 5356:tid 508] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Mon Jun 18 10:19:45.538308 2012] [mpm_winnt:notice] [pid 5356:tid 508] AH00456: Server built: Apr  7 2012 13:58:11
+[Mon Jun 18 10:19:45.538308 2012] [core:notice] [pid 5356:tid 508] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Mon Jun 18 10:19:45.539306 2012] [mpm_winnt:notice] [pid 5356:tid 508] AH00418: Parent: Created child process 5608
+[Mon Jun 18 10:19:45.922441 2012] [mpm_winnt:notice] [pid 5608:tid 428] AH00354: Child: Starting 64 worker threads.

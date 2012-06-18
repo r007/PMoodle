@@ -4,6 +4,8 @@ unset($CFG);
 global $CFG;
 $CFG = new stdClass();
 
+$CFG->opensslcnf = '/openssl/openssl.cnf';
+
 $CFG->dbtype    = 'mysqli';
 $CFG->dblibrary = 'native';
 $CFG->dbhost    = 'localhost';
