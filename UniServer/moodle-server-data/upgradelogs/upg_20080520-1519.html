@@ -1,0 +1,715 @@
+<h2   class="main">question/type/calculated plugin needs upgrading</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_question_calculated (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    question BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    answer BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    tolerance VARCHAR(20) NOT NULL DEFAULT '0.0',
+    tolerancetype BIGINT(10) NOT NULL DEFAULT 1,
+    correctanswerlength BIGINT(10) NOT NULL DEFAULT 2,
+    correctanswerformat BIGINT(10) NOT NULL DEFAULT 2,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_question_calculated COMMENT='Options for questions of type calculated' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_quescalc_ans_ix ON mdl_srv_question_calculated (answer) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_quescalc_que_ix ON mdl_srv_question_calculated (question) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">calculated tables have been set up correctly</div>
+<hr /><h2   class="main">question/type/essay plugin needs upgrading</h2><div class="notifysuccess" style="text-align:center">essay tables have been set up correctly</div>
+<hr /><h2   class="main">question/type/match plugin needs upgrading</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_question_match (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    question BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    subquestions VARCHAR(255) NOT NULL DEFAULT '',
+    shuffleanswers SMALLINT(4) NOT NULL DEFAULT 1,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_question_match COMMENT='Defines fixed matching questions' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_quesmatc_que_ix ON mdl_srv_question_match (question) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_srv_question_match_sub (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    code BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    question BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    questiontext TEXT NOT NULL,
+    answertext VARCHAR(255) NOT NULL DEFAULT '',
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_question_match_sub COMMENT='Defines the subquestions that make up a matching question' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_quesmatcsub_que_ix ON mdl_srv_question_match_sub (question) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">match tables have been set up correctly</div>
+<hr /><h2   class="main">question/type/multianswer plugin needs upgrading</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_question_multianswer (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    question BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    sequence TEXT NOT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_question_multianswer COMMENT='Options for multianswer questions' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_quesmult_que_ix ON mdl_srv_question_multianswer (question) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">multianswer tables have been set up correctly</div>
+<hr /><h2   class="main">question/type/multichoice plugin needs upgrading</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_question_multichoice (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    question BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    layout SMALLINT(4) NOT NULL DEFAULT 0,
+    answers VARCHAR(255) NOT NULL DEFAULT '',
+    single SMALLINT(4) NOT NULL DEFAULT 0,
+    shuffleanswers SMALLINT(4) NOT NULL DEFAULT 1,
+    correctfeedback TEXT NOT NULL,
+    partiallycorrectfeedback TEXT NOT NULL,
+    incorrectfeedback TEXT NOT NULL,
+    answernumbering VARCHAR(10) NOT NULL DEFAULT 'abc',
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_question_multichoice COMMENT='Options for multiple choice questions' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_quesmult_que2_ix ON mdl_srv_question_multichoice (question) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">multichoice tables have been set up correctly</div>
+<hr /><h2   class="main">question/type/numerical plugin needs upgrading</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_question_numerical (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    question BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    answer BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    tolerance VARCHAR(255) NOT NULL DEFAULT '0.0',
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_question_numerical COMMENT='Options for numerical questions' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_quesnume_ans_ix ON mdl_srv_question_numerical (answer) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_quesnume_que_ix ON mdl_srv_question_numerical (question) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">numerical tables have been set up correctly</div>
+<hr /><h2   class="main">question/type/randomsamatch plugin needs upgrading</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_question_randomsamatch (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    question BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    choose BIGINT(10) unsigned NOT NULL DEFAULT 4,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_question_randomsamatch COMMENT='Info about a random short-answer matching question' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_quesrand_que_ix ON mdl_srv_question_randomsamatch (question) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">randomsamatch tables have been set up correctly</div>
+<hr /><h2   class="main">question/type/shortanswer plugin needs upgrading</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_question_shortanswer (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    question BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    answers VARCHAR(255) NOT NULL DEFAULT '',
+    usecase TINYINT(2) NOT NULL DEFAULT 0,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_question_shortanswer COMMENT='Options for short answer questions' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_quesshor_que_ix ON mdl_srv_question_shortanswer (question) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">shortanswer tables have been set up correctly</div>
+<hr /><h2   class="main">question/type/truefalse plugin needs upgrading</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_question_truefalse (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    question BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    trueanswer BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    falseanswer BIGINT(10) unsigned NOT NULL DEFAULT 0,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_question_truefalse COMMENT='Options for True-False questions' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_questrue_que_ix ON mdl_srv_question_truefalse (question) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">truefalse tables have been set up correctly</div>
+<hr /><h2   class="main">backup</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_backup_files (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    backup_code BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    file_type VARCHAR(10) NOT NULL DEFAULT '',
+    path VARCHAR(255) NOT NULL DEFAULT '',
+    old_id BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    new_id BIGINT(10) unsigned NOT NULL DEFAULT 0,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_backup_files COMMENT='To store and recode ids to user and course files' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE UNIQUE INDEX mdl_srv_backfile_bacfilpat_uix ON mdl_srv_backup_files (backup_code, file_type, path) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_srv_backup_ids (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    backup_code BIGINT(12) unsigned NOT NULL DEFAULT 0,
+    table_name VARCHAR(30) NOT NULL DEFAULT '',
+    old_id BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    new_id BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    info MEDIUMTEXT NOT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_backup_ids COMMENT='To store and convert ids in backup/restore' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE UNIQUE INDEX mdl_srv_backids_bactabold_uix ON mdl_srv_backup_ids (backup_code, table_name, old_id) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_srv_backup_config (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    name VARCHAR(255) NOT NULL DEFAULT '',
+    value VARCHAR(255) NOT NULL DEFAULT '',
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_backup_config COMMENT='To store backup configuration variables' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE UNIQUE INDEX mdl_srv_backconf_nam_uix ON mdl_srv_backup_config (name) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_srv_backup_courses (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    courseid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    laststarttime BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    lastendtime BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    laststatus VARCHAR(1) NOT NULL DEFAULT '0',
+    nextstarttime BIGINT(10) unsigned NOT NULL DEFAULT 0,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_backup_courses COMMENT='To store every course backup status' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE UNIQUE INDEX mdl_srv_backcour_cou_uix ON mdl_srv_backup_courses (courseid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_srv_backup_log (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    courseid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    time BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    laststarttime BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    info VARCHAR(255) NOT NULL DEFAULT '',
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_backup_log COMMENT='To store every course backup log info' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_backlog_cou_ix ON mdl_srv_backup_log (courseid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">Database was successfully upgraded</div>
+<div class="notifysuccess" style="text-align:center">Backup version is now 2008041100</div>
+<h2   class="main">blocks</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_block (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    name VARCHAR(40) NOT NULL DEFAULT '',
+    version BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    cron BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    lastcron BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    visible TINYINT(1) NOT NULL DEFAULT 1,
+    multiple TINYINT(1) NOT NULL DEFAULT 0,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_block COMMENT='to store installed blocks' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_srv_block_instance (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    blockid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    pageid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    pagetype VARCHAR(20) NOT NULL DEFAULT '',
+    position VARCHAR(10) NOT NULL DEFAULT '',
+    weight SMALLINT(3) NOT NULL DEFAULT 0,
+    visible TINYINT(1) NOT NULL DEFAULT 0,
+    configdata TEXT,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_block_instance COMMENT='to store block instances in pages' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_blocinst_pag_ix ON mdl_srv_block_instance (pageid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_blocinst_pag2_ix ON mdl_srv_block_instance (pagetype) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_blocinst_blo_ix ON mdl_srv_block_instance (blockid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_srv_block_pinned (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    blockid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    pagetype VARCHAR(20) NOT NULL DEFAULT '',
+    position VARCHAR(10) NOT NULL DEFAULT '',
+    weight SMALLINT(3) NOT NULL DEFAULT 0,
+    visible TINYINT(1) NOT NULL DEFAULT 0,
+    configdata TEXT NOT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_block_pinned COMMENT='to pin blocks' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_blocpinn_pag_ix ON mdl_srv_block_pinned (pagetype) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_blocpinn_blo_ix ON mdl_srv_block_pinned (blockid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">Database was successfully upgraded</div>
+<div class="notifysuccess" style="text-align:center">Blocks version is now 2007081300</div>
+<h2   class="main">activity_modules</h2><div class="notifysuccess" style="text-align:center">Activities tables have been set up correctly</div>
+<hr /><h2   class="main">admin</h2><div class="notifysuccess" style="text-align:center">Administration tables have been set up correctly</div>
+<hr /><h2   class="main">admin_bookmarks</h2><div class="notifysuccess" style="text-align:center">Admin bookmarks tables have been set up correctly</div>
+<hr /><h2   class="main">admin_tree</h2><div class="notifysuccess" style="text-align:center">Site Administration tables have been set up correctly</div>
+<hr /><h2   class="main">blog_menu</h2><div class="notifysuccess" style="text-align:center">Blog Menu tables have been set up correctly</div>
+<hr /><h2   class="main">blog_tags</h2><div class="notifysuccess" style="text-align:center">Blog Tags tables have been set up correctly</div>
+<hr /><h2   class="main">calendar_month</h2><div class="notifysuccess" style="text-align:center">Calendar tables have been set up correctly</div>
+<hr /><h2   class="main">calendar_upcoming</h2><div class="notifysuccess" style="text-align:center">Upcoming Events tables have been set up correctly</div>
+<hr /><h2   class="main">course_list</h2><div class="notifysuccess" style="text-align:center">Courses tables have been set up correctly</div>
+<hr /><h2   class="main">course_summary</h2><div class="notifysuccess" style="text-align:center">Course/Site Description tables have been set up correctly</div>
+<hr /><h2   class="main">glossary_random</h2><div class="notifysuccess" style="text-align:center">Random Glossary Entry tables have been set up correctly</div>
+<hr /><h2   class="main">html</h2><div class="notifysuccess" style="text-align:center">HTML tables have been set up correctly</div>
+<hr /><h2   class="main">loancalc</h2><div class="notifysuccess" style="text-align:center">Loan calculator tables have been set up correctly</div>
+<hr /><h2   class="main">login</h2><div class="notifysuccess" style="text-align:center">Login tables have been set up correctly</div>
+<hr /><h2   class="main">mentees</h2><div class="notifysuccess" style="text-align:center">Mentees tables have been set up correctly</div>
+<hr /><h2   class="main">messages</h2><div class="notifysuccess" style="text-align:center">Messages tables have been set up correctly</div>
+<hr /><h2   class="main">mnet_hosts</h2><div class="notifysuccess" style="text-align:center">Network Servers tables have been set up correctly</div>
+<hr /><h2   class="main">news_items</h2><div class="notifysuccess" style="text-align:center">Latest News tables have been set up correctly</div>
+<hr /><h2   class="main">online_users</h2><div class="notifysuccess" style="text-align:center">Online Users tables have been set up correctly</div>
+<hr /><h2   class="main">participants</h2><div class="notifysuccess" style="text-align:center">People tables have been set up correctly</div>
+<hr /><h2   class="main">quiz_results</h2><div class="notifysuccess" style="text-align:center">Quiz Results tables have been set up correctly</div>
+<hr /><h2   class="main">recent_activity</h2><div class="notifysuccess" style="text-align:center">Recent Activity tables have been set up correctly</div>
+<hr /><h2   class="main">rss_client</h2><hr />
+(mysql): CREATE TABLE mdl_srv_block_rss_client (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    userid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    title TEXT NOT NULL,
+    preferredtitle VARCHAR(64) NOT NULL DEFAULT '',
+    description TEXT NOT NULL,
+    shared TINYINT(2) unsigned NOT NULL DEFAULT 0,
+    url VARCHAR(255) NOT NULL DEFAULT '',
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_block_rss_client COMMENT='Remote news feed information. Contains the news feed id, the' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">Remote RSS Feeds tables have been set up correctly</div>
+<hr /><h2   class="main">search</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_block_search_documents (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    docid VARCHAR(32) NOT NULL DEFAULT '',
+    doctype VARCHAR(32) NOT NULL DEFAULT 'none',
+    itemtype VARCHAR(32) NOT NULL DEFAULT 'standard',
+    title VARCHAR(255) NOT NULL DEFAULT '',
+    url VARCHAR(255) NOT NULL DEFAULT '',
+    docdate BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    updated BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    courseid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    groupid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_block_search_documents COMMENT='table to store search index backups' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_blocseardocu_doc_ix ON mdl_srv_block_search_documents (docid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_blocseardocu_doc2_ix ON mdl_srv_block_search_documents (doctype) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_blocseardocu_ite_ix ON mdl_srv_block_search_documents (itemtype) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">Global Search tables have been set up correctly</div>
+<hr /><h2   class="main">search_forums</h2><div class="notifysuccess" style="text-align:center">Search Forums tables have been set up correctly</div>
+<hr /><h2   class="main">section_links</h2><div class="notifysuccess" style="text-align:center">Section Links tables have been set up correctly</div>
+<hr /><h2   class="main">site_main_menu</h2><div class="notifysuccess" style="text-align:center">Main Menu tables have been set up correctly</div>
+<hr /><h2   class="main">social_activities</h2><div class="notifysuccess" style="text-align:center">Social Activities tables have been set up correctly</div>
+<hr /><h2   class="main">tag_flickr</h2><div class="notifysuccess" style="text-align:center">Flickr tables have been set up correctly</div>
+<hr /><h2   class="main">tag_youtube</h2><div class="notifysuccess" style="text-align:center">Youtube tables have been set up correctly</div>
+<hr /><h2   class="main">tags</h2><div class="notifysuccess" style="text-align:center">Tags tables have been set up correctly</div>
+<hr /><h2   class="main">enrol/authorize plugin needs upgrading</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_enrol_authorize (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    paymentmethod enum('cc', 'echeck') NOT NULL DEFAULT 'cc',
+    refundinfo SMALLINT(4) unsigned NOT NULL DEFAULT 0,
+    ccname VARCHAR(255) NOT NULL DEFAULT '',
+    courseid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    userid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    transid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    status BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    timecreated BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    settletime BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    amount VARCHAR(10) NOT NULL DEFAULT '',
+    currency VARCHAR(3) NOT NULL DEFAULT 'USD',
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_enrol_authorize COMMENT='Holds all known information about authorize.net transactions' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_enroauth_cou_ix ON mdl_srv_enrol_authorize (courseid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_enroauth_use_ix ON mdl_srv_enrol_authorize (userid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_enroauth_sta_ix ON mdl_srv_enrol_authorize (status) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_enroauth_tra_ix ON mdl_srv_enrol_authorize (transid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_srv_enrol_authorize_refunds (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    orderid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    status TINYINT(1) unsigned NOT NULL DEFAULT 0,
+    amount VARCHAR(10) NOT NULL DEFAULT '',
+    transid BIGINT(10) unsigned DEFAULT 0,
+    settletime BIGINT(10) unsigned NOT NULL DEFAULT 0,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_enrol_authorize_refunds COMMENT='Authorize.net refunds' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_enroauthrefu_tra_ix ON mdl_srv_enrol_authorize_refunds (transid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_srv_enroauthrefu_ord_ix ON mdl_srv_enrol_authorize_refunds (orderid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">authorize tables have been set up correctly</div>
+<hr /><h2   class="main">enrol/paypal plugin needs upgrading</h2><hr />
+(mysql): CREATE TABLE mdl_srv_enrol_paypal (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    business VARCHAR(255) NOT NULL DEFAULT '',
+    receiver_email VARCHAR(255) NOT NULL DEFAULT '',
+    receiver_id VARCHAR(255) NOT NULL DEFAULT '',
+    item_name VARCHAR(255) NOT NULL DEFAULT '',
+    courseid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    userid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    memo VARCHAR(255) NOT NULL DEFAULT '',
+    tax VARCHAR(255) NOT NULL DEFAULT '',
+    option_name1 VARCHAR(255) NOT NULL DEFAULT '',
+    option_selection1_x VARCHAR(255) NOT NULL DEFAULT '',
+    option_name2 VARCHAR(255) NOT NULL DEFAULT '',
+    option_selection2_x VARCHAR(255) NOT NULL DEFAULT '',
+    payment_status VARCHAR(255) NOT NULL DEFAULT '',
+    pending_reason VARCHAR(255) NOT NULL DEFAULT '',
+    reason_code VARCHAR(30) NOT NULL DEFAULT '',
+    txn_id VARCHAR(255) NOT NULL DEFAULT '',
+    parent_txn_id VARCHAR(255) NOT NULL DEFAULT '',
+    payment_type VARCHAR(30) NOT NULL DEFAULT '',
+    timeupdated BIGINT(10) unsigned NOT NULL DEFAULT 0,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_enrol_paypal COMMENT='Holds all known information about PayPal transactions' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">paypal tables have been set up correctly</div>
+<hr /><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_backup_guids (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    guid VARCHAR(255) NOT NULL DEFAULT '',
+    src_table VARCHAR(255) NOT NULL DEFAULT '',
+    src_field VARCHAR(255) NOT NULL DEFAULT '',
+    src_value VARCHAR(255) NOT NULL DEFAULT '',
+    courseid BIGINT(10) unsigned NOT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE UNIQUE INDEX mdl_srv_backguid_gui_uix ON mdl_srv_backup_guids (guid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_srv_restore_guids (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    guid VARCHAR(255) NOT NULL DEFAULT '',
+    src_table VARCHAR(255) NOT NULL DEFAULT '',
+    src_field VARCHAR(255) NOT NULL DEFAULT '',
+    src_value VARCHAR(255) NOT NULL DEFAULT '',
+    courseid BIGINT(10) unsigned NOT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE UNIQUE INDEX mdl_srv_restguid_gui_uix ON mdl_srv_restore_guids (guid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_backup_guids DROP COLUMN courseid &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_srv_restore_guids DROP INDEX mdl_srv_restguid_gui_uix &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW INDEX FROM mdl_srv_restore_guids &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE INDEX mdl_srv_restguid_gui_ix ON mdl_srv_restore_guids (guid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_srv_incremental_courses (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    courseid BIGINT(10) unsigned DEFAULT NULL,
+    laststarttime BIGINT(10) unsigned DEFAULT NULL,
+    lastendtime BIGINT(10) unsigned DEFAULT NULL,
+    laststatus TINYINT(1) unsigned DEFAULT NULL,
+    nextstarttime BIGINT(10) unsigned DEFAULT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_srv_incremental_instance (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    courseid BIGINT(10) unsigned NOT NULL,
+    filename VARCHAR(255) NOT NULL DEFAULT '',
+    hash VARCHAR(255) NOT NULL DEFAULT '',
+    timecreated BIGINT(10) unsigned NOT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">Database was successfully upgraded</div>
+<div class="notifysuccess" style="text-align:center">Local database customisations version is now 2008041113</div>
+<h2   class="main">grade/export/ods plugin needs upgrading</h2><div class="notifysuccess" style="text-align:center">ods tables have been set up correctly</div>
+<hr /><h2   class="main">grade/export/txt plugin needs upgrading</h2><div class="notifysuccess" style="text-align:center">txt tables have been set up correctly</div>
+<hr /><h2   class="main">grade/export/xls plugin needs upgrading</h2><div class="notifysuccess" style="text-align:center">xls tables have been set up correctly</div>
+<hr /><h2   class="main">grade/export/xml plugin needs upgrading</h2><div class="notifysuccess" style="text-align:center">xml tables have been set up correctly</div>
+<hr /><h2   class="main">grade/import/csv plugin needs upgrading</h2><div class="notifysuccess" style="text-align:center">csv tables have been set up correctly</div>
+<hr /><h2   class="main">grade/import/xml plugin needs upgrading</h2><div class="notifysuccess" style="text-align:center">xml tables have been set up correctly</div>
+<hr /><h2   class="main">grade/report/grader plugin needs upgrading</h2><div class="notifysuccess" style="text-align:center">grader tables have been set up correctly</div>
+<hr /><h2   class="main">grade/report/outcomes plugin needs upgrading</h2><div class="notifysuccess" style="text-align:center">outcomes tables have been set up correctly</div>
+<hr /><h2   class="main">grade/report/overview plugin needs upgrading</h2><div class="notifysuccess" style="text-align:center">overview tables have been set up correctly</div>
+<hr /><h2   class="main">grade/report/user plugin needs upgrading</h2><div class="notifysuccess" style="text-align:center">user tables have been set up correctly</div>
+<hr />

@@ -1,0 +1,28 @@
+config.php
+
+admin/
+	mnet/
+	
+backup/
+	restorelib.php
+	backuplib.php
+blocks/
+	synch/
+	synchronisation/
+	
+lang/
+	en_utf8/
+		synch_mnet.php
+		synch.php
+		
+lib/
+	dmllib.php
+	setup.php
+	
+local/	
+
+mod/
+	forum/
+		lib.php
+
+synch/	

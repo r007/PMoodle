@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GLOSSARY>
+  <INFO>
+    <NAME>A glossary of common terms</NAME>
+    <INTRO></INTRO>
+    <STUDENTCANPOST>1</STUDENTCANPOST>
+    <ALLOWDUPLICATEDENTRIES>1</ALLOWDUPLICATEDENTRIES>
+    <DISPLAYFORMAT>fullwithoutauthor</DISPLAYFORMAT>
+    <SHOWSPECIAL>1</SHOWSPECIAL>
+    <SHOWALPHABET>1</SHOWALPHABET>
+    <SHOWALL>1</SHOWALL>
+    <ALLOWCOMMENTS>1</ALLOWCOMMENTS>
+    <USEDYNALINK>1</USEDYNALINK>
+    <DEFAULTAPPROVAL>1</DEFAULTAPPROVAL>
+    <GLOBALGLOSSARY>0</GLOBALGLOSSARY>
+    <ENTBYPAGE>10</ENTBYPAGE>
+    <ENTRIES>
+      <ENTRY>
+        <CONCEPT>SMTP</CONCEPT>
+        <DEFINITION>Short for Simple Mail Transfer Protocol, a protocol for sending e-mail messages between servers.  Most e-mail systems that send mail over the Internet use SMTP to send messages from one server to another.  In addition, SMTP is generally used to send messages from a mail client (or a program like Moodle) to a mail server.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>applet</CONCEPT>
+        <DEFINITION>&lt;nolink&gt;Applets are small programs written in Java and embedded within web pages.  Most recent browsers can run these small programs if you have Java installed on your computer.&lt;/nolink&gt;</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>CSS</CONCEPT>
+        <DEFINITION>Abbreviation for &quot;Cascading Style Sheets&quot;. CSS defines styles and colours and how they should be applied to a web page.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>CVS</CONCEPT>
+        <DEFINITION>The Concurrent Versioning System (CVS) is simply a method of storing files on a server that helps coordinate many people working on those files. It keeps track of every version of every file in a software project.&lt;br /&gt;&lt;br /&gt;The &amp;quot;master copy&amp;quot; of Moodle is stored on a CVS server at Sourceforge.net - you can &lt;a href=&quot;http://cvs.sourceforge.net/viewcvs.py/moodle/moodle/&quot;&gt;browse it via the web&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;To &amp;quot;&lt;span style=&quot;font-weight: bold;&quot;&gt;check out&lt;/span&gt;&amp;quot; files from a CVS server means to copy the very latest versions to your own computer -  &lt;a href=&quot;http://moodle.org/download/&quot;&gt;anyone can check out files using an anonymous account&lt;/a&gt;.  &lt;br /&gt;&lt;br /&gt;To &amp;quot;&lt;span style=&quot;font-weight: bold;&quot;&gt;check in&lt;/span&gt;&amp;quot; files means to update the master version with new code - &lt;a href=&quot;http://moodle.org/doc/?frame=cvs.html&quot;&gt;only registered Moodle developers can check files in&lt;/a&gt;.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>database</CONCEPT>
+        <DEFINITION>An electronic collection of information, stored in tables of data. For example, Moodle contains a table of all users in a site. There are many brands of database software, but most people use MySQL.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>dataroot</CONCEPT>
+        <DEFINITION>The place where Moodle can save uploaded files. This directory should be readable and writeable by the web server user but it should not be accessible directly via the web.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Moodle terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>domain</CONCEPT>
+        <DEFINITION>A name given to a computer or a group of computers. eg moodle.org.   You can buy new domain names from a domain name registrar, of which there are many.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>download</CONCEPT>
+        <DEFINITION>To move your files from a server &amp;quot;down&amp;quot; to your personal computer. Also see FTP and upload.&lt;br /&gt;&lt;br /&gt;You can download Moodle via the &lt;a href=&quot;http://moodle.org/download/&quot;&gt;Moodle download&lt;/a&gt; page.&lt;br /&gt;</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>upload</CONCEPT>
+        <DEFINITION>To move your files from a personal computer &quot;up&quot; to a server. Also see FTP and download.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>dirroot</CONCEPT>
+        <DEFINITION>The dirroot is the name for the directory in which you have installed Moodle.  It's a setting in config.php that must be entered correctly.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Moodle terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>FTP</CONCEPT>
+        <DEFINITION>File Transfer Protocol - a method of copying files from one computer to another. For example, you might FTP your Moodle files from your home computer to your web server.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>hosting provider</CONCEPT>
+        <DEFINITION>A business that will host your web site for a monthly fee. You provide a domain name that you own, and after they've set it up for you, you can copy your files to their server and set up your site.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>HTML</CONCEPT>
+        <DEFINITION>HyperText Markup Language - a language used to create web pages.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Java</CONCEPT>
+        <DEFINITION>A programming language that can be used to write applets that may run within web pages. Moodle doesn't use any of it.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Javascript</CONCEPT>
+        <DEFINITION>A scripting language that can be used to write small programs in web pages, such as popup menus. Moodle uses a little Javascript.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>MySQL</CONCEPT>
+        <DEFINITION>MySQL is the world's most popular open source database, recognized for its speed and reliability.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>nightly</CONCEPT>
+        <DEFINITION>A Moodle Nightly is built automatically every day from the most recent code, and is available from the Moodle.org &lt;a href=&quot;http://moodle.org/download/&quot;&gt;download page&lt;/a&gt;. It can be useful if you don't have CVS, but you want to try the latest features. It can also contain bugs, since they may not have been well-tested yet.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Moodle terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>server</CONCEPT>
+        <DEFINITION>This is where your web site or database, or both, resides. You may choose to run your own server or have a hosting provider look after this for you. </DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>URL</CONCEPT>
+        <DEFINITION>A Uniform Resource Locator is the address that is used to reach a website.  For example, http://moodle.org/</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>XHTML</CONCEPT>
+        <DEFINITION>XHTML will eventually replace HTML as the language used to program web pages for display in your web browser. It's actually very similar to HTML, but has stricter rules about the formatting.  As the world moves to XHTML web browsers will display pages more consistently, and the web will also be more accessible to people with disabilities.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Oodle-Moodle</CONCEPT>
+        <DEFINITION>A symptom or psychoses prompted by too much Moodling.  Oodle-Moodle often manifests itself in relationships that have been stunted while Moodling.  Husbands, wives, and children may ask an oodled soul to &quot;step away from the machine&quot; and to communicate once again with hand gestures and verbal cues rather than emoticons.Might be contagious.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Moodle terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+          <CATEGORY>
+            <NAME>Moodle terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>sections</CONCEPT>
+        <DEFINITION>The areas within a course that hold activities are known as sections.  This is a generic term that covers weeks and topics.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Moodle terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Moodle</CONCEPT>
+        <DEFINITION>Moodle was originally an acronym for Modular Object-Oriented Dynamic Learning Environment, but now it's just a name. :-)It's also a verb:  &quot;I try and moodle every day!&quot;</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Moodle terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>activities</CONCEPT>
+        <DEFINITION>&lt;nolink&gt;Activities in Moodle are educational things to do. They include, for example:discussing a topic in a forum, writing a journal entry, submitting anassignment, or completing a quiz.&lt;/nolink&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Moodle terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>constructivism</CONCEPT>
+        <DEFINITION>This point of view maintains that people actively construct new knowledge as they interact with their environment.Everything you read, see, hear, feel, and touch is tested against your prior knowledge and if it is viable within your mental world, may form new knowledge you carry with you. Knowledge is strengthened if you can use it successfully in your wider environment. You are not just a memory bank passively absorbing information, nor can knowledge be &quot;transmitted&quot; to you just by reading something or listening to someone.This is not to say you can't learn anything from reading a web page or watching a lecture, obviously you can, it's just pointing out that there is more interpretation going on than a transfer of information from one brain to another.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Education terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>social constructionism</CONCEPT>
+        <DEFINITION>Social constructionism is a term that defines a particular view of education.  It acknowledges constructivism as a description of what each learner experiences, while focussing on the power of constructing artifacts (like text) within a social environment.  From this point of view, education is best served by creating experiences that would be best for learning from the learner's point of view, rather than just publishing and assessing the information you think they need to know.  Each participant in a course can be a teacher as well as a learner.  A 'teacher' in this environment is an influencer and role model of class culture, connecting with others in a personal way that addresses their own learning needs, and moderating discussions and activities in a way that collectively leads students towards the learning goals of the class.Moodle tries to promote this view, but is not constrained by it.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>social constructionist</NAME>
+          </ALIAS>
+        </ALIASES>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Education terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>DHTML</CONCEPT>
+        <DEFINITION>&lt;p&gt;Dynamic HTML (DHTML) describes using HTML, CSS and JavaScript to create dynamic content on pages. A menu or other objects on a web page that respond to the user without requiring an additional trip to the server or a plug-in application are examples of DHTML in use.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Dynamic HTML</NAME>
+          </ALIAS>
+        </ALIASES>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>wwwroot</CONCEPT>
+        <DEFINITION>This is the setting inside config.php that tells Moodle where it is installed.  It has to be a full URL to the web site's &amp;quot;natural&amp;quot; address.  Some web sites may work under more than one address (for example www.example.com and example.com) but you should pick the main one.</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Moodle terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>meta tag</CONCEPT>
+        <DEFINITION>Meta Data is data about data, describing the type of data under discussion. Meta tags in HTML are used to identify which version of HTML is in use, the language (both used by the browser to parse, or interpret the code) and other technical information. Two special meta tags of great interest to web weavers are the &lt;b&gt;content&lt;/b&gt; and &lt;b&gt;keyword&lt;/b&gt; tags. These provide special information that's often used by search engines to enhance retrieval of the page. </DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>metadata</NAME>
+          </ALIAS>
+        </ALIASES>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Firefox</CONCEPT>
+        <DEFINITION>Firefox (formerly Firebird) is a web browser, based on Mozilla (but with all the non-browser stuf in Mozilla taken out).  It's still in development, but is already very stable, usable and full of features.  &lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://www.mozilla.org/products/firefox/&quot;&gt;Firefox&lt;/a&gt; makes a good replacement for Internet Explorer on Windows platforms.&lt;br /&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>firebird</NAME>
+          </ALIAS>
+        </ALIASES>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>flame</CONCEPT>
+        <DEFINITION>(n.) A searing e-mail or newsgroup message in which the writer attacks another participant in overly harsh, and often personal, terms. Flames are an unfortunate, but inevitable, element of unmoderated conferences. (v.) To post a flame. source: http://www.pcwebopaedia.com/TERM/f/flame.html</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>flame-war</NAME>
+          </ALIAS>
+        </ALIASES>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>spam</CONCEPT>
+        <DEFINITION>Electronic junk mail or junk newsgroup postings. Some people define spam even more generally as any unsolicited e-mail. However, if a long-lost brother finds your e-mail address and sends you a message, this could hardly be called spam, even though it's unsolicited. Real spam is generally e-mail advertising for some product sent to a mailing list or newsgroup. In addition to wasting people's time with unwanted e-mail, spam also eats up a lot of network bandwidth. Consequently, there are many organizations, as well as individuals, who have taken it upon themselves to fight spam with a variety of techniques. But because the Internet is public, there is really little that can be done to prevent spam, just as it is impossible to prevent junk mail. However, some online services have instituted policies to prevent spammers from spamming their subscribers. There is some debate about the source of the term, but the generally accepted version is that it comes from the Monty Python song, &quot;Spam spam spam spam, spam spam spam spam, lovely spam, wonderful spam&quot; Like the song, spam is an endless repetition of worthless text. Another school of thought maintains that it comes from the computer group lab at the University of Southern California who gave it the name because it has many of the same characteristics as the lunchmeat Spam: Nobody wants it or ever asks for it. No one ever eats it; it is the first item to be pushed to the side when eating the entree. Sometimes it is actually tasty, like 1% of junk mail that is really useful to some people. source: http://www.pcwebopaedia.com/TERM/s/spam.html </DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>spammer</NAME>
+          </ALIAS>
+          <ALIAS>
+            <NAME>spamming</NAME>
+          </ALIAS>
+        </ALIASES>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>martinized</CONCEPT>
+        <DEFINITION>&quot;Martinized&quot; was originally a patented dry cleaning process by a North American firm.  Now it refers to a similar process occurring when the moodle chief developer thoughtfully  V-.  checks over code submitted for inclusion in the next updated version.  </DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>martinized</NAME>
+          </ALIAS>
+          <ALIAS>
+            <NAME>scrutinized</NAME>
+          </ALIAS>
+          <ALIAS>
+            <NAME>standardized</NAME>
+          </ALIAS>
+        </ALIASES>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Moodle terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+          <CATEGORY>
+            <NAME>Moodle terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>WIP</CONCEPT>
+        <DEFINITION>Work In Progress.</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Wiki</CONCEPT>
+        <DEFINITION>The following definition is from the Wiki-pedia the worlds biggest encyclopedia and written using Wiki (wiki web) software. The &lt;a href=&quot;http://en.wikipedia.org/wiki/Wiki&quot;&gt;full entry&lt;/a&gt; can be found &lt;a href=&quot;http://en.wikipedia.org/wiki/Wiki&quot;&gt;here&lt;/a&gt;.A WikiWikiWeb enables documents to be authored collectively in a simple markup language using a web browser. Because most wikis are web-based, the term &quot;wiki&quot; is usually sufficient. A single page in a wiki is referred to as a &quot;wiki page&quot;, while the entire body of pages, which are usually highly interconnected, is called &quot;the wiki&quot;. &quot;Wiki wiki&quot; means &quot;fast&quot; in the Hawaiian language, and it is the speed of creating and updating pages that is one of the defining aspects of wiki technology. Generally, there is no prior review before modifications are accepted, and most wikis are open to the general public or at least to all persons who also have access to the wiki server. In fact, even registration of a user account is not often required. </DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>wiki, wikiwikiweb, collaborative texts</NAME>
+          </ALIAS>
+        </ALIASES>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>MOO</CONCEPT>
+        <DEFINITION>&lt;b style=&quot;font-family: arial,helvetica,sans-serif;&quot; class=&quot;xlgfc2b&quot;&gt;MOO - &lt;/b&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot; class=&quot;xlgfc2b&quot;&gt;&lt;span class=&quot;xlgfc2b&quot;&gt;LambdaMOO Server&lt;/span&gt;&lt;b class=&quot;xlgfc2b&quot;&gt;&lt;br /&gt;&amp;quot;&lt;/b&gt;&lt;span class=&quot;xlgfc2b&quot;&gt;LambdaMOO is a network-accessible, multi-user, programmable,interactive system well-suited to the construction of text-basedadventure games, conferencing systems, and other collaborative software.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;xlgfc2b&quot;&gt;&lt;b class=&quot;xlgfc2b&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;br style=&quot;font-family: arial,helvetica,sans-serif;&quot; /&gt;&lt;a style=&quot;font-family: arial,helvetica,sans-serif;&quot; href=&quot;http://sourceforge.net/projects/lambdamoo/&quot;&gt;http://sourceforge.net/projects/lambdamoo/&lt;/a&gt;&lt;br style=&quot;font-family: arial,helvetica,sans-serif;&quot; /&gt;&lt;br /&gt;&lt;/b&gt;&lt;/span&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME></NAME>
+          </ALIAS>
+        </ALIASES>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Breadcrumb</CONCEPT>
+        <DEFINITION>Breadcrumb navigation shows the current page's location within the site's structure. In Moodle, the navigation breadcrumbs appear in the header bar.</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+          <CATEGORY>
+            <NAME>Computing terms</NAME>
+            <USEDYNALINK>1</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>DIP</CONCEPT>
+        <DEFINITION>Dual Inline Package</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>analog</CONCEPT>
+        <DEFINITION>&lt;span style=&quot;FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: BG; mso-fareast-language: BG; mso-bidi-language: AR-SA&quot;&gt;Analog data is expressed in the form of continuously variable waves (e.g. amplitude or frequency of sound waves or electromagnetic waves). Susceptible to noise and are not easily compressible.&lt;/span&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Flaberfused</CONCEPT>
+        <DEFINITION>When one is confused and flabbergasted at the same time after trying to understand something i.e. what they are suppose to do on the teacher define glossary. Synonym of muddled.</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Confusion</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+    </ENTRIES>
+  </INFO>
+</GLOSSARY>

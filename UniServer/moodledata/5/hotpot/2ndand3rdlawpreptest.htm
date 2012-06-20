@@ -1,0 +1,2170 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en"><head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to Michael Pozuc."></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Creator" content="UNREGISTERED" />
+<meta name="DC:Title" content="Newton's 2nd and 3rd Laws Pretest" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>
+Newton's 2nd and 3rd Laws Pretest
+</title>
+
+<!-- Made with executable version 6.0 Release 3 Build 43 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style type="text/css">
+
+
+/* This is the CSS stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 6.0 Release 3 Build 43 */
+
+body{
+	font-family: Arial,Geneva,sans-serif;
+	background-color: #C0C0C0;
+	color: #000000;
+ 
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: small;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: small;
+}
+
+div,span,td{
+	font-size: small;
+	color: #000000;
+}
+
+div.Titles{
+	padding: 10px;
+	text-align: center;
+	color: #000000;
+}
+
+button{
+	display: inline;
+}
+
+.ExerciseTitle{
+	font-size: large;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	color: #000000;
+}
+
+div.StdDiv{
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: small;
+	color: #000000;
+	padding: 8px;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #000000;
+	margin-bottom: 1px;
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Arial,Geneva,sans-serif; 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Arial,Geneva,sans-serif; 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", Arial,Geneva,sans-serif;
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 6px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #000000;
+}
+
+span#TimerText{
+	padding: 6px;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: #000000;
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: #000000;
+}
+
+.LeftItem{
+	font-size: small;
+	color: #000000;
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: small;
+	color: #000000;
+}
+
+span.CorrectMark{
+
+}
+
+input, textarea{
+	font-family: Arial,Geneva,sans-serif;
+	font-size: 120%;
+}
+
+div.Feedback {
+	background-color: #C0C0C0;
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: small;
+}
+
+
+
+
+div.ExerciseDiv{
+	color: #000000;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: #000000;
+	border-color: #000000;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 90%;
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+
+table.FlashcardTable td.Showing{
+	font-size: large;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: medium;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	width: 80%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: large;
+	padding: 0px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: x-small;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+}
+
+div.Keypad button{
+	font-family: Arial,Geneva,sans-serif;
+	font-size: 120%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: Arial,Geneva,sans-serif;
+}
+
+.QuestionText{
+
+}
+
+.Answer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+}
+
+.PartialAnswer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.Highlight{
+	color: #000000;
+	background-color: #ffff00;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #000000;
+	background-color: #FFFFFF;
+
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+.FuncButtonUp {
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+
+	background-color: #000000;
+	color: #FFFFFF;
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+.FuncButtonDown {
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #ffffff;
+	border-bottom-color: #ffffff;
+	background-color: #000000;
+	color: #FFFFFF;
+
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: #000000;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: small;
+}
+
+.NavButton {
+	border-style: solid;
+	
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	background-color: #000000;
+	color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+.NavButtonUp {
+	border-style: solid;
+
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	color: #000000;
+	background-color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+.NavButtonDown {
+	border-style: solid;
+
+	border-left-color: #000000;
+	border-top-color: #000000;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #000000;
+	background-color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: #0000FF;
+}
+
+a:visited{
+	color: #0000CC;
+}
+
+a:hover{
+	color: #0000FF;
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: Arial,Geneva,sans-serif;
+	font-size: small;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	background-color: #FFFFFF;
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+}
+
+.rtl{
+	text-align: right;
+	font-size: large;
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+
+function Client(){
+//if not a DOM browser, hopeless
+	this.min = false; if (document.getElementById){this.min = true;};
+
+	this.ua = navigator.userAgent;
+	this.name = navigator.appName;
+	this.ver = navigator.appVersion;  
+
+//Get data about the browser
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+
+//Look for Gecko
+	this.gecko = (this.ua.indexOf('Gecko') > 1);
+	if (this.gecko){
+		this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+		if (this.geckoVer < 20020000){this.min = false;}
+	}
+	
+//Look for Firebird
+	this.firebird = (this.ua.indexOf('Firebird') > 1);
+	
+//Look for Safari
+	this.safari = (this.ua.indexOf('Safari') > 1);
+	if (this.safari){
+		this.gecko = false;
+	}
+	
+//Look for IE
+	this.ie = (this.ua.indexOf('MSIE') > 0);
+	if (this.ie){
+		this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer < 5.5){this.min = false;}
+	}
+	
+//Look for Opera
+	this.opera = (this.ua.indexOf('Opera') > 0);
+	if (this.opera){
+		this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera')+6, this.ua.length));
+		if (this.operaVer < 7.04){this.min = false;}
+	}
+	if (this.min == false){
+		alert('Your browser may not be able to handle this page.');
+	}
+	
+//Special case for the horrible ie5mac
+	this.ie5mac = (this.ie&&this.mac&&(this.ieVer<6));
+}
+
+var C = new Client();
+
+//for (prop in C){
+//	alert(prop + ': ' + C[prop]);
+//}
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+//[strNavBarJS]
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}
+
+function NavBtnDown(Btn){
+	Btn.className = 'NavButtonDown';
+}
+//[/strNavBarJS]
+
+function FuncBtnOver(Btn){
+	if (Btn.className != 'FuncButtonDown'){Btn.className = 'FuncButtonUp';}
+}
+
+function FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+
+function FuncBtnDown(Btn){
+	Btn.className = 'FuncButtonDown';
+}
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+//	RefreshImages();
+//
+}
+
+function ShowElements(Show, TagName){
+//Special for IE bug -- hide all the form elements that will show through the popup
+	if (C.ie){
+		var Els = document.getElementsByTagName(TagName);
+		for (var i=0; i<Els.length; i++){
+			if (Show == true){
+				Els[i].style.display = 'inline';
+			}
+			else{
+				Els[i].style.display = 'none';
+			}
+		}
+	} 
+}
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	if (Finished == true){
+		Finish();
+	}
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].clientWidth;
+	this.H = document.getElementsByTagName('body')[0].clientHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (document.documentElement && document.documentElement.scrollTop){
+		return document.documentElement.scrollTop;
+	}
+	else{
+		if (document.body){
+ 			return document.body.scrollTop;
+		}
+		else{
+			return window.pageYOffset;
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (window.innerHeight){
+		return window.innerHeight;
+	}
+	else{
+		return document.getElementsByTagName('body')[0].clientHeight;
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	if (C.ie) {
+		thisKey = window.event.keyCode;
+	}
+	else {
+		thisKey = e.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (C.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+if (C.ie){
+	document.attachEvent('onkeydown',SuppressBackspace);
+	window.attachEvent('onkeydown',SuppressBackspace);
+}
+else{
+	if (window.addEventListener){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+}
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+	RefreshImages();
+
+}
+
+
+
+Imgs = new Array();
+
+function PreloadImages(){
+	var a = PreloadImages.arguments;
+	for (var i=0; i<a.length; i++){
+		Imgs[i] = new Image();
+		Imgs[i].src = a[i];
+	}
+}
+
+function RefreshImages(){
+	for (var i=0; i<document.images.length; i++){
+		if (document.images[i].name.substring(0,6) != 'NavBar'){
+			document.images[i].src = document.images[i].src;
+		}
+	}
+}
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+//EXTENSION TO ARRAY OBJECT
+function Array_IndexOf(Input){
+	var Result = -1;
+	for (var i=0; i<this.length; i++){
+		if (this[i] == Input){
+			Result = i;
+		}
+	}
+	return Result;
+}
+Array.prototype.indexOf = Array_IndexOf;
+
+//IE HAS RENDERING BUG WITH BOTTOM NAVBAR
+function RemoveBottomNavBarForIE(){
+	if ((C.ie)&&(document.getElementById('Reading') != null)){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+}
+
+
+
+
+//HOTPOTNET-RELATED CODE
+
+var HPNStartTime = (new Date()).getTime();
+var SubmissionTimeout = 30000;
+var Detail = ''; //Global that is used to submit tracking data
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.detail.value = Detail;
+		Frm.submit();
+	}
+}
+
+
+
+//JQUIZ CORE JAVASCRIPT CODE
+
+var CurrQNum = 0;
+var CorrectIndicator = ':-)';
+var IncorrectIndicator = 'X';
+var YourScoreIs = 'Your score is ';
+var ContinuousScoring = true;
+var CorrectFirstTime = 'Questions answered correctly first time: ';
+var ShowCorrectFirstTime = true;
+var ShuffleQs = false;
+var ShuffleAs = false;
+var DefaultRight = 'Correct!';
+var DefaultWrong = 'Sorry! Try again.';
+var QsToShow = 22;
+var Score = 0;
+var Finished = false;
+var Qs = null;
+var QArray = new Array();
+var ShowingAllQuestions = false;
+var ShowAllQuestionsCaption = 'Show all questions';
+var ShowOneByOneCaption = 'Show questions one by one';
+var State = new Array();
+var Feedback = '';
+var TimeOver = false;
+var strInstructions = '';
+
+//The following variable can be used to add a message explaining that
+//the question is finished, so no further marking will take place.
+var strQuestionFinished = '';
+
+function CompleteEmptyFeedback(){
+	var QNum, ANum;
+	for (QNum=0; QNum<I.length; QNum++){
+//Only do this if not multi-select
+		if (I[QNum][2] != '3'){
+  		for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+  			if (I[QNum][3][ANum][1].length < 1){
+  				if (I[QNum][3][ANum][2] > 0){
+  					I[QNum][3][ANum][1] = DefaultRight;
+  				}
+  				else{
+  					I[QNum][3][ANum][1] = DefaultWrong;
+  				}
+  			}
+  		}
+		}
+	}
+}
+
+function SetUpQuestions(){
+	var AList = new Array(); 
+	var QList = new Array();
+	var i, j;
+	Qs = document.getElementById('Questions');
+	while (Qs.getElementsByTagName('li').length > 0){
+		QList.push(Qs.removeChild(Qs.getElementsByTagName('li')[0]));
+	}
+	var DumpItem = 0;
+	if (QsToShow > QList.length){
+		QsToShow = QList.length;
+	}
+	while (QsToShow < QList.length){
+		DumpItem = Math.floor(QList.length*Math.random());
+		for (j=DumpItem; j<(QList.length-1); j++){
+			QList[j] = QList[j+1];
+		}
+		QList.length = QList.length-1;
+	}
+	if (ShuffleQs == true){
+		QList = Shuffle(QList);
+	}
+	if (ShuffleAs == true){
+		var As;
+		for (var i=0; i<QList.length; i++){
+			As = QList[i].getElementsByTagName('ol')[0];
+			if (As != null){
+  			AList.length = 0;
+				while (As.getElementsByTagName('li').length > 0){
+					AList.push(As.removeChild(As.getElementsByTagName('li')[0]));
+				}
+				AList = Shuffle(AList);
+				for (j=0; j<AList.length; j++){
+					As.appendChild(AList[j]);
+				}
+			}
+		}
+	}
+	
+	for (i=0; i<QList.length; i++){
+		Qs.appendChild(QList[i]);
+		QArray[QArray.length] = QList[i];
+	}
+
+//Show the first item
+	QArray[0].style.display = '';
+	
+//Now hide all except the first item
+	for (i=1; i<QArray.length; i++){
+		QArray[i].style.display = 'none';
+	}		
+	SetQNumReadout();
+	
+	SetFocusToTextbox();
+}
+
+function SetFocusToTextbox(){
+//if there's a textbox, set the focus in it
+	if (QArray[CurrQNum].getElementsByTagName('input')[0] != null){
+		QArray[CurrQNum].getElementsByTagName('input')[0].focus();
+	}
+	else{
+  	if (QArray[CurrQNum].getElementsByTagName('textarea')[0] != null){
+  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();	
+		}
+	}
+}
+
+function ChangeQ(ChangeBy){
+//The following line prevents moving to another question until the current
+//question is answered correctly. Uncomment it to enable this behaviour. 
+//	if (State[CurrQNum][0] == -1){return;}
+	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
+	QArray[CurrQNum].style.display = 'none';
+	CurrQNum += ChangeBy;
+	QArray[CurrQNum].style.display = '';
+	SetQNumReadout();
+	SetFocusToTextbox();
+}
+
+function SetQNumReadout(){
+	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
+}
+
+I=new Array();
+I[0]=new Array();I[0][0]=100;
+I[0][1]='';
+I[0][2]='0';
+I[0][3]=new Array();
+I[0][3][0]=new Array('10 times as much as the force on the 1 kg brick.','Well done.  Force of gravity is weight.  A 10 kg object weighs 10 times more than a 1 kg object.',1,100,1);
+I[0][3][1]=new Array('zero.','Nope.  Gravity works just fine in a vacuum.',0,0,1);
+I[0][3][2]=new Array('the same as the force on the 1 kg brick.','No.  You got faked out.  You are thinking of acceleration which is the same.  But the question asked for the "force of gravity" which is the weight.  A 10 kg block and a 1 kg block do not weigh the same.',0,0,1);
+I[1]=new Array();I[1][0]=100;
+I[1][1]='';
+I[1][2]='0';
+I[1][3]=new Array();
+I[1][3][0]=new Array('0 N.','You got it.  If it is at rest it is in equilibrium.  That means net force = zero.',1,100,1);
+I[1][3][1]=new Array('0.1 N','This is a nonsense answer.',0,0,1);
+I[1][3][2]=new Array('1 N','This is the weight but the hand is opposing the force with 1 N so the net force is zero.  You know because the apple isn\'t accelerating.',0,0,1);
+I[1][3][3]=new Array('9.8 N','This is a nonsense answer.',0,0,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='0';
+I[2][3]=new Array();
+I[2][3][0]=new Array('one forth.','sorry, not right.',0,0,1);
+I[2][3][1]=new Array('the same.','nope. sorry.',0,0,1);
+I[2][3][2]=new Array('one half.','sorry, not right.',0,0,1);
+I[2][3][3]=new Array('one third.','a=f/m.  In case 1 you get a=f/m.  In case 2 you get a=f/3m which means a must be 1/3a.',1,100,1);
+I[2][3][4]=new Array('none of these.','sorry, not right.',0,0,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='0';
+I[3][3]=new Array();
+I[3][3][0]=new Array('500 kg','Nope. sorry.',0,0,1);
+I[3][3][1]=new Array('1000 kg','Nope. sorry.',0,0,1);
+I[3][3][2]=new Array('1500 kg','Good.  m=F/a so 3000N/2 m/s/s = 1500 kg.',1,100,1);
+I[3][3][3]=new Array('3000 kg','Nope. Sorry.',0,0,1);
+I[3][3][4]=new Array('none of these.','There is a correct choice here.',0,0,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='0';
+I[4][3]=new Array();
+I[4][3][0]=new Array('velocity.','No because constant velocity means no acceleration.  A net force always produces acceleration.',0,0,1);
+I[4][3][1]=new Array('acceleration.','Bingo!  Net forces always cause acceleration.',1,100,1);
+I[4][3][2]=new Array('both of these.','Can\'t be.',0,0,1);
+I[4][3][3]=new Array('none of these.','There is a correct choice above.',0,0,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='0';
+I[5][3]=new Array();
+I[5][3][0]=new Array('has no forces acting on it.','No because there could be a number of forces that add up to a net force of zero N.',0,0,1);
+I[5][3][1]=new Array('must be moving in a vacuum or in the absence of air drag.','Not true.  terminal velocity would be an example of constant velocity that occurs precisely because of air drag.',0,0,1);
+I[5][3][2]=new Array('has zero acceleration.','That\'s it!  No net force always means no acceleration.',1,100,1);
+I[5][3][3]=new Array('has a net force acting upon it in the direction of motion.','No because constant velocity only occurs in the absence of a net force.',0,0,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='0';
+I[6][3]=new Array();
+I[6][3][0]=new Array('the mass of the rocket decreases as the fuel is burned.','That\'s it!  A rocket will lose a significant portion of its total mass during lift-off.',1,100,1);
+I[6][3][1]=new Array('gravity becomes weaker with increased distance.','While true, this makes a very small difference when compared to response A above.',0,0,1);
+I[6][3][2]=new Array('The applied force on the rocket increases as burning of fuel progresses.','This isn\'t true.  The thrust of the rocket depends on the engines and not on the length of time the fuel burns.',0,0,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='0';
+I[7][3]=new Array();
+I[7][3][0]=new Array('0.2 g.','Sorry. try again.',0,0,1);
+I[7][3][1]=new Array('0.3 g.','Sorry. Try again.',0,0,1);
+I[7][3][2]=new Array('0.4 g.','Sorry. Try again.',0,0,1);
+I[7][3][3]=new Array('0.5 g.','100 kg x 9.8 m/s/s = 980 N.  Net force would be 980 N - 500 N = 480 N.  a=f/m so 480 N/100 kg = 4.8 m/s/s or about 1/2 g.',1,100,1);
+I[7][3][4]=new Array('more than 0.5 g.','Sorry. Try again.',0,0,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='0';
+I[8][3]=new Array();
+I[8][3][0]=new Array('0.','You got it.  The weight of the object is 55kg x 9.8 m/s/s = 539 N.  Since the air resistance is the same it must be at terminal velocity which means the net force is zero and no acceleration.',1,100,1);
+I[8][3][1]=new Array('10.2','Sorry. Try again.',0,0,1);
+I[8][3][2]=new Array('9.8','Sorry. Try again.',0,0,1);
+I[8][3][3]=new Array('16.3','Sorry. Try again.',0,0,1);
+I[8][3][4]=new Array('3.7','Sorry, Try again.',0,0,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='0';
+I[9][3]=new Array();
+I[9][3][0]=new Array('grip of the archer\'s hand on the bow.','String on arrow...hand on bow?  That doesn\'t sound right does it?  Incorrect.',0,0,1);
+I[9][3][1]=new Array('arrow\'s push against the bowstring.','String on arrow...arrow on string.  That sounds good. Right!',1,100,1);
+I[9][3][2]=new Array('air resistance against the bow.','String on arrow...air on bow.  That doesn\'t sound right does it?  Incorrect.',0,0,1);
+I[9][3][3]=new Array('friction of the ground against the archer\'s feet.','String on arrow...ground on feet.  That doesn\'t sound right does it?  Incorrect.',0,0,1);
+I[9][3][4]=new Array('weight of the arrow.','String on arrow...earth on arrow.  That doesn\'t sound right does it?  Incorrect.',0,0,1);
+I[10]=new Array();I[10][0]=100;
+I[10][1]='';
+I[10][2]='0';
+I[10][3]=new Array();
+I[10][3][0]=new Array('10 N','Your right!  Newton\'s third law makes that clear.',1,100,1);
+I[10][3][1]=new Array('20 N','Not right.  The tension comes from the resistance of the opposing object.  Each can only oppose by 10 N.',0,0,1);
+I[10][3][2]=new Array('0 N','Sorry. try again.',0,0,1);
+I[11]=new Array();I[11][0]=100;
+I[11][1]='';
+I[11][2]='0';
+I[11][3]=new Array();
+I[11][3][0]=new Array('does not push Bill.','This won\'t obey Newton\'s third law.',0,0,1);
+I[11][3][1]=new Array('will eventually push Joe when he awakes.','Cute, but not a physics answer.',0,0,1);
+I[11][3][2]=new Array('pushes Joe, but not as hard.','nope!',0,0,1);
+I[11][3][3]=new Array('pushes Joe equally hard.','Even though he isn\'t aware of it.  Joe can only touch Bill (and therefore push him) if Bill resists equally.',1,100,1);
+I[12]=new Array();I[12][0]=100;
+I[12][1]='';
+I[12][2]='0';
+I[12][3]=new Array();
+I[12][3][0]=new Array('21,000,000 N','You did everything right except you forgot to convert 60 g to kg.',0,0,1);
+I[12][3][1]=new Array('21,000 N','Bingo! That\'s right.  ',1,100,1);
+I[12][3][2]=new Array('21 N','Sorry. Try again.',0,0,1);
+I[12][3][3]=new Array('.00021 N','Sorry. Try again.',0,0,1);
+I[13]=new Array();I[13][0]=100;
+I[13][1]='';
+I[13][2]='0';
+I[13][3]=new Array();
+I[13][3][0]=new Array('-11,327.4 N','Not correct.  Try again.',0,0,1);
+I[13][3][1]=new Array('13,500 N','Not a chance.  I got this by randomly multiplying numbers that were in the problem.  Is that what you did?',0,0,1);
+I[13][3][2]=new Array('-4166.7 N','Shazzam!  You did it.',1,100,1);
+I[13][3][3]=new Array('15,000 N','Mistake!  You forgot to change 90 km/hr to m/s.  Try again.',0,0,1);
+I[14]=new Array();I[14][0]=100;
+I[14][1]='';
+I[14][2]='0';
+I[14][3]=new Array();
+I[14][3][0]=new Array('5.62 m/s/s','Not correct. You forgot to take friction into account.',0,0,1);
+I[14][3][1]=new Array('2.09 m/s/s','Not correct.  You didn\'t solve for normal force correctly.  Normal force = weight when on a flat surface but this is an incline.  Normal force = Cos 35 x 4214 N.',0,0,1);
+I[14][3][2]=new Array('.277 m/s/s','Not correct.  You forgot to change mass to weight before beginning the problem.  Do that first and you will get the correct answer.',0,0,1);
+I[14][3][3]=new Array('2.73 m/s/s','Yeehaa!  That\'s right.',1,100,1);
+I[15]=new Array();I[15][0]=100;
+I[15][1]='';
+I[15][2]='0';
+I[15][3]=new Array();
+I[15][3][0]=new Array('36 N','Great!  This seems a small number but remember the boxer can only put the amount of force on the paper that the paper permits by providing resistance force.',1,100,1);
+I[15][3][1]=new Array('352.8 N','Sorry.  You simply forgot to change the weight of the paper to the mass before multiplying by acceleration.  Try again.',0,0,1);
+I[15][3][2]=new Array('.36 N','Sorry.  You forgot to change cm to meters before you calculated acceleration.  It looks like you did everything else right. Try again.',0,0,1);
+I[15][3][3]=new Array('.0784 N','This is the weight of the paper.  You are either guessing or you forgot to square final velocity when calculating acceleration and to change the weight of the paper into mass before calculating force.  Try again.',0,0,1);
+I[16]=new Array();I[16][0]=100;
+I[16][1]='';
+I[16][2]='1';
+I[16][3]=new Array();
+I[16][3][0]=new Array('1.32 m/s/s','',1,100,1);
+I[17]=new Array();I[17][0]=100;
+I[17][1]='';
+I[17][2]='0';
+I[17][3]=new Array();
+I[17][3][0]=new Array('in equilibrium','yeahhh!',1,100,1);
+I[17][3][1]=new Array('moving at constant non-zero velocity','it could be but it might be at rest so we can\'t say this one "for sure".',0,0,1);
+I[17][3][2]=new Array('at rest','it could be but it might be moving at constant non-zero velocity so we can\'t say this one "for sure".',0,0,1);
+I[17][3][3]=new Array('all of these','better choice above',0,0,1);
+I[17][3][4]=new Array('none of these','better choice above',0,0,1);
+I[18]=new Array();I[18][0]=100;
+I[18][1]='';
+I[18][2]='0';
+I[18][3]=new Array();
+I[18][3][0]=new Array('at the same time as the light block.','Yes.  Since there is no friction there is no loss of force.  Gravity pulls harder on the big block but its mass has more inertia.  The ratios between force and mass are the same even on an incline.',1,100,1);
+I[18][3][1]=new Array('before the light block.','Try again.',0,0,1);
+I[18][3][2]=new Array('after the light block.','Try again.',0,0,1);
+I[19]=new Array();I[19][0]=100;
+I[19][1]='';
+I[19][2]='0';
+I[19][3]=new Array();
+I[19][3][0]=new Array('its weight.','Beautiful!  You know it is still accelerating even though it is momentarily stationary at the top.  You know gravity never turns off.  Great!',1,100,1);
+I[19][3][1]=new Array('less than its weight.','Did gravity turn off?  Try again.',0,0,1);
+I[19][3][2]=new Array('more than its weight.','What else is pulling on it beside gravity?  Try again.',0,0,1);
+I[20]=new Array();I[20][0]=100;
+I[20][1]='';
+I[20][2]='0';
+I[20][3]=new Array();
+I[20][3][0]=new Array('1/2 as far.','No. Try again.',0,0,1);
+I[20][3][1]=new Array('1 1/2 as far.','No Try again.',0,0,1);
+I[20][3][2]=new Array('2 times as far.','Nope. Try again.',0,0,1);
+I[20][3][3]=new Array('4 times as far.','Nope.  Try again.',0,0,1);
+I[20][3][4]=new Array('the same.','Yes! Since Friction Force = cefficient of friction x Normal force the friction would double if you double the weight (normal force).  Acceleration = Net Force over mass.  Both net force and mass double so acceleration remains unchanged.',1,100,1);
+I[21]=new Array();I[21][0]=100;
+I[21][1]='';
+I[21][2]='0';
+I[21][3]=new Array();
+I[21][3][0]=new Array('3m','No. Try again.',0,0,1);
+I[21][3][1]=new Array('4m','That\'s it!  The force on both is equal and opposite.  One accelerates twice as much as the other so covers twice the distance in the same amount of time.  The heavier must go 4 m while the lighter goes 8 m.',1,100,1);
+I[21][3][2]=new Array('5m','No. Try again.',0,0,1);
+I[21][3][3]=new Array('6m','No. Try again.',0,0,1);
+
+
+function StartUp(){
+	RemoveBottomNavBarForIE();
+
+//If there's only one question, no need for question navigation controls
+	if (QsToShow < 2){
+		document.getElementById('QNav').style.display = 'none';
+	}
+	
+//Stash the instructions so they can be redisplayed
+	strInstructions = document.getElementById('InstructionsDiv').innerHTML;
+	
+
+	
+
+	PreloadImages('balance.jpg','Scan0001.jpg');
+
+	
+	CompleteEmptyFeedback();
+
+	SetUpQuestions();
+	ClearTextBoxes();
+	CreateStatusArray();
+	
+
+	
+//Check search string for q parameter
+	if (document.location.search.length > 0){
+		if (ShuffleQs == false){
+			var JumpTo = parseInt(document.location.search.substring(1,document.location.search.length))-1;
+			if (JumpTo <= QsToShow){
+				ChangeQ(JumpTo);
+			}
+		}
+	}
+}
+
+function ShowHideQuestions(){
+	FuncBtnOut(document.getElementById('ShowMethodButton'));
+	document.getElementById('ShowMethodButton').style.display = 'none';
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		document.getElementById('Questions').style.listStyleType = 'decimal';
+		document.getElementById('OneByOneReadout').style.display = 'none';
+		document.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption;
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		document.getElementById('Questions').style.listStyleType = 'none';
+		document.getElementById('OneByOneReadout').style.display = '';
+		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAllQuestions = false;	
+	}
+	document.getElementById('ShowMethodButton').style.display = 'inline';
+}
+
+function CreateStatusArray(){
+	var QNum, ANum;
+//For each item in the item array
+	for (QNum=0; QNum<I.length; QNum++){
+//Check if the question still exists (hasn't been nuked by showing a random selection)
+		if (document.getElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question not done yet
+			State[QNum][1] = new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen yet; when chosen, will store its position in the series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far
+			State[QNum][3] = 0; //incrementing percent-correct values of selected answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[QNum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null;
+		}
+	}
+}
+
+
+
+function CheckMCAnswer(QNum, ANum, Btn){
+//if question doesn't exist, bail
+	if (State[QNum].length < 1){return;}
+	
+//Get the feedback
+	Feedback = I[QNum][3][ANum][1];
+	
+//Now show feedback and bail if question already complete
+	if (State[QNum][0] > -1){
+//Add an extra message explaining that the question
+// is finished if defined by the user
+		if (strQuestionFinished.length > 0){Feedback += '<br />' + strQuestionFinished;}
+//Show the feedback
+		ShowMessage(Feedback);
+		return;
+	}
+	
+//Hide the button while processing
+	Btn.style.display = 'none';
+
+//Increment the number of tries
+	State[QNum][2]++;
+	
+//Add the percent-correct value of this answer
+	State[QNum][3] += I[QNum][3][ANum][3];
+	
+//Store the try number in the answer part of the State array, for tracking purposes
+	State[QNum][1][ANum] = State[QNum][2];
+	State[QNum][5] += String.fromCharCode(65+ANum) + ',';
+	
+//Should this answer be accepted as correct?
+	if (I[QNum][3][ANum][2] < 1){
+//It's wrong
+
+//Mark the answer
+		Btn.innerHTML = IncorrectIndicator;
+		
+//Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Finished == false){
+			WriteToInstructions(strInstructions);
+		}	
+		
+//Check whether this leaves just one MC answer unselected, in which case the Q is terminated
+		var RemainingAnswer = FinalAnswer(QNum);
+		if (RemainingAnswer > -1){
+//Behave as if the last answer had been selected, but give no credit for it
+//Increment the number of tries
+			State[QNum][2]++;		
+		
+//Calculate the score for this question
+			CalculateMCQuestionScore(QNum);
+
+//Get the overall score and add it to the feedback
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.';
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.');
+			}
+		}
+	}
+	else{
+//It's right
+//Mark the answer
+		Btn.innerHTML = CorrectIndicator;
+				
+//Calculate the score for this question
+		CalculateMCQuestionScore(QNum);
+
+//Get the overall score and add it to the feedback
+		if (ContinuousScoring == true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.';
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.');
+			}
+		}
+	}
+	
+//Show the button again
+	Btn.style.display = 'inline';
+	
+//Finally, show the feedback	
+	ShowMessage(Feedback);
+	
+//Check whether all questions are now done
+	CheckFinished();
+}
+
+function CalculateMCQuestionScore(QNum){
+	var Tries = State[QNum][2] + State[QNum][4]; //include tries and hint penalties
+	var PercentCorrect = State[QNum][3];
+	var TotAns = GetTotalMCAnswers(QNum);
+	var HintPenalties = State[QNum][4];
+	
+//Make sure it's not already complete
+
+	if (State[QNum][0] < 0){
+//Allow for Hybrids
+		if (HintPenalties >= 1){
+			State[QNum][0] = 0;
+		}
+		else{
+//This line calculates the score for this question
+			if (TotAns == 1){
+				State[QNum][0] = 1;
+			}
+			else{
+				State[QNum][0] = ((TotAns-((Tries*100)/State[QNum][3]))/(TotAns-1));
+			}
+		}
+//Fix for Safari bug added for version 6.0.3.42 (negative infinity problem)
+		if ((State[QNum][0] < 0)||(State[QNum][0] == Number.NEGATIVE_INFINITY)){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+function GetTotalMCAnswers(QNum){
+	var Result = 0;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			Result++;
+		}
+	}
+	return Result;
+}
+
+function FinalAnswer(QNum){
+	var UnchosenAnswers = 0;
+	var FinalAnswer = -1;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			if (State[QNum][1][ANum] < 1){ //This answer hasn't been chosen yet
+				UnchosenAnswers++;
+				FinalAnswer = ANum;
+			}
+		}
+	}
+	if (UnchosenAnswers == 1){
+		return FinalAnswer;
+	}
+	else{
+		return -1;
+	}
+}
+
+
+
+
+
+function CalculateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0];
+				TotalScore += (I[QNum][0] * State[QNum][0]);
+			}
+		}
+	}
+	if (TotalWeighting > 0){
+		Score = Math.floor((TotalScore/TotalWeighting)*100);
+	}
+	else{
+//if TotalWeighting is 0, no questions so far have any value, so 
+//no penalty should be shown.
+		Score = 100; 
+	}
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = YourScoreIs + ' ' + Score + '%.';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingField</fieldlabelid><fielddata>' + State[QNum][5] + '</fielddata></field>';
+				}
+			}
+		}
+		Detail += '</fields></hpnetresult>';
+		setTimeout('Finish()', SubmissionTimeout);
+	}
+}
+
+
+
+
+
+//CORE CODE FOR CHECKING SHORT ANSWER GUESSES AGAINST ANSWER ARRAYS
+
+var CaseSensitive = false;
+var ShowAlsoCorrect = true;
+var PleaseEnter = 'Please enter a guess.';
+var HybridTries = 2;
+var PartlyIncorrect = 'Your answer is partly wrong: ';
+var CorrectList = 'Correct answers: ';
+var NextCorrect = 'Next correct letter in the answer: ';
+var CurrBox = null;
+
+function TrackFocus(BoxID){
+	InTextBox = true;
+	CurrBox = document.getElementById(BoxID);
+}
+
+function LeaveGap(){
+	InTextBox = false;
+}
+
+function TypeChars(Chars){
+	if (CurrBox != null){
+//		if (CurrBox.style.display != 'none'){
+			CurrBox.value += Chars;
+			CurrBox.focus();
+//		}
+	}
+}
+
+function CheckGuess(Guess, Answer, CaseSensitive, PercentCorrect, Feedback){
+	this.Guess = Guess;
+	this.Answer = Answer;
+	this.PercentCorrect = PercentCorrect;
+	this.Feedback = Feedback;
+	if (CaseSensitive == false){
+		this.WorkingGuess = Guess.toLowerCase();
+		this.WorkingAnswer = Answer.toLowerCase();
+	}
+	else{
+		this.WorkingGuess = Guess;
+		this.WorkingAnswer = Answer;				
+	}
+	this.Hint = '';
+	this.HintPenalty = 1/Answer.length;
+	this.CorrectStart = '';
+	this.WrongMiddle = '';
+	this.CorrectEnd = '';
+	this.PercentMatch = 0;
+	this.DoCheck();
+}
+
+function CheckGuess_DoCheck(){
+//Check if it's an exact match
+	if (this.WorkingAnswer == this.WorkingGuess){
+		this.PercentMatch = 100;
+		this.CorrectStart = this.Guess;
+	return;
+	}
+//Figure out how much of the beginning is correct
+	var i = 0;
+	var CorrectChars = 0;
+	while (this.WorkingAnswer.charAt(i) == this.WorkingGuess.charAt(i)){
+		i++;
+		CorrectChars++;
+	}
+//Stash the hint
+	this.Hint = this.Answer.charAt(i);
+	
+	this.CorrectStart = this.Guess.substring(0, i);
+	
+//If there's more to the answer, look at the rest of it
+	if (i<this.Guess.length){
+	
+//Figure out how much of the end is correct
+		var j = this.WorkingGuess.length-1;
+		var k = this.WorkingAnswer.length-1;
+		while ((j>=i)&&((this.WorkingAnswer.charAt(k) == this.WorkingGuess.charAt(j))&&(CorrectChars < this.Answer.length))){
+			CorrectChars++;
+			j--;
+			k--;
+		}
+		this.CorrectEnd = this.Guess.substring(j+1, this.Guess.length);
+		this.WrongMiddle = this.Guess.substring(i, j+1);
+	}
+	if (TrimString(this.WrongMiddle).length < 1){this.WrongMiddle = '_';}
+//Calculate match score based on how much of the guess is correct
+	if (CorrectChars < this.Answer.length){
+		this.PercentMatch = Math.floor(100*CorrectChars)/this.Answer.length;
+	}
+	else{
+		this.PercentMatch = Math.floor((100 * CorrectChars)/this.Guess.length);
+	}	
+}
+
+CheckGuess.prototype.DoCheck = CheckGuess_DoCheck;
+
+function CheckAnswerArray(CaseSensitive){
+	this.CaseSensitive = CaseSensitive;
+	this.Answers = new Array();
+	this.Score = 0;
+	this.Feedback = '';
+	this.Hint = '';
+	this.HintPenalty = 0;
+	this.MatchedAnswerLength = 1;
+	this.CompleteMatch = false;
+	this.MatchNum = -1;
+}
+
+function CheckAnswerArray_AddAnswer(Guess, Answer, PercentCorrect, Feedback){
+	this.Answers.push(new CheckGuess(Guess, Answer, this.CaseSensitive, PercentCorrect, Feedback));
+}
+
+CheckAnswerArray.prototype.AddAnswer = CheckAnswerArray_AddAnswer;
+
+function CheckAnswerArray_ClearAll(){
+	this.Answers.length = 0;
+}
+
+CheckAnswerArray.prototype.ClearAll = CheckAnswerArray_ClearAll;
+
+function CheckAnswerArray_GetBestMatch(){
+//First check for a 100% match
+	for (var i=0; i<this.Answers.length; i++){
+		if (this.Answers[i].PercentMatch == 100){
+			this.Feedback = this.Answers[i].Feedback;
+			this.Score = this.Answers[i].PercentCorrect;
+			this.CompleteMatch = true;
+			this.MatchNum = i;
+			return;
+		}
+	}
+//Now check for the best alternative match
+	var PercentMatch = 0;
+	var BestMatch = -1;
+	for (i=0; i<this.Answers.length; i++){
+		if ((this.Answers[i].PercentMatch > PercentMatch)&&(this.Answers[i].PercentCorrect == 100)){
+			BestMatch = i;
+			PercentMatch = this.Answers[i].PercentMatch;
+		}
+	}
+	if (BestMatch > -1){
+		this.Score = this.Answers[BestMatch].PercentMatch;
+		this.Feedback = PartlyIncorrect + ' ';
+		this.Feedback += '<span class="PartialAnswer">' + this.Answers[BestMatch].CorrectStart;
+		this.Feedback += '<span class="Highlight">' + this.Answers[BestMatch].WrongMiddle + '</span>';
+		this.Feedback += this.Answers[BestMatch].CorrectEnd + '</span>';
+		this.Hint = '<span class="PartialAnswer">' + this.Answers[BestMatch].CorrectStart;
+		this.Hint += '<span class="Highlight">' + this.Answers[BestMatch].Hint + '</span></span>';
+		this.HintPenalty = this.Answers[BestMatch].HintPenalty;
+	}
+	else{
+		this.Score = 0;
+		this.Feedback = '';
+	}
+}
+
+CheckAnswerArray.prototype.GetBestMatch = CheckAnswerArray_GetBestMatch;
+
+function CheckShortAnswer(QNum){
+//bail if question doesn't exist or exercise finished
+	if ((State[QNum].length < 1)||(Finished == true)){return;}
+	
+//bail if question already complete
+	if (State[QNum][0] > -1){return;}
+
+//Get the guess
+	var G = document.getElementById('Q_' + QNum + '_Guess').value;
+	
+//If no guess, bail with message; no penalty
+	if (G.length < 1){
+		ShowMessage(PleaseEnter);
+		return;
+	}
+
+//Increment tries
+	State[QNum][2]++;
+	
+//Create a check object
+	var CA = new CheckAnswerArray(CaseSensitive);
+
+	CA.ClearAll();
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		CA.AddAnswer(G, I[QNum][3][ANum][0], I[QNum][3][ANum][3], I[QNum][3][ANum][1]);
+	}
+	CA.GetBestMatch();
+	
+//Store any match in the state tracking field
+	if (CA.MatchNum > -1){
+		State[QNum][5] += String.fromCharCode(65+CA.MatchNum) + ',';
+	}
+
+//Add the percent correct value for this answer to the Q State (works for all
+//situations, wrong or right)
+	State[QNum][3] += CA.Score;
+	
+//Now branch, based on the nature of the match
+//Is it a complete match?
+	if (CA.CompleteMatch == true){
+		
+//Is it with a wrong answer, or a right answer?
+		if (CA.Score == 100){
+//It's right
+			CalculateShortAnsQuestionScore(QNum);
+//Get correct answer list if required, assuming there are any other correct alternatives
+			if (ShowAlsoCorrect == true){
+				var AlsoCorrectList = GetCorrectList(QNum, G, false);
+				if (AlsoCorrectList.length > 0){
+					CA.Feedback += '<br />' + CorrectList + '<br />' + AlsoCorrectList;
+				}
+			}	
+		
+//Get the overall score and add it to the feedback
+			if (ContinuousScoring == true){
+				CalculateOverallScore();
+				CA.Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.';
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.');
+			}
+			ShowMessage(CA.Feedback);
+//Put the answer in
+			ReplaceGuessBox(QNum, G);
+			CheckFinished();
+			return;
+		}
+	}
+	
+//Otherwise, it's a match to a predicted wrong/partially correct, or a partial
+//match to a right answer
+	if (CA.Feedback.length < 1){CA.Feedback = DefaultWrong;}
+//Remove any previous score unless exercise is finished (6.0.3.8+)
+	if (Finished == false){
+		WriteToInstructions(strInstructions);
+	}	
+	ShowMessage(CA.Feedback);
+
+//If necessary, switch a hybrid question to m/c
+	if (State[QNum][2] >= HybridTries){
+		SwitchHybridDisplay(QNum);
+	}
+}
+
+function CalculateShortAnsQuestionScore(QNum){
+	var Tries = State[QNum][2] + State[QNum][4]; //include tries and hint penalties;
+	var PercentCorrect = State[QNum][3];
+	var HintPenalties = State[QNum][4];
+
+//Make sure it's not already complete
+	if (State[QNum][0] < 0){
+		if (HintPenalties >= 1){
+			State[QNum][0] = 0;
+		}
+		else{
+			State[QNum][0] = (PercentCorrect/(100*Tries));
+		}
+		if (State[QNum][0] < 0){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+function SwitchHybridDisplay(QNum){
+	if (document.getElementById('Q_' + QNum + '_Hybrid_MC') != null){
+		document.getElementById('Q_' + QNum + '_Hybrid_MC').style.display = '';
+		if (document.getElementById('Q_' + QNum + '_SA') != null){
+			document.getElementById('Q_' + QNum + '_SA').style.display = 'none';
+		}
+	}
+}
+
+function GetCorrectArray(QNum){
+	var Result = new Array();
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][2] == 1){ //This is an acceptable correct answer
+			Result.push(I[QNum][3][ANum][0]);
+		}
+	}	
+	return Result;
+}
+
+function GetCorrectList(QNum, Answer, IncludeAnswer){
+	var As = GetCorrectArray(QNum);
+	var Result = '';
+	for (var ANum=0; ANum<As.length; ANum++){
+		if ((IncludeAnswer == true)||(As[ANum] != Answer)){
+			Result += As[ANum] + '<br />';
+		}
+	}
+	return Result;
+}
+
+function GetFirstCorrectAnswer(QNum){
+	var As = GetCorrectArray(QNum);
+	if (As.length > 0){
+		return As[0];
+	}
+	else{
+		return '';
+	}
+}
+
+function ReplaceGuessBox(QNum, Ans){
+	if (document.getElementById('Q_' + QNum + '_SA') != null){
+		var El = document.getElementById('Q_' + QNum + '_SA');
+		while (El.childNodes.length > 0){
+			El.removeChild(El.childNodes[0]);
+		}
+		var A = document.createElement('span');
+		A.setAttribute('class', 'Answer');
+		var T = document.createTextNode(Ans);
+		A.appendChild(T);
+		El.appendChild(A);
+	}
+}
+
+
+
+function ShowAnswers(QNum){
+//bail if question doesn't exist or exercise finished
+	if ((State[QNum].length < 1)||(Finished == true)){return;}
+	
+//Get the answer list to display
+	var Ans = GetCorrectList(QNum, '', false);
+	Ans = CorrectList + '<br />' + Ans;
+	
+//Display feedback
+	ShowMessage(Ans);
+	
+//Set the score for this question to 0 if no 
+	if (State[QNum][0] < 1){
+		State[QNum][0] = 0;
+	}
+
+//Get the first correct answer
+	var FirstAns = GetFirstCorrectAnswer(QNum);
+	
+//Replace the textbox
+	ReplaceGuessBox(QNum, FirstAns);
+	
+//Remove any current score
+	WriteToInstructions(strInstructions);
+	
+//This may be the last, so check finished status
+	CheckFinished();
+}
+
+
+
+
+
+function ShowHint(QNum){
+//bail if question doesn't exist or exercise finished
+	if ((State[QNum].length < 1)||(Finished == true)){return;}
+	
+//bail if question already complete
+	if (State[QNum][0] > -1){return;}
+
+//Get the guess
+	var G = document.getElementById('Q_' + QNum + '_Guess').value;
+	
+//If no guess, give the first correct bit
+	if (G.length < 1){
+		var Ans = GetFirstCorrectAnswer(QNum);
+		var Hint = Ans.charAt(0);
+		ShowMessage(NextCorrect + '<br />' + Hint);
+//Penalty for hint
+		State[QNum][4] += (1/Ans.length);
+		return;
+	}
+
+//Increment tries
+	State[QNum][2]++;
+	
+//Create a check object
+	var CA = new CheckAnswerArray(CaseSensitive);
+
+	CA.ClearAll();
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+//Use only correct answers
+		if (I[QNum][3][ANum][2] == 1){
+			CA.AddAnswer(G, I[QNum][3][ANum][0], I[QNum][3][ANum][3], I[QNum][3][ANum][1]);
+		}
+	}
+	CA.GetBestMatch();
+	if (CA.CompleteMatch == true){
+//It's right!
+		CheckShortAnswer(QNum);
+		return;
+	}
+	else{
+		if (CA.Hint.length > 0){
+			ShowMessage(NextCorrect + '<br />' + CA.Hint);
+			State[QNum][4] += CA.HintPenalty;
+		}
+		else{
+			ShowMessage(DefaultWrong + '<br />' + NextCorrect + '<br />' + GetFirstCorrectAnswer(QNum).charAt(0));
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody">
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='jcross1.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">Newton's 2nd and 3rd Laws Pretest</h2>
+
+	<h3 class="ExerciseSubtitle">Quiz</h3>
+
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<p id="Instructions"></p>
+</div>
+
+
+
+
+<div id="MainDiv" class="StdDiv">
+ 
+<div id="QNav" class="QuestionNavigation">
+
+<p style="text-align: right;">
+<button id="ShowMethodButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ShowHideQuestions(); return false;">Show all questions</button>
+</p>
+
+<div id="OneByOneReadout">
+<button id="PrevQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(-1); return false;">&lt;=</button>
+
+<span id="QNumReadout" class="QNum">&nbsp;</span>
+
+<button id="NextQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(1); return false;">=&gt;</button>
+<br />
+</div>
+
+</div>
+ 
+<ol class="QuizQuestions" id="Questions">
+<li class="QuizQuestion" id="Q_0" style="display: none;"><p class="QuestionText">A 10 kg brick and a 1 kg brick are dropped in a vacuum. The force of gravity on the 10 kg brick is</p><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;10 times as much as the force on the 1 kg brick.</li><li id="Q_0_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;zero.</li><li id="Q_0_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;the same as the force on the 1 kg brick.</li></ol></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><p class="QuestionText">An apple weighs 1 N. When held at rest above your head, the net force on the apple is</p><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;0 N.</li><li id="Q_1_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;0.1 N</li><li id="Q_1_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;1 N</li><li id="Q_1_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_3_Btn" onclick="CheckMCAnswer(1,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;9.8 N</li></ol></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><p class="QuestionText">The maximum acceleration of a car while towing a second car twice its mass, compared to no towing, is</p><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;one forth.</li><li id="Q_2_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;the same.</li><li id="Q_2_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;one half.</li><li id="Q_2_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_3_Btn" onclick="CheckMCAnswer(2,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;one third.</li><li id="Q_2_4"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_4_Btn" onclick="CheckMCAnswer(2,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;none of these.</li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><p class="QuestionText">A tow truck exerts a force of 3000 N on a car, accelerating it at 2 m/s/s. What is the mass of the car?</p><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;500 kg</li><li id="Q_3_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;1000 kg</li><li id="Q_3_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;1500 kg</li><li id="Q_3_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_3_Btn" onclick="CheckMCAnswer(3,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;3000 kg</li><li id="Q_3_4"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_4_Btn" onclick="CheckMCAnswer(3,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;none of these.</li></ol></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><p class="QuestionText">If the mass of an object does not change, a constant net force on the object produces constant</p><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;velocity.</li><li id="Q_4_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;acceleration.</li><li id="Q_4_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;both of these.</li><li id="Q_4_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_3_Btn" onclick="CheckMCAnswer(4,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;none of these.</li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><p class="QuestionText">An object following a straight line path at constant speed</p><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;has no forces acting on it.</li><li id="Q_5_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;must be moving in a vacuum or in the absence of air drag.</li><li id="Q_5_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;has zero acceleration.</li><li id="Q_5_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_3_Btn" onclick="CheckMCAnswer(5,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;has a net force acting upon it in the direction of motion.</li></ol></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><p class="QuestionText">A rocket becomes progressively easier to accelerate as it travels upward from the ground mainly because</p><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;the mass of the rocket decreases as the fuel is burned.</li><li id="Q_6_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;gravity becomes weaker with increased distance.</li><li id="Q_6_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The applied force on the rocket increases as burning of fuel progresses.</li></ol></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><p class="QuestionText">A skydiver of mass 100 kg experiences air resistance of 500 N, and an acceleration of about... (remember a g is a 9.8 m/s/s)</p><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;0.2 g.</li><li id="Q_7_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;0.3 g.</li><li id="Q_7_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;0.4 g.</li><li id="Q_7_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_3_Btn" onclick="CheckMCAnswer(7,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;0.5 g.</li><li id="Q_7_4"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_4_Btn" onclick="CheckMCAnswer(7,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;more than 0.5 g.</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><p class="QuestionText">A 55 kg piece of metal falls from an airplane 2000 m high. By the time the piece falls 900 m it is experiencing a force of resistance of 539 N. What is its acceleration in m/s/s?</p><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;0.</li><li id="Q_8_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;10.2</li><li id="Q_8_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;9.8</li><li id="Q_8_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_3_Btn" onclick="CheckMCAnswer(8,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;16.3</li><li id="Q_8_4"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_4_Btn" onclick="CheckMCAnswer(8,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;3.7</li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><p class="QuestionText">An archer shoots an arrow. Consider the action force to be exerted by the bowstring against the arrow. The reaction to this force is the</p><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;grip of the archer's hand on the bow.</li><li id="Q_9_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;arrow's push against the bowstring.</li><li id="Q_9_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;air resistance against the bow.</li><li id="Q_9_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_3_Btn" onclick="CheckMCAnswer(9,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;friction of the ground against the archer's feet.</li><li id="Q_9_4"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_4_Btn" onclick="CheckMCAnswer(9,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;weight of the arrow.</li></ol></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;"><p class="QuestionText"><img src="balance.jpg" alt="balance.jpg" title="balance" width="467" height="275"></img><br />Two 10 Newton weights are pulling on the spring scale as shown. The reading on the scale is</p><ol class="MCAnswers"><li id="Q_10_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_0_Btn" onclick="CheckMCAnswer(10,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;10 N</li><li id="Q_10_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_1_Btn" onclick="CheckMCAnswer(10,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;20 N</li><li id="Q_10_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_2_Btn" onclick="CheckMCAnswer(10,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;0 N</li></ol></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;"><p class="QuestionText">Joe pushes Bill, who is asleep. Bill</p><ol class="MCAnswers"><li id="Q_11_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_0_Btn" onclick="CheckMCAnswer(11,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;does not push Bill.</li><li id="Q_11_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_1_Btn" onclick="CheckMCAnswer(11,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;will eventually push Joe when he awakes.</li><li id="Q_11_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_2_Btn" onclick="CheckMCAnswer(11,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;pushes Joe, but not as hard.</li><li id="Q_11_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_3_Btn" onclick="CheckMCAnswer(11,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;pushes Joe equally hard.</li></ol></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;"><p class="QuestionText">A golf ball of mass 60 grams is struck by a golf club and acquires a speed of 70 m/s during the impact, which lasts .0002 seconds. What force (assumed constant) is exerted on the object?</p><ol class="MCAnswers"><li id="Q_12_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_0_Btn" onclick="CheckMCAnswer(12,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;21,000,000 N</li><li id="Q_12_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_1_Btn" onclick="CheckMCAnswer(12,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;21,000 N</li><li id="Q_12_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_2_Btn" onclick="CheckMCAnswer(12,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;21 N</li><li id="Q_12_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_3_Btn" onclick="CheckMCAnswer(12,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;.00021 N</li></ol></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;"><p class="QuestionText">What average force is required to stop a 1000 kg car in 6.0 seconds if it is traveling at 90 km/hr?</p><ol class="MCAnswers"><li id="Q_13_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_0_Btn" onclick="CheckMCAnswer(13,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;-11,327.4 N</li><li id="Q_13_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_1_Btn" onclick="CheckMCAnswer(13,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;13,500 N</li><li id="Q_13_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_2_Btn" onclick="CheckMCAnswer(13,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;-4166.7 N</li><li id="Q_13_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_3_Btn" onclick="CheckMCAnswer(13,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;15,000 N</li></ol></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;"><p class="QuestionText">A large 430 kg crate breaks loose on a loading dock and slides down the ramp that is 35 degrees with the horizontal. The coefficient of friction on this ramp is .36. With what acceleration does the crate slide down?</p><ol class="MCAnswers"><li id="Q_14_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_0_Btn" onclick="CheckMCAnswer(14,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;5.62 m/s/s</li><li id="Q_14_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_1_Btn" onclick="CheckMCAnswer(14,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;2.09 m/s/s</li><li id="Q_14_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_2_Btn" onclick="CheckMCAnswer(14,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;.277 m/s/s</li><li id="Q_14_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_3_Btn" onclick="CheckMCAnswer(14,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;2.73 m/s/s</li></ol></li>
+<li class="QuizQuestion" id="Q_15" style="display: none;"><p class="QuestionText">A heavyweight boxer slugs a piece of paper hanging from a string. The paper weighs 0.0784 N and is accelerated to a speed of 45 m/s in a distance of 22.5 cm. What massive force did the boxer apply to the paper? What is odd about the size of this force?</p><ol class="MCAnswers"><li id="Q_15_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_0_Btn" onclick="CheckMCAnswer(15,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;36 N</li><li id="Q_15_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_1_Btn" onclick="CheckMCAnswer(15,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;352.8 N</li><li id="Q_15_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_2_Btn" onclick="CheckMCAnswer(15,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;.36 N</li><li id="Q_15_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_3_Btn" onclick="CheckMCAnswer(15,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;.0784 N</li></ol></li>
+<li class="QuizQuestion" id="Q_16" style="display: none;"><p class="QuestionText">A man mows his yard which is very hilly. One hill has an incline of 21 degrees with the horizontal. The 17 kg mower makes an angle of 40 degrees with the hill itself. The coefficient of friction on the slope is .25. The man pushes with 200 N of force. With what acceleration does the mower go up the hill. (see diagram).<br /><br /><img src="Scan0001.jpg" alt="Scan0001.jpg" title="Scan0001" width="528" height="275"></img></p><div class="ShortAnswer" id="Q_16_SA"><form method="post" action="" onsubmit="return false;"><div><input type="text" id="Q_16_Guess" onfocus="TrackFocus('Q_16_Guess')" onblur="LeaveGap()" class="ShortAnswerBox" size="10"></input><br /><br /><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckShortAnswer(16)">Check</button><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="ShowHint(16)">Hint</button><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="ShowAnswers(16)">Show answer</button></div></form></div></li>
+<li class="QuizQuestion" id="Q_17" style="display: none;"><p class="QuestionText">If a non-rotating object has no acceleration, then we can say for certain that it is</p><ol class="MCAnswers"><li id="Q_17_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_0_Btn" onclick="CheckMCAnswer(17,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;in equilibrium</li><li id="Q_17_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_1_Btn" onclick="CheckMCAnswer(17,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;moving at constant non-zero velocity</li><li id="Q_17_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_2_Btn" onclick="CheckMCAnswer(17,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;at rest</li><li id="Q_17_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_3_Btn" onclick="CheckMCAnswer(17,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;all of these</li><li id="Q_17_4"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_4_Btn" onclick="CheckMCAnswer(17,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;none of these</li></ol></li>
+<li class="QuizQuestion" id="Q_18" style="display: none;"><p class="QuestionText">Neglecting Friction, a large block of ice and a small block of ice start sliding down an incline together. The heavier block will get to the bottom</p><ol class="MCAnswers"><li id="Q_18_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_0_Btn" onclick="CheckMCAnswer(18,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;at the same time as the light block.</li><li id="Q_18_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_1_Btn" onclick="CheckMCAnswer(18,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;before the light block.</li><li id="Q_18_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_2_Btn" onclick="CheckMCAnswer(18,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;after the light block.</li></ol></li>
+<li class="QuizQuestion" id="Q_19" style="display: none;"><p class="QuestionText">A rock is thrown vertically into the air. At the very top of its trajectory the net force on it is</p><ol class="MCAnswers"><li id="Q_19_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_0_Btn" onclick="CheckMCAnswer(19,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;its weight.</li><li id="Q_19_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_1_Btn" onclick="CheckMCAnswer(19,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;less than its weight.</li><li id="Q_19_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_2_Btn" onclick="CheckMCAnswer(19,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;more than its weight.</li></ol></li>
+<li class="QuizQuestion" id="Q_20" style="display: none;"><p class="QuestionText">The brakes of a speeding truck are slammed on and it skids to a stop. If the truck were heavily loaded so that it had twice the total mass, the skidding distance would be</p><ol class="MCAnswers"><li id="Q_20_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_0_Btn" onclick="CheckMCAnswer(20,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;1/2 as far.</li><li id="Q_20_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_1_Btn" onclick="CheckMCAnswer(20,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;1 1/2 as far.</li><li id="Q_20_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_2_Btn" onclick="CheckMCAnswer(20,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;2 times as far.</li><li id="Q_20_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_3_Btn" onclick="CheckMCAnswer(20,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;4 times as far.</li><li id="Q_20_4"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_4_Btn" onclick="CheckMCAnswer(20,4,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;the same.</li></ol></li>
+<li class="QuizQuestion" id="Q_21" style="display: none;"><p class="QuestionText">Two people, one twice as massive as the other, attempt a tug-of-war with 12 meters of rope on frictionless ice. After a brief time, they meet. The heavier person slides a distance of</p><ol class="MCAnswers"><li id="Q_21_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_0_Btn" onclick="CheckMCAnswer(21,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;3m</li><li id="Q_21_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_1_Btn" onclick="CheckMCAnswer(21,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;4m</li><li id="Q_21_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_2_Btn" onclick="CheckMCAnswer(21,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;5m</li><li id="Q_21_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_3_Btn" onclick="CheckMCAnswer(21,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;6m</li></ol></li></ol>
+
+
+
+</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='jcross1.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>

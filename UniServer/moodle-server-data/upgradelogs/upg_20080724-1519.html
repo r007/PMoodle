@@ -1,0 +1,32 @@
+<h2   class="main">Upgrading Moodle database from version 1.9.1+ (Build: 20080602) (2007101513) to 1.9.2+ (Build: 20080718) (2007101520)...</h2><hr />
+(mysql): ALTER TABLE mdl_srv_mnet_enrol_course MODIFY COLUMN sortorder BIGINT(10) unsigned NOT NULL DEFAULT 0 &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): SELECT name FROM mdl_srv_config WHERE name = 'version' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_srv_config SET value = '2007101514' WHERE name = 'version' &nbsp; 
+<hr />
+<hr />
+(mysql): DELETE FROM mdl_srv_role_names WHERE  name = ''  &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_srv_config WHERE name = 'version' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_srv_config SET value = '2007101515' WHERE name = 'version' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_srv_config WHERE name = 'version' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_srv_config SET value = '2007101517' WHERE name = 'version' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Database was successfully upgraded</div>
+<h2   class="main">label module needs upgrading</h2><hr />
+(mysql): UPDATE mdl_srv_log_display SET mtable = 'label' WHERE module = 'label' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">label tables have been set up correctly</div>
+<hr />

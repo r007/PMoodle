@@ -1,0 +1,4 @@
+<br />
+<b>Notice</b>:  Undefined property: object::$path in <b>/var/www/html/cc5983/offline/development/moodle/20080528/backup/send_incremental.php</b> on line <b>20</b><br />
+<br />
+<b>Warning</b>:  fopen(backup-vledev_20080708_10_59-20080708-1104.zip) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in <b>/var/www/html/cc5983/offline/development/moodle/20080528/lib/filelib.php</b> on line <b>875</b><br />

@@ -1,0 +1,35 @@
+<h2   class="main">backup</h2><div class="notifysuccess" style="text-align:center">Database was successfully upgraded</div>
+<div class="notifysuccess" style="text-align:center">Backup version is now 2008041100</div>
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_backup_guids (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    guid VARCHAR(255) NOT NULL DEFAULT '',
+    src_table VARCHAR(255) NOT NULL DEFAULT '',
+    src_field VARCHAR(255) NOT NULL DEFAULT '',
+    src_value VARCHAR(255) NOT NULL DEFAULT '',
+    courseid BIGINT(10) unsigned NOT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE UNIQUE INDEX mdl_backguid_gui_uix ON mdl_backup_guids (guid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE UNIQUE INDEX mdl_backguid_srcsrcsrc_uix ON mdl_backup_guids (src_table, src_field, src_value) &nbsp; 
+<hr />
+1071: Specified key was too long; max key length is 1000 bytes<br>
+<pre align="left"> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <font face="Courier New,Courier">ADOConnection._Execute(CREATE UNIQUE INDEX mdl_backguid_srcsrcsrc_uix ON mdl_backup_guids (src_table, src_field, src_value), false)</font><font color="#808080" size="-1"> % line  891, file: <a href="file:/C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.3\htdocs\moodle\lib\adodb\adodb.inc.php">adodb.inc.php</a></font>
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <font face="Courier New,Courier">ADOConnection.Execute(CREATE UNIQUE INDEX mdl_backguid_srcsrcsrc_uix ON mdl_backup_guids (src_table, src_field, src_value))</font><font color="#808080" size="-1"> % line   89, file: <a href="file:/C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.3\htdocs\moodle\lib\dmllib.php">dmllib.php</a></font>
+ &nbsp;  &nbsp;  &nbsp; <font face="Courier New,Courier">execute_sql(CREATE UNIQUE INDEX mdl_backguid_srcsrcsrc_uix ON mdl_backup_guids (src_table, src_field, src_value), true)</font><font color="#808080" size="-1"> % line 2201, file: <a href="file:/C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.3\htdocs\moodle\lib\dmllib.php">dmllib.php</a></font>
+ &nbsp;  &nbsp; <font face="Courier New,Courier">execute_sql_arr(Array[3], true, true)</font><font color="#808080" size="-1"> % line  863, file: <a href="file:/C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.3\htdocs\moodle\lib\ddllib.php">ddllib.php</a></font>
+ &nbsp; <font face="Courier New,Courier">create_table(Object:XMLDBTable)</font><font color="#808080" size="-1"> % line   28, file: <a href="file:/C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.3\htdocs\moodle\local\db\upgrade.php">upgrade.php</a></font>
+</pre><div class="notifyproblem" style="text-align:center"><strong>Error</strong></div>
+<br /><div class="box errorbox errorboxcontent">Upgrade failed!  See local/version.php</div>

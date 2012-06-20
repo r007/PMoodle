@@ -1,0 +1,4 @@
+<br />
+<b>Notice</b>:  Undefined property: object::$path in <b>/var/www/html/cc5983/offline/development/moodle/ou-moodle-merge/backup/send_incremental.php</b> on line <b>20</b><br />
+<br />
+<b>Warning</b>:  fopen(backup-ofoume_20080723_11_47-20080723-1441.zip) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in <b>/var/www/html/cc5983/offline/development/moodle/ou-moodle-merge/lib/filelib.php</b> on line <b>875</b><br />

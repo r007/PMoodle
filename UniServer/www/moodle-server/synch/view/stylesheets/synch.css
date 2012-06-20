@@ -1,0 +1,63 @@
+
+/***** /synch styles start *****/
+#courseList li li {
+	/*display: none;*/
+}
+
+#synchNav li{
+	/*list-style: none;*/
+cursor:pointer;
+list-style:none;
+}
+
+/*
+#synchNav li {
+	list-style-image: url(../images/icon_course.gif);
+	list-style-position: inside;
+}*/
+
+
+/*
+#synchNav li.hub{
+	list-style-image: url('../images/icon_hub.gif');
+}
+
+#synchNav li.course{
+	list-style-image: url('../images/icon_course.gif');
+}
+
+#synchNav li.week{
+	list-style-image: url(../images/icon_week.gif);
+}
+
+#synchNav li.forum{
+	list-style-image: url(../images/icon_forum.gif);
+}
+
+#synchNav li.discussion{
+	list-style-image: url(../images/icon_discussion.gif);
+}
+
+#synchNav li.post{
+	list-style-image: url(../images/icon_post.gif);
+}
+#synchNav li.wiki{
+	list-style-image: url(../images/icon_wiki.gif);
+}
+
+#synchNav li.assignment{
+	list-style-image: url(../images/icon_assignment.gif);
+}
+*/
+
+#synchNav li.checkChildren{
+	list-style-image: url(../images/icon_checkChilden.gif);
+}
+
+/***** /courselist start *****/
+
+.key ul{
+	list-style:none;
+}
+
+/***** /synch styles end *****/

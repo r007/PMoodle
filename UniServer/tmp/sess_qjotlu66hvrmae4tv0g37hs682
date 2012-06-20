@@ -1,0 +1,23 @@
+INSTALL|a:22:{s:8:"language";s:7:"ru_utf8";s:6:"dbhost";s:9:"localhost";s:6:"dbuser";s:4:"root";s:6:"dbpass";s:4:"root";s:6:"dbtype";s:5:"mysql";s:6:"dbname";s:6:"moodle";s:6:"prefix";s:4:"mdl_";s:16:"downloadlangpack";b:0;s:20:"showdownloadlangpack";b:0;s:21:"downloadlangpackerror";s:0:"";s:7:"wwwroot";s:28:"http://localhost:4001/moodle";s:7:"dirroot";s:13:"W:\www\moodle";s:8:"dataroot";s:14:"W:\/moodledata";s:11:"wwwrootform";s:28:"http://localhost:4001/moodle";s:11:"dirrootform";s:13:"W:\www\moodle";s:12:"admindirname";s:5:"admin";s:5:"stage";i:0;s:7:"version";i:2007101520;s:7:"release";s:24:"1.9.2+ (Build: 20080718)";s:4:"next";s:16:"Дальше  »";s:4:"same";s:1:"1";s:6:"config";s:686:"<?php  /// Moodle Configuration File 
+
+unset($CFG);
+
+$CFG->dbtype    = 'mysql';
+$CFG->dbhost    = 'localhost';
+$CFG->dbname    = 'moodle';
+$CFG->dbuser    = 'root';
+$CFG->dbpass    = 'root';
+$CFG->dbpersist =  false;
+$CFG->prefix    = 'mdl_';
+
+$CFG->wwwroot   = 'http://localhost:4001/moodle';
+$CFG->dirroot   = 'W:\www\moodle';
+$CFG->dataroot  = 'W:\/moodledata';
+$CFG->admin     = 'admin';
+
+$CFG->directorypermissions = 00777;  // try 02777 on a server in Safe Mode
+
+require_once("$CFG->dirroot/lib/setup.php");
+// MAKE SURE WHEN YOU EDIT THIS FILE THAT THERE ARE NO SPACES, BLANK LINES,
+// RETURNS, OR ANYTHING ELSE AFTER THE TWO CHARACTERS ON THE NEXT LINE.
+?>";}

@@ -1,0 +1,68 @@
+<h2   class="main">Upgrading Moodle database from version 1.9 + (Build: 20080306) (2007101509) to 1.9.1+ (Build: 20080602) (2007101513)...</h2><hr />
+(mysql): UPDATE mdl_question SET parent = id WHERE qtype = 'random' AND parent &lt;&gt; id &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): SELECT name FROM mdl_config WHERE name = 'version' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_config SET value = '2007101510' WHERE name = 'version' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_role WHERE id = '7' LIMIT 100 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT r.*
+                      FROM mdl_role r,
+                           mdl_role_capabilities rc
+                     WHERE rc.capability = 'moodle/legacy:guest'
+                       AND rc.roleid = r.id  AND rc.permission = '1' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Increasing size of user idnumber field, this may take a while...</div>
+<hr />
+(mysql): UPDATE mdl_user SET idnumber = '' WHERE idnumber IS NULL &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_user DROP INDEX mdl_user_idn_ix &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_user MODIFY COLUMN idnumber VARCHAR(255) NOT NULL DEFAULT '' after password &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW INDEX FROM mdl_user &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE INDEX mdl_user_idn_ix ON mdl_user (idnumber) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): SELECT name FROM mdl_config WHERE name = 'version' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_config SET value = '2007101512' WHERE name = 'version' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_log_display WHERE action = 'unenrol' AND module = 'course' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT * FROM mdl_log_display WHERE id = '-1' &nbsp; 
+<hr />
+<hr />
+(mysql): INSERT INTO mdl_log_display ( MODULE, ACTION, MTABLE, FIELD ) VALUES ( 'course', 'unenrol', 'course', 'fullname' ) &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT LAST_INSERT_ID() &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT name FROM mdl_config WHERE name = 'version' LIMIT 1 &nbsp; 
+<hr />
+<hr />
+(mysql): UPDATE mdl_config SET value = '2007101513' WHERE name = 'version' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Database was successfully upgraded</div>

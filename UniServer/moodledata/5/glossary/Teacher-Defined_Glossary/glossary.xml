@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GLOSSARY>
+  <INFO>
+    <NAME>Teacher-Defined Glossary</NAME>
+    <INTRO>&lt;p style=&quot;text-align: left;&quot;&gt;Teachers often want to create a glossary of terms that will be easily referenced by students.  This is an easy task in Moodle.&lt;/p&gt;
+&lt;p style=&quot;text-align: left;&quot;&gt;Moreover, almost any module of Moodle can be set to hyperlink - automatically - to any word or phrase that is stored in or added to the glossary (see &lt;a href=&quot;http://moodle.org/mod/resource/view.php?id=2303&quot;&gt;auto-linking&lt;/a&gt;).&lt;/p&gt;
+&lt;ul style=&quot;width: 90%; text-align: left;&quot;&gt;
+&lt;li&gt;Glossary items can be grouped in categories.&lt;/li&gt;
+&lt;li&gt;Participants can comment on glossary entries.&lt;/li&gt;
+&lt;li&gt;Entries can be rated using teacher-defined scales.&lt;/li&gt;
+&lt;li&gt;Glossaries can be easily exported and imported via xml.&lt;/li&gt;
+&lt;li&gt;Glossaries can be fully searched.&lt;/li&gt;
+&lt;li&gt;Glossaries can be viewed with different display formats.&lt;/li&gt;
+&lt;/ul&gt;</INTRO>
+    <STUDENTCANPOST>0</STUDENTCANPOST>
+    <ALLOWDUPLICATEDENTRIES>1</ALLOWDUPLICATEDENTRIES>
+    <DISPLAYFORMAT>dictionary</DISPLAYFORMAT>
+    <SHOWSPECIAL>0</SHOWSPECIAL>
+    <SHOWALPHABET>1</SHOWALPHABET>
+    <SHOWALL>1</SHOWALL>
+    <ALLOWCOMMENTS>1</ALLOWCOMMENTS>
+    <USEDYNALINK>1</USEDYNALINK>
+    <DEFAULTAPPROVAL>1</DEFAULTAPPROVAL>
+    <GLOBALGLOSSARY>0</GLOBALGLOSSARY>
+    <ENTBYPAGE>10</ENTBYPAGE>
+    <ENTRIES>
+      <ENTRY>
+        <CONCEPT>Assignments</CONCEPT>
+        <DEFINITION>&lt;p&gt;Assignments allow the teacher to specify a task that requires students to prepare digital content (any format) and submit it by uploading it to the server. Typical assignments include essays, projects, reports and so on. This module includes grading facilities.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Chats</CONCEPT>
+        <DEFINITION>&lt;p&gt;The Chat module allows participants to have a real-time synchronous discussion via the web. This is a useful way to get a different understanding of each other and the topic being discussed - the mode of using a chat room is quite different from the asynchronous forums. The Chat module contains a number of features for managing and reviewing chat discussions. &lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Choices</CONCEPT>
+        <DEFINITION>&lt;p&gt;A choice activity is very simple - the teacher asks a question and specifies a choice of multiple responses. It can be useful as a quick poll to stimulate thinking about a topic; to allow the class to vote on a direction for the course; or to gather research consent. &lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Forums</CONCEPT>
+        <DEFINITION>&lt;p&gt;This activity can be the most important - it is here that most discussion takes place. Forums can be structured in different ways, and can include peer rating of each posting. The postings can be viewed in a variety for formats, and can include attachments. By subscribing to a forum, participants will receive copies of each new posting in their email. A teacher can impose subscription on everyone if they want to.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Glossary</CONCEPT>
+        <DEFINITION>&lt;p&gt;This activity allows participants to create and maintain a list of definitions, like a dictionary. &lt;/p&gt;&lt;p&gt;The entries can be searched or browsed in many different formats. &lt;/p&gt;&lt;p&gt;The glossary also allows teachers to export entries from one glossary to another (the main one) within the same course. &lt;/p&gt;&lt;p&gt;Finally, it is possible to automatically create links to these entries from throughout the course.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Journals</CONCEPT>
+        <DEFINITION>&lt;p&gt;This module is a very important reflective activity. The teacher asks the student to reflect on a particular topic, and the student can edit and refine their answer over time. This answer is private and can only be seen by the teacher, who can offer feedback and a grade on each journal entry. It's usually a good idea to have about one Journal activity per week.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Labels</CONCEPT>
+        <DEFINITION>&lt;p&gt;This is a not a true activity - it is a &amp;quot;dummy&amp;quot; activity that allows you to insert text and graphics among the other activities on the course page.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Lesson</CONCEPT>
+        <DEFINITION>&lt;p&gt;A lesson delivers content in an interesting and flexible way. It consists of a number of pages. Each page normally ends with a question and a number of possible answers. Depending on the student's choice of answer they either progress to the next page or are taken back to a previous page. Navigation through the lesson can be straight forward or complex, depending largely on the structure of the material being presented.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Quizzes</CONCEPT>
+        <DEFINITION>&lt;p&gt;This module allows the teacher to design and set quiz tests, consisting of multiple choice, true-false, and short answer questions. These questions are kept in a categorised database, and can be re-used within courses and even between courses. Quizzes can allow multiple attempts. Each attempt is automatically marked, and the teacher can choose whether to give feedback or to show correct answers. This module includes grading facilities. &lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Resources</CONCEPT>
+        <DEFINITION>&lt;p&gt;Resources are content: information the teacher wants to bring into the course. These can be prepared files uploaded to the course server; pages edited directly in Moodle; or external web pages made to appear part of this course.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Surveys</CONCEPT>
+        <DEFINITION>&lt;p&gt;The Survey module provides a number of verified survey instruments that have been found useful in assessing and stimulating learning in online environments. Teachers can use these to gather data from their students that will help them learn about their class and reflect on their own teaching.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Wikis</CONCEPT>
+        <DEFINITION>&lt;p&gt;A Wiki enables documents to be authored collectively in a simple markup language using a web browser.&lt;/p&gt;&lt;p&gt;&amp;quot;Wiki wiki&amp;quot; means &amp;quot;super fast&amp;quot; in the Hawaiian language, and it is the speed of creating and updating pages that is one of the defining aspects of wiki technology. Generally, there is no prior review before modifications are accepted, and most wikis are open to the general public or at least to all persons who also have access to the wiki server.&lt;/p&gt;&lt;p&gt;This Wiki enabels collaborative Work. People can work together on one web adding, expanding and changing the content. The content is usually never deleted and can be restored.&lt;/p&gt;&lt;p&gt;This module integrates the marvellous &lt;a href=&quot;http://erfurtwiki.sourceforge.net/&quot; target=&quot;_new&quot;&gt;Erfurt Wiki&lt;/a&gt;.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Workshop</CONCEPT>
+        <DEFINITION>&lt;p&gt;A Workshop is a peer assessment activity with a huge array of options. It allows participants to assess each other's projects, as well as exemplar projects, in a number of ways. It also coordinates the collection and distribution of these assessments in a variety of ways. The Workshop module is contributed by Ray Kingdon. &lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Activity Modules</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Weekly format</CONCEPT>
+        <DEFINITION>&lt;p&gt;The course is organised week by week, with a clear start date and a finish date. Each week consists of activities. Some of them, like journals, may have &amp;quot;open windows&amp;quot; of, say, two weeks after which they become unavailable. &lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Course formats</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Topics format</CONCEPT>
+        <DEFINITION>&lt;p&gt;The course is organised by topics. Very similar to the weekly format, except that each &amp;quot;week&amp;quot; is called a topic. A &amp;quot;topic&amp;quot; is not restricted to any time limit. You don't need to specify any dates. &lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Course formats</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Social format</CONCEPT>
+        <DEFINITION>&lt;p&gt;This format is oriented around one main forum, the Social forum, which appears listed on the main page. It is useful for situations that are more freeform. They may not even be courses. For example, it could be used as a departmental notice board. &lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Course formats</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Plain text resource</CONCEPT>
+        <DEFINITION>&lt;p&gt;The easiest resource type. You can just type (edit) the page into a form. Some things you type will be automatically formatted, just like forum postings&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Resource Type</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>HTML text resource</CONCEPT>
+        <DEFINITION>&lt;p&gt;Resource for more advanced users. No automatic formatting is performed, you need to do it all manually using HTML codes.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Resource Type</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Reference resource</CONCEPT>
+        <DEFINITION>&lt;p&gt;A scholarly reference to a journal or book.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Resource Type</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Directory resource</CONCEPT>
+        <DEFINITION>&lt;p&gt;Displays a whole directory (and subdirectories) from your course files area. Students can then browse and view all those files. &lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Resource Type</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Web link resource</CONCEPT>
+        <DEFINITION>&lt;p&gt;A URL to somewhere on the web. When anyone clicks on this resource activity they will be taken out of the course (the page you've specified will fill the browser window, or if you specify it, will launch in a completely new window). &lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Resource Type</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Web page resource</CONCEPT>
+        <DEFINITION>&lt;p&gt;A URL to somewhere on the web. Like the previous type, this will display a web page. Unlike the previous type, though, the page will displayed &lt;b&gt;within a frame&lt;/b&gt;, as if it is integrated within the course. &lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Resource Type</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Program resource</CONCEPT>
+        <DEFINITION>&lt;p&gt;An external program that requires information passed to it about the current Moodle user and course. This allows external web applications to cooperate with Moodle.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Resource Type</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Wiki text resource</CONCEPT>
+        <DEFINITION>&lt;p&gt;Allows more formatting options than Plain Text without having to learn HTML. You type plain text but a large range of formatting characters can be included (e.g. *this will be bold* /this will be emphasised/) to easily create complex formatting.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Resource Type</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Uploaded file resource</CONCEPT>
+        <DEFINITION>&lt;p&gt;Displays any file you have uploaded into the course.&lt;/p&gt;&lt;p&gt;For example: pdf, mp3, word, zip, gif, flash, quicktime, or any format.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>0</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <CATEGORIES>
+          <CATEGORY>
+            <NAME>Resource Type</NAME>
+            <USEDYNALINK>0</USEDYNALINK>
+          </CATEGORY>
+        </CATEGORIES>
+      </ENTRY>
+    </ENTRIES>
+  </INFO>
+</GLOSSARY>

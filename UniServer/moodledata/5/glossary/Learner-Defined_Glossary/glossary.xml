@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GLOSSARY>
+  <INFO>
+    <NAME>Learner-Defined Glossary</NAME>
+    <INTRO>
+&lt;p&gt;When students participate in a course by researching ideas and defining them in a common glossary, their audience expands from one person (the teacher) to a larger community (their peers). &lt;br /&gt;&lt;br /&gt;This is one of the modules that best illustrates the way that Moodle can fundamentally improve upon the experience of a traditional classroom. When students contribute to a course in a public place like the glossary, their ideas are given weight and attention and often result in a greater pride or ownership of the assignment. &lt;br /&gt;&lt;/p&gt;&lt;li&gt;Glossary items can be grouped in categories. &lt;/li&gt;&lt;li&gt;Participants can comment on glossary entries. &lt;/li&gt;&lt;li&gt;Entries can be rated using teacher-defined scales. &lt;/li&gt;&lt;li&gt;Glossaries can be easily exported and imported via xml. &lt;/li&gt;&lt;li&gt;Student entries can be previewed by instructors before publishing. &lt;/li&gt;&lt;li&gt;Glossaries can be fully searched. &lt;/li&gt;&lt;li&gt;Glossaries can be viewed with different display formats. &lt;/li&gt;</INTRO>
+    <STUDENTCANPOST>1</STUDENTCANPOST>
+    <ALLOWDUPLICATEDENTRIES>1</ALLOWDUPLICATEDENTRIES>
+    <DISPLAYFORMAT>encyclopedia</DISPLAYFORMAT>
+    <SHOWSPECIAL>1</SHOWSPECIAL>
+    <SHOWALPHABET>1</SHOWALPHABET>
+    <SHOWALL>1</SHOWALL>
+    <ALLOWCOMMENTS>1</ALLOWCOMMENTS>
+    <USEDYNALINK>1</USEDYNALINK>
+    <DEFAULTAPPROVAL>1</DEFAULTAPPROVAL>
+    <GLOBALGLOSSARY>0</GLOBALGLOSSARY>
+    <ENTBYPAGE>10</ENTBYPAGE>
+    <ENTRIES>
+      <ENTRY>
+        <CONCEPT>Aiken</CONCEPT>
+        <DEFINITION>A town of approximately 22,000 in South Carolina, USA. It's about a three hour drive west to Atlanta from Aiken.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Ache'n</CONCEPT>
+        <DEFINITION>The feeling I get when after I've exercised after a three hour walk from Atlanta.
+</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>A Ken</CONCEPT>
+        <DEFINITION>Barbies boyfriend</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Biest-Houtakker</CONCEPT>
+        <DEFINITION>A small village in the south of the Netherlands, with approximately 800 inhabitants.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>SMS</CONCEPT>
+        <DEFINITION>&lt;p&gt;Short Message Service: Text service for mobile phones. More definitions:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.google.ch/search?q=define:sms&quot;&gt;http://www.google.ch/search?q=define:sms&lt;/a&gt;&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Short Message Service Text Mobile Phone</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Collaborative Activity</CONCEPT>
+        <DEFINITION>is an activity where groups of students work together .......</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>collaboration</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Wien</CONCEPT>
+        <DEFINITION>... zur Zeit sehr heiß :-)</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Vienna</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Building A Learning Community</CONCEPT>
+        <DEFINITION>&lt;p&gt;I think this &amp;quot;&lt;font size=&quot;3&quot;&gt;&lt;strong&gt;Student-Defined Glossary&lt;/strong&gt;&amp;quot; is a great feature of Moodle.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;It faciliates contributions from all learners and this in turn facilitates activities that hlep build an on-line learning community.&lt;/p&gt;&lt;p&gt;This is a feature that many other learning management systems lack.  &lt;/p&gt;&lt;p&gt;The only thing I don't like, is the &amp;quot;student&amp;quot; label - I think using &amp;quot;teacher-defined&amp;quot; and &amp;quot;student-defined&amp;quot; continues the authority thing and heirarchy which we are trying to break through as we try to see all participants in a learning community as co-learners.  Couldn't we use terms like &amp;quot;Faciltitator&amp;quot; or Moderator and &amp;quot;Learner&amp;quot; or better still &amp;quot;Community Defined, or Collaboratively-Defined, or Collectively-Defined or &amp;quot;Community Contributions&amp;quot; or something like that?&lt;/p&gt;&lt;p&gt;Cheers,&lt;br /&gt;Sue M.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Learner Involvement</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>AA Anarchist</CONCEPT>
+        <DEFINITION>One who does not believe in rules or order yet contadicts this by trying to be first or formost at things.  Such as AAA Auto Body who tries to be first in the listings in the yellow pages.    A Ken is such an AA Anarchist.  :-P</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>revolutionary</NAME>
+          </ALIAS>
+          <ALIAS>
+            <NAME>unemployed</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Concord Consortium</CONCEPT>
+        <DEFINITION>A non-profit organization which offers excellent online training in how to be an effective online instructor. Their courses are particularly valuable to those interested in creating and facilitating online courses with more than &amp;quot;seat of the pants&amp;quot; training. &lt;img alt=&quot;big grin&quot; src=&quot;http://moodle.org/pix/s/biggrin.gif&quot; /&gt;
+</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>online</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Bangalore</CONCEPT>
+        <DEFINITION>Bangalore's come a long way from the hamlet of &quot;boiled beans&quot; to a large BPO hub.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Indian cities</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Kärsämäki</CONCEPT>
+        <DEFINITION>&lt;p&gt;A small town in the middle of Finland (some say in the middle of nowhere). What a pity they started making cell phones in the town of Nokia - would've loved to have seen this word everywhere: &amp;quot;Kärsämäki - Connecting people&amp;quot;. &lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.karsamaki.fi&quot;&gt;http://www.karsamaki.fi&lt;/a&gt;&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>towns villages</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Ds Pierson College</CONCEPT>
+        <DEFINITION>Ds Pierson College is a modern comprehensive school in Den Bosch, The Netherlands.</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Pierson</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Pod casting</CONCEPT>
+        <DEFINITION>Pod casting is the process of making mp3 files available via an RSS enclosure.  The practical effect is that it is as easy to distribute audio files to a subscriber audience as it is to distribute any RSS feed.  For more information refer to http://www.ipodder.org .&lt;br /&gt;&lt;br /&gt;The glossary tool would be a great place to share web site research in a classroom situation.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Audio, Podcasting, MP3</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Tango</CONCEPT>
+        <DEFINITION>Much more than an argentinian dance. It is a feeling, a passion, an embrace. A place where you can live a 3 minutes life embraced with sombody that you never met before.</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Georgeproust</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Grok</CONCEPT>
+        <DEFINITION>&lt;p&gt;Martian word of obscure meaning.&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Oachkatzlschwoaf</CONCEPT>
+        <DEFINITION>Schwoaf vom Oachkatzl. Das stark befellte Ende eines kleinen Tierchens, das von Baum zu Baum springt, dabei den O. benutzt um zu steuern und das Gleichgewicht zu halten.
+
+Fur-covered end of a small animal jumping from tree to tree navigating by its O.</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>display</CONCEPT>
+        <DEFINITION>video graphic device</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>monitor</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>video</CONCEPT>
+        <DEFINITION>see in greek</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>monitor</CONCEPT>
+        <DEFINITION>surveillant</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>0</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Ball</CONCEPT>
+        <DEFINITION>A spherical object often used in games.</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Toy</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>LAMK</CONCEPT>
+        <DEFINITION>LAMK is Lahti polytechnic and it's located in southern Finland.</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Finland</NAME>
+          </ALIAS>
+          <ALIAS>
+            <NAME>polytechnic</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Suse</CONCEPT>
+        <DEFINITION>The Suse is a friend of Barbie. In computer's world, Suse is a linux distribution... (that is friend of Barbie? ;-))
+</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Barbie</NAME>
+          </ALIAS>
+          <ALIAS>
+            <NAME>Ken</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Adamantina</CONCEPT>
+        <DEFINITION>Adamantina is a brasilian city that is located in west of State of São Paulo. São Paulo is another city that is the capital of State of São Paulo.
+</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>city</NAME>
+          </ALIAS>
+          <ALIAS>
+            <NAME>Brazil</NAME>
+          </ALIAS>
+          <ALIAS>
+            <NAME>Brasil</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Gweilo</CONCEPT>
+        <DEFINITION>A 'ghost man' or foreigner in Cantonese.  </DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Ateul</CONCEPT>
+        <DEFINITION>It is a Sundanese languange for itchy. &lt;img alt=&quot;berkedip&quot; src=&quot;http://moodle.org/pix/s/wink.gif&quot; /&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>gatal</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>weather</CONCEPT>
+        <DEFINITION>clouds are made of tiny water droplets.
+
+clouds are generated when an air parcel is cooled down so that the relative humidity has increased to 100%. Cooling down further will force the water vapour in the air parcel to condensate and thus to become water (droplets). This is no rain yet!</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>clouds</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Paradise</CONCEPT>
+        <DEFINITION>Hawaii </DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Content Management System</CONCEPT>
+        <DEFINITION>CMS or Content Management System - is a system to make it easier for many people to collaborate on presenting information over the internet. The writing, editing, and publishing permissions can be granted as well as the read permissions, and the information content is made more separate from the &quot;markup&quot; of the content by use of special formatting tools like input forms and templates. A good site to compare CMS features is www.cmsmatrix.org </DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>CMS content management  system markup concurrent collaboration</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>XML</CONCEPT>
+        <DEFINITION>Extensible Markup Language</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>course</CONCEPT>
+        <DEFINITION>TESTE </DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Nitra</CONCEPT>
+        <DEFINITION>&lt;a href=&quot;http://www.nitra.sk/&quot;&gt;Nitra&lt;/a&gt; is a small city in Slovak republic.
+</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>city, slovakia</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Testing the glossary</CONCEPT>
+        <DEFINITION>This is a attempt to test the glossary</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>test, testing</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Surfing</CONCEPT>
+        <DEFINITION>Browsing, searching</DEFINITION>
+        <FORMAT>0</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>1</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Surfing, browsing</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>course</CONCEPT>
+        <DEFINITION>this is a test</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Lester</CONCEPT>
+        <DEFINITION>Slang for a Gibson Les Paul
+</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Gibson, Les Paul, Guitar</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>create account problem</CONCEPT>
+        <DEFINITION>&lt;p&gt;when i run moodle, i can't create new account!&lt;/p&gt;</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>eLearning</CONCEPT>
+        <DEFINITION>Teaching with technology</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>Learning Technology</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>NCCIA</CONCEPT>
+        <DEFINITION>The North Carolina Computer Instructors' Association</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>0</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+        <ALIASES>
+          <ALIAS>
+            <NAME>conference</NAME>
+          </ALIAS>
+          <ALIAS>
+            <NAME>computer science</NAME>
+          </ALIAS>
+          <ALIAS>
+            <NAME>education</NAME>
+          </ALIAS>
+        </ALIASES>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>Zymurgy</CONCEPT>
+        <DEFINITION>Passtime or profession notable for its nobility, admirability and propensity for wearing deep hoods. 
+</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+      <ENTRY>
+        <CONCEPT>223A</CONCEPT>
+        <DEFINITION>My office number.
+</DEFINITION>
+        <FORMAT>1</FORMAT>
+        <USEDYNALINK>1</USEDYNALINK>
+        <CASESENSITIVE>1</CASESENSITIVE>
+        <FULLMATCH>1</FULLMATCH>
+        <TEACHERENTRY>0</TEACHERENTRY>
+      </ENTRY>
+    </ENTRIES>
+  </INFO>
+</GLOSSARY>

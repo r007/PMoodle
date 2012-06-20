@@ -1,0 +1,30 @@
+<h2   class="main">assignment module needs upgrading</h2><div class="notifysuccess" style="text-align:center">Processing assignment grades, this may take a while if there are many assignments...</div>
+<div class="notifysuccess" style="text-align:center">assignment tables have been set up correctly</div>
+<hr /><h2   class="main">data module needs upgrading</h2><div class="notifysuccess" style="text-align:center">data tables have been set up correctly</div>
+<hr /><h2   class="main">forum module needs upgrading</h2><div class="notifysuccess" style="text-align:center">Processing forum grades, this may take a while if there are many forums...</div>
+<div class="notifysuccess" style="text-align:center">Removing stale forum subscriptions</div>
+<hr />
+(mysql): SELECT r.*
+                      FROM mdl_role r,
+                           mdl_role_capabilities rc
+                     WHERE rc.capability = 'moodle/course:view'
+                       AND rc.roleid = r.id  AND rc.permission = '1' &nbsp; 
+<hr />
+<hr />
+(mysql): SELECT fs.userid, f.id AS forumid
+                  FROM mdl_forum f
+                       JOIN mdl_course c                 ON c.id = f.course
+                       JOIN mdl_context ctx              ON (ctx.instanceid = c.id AND ctx.contextlevel = 50)
+                       JOIN mdl_forum_subscriptions fs   ON fs.forum = f.id
+                       LEFT JOIN mdl_role_assignments ra ON (ra.contextid = ctx.id AND ra.userid = fs.userid AND ra.roleid IN (6,5,4,3))
+                 WHERE ra.id IS NULL &nbsp; 
+<hr />
+...........<div class="notifysuccess" style="text-align:center">forum tables have been set up correctly</div>
+<hr /><h2   class="main">hotpot module needs upgrading</h2><div class="notifysuccess" style="text-align:center">Processing hotpot grades, this may take a while if there are many hotpots...</div>
+<div class="notifysuccess" style="text-align:center">hotpot tables have been set up correctly</div>
+<hr /><h2   class="main">question/type/multianswer plugin needs upgrading</h2><hr />
+(mysql): SELECT q.id, q.category, qma.sequence FROM mdl_question q JOIN mdl_question_multianswer qma ON q.id = qma.question &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">multianswer tables have been set up correctly</div>
+<hr /><h2   class="main">New version of Global Search (search) exists</h2><div class="notifysuccess" style="text-align:center">Global Search tables have been set up correctly</div>
+<hr />

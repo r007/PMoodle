@@ -1,0 +1,207 @@
+<h2   class="main">exercise</h2><hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE TABLE mdl_exercise (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    course BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    name VARCHAR(255) NOT NULL DEFAULT '',
+    nelements SMALLINT(3) unsigned NOT NULL DEFAULT 1,
+    phase SMALLINT(3) unsigned NOT NULL DEFAULT 0,
+    gradingstrategy SMALLINT(3) unsigned NOT NULL DEFAULT 1,
+    usemaximum SMALLINT(3) unsigned NOT NULL DEFAULT 0,
+    assessmentcomps SMALLINT(3) unsigned NOT NULL DEFAULT 2,
+    anonymous SMALLINT(3) unsigned NOT NULL DEFAULT 1,
+    maxbytes BIGINT(10) unsigned NOT NULL DEFAULT 100000,
+    deadline BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    timemodified BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    grade SMALLINT(3) NOT NULL DEFAULT 0,
+    gradinggrade SMALLINT(3) NOT NULL DEFAULT 0,
+    showleaguetable SMALLINT(3) unsigned NOT NULL DEFAULT 0,
+    usepassword SMALLINT(3) unsigned NOT NULL DEFAULT 0,
+    password VARCHAR(32) NOT NULL DEFAULT '',
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_exercise COMMENT='Defines exercise' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_exer_cou_ix ON mdl_exercise (course) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_exercise_submissions (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    exerciseid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    userid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    title VARCHAR(100) NOT NULL DEFAULT '',
+    timecreated BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    resubmit SMALLINT(3) unsigned NOT NULL DEFAULT 0,
+    mailed SMALLINT(3) unsigned NOT NULL DEFAULT 0,
+    isexercise SMALLINT(3) unsigned NOT NULL DEFAULT 0,
+    late SMALLINT(3) unsigned NOT NULL DEFAULT 0,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_exercise_submissions COMMENT='Info about submitted work from teacher and students' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_exersubm_use_ix ON mdl_exercise_submissions (userid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_exersubm_exe_ix ON mdl_exercise_submissions (exerciseid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_exercise_assessments (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    exerciseid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    submissionid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    userid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    timecreated BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    timegraded BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    grade DOUBLE NOT NULL DEFAULT 0,
+    gradinggrade SMALLINT(3) NOT NULL DEFAULT 0,
+    mailed TINYINT(2) unsigned NOT NULL DEFAULT 0,
+    generalcomment TEXT NOT NULL,
+    teachercomment TEXT NOT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_exercise_assessments COMMENT='Info about assessments by teacher and students' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_exerasse_use_ix ON mdl_exercise_assessments (userid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_exerasse_exe_ix ON mdl_exercise_assessments (exerciseid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_exerasse_sub_ix ON mdl_exercise_assessments (submissionid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_exercise_elements (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    exerciseid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    elementno SMALLINT(3) unsigned NOT NULL DEFAULT 0,
+    description TEXT NOT NULL,
+    scale SMALLINT(3) unsigned NOT NULL DEFAULT 0,
+    maxscore SMALLINT(3) unsigned NOT NULL DEFAULT 1,
+    weight SMALLINT(3) unsigned NOT NULL DEFAULT 11,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_exercise_elements COMMENT='Info about marking scheme of assignment' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_exerelem_exe_ix ON mdl_exercise_elements (exerciseid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_exercise_rubrics (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    exerciseid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    elementno BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    rubricno SMALLINT(3) unsigned NOT NULL DEFAULT 0,
+    description TEXT NOT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_exercise_rubrics COMMENT='Info about the rubrics marking scheme' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_exerrubr_exe_ix ON mdl_exercise_rubrics (exerciseid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_exercise_grades (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    exerciseid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    assessmentid BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    elementno BIGINT(10) unsigned NOT NULL DEFAULT 0,
+    feedback TEXT NOT NULL,
+    grade SMALLINT(3) NOT NULL DEFAULT 0,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): ALTER TABLE mdl_exercise_grades COMMENT='Info about individual grades given to each element' &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_exergrad_exe_ix ON mdl_exercise_grades (exerciseid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE INDEX mdl_exergrad_ass_ix ON mdl_exercise_grades (assessmentid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): INSERT INTO mdl_log_display(module, action, mtable, field) VALUES ('exercise', 'close', 'exercise', 'name') &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): INSERT INTO mdl_log_display(module, action, mtable, field) VALUES ('exercise', 'open', 'exercise', 'name') &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): INSERT INTO mdl_log_display(module, action, mtable, field) VALUES ('exercise', 'submit', 'exercise', 'name') &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): INSERT INTO mdl_log_display(module, action, mtable, field) VALUES ('exercise', 'view', 'exercise', 'name') &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): INSERT INTO mdl_log_display(module, action, mtable, field) VALUES ('exercise', 'update', 'exercise', 'name') &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">exercise tables have been set up correctly</div>
+<hr />

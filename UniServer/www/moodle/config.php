@@ -1,32 +1,25 @@
-<?php  // Moodle configuration file
+<?php  /// Moodle Configuration File 
 
 unset($CFG);
-global $CFG;
+global $CFG;  // This is necessary here for PHPUnit execution
 $CFG = new stdClass();
 
-$CFG->opensslcnf = '/openssl/openssl.cnf';
-
-$CFG->dbtype    = 'mysqli';
-$CFG->dblibrary = 'native';
+$CFG->dbtype    = 'mysql';
 $CFG->dbhost    = 'localhost';
 $CFG->dbname    = 'moodle';
 $CFG->dbuser    = 'root';
 $CFG->dbpass    = 'root';
+$CFG->dbpersist =  false;
 $CFG->prefix    = 'mdl_';
-$CFG->dboptions = array (
-  'dbpersist' => 0,
-  'dbsocket' => 0,
-);
 
 $CFG->wwwroot   = 'http://localhost:4001/moodle';
-$CFG->dataroot  = '/moodledata';
+$CFG->dirroot   = dirname(__FILE__);
+$CFG->dataroot   = str_replace('\\', '/', realpath(dirname(__FILE__).'/../..').'\moodledata');
 $CFG->admin     = 'admin';
 
-$CFG->directorypermissions = 0777;
+$CFG->directorypermissions = 00777;  // try 02777 on a server in Safe Mode
 
-$CFG->passwordsaltmain = 'c[xpx25p{P77?!CpPw{[KDICUa4';
-
-require_once(dirname(__FILE__) . '/lib/setup.php');
-
-// There is no php closing tag in this file,
-// it is intentional because it prevents trailing whitespace problems!
+require_once("$CFG->dirroot/lib/setup.php");
+// MAKE SURE WHEN YOU EDIT THIS FILE THAT THERE ARE NO SPACES, BLANK LINES,
+// RETURNS, OR ANYTHING ELSE AFTER THE TWO CHARACTERS ON THE NEXT LINE.
+?>

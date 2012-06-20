@@ -1,0 +1,39 @@
+<hr />
+(mysql): ALTER TABLE mdl_restore_guids DROP INDEX mdl_restguid_gui_uix &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW INDEX FROM mdl_restore_guids &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE INDEX mdl_restguid_gui_ix ON mdl_restore_guids (guid) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_incremental_courses (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    courseid BIGINT(10) unsigned DEFAULT NULL,
+    laststarttime BIGINT(10) unsigned DEFAULT NULL,
+    lastendtime BIGINT(10) unsigned DEFAULT NULL,
+    laststatus TINYINT(1) unsigned DEFAULT NULL,
+    nextstarttime BIGINT(10) unsigned DEFAULT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): CREATE TABLE mdl_incremental_instance (
+    id BIGINT(10) unsigned NOT NULL auto_increment,
+    courseid BIGINT(10) unsigned NOT NULL,
+    filename VARCHAR(255) NOT NULL DEFAULT '',
+    hash VARCHAR(255) NOT NULL DEFAULT '',
+    timecreated BIGINT(10) unsigned NOT NULL,
+CONSTRAINT  PRIMARY KEY (id)
+) &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<div class="notifysuccess" style="text-align:center">Database was successfully upgraded</div>
+<div class="notifysuccess" style="text-align:center">Local database customisations version is now 2008041103</div>

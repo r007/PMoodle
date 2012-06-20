@@ -1,0 +1,21 @@
+<hr />
+(mysql): ALTER TABLE mdl_backup_guids DROP COLUMN courseid &nbsp; 
+<hr />
+<div class="notifysuccess" style="text-align:center">Success</div>
+<hr />
+(mysql): SHOW TABLES &nbsp; 
+<hr />
+<hr />
+(mysql): SHOW INDEX FROM mdl_restore_guids &nbsp; 
+<hr />
+<hr />
+(mysql): CREATE UNIQUE INDEX mdl_restguid_srcsrcsrccou_uix ON mdl_restore_guids (src_table, src_field, src_value, courseid) &nbsp; 
+<hr />
+1071: Specified key was too long; max key length is 1000 bytes<br>
+<pre align="left"> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <font face="Courier New,Courier">ADOConnection._Execute(CREATE UNIQUE INDEX mdl_restguid_srcsrcsrccou_uix ON mdl_restore_guids (src_table, src_field, src_value, courseid), false)</font><font color="#808080" size="-1"> % line  891, file: <a href="file:/C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.3\htdocs\moodle\lib\adodb\adodb.inc.php">adodb.inc.php</a></font>
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <font face="Courier New,Courier">ADOConnection.Execute(CREATE UNIQUE INDEX mdl_restguid_srcsrcsrccou_uix ON mdl_restore_guids (src_table, src_field, src_value, courseid))</font><font color="#808080" size="-1"> % line   89, file: <a href="file:/C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.3\htdocs\moodle\lib\dmllib.php">dmllib.php</a></font>
+ &nbsp;  &nbsp;  &nbsp; <font face="Courier New,Courier">execute_sql(CREATE UNIQUE INDEX mdl_restguid_srcsrcsrccou_uix ON mdl_restore_guids (src_table, src_field, src_value, courseid), true)</font><font color="#808080" size="-1"> % line 2201, file: <a href="file:/C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.3\htdocs\moodle\lib\dmllib.php">dmllib.php</a></font>
+ &nbsp;  &nbsp; <font face="Courier New,Courier">execute_sql_arr(Array[1], true, true)</font><font color="#808080" size="-1"> % line 1344, file: <a href="file:/C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.3\htdocs\moodle\lib\ddllib.php">ddllib.php</a></font>
+ &nbsp; <font face="Courier New,Courier">add_key(Object:XMLDBTable, Object:XMLDBKey)</font><font color="#808080" size="-1"> % line   79, file: <a href="file:/C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.3\htdocs\moodle\local\db\upgrade.php">upgrade.php</a></font>
+</pre><div class="notifyproblem" style="text-align:center"><strong>Error</strong></div>
+<br /><div class="box errorbox errorboxcontent">Upgrade failed!  See local/version.php</div>

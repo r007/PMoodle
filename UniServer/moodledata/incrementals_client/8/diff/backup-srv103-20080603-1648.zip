@@ -1,0 +1,4 @@
+<br />
+<b>Notice</b>:  Undefined property:  object::$path in <b>C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.4\htdocs\moodle-server\backup\send_incremental.php</b> on line <b>20</b><br />
+<br />
+<b>Warning</b>:  fopen(backup-srv103-20080603-1648.zip) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in <b>C:\projects\VLE\Mobile Moodle\environments\xampplite-win32-1.6.6.exe\development\offlinemoodle-0.4\htdocs\moodle-server\lib\filelib.php</b> on line <b>825</b><br />
