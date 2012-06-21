@@ -15,6 +15,10 @@ class MoodleQuickForm_header extends HTML_QuickForm_header
      * @var string
      */
     var $_helpbutton='';
+	
+	function MoodleQuickForm_header($elementName = null, $text = null) {
+		parent::HTML_QuickForm_header($elementName, $text);
+	}
 
     // {{{ accept()
 

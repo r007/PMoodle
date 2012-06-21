@@ -21,6 +21,10 @@ class MoodleQuickForm_submit extends HTML_QuickForm_submit {
      * @access    public
      * @return    void
      */
+	function MoodleQuickForm_submit($elementName=null, $value=null, $attributes=null) {
+		parent::HTML_QuickForm_submit($elementName, $value, $attributes);
+	}
+	 
     function onQuickFormEvent($event, $arg, &$caller)
     {
         switch ($event) {
