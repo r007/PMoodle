@@ -7250,3 +7250,21 @@
 [Thu Jun 21 11:35:39.965052 2012] [:error] [pid 1032:tid 1088] [client 127.0.0.1:29958] PHP Warning:  Creating default object from empty value in W:\\www\\moodle-server\\theme\\standardwhite\\config.php on line 9, referer: http://localhost:4001/moodle-server/
 [Thu Jun 21 11:35:44.833052 2012] [:error] [pid 1032:tid 1088] [client 127.0.0.1:29958] PHP Warning:  Creating default object from empty value in W:\\www\\moodle-server\\theme\\standardwhite\\config.php on line 9, referer: http://localhost:4001/moodle-server/admin/settings.php?section=debugging
 [Thu Jun 21 11:35:44.841044 2012] [:error] [pid 1032:tid 1088] [client 127.0.0.1:29958] PHP Warning:  Creating default object from empty value in W:\\www\\moodle-server\\theme\\standardwhite\\config.php on line 9, referer: http://localhost:4001/moodle-server/admin/settings.php?section=debugging
+[Thu Jun 21 12:58:49.064691 2012] [core:warn] [pid 4772:tid 488] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Jun 21 12:58:49.100653 2012] [mpm_winnt:notice] [pid 4772:tid 488] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Thu Jun 21 12:58:49.100653 2012] [mpm_winnt:notice] [pid 4772:tid 488] AH00456: Server built: Apr  7 2012 13:58:11
+[Thu Jun 21 12:58:49.100653 2012] [core:notice] [pid 4772:tid 488] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Thu Jun 21 12:58:49.101652 2012] [mpm_winnt:notice] [pid 4772:tid 488] AH00418: Parent: Created child process 7400
+[Thu Jun 21 12:58:49.468266 2012] [mpm_winnt:notice] [pid 7400:tid 464] AH00354: Child: Starting 64 worker threads.
+[Thu Jun 21 13:00:53.443561 2012] [core:warn] [pid 7908:tid 260] AH00098: pid file W:/usr/local/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Jun 21 13:00:53.461541 2012] [mpm_winnt:notice] [pid 7908:tid 260] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Thu Jun 21 13:00:53.461541 2012] [mpm_winnt:notice] [pid 7908:tid 260] AH00456: Server built: Apr  7 2012 13:58:11
+[Thu Jun 21 13:00:53.461541 2012] [core:notice] [pid 7908:tid 260] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Thu Jun 21 13:00:53.463539 2012] [mpm_winnt:notice] [pid 7908:tid 260] AH00418: Parent: Created child process 6872
+[Thu Jun 21 13:00:53.966882 2012] [mpm_winnt:notice] [pid 6872:tid 456] AH00354: Child: Starting 64 worker threads.
+[Thu Jun 21 13:37:08.548778 2012] [mpm_winnt:notice] [pid 7908:tid 260] AH00428: Parent: child process exited with status 3221225477 -- Restarting.
+[Thu Jun 21 13:37:08.683632 2012] [mpm_winnt:notice] [pid 7908:tid 260] AH00455: Apache/2.4.2 (Win32) PHP/5.4.0 configured -- resuming normal operations
+[Thu Jun 21 13:37:08.683632 2012] [mpm_winnt:notice] [pid 7908:tid 260] AH00456: Server built: Apr  7 2012 13:58:11
+[Thu Jun 21 13:37:08.683632 2012] [core:notice] [pid 7908:tid 260] AH00094: Command line: 'W:\\usr\\local\\apache2\\bin\\httpd1.exe -d W:/usr/local/apache2 -f W:\\\\usr\\local\\apache2\\conf\\httpd.conf -d W:\\\\usr\\local\\apache2'
+[Thu Jun 21 13:37:08.685631 2012] [mpm_winnt:notice] [pid 7908:tid 260] AH00418: Parent: Created child process 7832
+[Thu Jun 21 13:37:09.041256 2012] [mpm_winnt:notice] [pid 7832:tid 644] AH00354: Child: Starting 64 worker threads.
