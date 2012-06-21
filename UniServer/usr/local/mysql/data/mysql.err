@@ -818,3 +818,41 @@ InnoDB: buffer...
 120620 19:50:25 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
 120620 19:50:25 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
 120620 19:50:25 [Note] Server socket created on IP: '127.0.0.1'.
+120621  0:30:28 [Note] Plugin 'FEDERATED' is disabled.
+120621  0:30:28 InnoDB: The InnoDB memory heap is disabled
+120621  0:30:28 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120621  0:30:28 InnoDB: Compressed tables use zlib 1.2.3
+120621  0:30:28 InnoDB: Initializing buffer pool, size = 16.0M
+120621  0:30:28 InnoDB: Completed initialization of buffer pool
+120621  0:30:29 InnoDB: highest supported file format is Barracuda.
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+120621  0:30:29  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+120621  0:30:31  InnoDB: Waiting for the background threads to start
+120621  0:30:32 InnoDB: 1.1.8 started; log sequence number 20350444
+120621  0:30:32 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+120621  0:30:32 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+120621  0:30:32 [Note] Server socket created on IP: '127.0.0.1'.
+120621 10:58:47 [Note] Plugin 'FEDERATED' is disabled.
+120621 10:58:47 InnoDB: The InnoDB memory heap is disabled
+120621 10:58:47 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120621 10:58:47 InnoDB: Compressed tables use zlib 1.2.3
+120621 10:58:47 InnoDB: Initializing buffer pool, size = 16.0M
+120621 10:58:47 InnoDB: Completed initialization of buffer pool
+120621 10:58:47 InnoDB: highest supported file format is Barracuda.
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+120621 10:58:47  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+120621 10:58:52  InnoDB: Waiting for the background threads to start
+120621 10:58:53 InnoDB: 1.1.8 started; log sequence number 20350444
+120621 10:58:53 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+120621 10:58:53 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+120621 10:58:53 [Note] Server socket created on IP: '127.0.0.1'.
