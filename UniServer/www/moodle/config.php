@@ -14,7 +14,7 @@ $CFG->prefix    = 'mdl_';
 
 $CFG->wwwroot   = 'http://localhost:4001/moodle';
 $CFG->dirroot   = dirname(__FILE__);
-$CFG->dataroot   = str_replace('\\', '/', realpath(dirname(__FILE__).'/../..').'\moodledata');
+$CFG->dataroot   = 'W:\\moodledata';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 00777;  // try 02777 on a server in Safe Mode
