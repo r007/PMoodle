@@ -27,6 +27,7 @@
             $form1->startdate = make_timestamp($form1->startyear, $form1->startmonth, $form1->startday);
             $currentcoursestartdate = $course_header->course_startdate;
             $coursestartdatedateoffset = $form1->startdate - $currentcoursestartdate;
+            $restore = new stdClass(); // instantiate $restore explicitely
             $restore->course_startdateoffset = $coursestartdatedateoffset; //change to restore
         } else { // don't roll if the course hasn't start date
             $coursestartdatedateoffset = 0;
@@ -106,12 +107,14 @@
 
         //We are here, having all we need !!
         //Create the restore object and put it in the session
+        $restore = new stdClass(); // instantiate $restore explicitely
         $restore->backup_unique_code = $backup_unique_code;
         $restore->file = $file;
         if ($allmods = get_records("modules")) {
             foreach ($allmods as $mod) {
                 $modname = $mod->name;
                 $var = "restore_".$modname;
+                $restore->mods[$modname] = new stdClass(); // instantiate $restore->mods[$modname] explicitely
                 $restore->mods[$modname]->restore=$$var;
                 $var = "restore_user_info_".$modname;
                 $restore->mods[$modname]->userinfo=$$var;
@@ -121,6 +124,7 @@
                 }
                 foreach ($instances as $instance) {
                     $var = 'restore_'.$modname.'_instance_'.$instance->id;
+                    $restore->mods[$modname]->instances[$instance->id] = new stdClass(); // instantiate $restore->mods[$modname]->instances[$instance->id] explicitely
                     $restore->mods[$modname]->instances[$instance->id]->restore = $$var;
                     $var = 'restore_user_info_'.$modname.'_instance_'.$instance->id;
                     $restore->mods[$modname]->instances[$instance->id]->userinfo = $$var;

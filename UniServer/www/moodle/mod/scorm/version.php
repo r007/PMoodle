@@ -10,6 +10,8 @@
 //       catch up now, so until 27th October please only increment in very tiny steps 
 //       in HEAD, until we get past that date..
 
+$module = new stdClass(); // instantiate $module explicitely
+
 $module->version  = 2007110500;   // The (date) version of this module
 $module->requires = 2007101509;   // The version of Moodle that is required
 $module->cron     = 300;            // How often should cron check this module (seconds)?

@@ -122,6 +122,7 @@
     }
 
     if(!isset($form1->startdate)) {
+    	$form1 = new stdClass(); // instantiate $module explicitely
         $form1->startdate = $course_header->course_startdate; //$course_header->course_startdate;
     }
 

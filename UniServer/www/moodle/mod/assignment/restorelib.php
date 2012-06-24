@@ -43,6 +43,7 @@
             //$GLOBALS['traverse_array']="";                                                              //Debug
 
             //Now, build the ASSIGNMENT record structure
+            $assignment = new stdClass(); // instantiate $assignment explicitely
             $assignment->course = $restore->course_id;
             $assignment->name = backup_todb($info['MOD']['#']['NAME']['0']['#']);
             $assignment->description = backup_todb($info['MOD']['#']['DESCRIPTION']['0']['#']);

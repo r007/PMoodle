@@ -5,6 +5,8 @@
 //  This fragment is called by /admin/index.php
 ////////////////////////////////////////////////////////////////////////////////
 
+$module = new stdClass(); // instantiate $module explicitely
+
 $module->version  = 2007110500;
 $module->requires = 2007101509;  // Requires this Moodle version
 $module->cron     = 60;

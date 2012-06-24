@@ -13,8 +13,8 @@ $CFG->dbpersist =  false;
 $CFG->prefix    = 'mdl_';
 
 $CFG->wwwroot   = 'http://localhost:4001/moodle';
-$CFG->dirroot   = dirname(__FILE__);
-$CFG->dataroot   = 'W:\\moodledata';
+$CFG->dirroot   = 'W:\www\moodle';
+$CFG->dataroot   = 'W:/moodledata';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 00777;  // try 02777 on a server in Safe Mode

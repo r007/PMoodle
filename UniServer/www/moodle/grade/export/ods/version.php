@@ -23,6 +23,8 @@
 //                                                                       //
 ///////////////////////////////////////////////////////////////////////////
 
+$plugin = new stdClass(); // instantiate $plugin explicitely
+
 $plugin->version  = 2007092701;
 $plugin->requires = 2007101000;
 

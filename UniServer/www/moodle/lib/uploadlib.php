@@ -74,6 +74,7 @@ class upload_manager {
             $course = $SITE;
         }
         
+        $this->config = new stdClass(); // instantiate $this->config explicitely
         $this->config->deleteothers = $deleteothers;
         $this->config->handlecollisions = $handlecollisions;
         $this->config->recoverifmultiple = $recoverifmultiple;

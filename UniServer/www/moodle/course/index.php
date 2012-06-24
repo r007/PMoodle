@@ -327,6 +327,7 @@ function print_category_edit($category, $displaylist, $parentslist, $depth=-1, $
     static $str = '';
 
     if (empty($str)) {
+    	$str = new stdClass(); // instantiate $str explicitely
         $str->edit     = get_string('edit');
         $str->delete   = get_string('delete');
         $str->moveup   = get_string('moveup');
@@ -398,6 +399,7 @@ function print_category_edit($category, $displaylist, $parentslist, $depth=-1, $
         echo '</td>';
         echo '</tr>';
     } else {
+    	$category = new stdClass(); // instantiate $category explicitely
         $category->id = '0';
     }
 

@@ -118,6 +118,7 @@ function print_auth_lock_options ($auth, $user_fields, $helptext, $retrieveopts,
 
         // Define some vars we'll work with
         if (!isset($pluginconfig->{"field_map_$field"})) {
+        	$pluginconfig = new stdClass(); // instantiate $pluginconfig explicitely
             $pluginconfig->{"field_map_$field"} = '';
         }
         if (!isset($pluginconfig->{"field_updatelocal_$field"})) {

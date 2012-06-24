@@ -1626,6 +1626,7 @@ function make_categories_list(&$list, &$parents, $category=NULL, $path="") {
         }
         $list[$category->id] = $path;
     } else {
+    	$category = new stdClass(); // instantiate $category explicitely
         $category->id = 0;
     }
 
@@ -1941,6 +1942,8 @@ function print_course($course) {
 
     echo '</div><div class="summary">';
     $options = NULL;
+    
+    $options = new stdClass(); // instantiate $options explicitely
     $options->noclean = true;
     $options->para = false;
     echo format_text($course->summary, FORMAT_MOODLE, $options,  $course->id);

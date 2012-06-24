@@ -4943,6 +4943,7 @@ define('RESTORE_GROUPS_GROUPINGS', 3);
                             $this->info->backup_name = $this->getContents();
                             break;
                         case "MOODLE_VERSION":
+                        	$this->info = new stdClass(); // instantiate $this->info explicitely
                             $this->info->backup_moodle_version = $this->getContents();
                             break;
                         case "MOODLE_RELEASE":
@@ -5006,6 +5007,7 @@ define('RESTORE_GROUPS_GROUPINGS', 3);
                                 $this->info->tempName = $this->getContents();
                                 break;
                             case "INCLUDED":
+                           		$this->info->mods[$this->info->tempName] = new stdClass(); // instantiate $this->info->mods[$this->info->tempName] explicitely
                                 $this->info->mods[$this->info->tempName]->backup = $this->getContents();
                                 break;
                             case "USERINFO":
@@ -5017,6 +5019,7 @@ define('RESTORE_GROUPS_GROUPINGS', 3);
                         switch ($tagName) {
                             case "ID":
                                 $this->info->tempId = $this->getContents();
+                                $this->info->mods[$this->info->tempName]->instances[$this->info->tempId] = new stdClass(); // instantiate explicitely
                                 $this->info->mods[$this->info->tempName]->instances[$this->info->tempId]->id = $this->info->tempId;
                                 break;
                             case "NAME":
@@ -5112,6 +5115,7 @@ define('RESTORE_GROUPS_GROUPINGS', 3);
                 if ($this->level == 4) {
                     switch ($tagName) {
                         case "ID":
+                        	$this->info = new stdClass(); // instantiate explicitely
                             $this->info->course_id = $this->getContents();
                             break;
                         case "PASSWORD":
@@ -5237,7 +5241,8 @@ define('RESTORE_GROUPS_GROUPINGS', 3);
                     if ($this->level == 5) {
                         switch ($tagName) {
                             case "ID":
-                                $this->info->category->id = $this->getContents();
+                            	$this->info->category = new stdClass(); // instantiate explicitely
+                            	$this->info->category->id = $this->getContents();
                                 break;
                             case "NAME":
                                 $this->info->category->name = $this->getContents();
@@ -5556,6 +5561,7 @@ define('RESTORE_GROUPS_GROUPINGS', 3);
                 if ($this->level == 5) {
                     switch ($tagName) {
                         case "ID":
+                        	$this->info->tempsection = new stdClass(); // instantiate $this->info->tempsection explicitely
                             $this->info->tempsection->id = $this->getContents();
                             break;
                         case "NUMBER":
@@ -5586,6 +5592,7 @@ define('RESTORE_GROUPS_GROUPINGS', 3);
                             }
 
                             if (isset($this->info->tempmod->guid)) { //if guid set then add it too.
+                            $this->info->tempsection->mods[$this->info->tempmod->id] = new stdClass(); // instantiate $this->info->tempsection->mods[$this->info->tempmod->id] explicitely
                             $this->info->tempsection->mods[$this->info->tempmod->id]->guid =
                                 $this->info->tempmod->guid;   
                             }                           
@@ -5615,12 +5622,13 @@ define('RESTORE_GROUPS_GROUPINGS', 3);
                     }
                 }
                 if ($this->level == 7) {
-                    switch ($tagName) {
+                	switch ($tagName) {
                         case "ID":
                             $this->info->tempmod->id = $this->getContents();
                             break;
                         case "GUID":
-                            $this->info->tempmod->guid = $this->getContents();
+                        	$this->info->tempmod = new stdClass(); // instantiate $this->info->tempmod explicitely
+                        	$this->info->tempmod->guid = $this->getContents();
                             break;
                         case "TYPE":
                             $this->info->tempmod->type = $this->getContents();

@@ -5,6 +5,7 @@
 /// how Moodle uses this theme.
 ////////////////////////////////////////////////////////////////////////////////
 
+$THEME = new stdClass(); // instantiate $THEME explicitely
 
 $THEME->sheets = array('user_styles');
 

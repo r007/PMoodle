@@ -2,6 +2,7 @@
 <?php
     // set to defaults if undefined
     if (!isset($config->recaptcha)) {
+    	$config = new stdClass(); // instantiate $config explicitely
         $config->recaptcha = false;
     }
 

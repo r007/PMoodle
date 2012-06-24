@@ -190,6 +190,7 @@
         $m_x = false;
 
         // Total number of strings and missing strings
+        $totalcounter = new stdClass(); // instantiate $totalcounter explicitely
         $totalcounter->strings = 0;
         $totalcounter->missing = 0;       
 
